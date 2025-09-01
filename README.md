@@ -9,6 +9,8 @@ Projeto sistema para um(a) recepcionista de uma rede de Barbearias preencher age
 **Credenciais de ADM que permitira ter acesso a dados mais pessoais dos clientes.**
 
 ## Menu Principal
+**Cadastro de clientes**
+
 **Agendar horário, mostrando data e hora disponível**
 
 **Visualização por dia/semana/mês**
