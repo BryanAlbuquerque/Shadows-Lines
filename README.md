@@ -11,6 +11,8 @@ Projeto sistema para um(a) recepcionista de uma rede de Barbearias preencher age
 ## Menu Principal
 **Cadastro de clientes**
 
+**Clientes** com datos limitados de historicos de corte e pagamento feito ou em aberto. mas caso admin mostrar tudo do cliente.
+
 **Agendar horário, mostrando data e hora disponível**
 
 **Visualização por dia/semana/mês**
