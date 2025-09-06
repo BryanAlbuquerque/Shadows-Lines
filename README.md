@@ -1,7 +1,7 @@
-# BarbeariaBarbaz
+# Shadows & Lines
 
 **Futuro projeto:**
-Projeto sistema para um(a) recepcionista de uma rede de Barbearias preencher agendamentos por requisitos dos clientes pré definidos por WhatsApp ou Email.
+Projeto sistema para um(a) recepcionista de um Studio de Tatto preencher agendamentos por requisitos dos clientes pré definidos por WhatsApp ou Email.
 
 ## Menu de Login
 **Credenciais de recepcionista dando acesso ao sistema.**
