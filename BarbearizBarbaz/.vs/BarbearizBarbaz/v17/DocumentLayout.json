@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bryan\\Documents\\BarbeariaBarbaz\\BarbearizBarbaz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD96CA30-BC37-4D24-A00B-98E0BC380585}|BarbearizBarbaz\\BarbearizBarbaz.csproj|c:\\users\\bryan\\documents\\barbeariabarbaz\\barbearizbarbaz\\barbearizbarbaz\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DD96CA30-BC37-4D24-A00B-98E0BC380585}|BarbearizBarbaz\\BarbearizBarbaz.csproj|solutionrelative:barbearizbarbaz\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD96CA30-BC37-4D24-A00B-98E0BC380585}|BarbearizBarbaz\\BarbearizBarbaz.csproj|c:\\users\\bryan\\documents\\barbeariabarbaz\\barbearizbarbaz\\barbearizbarbaz\\login.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{DD96CA30-BC37-4D24-A00B-98E0BC380585}|BarbearizBarbaz\\BarbearizBarbaz.csproj|solutionrelative:barbearizbarbaz\\login.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\BarbeariaBarbaz\\BarbearizBarbaz\\BarbearizBarbaz\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "BarbearizBarbaz\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\BarbeariaBarbaz\\BarbearizBarbaz\\BarbearizBarbaz\\Login.xaml.cs",
+              "RelativeToolTip": "BarbearizBarbaz\\Login.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T22:15:34.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\BarbeariaBarbaz\\BarbearizBarbaz\\BarbearizBarbaz\\Login.xaml",
+              "RelativeDocumentMoniker": "BarbearizBarbaz\\Login.xaml",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\BarbeariaBarbaz\\BarbearizBarbaz\\BarbearizBarbaz\\Login.xaml",
+              "RelativeToolTip": "BarbearizBarbaz\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-04T22:15:32.127Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
