@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace BarbearizBarbaz
+namespace Shadows___Lines
 {
     /// <summary>
     /// Interaction logic for App.xaml
