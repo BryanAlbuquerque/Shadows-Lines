@@ -9,6 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="9bcaa0abb35b7f8f1d57a1ef669138f1.png" />
+    <None Remove="DAYS.jpg" />
+    <None Remove="GOD.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="9bcaa0abb35b7f8f1d57a1ef669138f1.png" />
+    <Resource Include="DAYS.jpg" />
+    <Resource Include="GOD.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Update="Login.xaml">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
