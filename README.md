@@ -4,19 +4,24 @@
 Projeto sistema para um(a) recepcionista de um Studio de Tatto preencher agendamentos por requisitos dos clientes pré definidos por WhatsApp ou Email.
 
 ## Menu de Login
-**Credenciais de recepcionista dando acesso ao sistema.**
+conexão com tabela no Banco de dados que vai ter niveís de acesso.
 
-**Credenciais de ADM que permitira ter acesso a dados mais pessoais dos clientes.**
 
-## Menu Principal
-**Cadastro de clientes**
+## Menu Funcionalidades níveis de acesso
+**01** O usuário vai ter acesso limitado somente para dar suporte basico e necessario para o dia a dia aos clientes.
+- Cadastro clientes
+- Visualizar dados Limitados clientes
+- Agendar horario
+- Visualizar datas disponíveis
+- Lista de espera
+- Cancelamento ou remarcação
+  
+**02** o usuário vai ter os mesmos acessos anteriores e agora podendo
+- Gerar relatórios
+- Dados completos clientes e alterações dos dados
+- Clientes com pagamento em aberto
 
-**Clientes** com datos limitados de historicos de corte e pagamento feito ou em aberto. mas caso admin mostrar tudo do cliente.
-
-**Agendar horário, mostrando data e hora disponível**
-
-**Visualização por dia/semana/mês**
-
-**Cancelamento remarcação**
-
-**Lista de espera**
+**03** o usuário vai ter os mesmos acessos anteriores e agora podendo
+- Cadastrar funcionarios
+- Excluir ou alterar dados funcionarios
+- Alterar nivél de acesso
