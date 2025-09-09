@@ -3,10 +3,6 @@
 **Futuro projeto:**
 Projeto sistema para um(a) recepcionista de um Studio de Tatto preencher agendamentos por requisitos dos clientes pré definidos por WhatsApp ou Email.
 
-## Menu de Login
-conexão com tabela no Banco de dados que vai ter niveís de acesso.
-
-
 ## Menu Funcionalidades níveis de acesso
 **01** O usuário vai ter acesso limitado somente para dar suporte basico e necessario para o dia a dia aos clientes.
 - Cadastro clientes
