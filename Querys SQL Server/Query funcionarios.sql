@@ -1,0 +1,13 @@
+CREATE TABLE Funcionarios(
+ID_Funcionario INT PRIMARY KEY IDENTITY(1,1),
+Nome VARCHAR(50) NOT NULL,
+CPF BIGINT NOT NULL UNIQUE,
+Data_Nascimento NVARCHAR(20) NOT NULL,
+Email NVARCHAR(50) NOT NULL,
+Telefone BIGINT NOT NULL,
+Endereco NVARCHAR (100),
+Cargo VARCHAR(100),
+Nivel_Acesso INT NOT NULL
+)
+
+Select * from funcionarios
