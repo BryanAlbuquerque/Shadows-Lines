@@ -19,3 +19,5 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\re
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLines.pdb
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLines.genruntimeconfig.cache
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ref\ShadowLines.dll
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Menu.g.cs
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Menu.baml

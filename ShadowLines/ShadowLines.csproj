@@ -9,11 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="9bcaa0abb35b7f8f1d57a1ef669138f1.png" />
+    <None Remove="25272326-mani-e-macchina-per-fabbricazione-tatuaggi-vettoriale-removebg-preview.png" />
+    <None Remove="ImgLogo.png" />
+    <None Remove="Logo.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="9bcaa0abb35b7f8f1d57a1ef669138f1.png" />
+    <Resource Include="ImgLogo.png" />
   </ItemGroup>
 
   <ItemGroup>
