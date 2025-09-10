@@ -11,21 +11,21 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Content="Login" HorizontalAlignment="Left" Foreground="White" Margin="178,326,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.293,0.432" Height="41" Width="136" FontFamily="Arial Rounded MT Bold" FontSize="16" BorderThickness="1,1,1,1" Background="Black"/>
-        <Rectangle Stroke="Black" Fill="Black" Margin="0,-10,0,366"/>
-        <Ellipse HorizontalAlignment="Left" Height="112" Margin="-30,99,0,0" VerticalAlignment="Top" Width="556" Fill="White" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Foreground="White" Margin="169,318,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.293,0.432" Height="41" Width="136" FontFamily="Arial Rounded MT Bold" FontSize="16" BorderThickness="1,1,1,1" Background="Black" Click="btnLogin_Click"/>
+        <Rectangle Stroke="Black" Fill="Black" Margin="0,-10,0,362"/>
+        <Ellipse HorizontalAlignment="Left" Height="122" Margin="-38,78,0,0" VerticalAlignment="Top" Width="520" Fill="White" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform AngleY="0.32"/>
-                    <RotateTransform Angle="-3.458"/>
-                    <TranslateTransform Y="0.584"/>
+                    <SkewTransform AngleY="-0.39"/>
+                    <RotateTransform Angle="-3.206"/>
+                    <TranslateTransform Y="-0.296" X="-0.053"/>
                 </TransformGroup>
             </Ellipse.RenderTransform>
         </Ellipse>
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="150,145,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,-0.555" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="16"/>
-        <Label Content="ID" HorizontalAlignment="Left" Margin="150,206,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,-0.555" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Margin="150,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Height="29"/>
-        <TextBox HorizontalAlignment="Left" Margin="150,235,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="164" Height="29"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="156,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,-0.555" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="16"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="156,224,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,-0.555" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Center" Margin="0,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Height="29"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Center" Margin="0,253,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="164" Height="29"/>
     </Grid>
 </Window>
