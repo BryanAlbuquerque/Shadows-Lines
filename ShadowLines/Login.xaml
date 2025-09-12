@@ -11,7 +11,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,372,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.293,0.432" Height="34" Width="136" FontFamily="Arial Rounded MT Bold" FontSize="16" BorderThickness="1,1,1,1" Background="Black" Foreground="White"/>
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,372,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.293,0.432" Height="34" Width="136" FontFamily="Arial Rounded MT Bold" FontSize="16" BorderThickness="1,1,1,1" Background="Black" Foreground="White" Click="btnLogin_Click"/>
         <Rectangle Stroke="Black" Fill="Black" Margin="0,-10,0,300"/>
         <Ellipse HorizontalAlignment="Center" Height="110" Margin="0,129,0,0" Stroke="White" VerticalAlignment="Top" Width="525" Fill="White"/>
         <Label Content="Nome" HorizontalAlignment="Left" Margin="152,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.079,-0.555" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" FontSize="16" Background="White" Foreground="Black"/>

@@ -1,13 +1,8 @@
-﻿using System.Text;
+﻿using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using ShadowLines.Classes;
+using ShadowLines.Menus;
+
 
 namespace ShadowLines
 {
@@ -18,9 +13,29 @@ namespace ShadowLines
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            string name = txtNome.Text;
+            int id = int.Parse(txtID.Text);
 
+            if (Users.Authenticate01(name, id))
+            {
+                Menu01 tela = new Menu01();
+                tela.Show();
+                this.Hide();s
+            }
+            else if (Users.Authenticate02(name, id))
+            {
+                Menu02 tela = new Menu02();
+                tela.Show();
+                this.Hide();
+            }
+            else if (Users.Autenticate03(name, id))
+            { 
+                Menu03 tela = new Menu03();
+                tela.Show();
+                this.Hide();
+            }
         }
     }
 }
