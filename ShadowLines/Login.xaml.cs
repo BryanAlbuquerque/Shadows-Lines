@@ -18,11 +18,18 @@ namespace ShadowLines
             string name = txtNome.Text;
             int id = int.Parse(txtID.Text);
 
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(txtID.Text))
+            {
+                MessageBox.Show("Erro: existem campos em branco!");
+                return;
+            }
+
+
             if (Users.Authenticate01(name, id))
             {
                 Menu01 tela = new Menu01();
                 tela.Show();
-                this.Hide();s
+                this.Hide();
             }
             else if (Users.Authenticate02(name, id))
             {

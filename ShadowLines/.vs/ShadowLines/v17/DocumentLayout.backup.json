@@ -45,8 +45,7 @@
               "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Menus\\Menu01.xaml",
               "RelativeToolTip": "Menus\\Menu01.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-12T14:10:14.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-12T14:10:14.679Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "RelativeToolTip": "Classes\\Users.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAkwD0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T20:27:08.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T20:27:08.944Z"
             },
             {
               "$type": "Document",
@@ -69,7 +67,7 @@
               "RelativeDocumentMoniker": "Login.xaml.cs",
               "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Login.xaml.cs",
               "RelativeToolTip": "Login.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAIwB8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T15:48:46.15Z",
               "EditorCaption": ""
@@ -83,8 +81,7 @@
               "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Login.xaml",
               "RelativeToolTip": "Login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-09T15:48:43.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T15:48:43.524Z"
             }
           ]
         }
