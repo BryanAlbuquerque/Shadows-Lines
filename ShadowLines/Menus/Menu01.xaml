@@ -7,7 +7,17 @@
         mc:Ignorable="d"
         Title="Menu01" Height="450" Width="800">
     <Grid>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="335,163,0,0" VerticalAlignment="Top"/>
-
+        <Rectangle HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="209">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF303030" Offset="0.583"/>
+                    <GradientStop Color="#FF090909" Offset="0.417"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Ellipse HorizontalAlignment="Left" Height="479" Margin="159,0,0,0" VerticalAlignment="Center" Width="100" Fill="White"/>
+        <Image Margin="3,3,716,353" Source="/Images/ImgLogo.png" Stretch="Fill"/>
     </Grid>
 </Window>

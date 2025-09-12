@@ -1,4 +1,5 @@
 ﻿using System;
+using System.DirectoryServices.ActiveDirectory;
 using System.Windows;
 using ShadowLines.Classes;
 using ShadowLines.Menus;
@@ -18,7 +19,8 @@ namespace ShadowLines
             string name = txtNome.Text;
             int id = int.Parse(txtID.Text);
 
-            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(txtID.Text))
+
+            if (string.IsNullOrWhiteSpace(name))
             {
                 MessageBox.Show("Erro: existem campos em branco!");
                 return;
@@ -38,7 +40,7 @@ namespace ShadowLines
                 this.Hide();
             }
             else if (Users.Autenticate03(name, id))
-            { 
+            {
                 Menu03 tela = new Menu03();
                 tela.Show();
                 this.Hide();
