@@ -1,5 +1,5 @@
 ﻿ShadowLines
-1.0.0.0
+
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\App.xaml
 4-934824166
 
-12764020468
+10219701277
 219955496359
 Views\Login.xaml;Views\Menu01ViewModel.xaml;Views\Menu02ViewModel.xaml;Views\Menu03ViewModel.xaml;
 

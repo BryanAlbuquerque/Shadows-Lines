@@ -15,5 +15,15 @@ namespace ShadowLines
             InitializeComponent();
             DataContext = new LoginViewModel();
         }
+
+        private void txtID_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
+        }
     }
 }

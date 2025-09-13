@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Windows;
 
 
@@ -9,7 +9,7 @@ namespace ShadowLines.Menus
         public Menu03()
         {
             InitializeComponent();
-            DataContext = new Menu03ViewModel();
+            
         }
     }
 }
