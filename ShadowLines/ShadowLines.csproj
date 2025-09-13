@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <None Remove="25272326-mani-e-macchina-per-fabbricazione-tatuaggi-vettoriale-removebg-preview.png" />
-    <None Remove="Images\ImgLogo.png" />
+    <None Remove="Views\Images\ImgLogo.png" />
     <None Remove="ImgLogo.png" />
     <None Remove="ImgUser.png" />
     <None Remove="Logo.png" />
@@ -21,13 +21,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Login.xaml">
+    <Page Update="Views\Login.xaml">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\ImgLogo.png">
+    <Resource Include="Views\Images\ImgLogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

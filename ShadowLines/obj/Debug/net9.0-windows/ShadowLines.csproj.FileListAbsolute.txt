@@ -68,3 +68,7 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Me
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Menus\Menu02.baml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Menus\Menu03.baml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLi.331D85DA.Up2Date
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Login.g.cs
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu01.g.cs
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu02.g.cs
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu03.g.cs

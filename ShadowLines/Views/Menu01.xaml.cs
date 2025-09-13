@@ -9,6 +9,7 @@ namespace ShadowLines.Menus
         public Menu01()
         {
             InitializeComponent();
+            DataContext = new Menu01();
         }
     }
 }
