@@ -27,10 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Page Update="Views\Login.xaml">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>

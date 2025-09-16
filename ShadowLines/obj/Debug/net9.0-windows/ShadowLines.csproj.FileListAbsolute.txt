@@ -61,3 +61,10 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\net9.0-windows\ru
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLi.331D85DA.Up2Date
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Login.g.cs
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Login.baml
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu01.g.cs
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu02.g.cs
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu03.g.cs
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLines_MarkupCompile.lref
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu01.baml
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu02.baml
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu03.baml

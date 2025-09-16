@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using Microsoft.Data.SqlClient;
 
-namespace ShadowLines.Classes
+namespace ShadowLines.Models
 {
     class Users
     {

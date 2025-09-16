@@ -3,10 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Login" Height="583" Width="584" WindowStartupLocation="CenterScreen">
     <Grid x:Name="Login_xaml" Margin="0,0,0,-6">
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="194,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="24" />
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Cursor="Hand" Height="25" Width="76"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="194,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="24" />
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="230,363,0,0" VerticalAlignment="Top" Cursor="Hand" Height="35" Width="128"/>
         <TextBlock HorizontalAlignment="Left" Margin="194,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="98" FontFamily="Arial Rounded MT Bold" FontSize="20"><Run Language="pt-br" Text="Senha ID"/></TextBlock>
-        <TextBox x:Name="txtNome_Copiar" HorizontalAlignment="Left" Margin="194,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="24" />
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="194,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="24" />
         <Rectangle HorizontalAlignment="Center" Height="177" Stroke="Black" VerticalAlignment="Top" Width="584" Fill="Black"/>
         <Ellipse HorizontalAlignment="Center" Height="100" Margin="0,119,0,0" VerticalAlignment="Top" Width="584" Fill="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="194,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Nome" Height="24" Width="66" FontFamily="Arial Rounded MT Bold" FontSize="20"/>

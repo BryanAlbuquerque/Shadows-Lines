@@ -7,6 +7,7 @@ namespace ShadowLines
         public Login()
         {
             InitializeComponent();
+            DataContext = new ViewModels.LoginVM();
         }
     }
 }
