@@ -1,5 +1,5 @@
 # Shadows & Lines 
-![Logo](https://github.com/BryanAlbuquerque/Shadows-Lines/blob/1604b83278a8912d0dae9283d095e309b36b9c2f/ShadowLines/Views/Images/ImgLogo2.png)
+![Logo](https://github.com/BryanAlbuquerque/Shadows-Lines/blob/9d16a3530e59f070c159c90f13bbba90b9359d1b/ShadowLines/Views/Images/ImgLogo%20(2).png)
 
 **Futuro projeto:**
 Projeto sistema para um(a) recepcionista de um Studio de Tatto preencher agendamentos por requisitos dos clientes pré definidos por WhatsApp ou Email.
