@@ -5,7 +5,6 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\net9.0-windows\Sh
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\net9.0-windows\ShadowLines.pdb
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\App.g.cs
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLines_MarkupCompile.cache
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLines_MarkupCompile.lref
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLines.g.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLines.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLines.AssemblyInfoInputs.cache
@@ -62,9 +61,3 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\net9.0-windows\ru
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\ShadowLi.331D85DA.Up2Date
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Login.g.cs
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Login.baml
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu01ViewModel.g.cs
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu02ViewModel.g.cs
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu03ViewModel.g.cs
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu01ViewModel.baml
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu02ViewModel.baml
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu03ViewModel.baml
