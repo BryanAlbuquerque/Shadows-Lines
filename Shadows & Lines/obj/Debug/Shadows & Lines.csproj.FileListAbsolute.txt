@@ -1,0 +1,10 @@
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\bin\Debug\Shadows & Lines.exe.config
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\bin\Debug\Shadows & Lines.exe
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\bin\Debug\Shadows & Lines.pdb
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\obj\Debug\Shadows & Lines.csproj.AssemblyReference.cache
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\obj\Debug\Shadows___Lines.Login.resources
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\obj\Debug\Shadows___Lines.Properties.Resources.resources
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\obj\Debug\Shadows & Lines.csproj.GenerateResource.cache
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\obj\Debug\Shadows & Lines.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\obj\Debug\Shadows & Lines.exe
+C:\Users\bryan\Documents\Shadows & Lines\Shadows & Lines\obj\Debug\Shadows & Lines.pdb
