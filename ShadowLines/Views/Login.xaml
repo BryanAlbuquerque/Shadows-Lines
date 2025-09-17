@@ -1,27 +1,49 @@
 ﻿<Window x:Class="ShadowLines.Login"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Login" Height="583" Width="584" WindowStartupLocation="CenterScreen">
-    <Grid x:Name="Login_xaml" Margin="0,0,0,-6">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="194,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="24" />
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="230,363,0,0" VerticalAlignment="Top" Cursor="Hand" Height="35" Width="128"/>
-        <TextBlock HorizontalAlignment="Left" Margin="194,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="98" FontFamily="Arial Rounded MT Bold" FontSize="20"><Run Language="pt-br" Text="Senha ID"/></TextBlock>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="194,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="24" />
-        <Rectangle HorizontalAlignment="Center" Height="177" Stroke="Black" VerticalAlignment="Top" Width="584" Fill="Black"/>
-        <Ellipse HorizontalAlignment="Center" Height="100" Margin="0,119,0,0" VerticalAlignment="Top" Width="584" Fill="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="194,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Nome" Height="24" Width="66" FontFamily="Arial Rounded MT Bold" FontSize="20"/>
-        <Image Margin="185,23,190,396" Source="/Views/Images/ImgLogo.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-8.345"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+        xmlns:vm="clr-namespace:ShadowLines.ViewModels"
+        Title="Login" Height="583" Width="584"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <vm:LoginVM/>
+    </Window.DataContext>
+
+    <Grid Margin="0,0,0,-6">
+
+        <TextBox x:Name="txtNome"
+                 Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
+                 HorizontalAlignment="Left" Margin="194,252,0,0"
+                 VerticalAlignment="Top" Width="200" Height="20"/>
+
+        <TextBox x:Name="txtID"
+                 Text="{Binding Id, UpdateSourceTrigger=PropertyChanged}"
+                 HorizontalAlignment="Left" Margin="194,315,0,0"
+                 VerticalAlignment="Top" Width="200" Height="20"/>
+
+        <Button x:Name="btnLogin" Content="Login"
+                Command="{Binding LoginCommand}"
+                HorizontalAlignment="Left" Margin="230,366,0,0"
+                VerticalAlignment="Top" Cursor="Hand"
+                Height="35" Width="128" FontFamily="Arial Rounded MT Bold"
+                FontSize="18" BorderThickness="0" Foreground="White">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="5"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.135"/>
+                    <GradientStop Color="#FFE21D1D" Offset="0.965"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

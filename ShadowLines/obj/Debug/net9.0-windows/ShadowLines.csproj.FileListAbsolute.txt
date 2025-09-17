@@ -68,3 +68,5 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Sh
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu01.baml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu02.baml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\Views\Menu03.baml
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\App.baml
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.cs

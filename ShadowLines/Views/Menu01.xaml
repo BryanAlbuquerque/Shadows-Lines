@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="Menu01" Height="450" Width="800">
     <Grid>
-        
+        <ComboBox HorizontalAlignment="Left" Margin="267,148,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="ComboBoxItem"/>
+            <ComboBoxItem Content="ComboBoxItem"/>
+        </ComboBox>
+
     </Grid>
 </Window>
