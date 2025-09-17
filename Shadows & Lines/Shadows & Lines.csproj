@@ -171,6 +171,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Users.cs" />
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,7 +207,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
     <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
