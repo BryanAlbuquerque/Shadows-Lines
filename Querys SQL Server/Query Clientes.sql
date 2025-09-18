@@ -1,0 +1,17 @@
+USE ShadowLines
+GO
+
+CREATE TABLE Clientes(
+ClienteID INT PRIMARY KEY IDENTITY (30,1),
+Nome_Completo VARCHAR(50) NOT NULL,
+CPF BIGINT NOT NULL UNIQUE,
+Telefone BIGINT NOT NULL,
+Email NVARCHAR(50),
+Data_Nascimento DATE, 
+Endereco NVARCHAR(200),
+DataCadastro DATETIME DEFAULT GETDATE()
+);
+
+SELECT * FROM Clientes
+
+
