@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShadowLines.Views"
         mc:Ignorable="d"
-        Title="Menu01" Height="450" Width="800">
-    <Grid>
-        
+        Title="Menu01" Height="589" Width="1161">
+
+    <Grid Height="575" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" 
+                   Height="578"
+                   VerticalAlignment="Top" 
+                   Width="248" Fill="#FF190913" Margin="0,-3,0,0"/>
+        <Image Margin="-2,-6,1005,473" Source="/Views/Images/ImgLogo.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.786"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Cadastrar Clientes" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Height="42" Width="194" Background="#FF100932" Foreground="#FF5ACA00" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
+        <Rectangle HorizontalAlignment="Left" 
+            Height="576"
+            VerticalAlignment="Center" 
+            Width="76" Fill="White" Margin="226,0,0,0" RadiusX="20" RadiusY="20"/>
     </Grid>
+
 </Window>
