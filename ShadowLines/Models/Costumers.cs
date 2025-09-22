@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Data.SqlClient;
+using System.Numerics;
+using System.Windows;
 
 namespace ShadowLines.Models
 {
@@ -11,5 +9,48 @@ namespace ShadowLines.Models
         public static string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
+        public static bool AddCustomer
+            (string name, BigInteger cpf, BigInteger number,
+            string email, DateTime birthday, string adress)
+        {
+            using (var conexao = new SqlConnection(connectionString))
+            {
+                string query = @" 
+                    INSERT INTO Clientes 
+                    (Nome_Completo, CPF, Telefone, Email, Data_Nascimento, Endereco, DataCadastro)
+                    VALUES 
+                    (@name, @cpf, @number, @email, @birthday, @adress, GETDATE())";
+
+                using (var comando = new SqlCommand(query, conexao))
+                {
+                    comando.Parameters.AddWithValue("@name", name);
+                    comando.Parameters.AddWithValue("@cpf", cpf);
+                    comando.Parameters.AddWithValue("@number", email);
+                    comando.Parameters.AddWithValue("@birthday", birthday);
+                    comando.Parameters.AddWithValue("@adress", adress);
+
+                    try
+                    {
+                        conexao.Open();
+                        int rowsAffected = comando.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            return true;
+                        }
+                        else 
+                        {
+                            MessageBox.Show("Nenhum registro foi inserido.");
+                            return false;
+
+                        }
+                    }
+                    catch (SqlException ex)
+                    {
+                        Console.WriteLine("Erro ao inserir dados: " + ex.Message);
+                        return false;
+                    }
+                }
+            }
+        }
     }
 }
