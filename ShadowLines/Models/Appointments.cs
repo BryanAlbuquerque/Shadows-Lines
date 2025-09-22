@@ -8,6 +8,12 @@ namespace ShadowLines.Models
 {
     internal class Appointments
     {
+        public int MyProperty { get; set; }
+        public int MyProperty { get; set; }
+        public int MyProperty { get; set; }
+        public Appointments()
+        {
+        }   
 
 
     }
