@@ -11,16 +11,16 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
         <Rectangle HorizontalAlignment="Left" 
                    Height="578"
                    VerticalAlignment="Top" 
-                   Width="248" Fill="#FF190913" Margin="0,-3,0,0"/>
+                   Width="248" Fill="#FF190913" Margin="-1,-3,0,0"/>
         <Rectangle x:Name="Panel01" HorizontalAlignment="Left" 
             Height="68"
             VerticalAlignment="Top" 
             Width="189" Fill="White" Margin="43,133,0,0" RadiusX="15" RadiusY="15" Visibility="Hidden"/>
-        
+
         <Image Margin="-2,-6,1005,473" Source="/Views/Images/ImgLogo.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -31,16 +31,34 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        
-        <Button Content="Cadastrar Clientes" HorizontalAlignment="Left" Margin="43,146,0,0" VerticalAlignment="Top" Height="42" Width="183" Background="#FF100932" Foreground="#FF5ACA00" FontFamily="Arial Rounded MT Bold" FontSize="18" MouseEnter="Button_MouseEnter"/>
-        <Rectangle HorizontalAlignment="Left" 
-            Height="576"
-            VerticalAlignment="Center" 
-            Width="76" Fill="White" Margin="226,0,0,0" RadiusX="20" RadiusY="20"/>
-        <Button Content="Clientes" HorizontalAlignment="Left" Margin="43,233,0,0" VerticalAlignment="Top" Height="42" Width="183" Background="#FF100932" Foreground="#FF5ACA00" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
-        <Button Content="Agendamentos" HorizontalAlignment="Left" Margin="43,292,0,0" VerticalAlignment="Top" Height="42" Width="183" Background="#FF100932" Foreground="#FF5ACA00" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
-        <Button Content="Calendario" HorizontalAlignment="Left" Margin="43,354,0,0" VerticalAlignment="Top" Height="42" Width="183" Background="#FF100932" Foreground="#FF5ACA00" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
-        <Button Content="Cancelamento ou &#xD;&#xA;Remarcação" HorizontalAlignment="Left" Margin="43,417,0,0" VerticalAlignment="Top" Height="51" Width="183" Background="#FF100932" Foreground="#FF5ACA00" FontFamily="Arial Rounded MT Bold" FontSize="18"/>
+
+        <Button Content="Cadastrar Clientes" HorizontalAlignment="Left" 
+                Margin="43,146,0,0" VerticalAlignment="Top" Height="42"
+                Width="183" Foreground="#FF5ACA00" Cursor="Hand"
+                FontFamily="Arial Rounded MT Bold" FontSize="18" BorderBrush="#FF190913" Background="#FF190913"/>
+
+        <Button Content="Clientes" HorizontalAlignment="Left" 
+                Margin="43,206,0,0" VerticalAlignment="Top" 
+                Height="42" Width="183" Cursor="Hand"
+                Foreground="#FF5ACA00" FontFamily="Arial Rounded MT Bold" 
+                FontSize="18" BorderBrush="#FF190913" Background="#FF190913"/>
+
+        <Button Content="Agendamentos" HorizontalAlignment="Left" 
+                Margin="43,265,0,0" VerticalAlignment="Top"
+                Height="42" Width="183" Cursor="Hand"
+                Foreground="#FF5ACA00" FontFamily="Arial Rounded MT Bold" 
+                FontSize="18" BorderBrush="#FF190913" Background="#FF190913"/>
+
+        <Button Content="Calendario" HorizontalAlignment="Left" 
+                Margin="43,324,0,0" VerticalAlignment="Top" Height="42" 
+                Width="183" Foreground="#FF5ACA00" Cursor="Hand"
+                FontFamily="Arial Rounded MT Bold" FontSize="18" BorderBrush="#FF190913" Background="#FF190913"/>
+
+        <Button Content="Cancelamento ou &#xD;&#xA;Remarcação" 
+                HorizontalAlignment="Left" Margin="43,381,0,0" Cursor="Hand"
+                VerticalAlignment="Top" Height="51" Width="183" Foreground="#FF5ACA00" 
+                FontFamily="Arial Rounded MT Bold" FontSize="18" BorderBrush="#FF190913" Background="#FF190913"/>
+
     </Grid>
 
 </Window>

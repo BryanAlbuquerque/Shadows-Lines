@@ -23,11 +23,5 @@ namespace ShadowLines.Views
         {
             InitializeComponent();
         }
-
-        private void Button_MouseEnter(object sender, MouseEventArgs e)
-        {
-            Panel01.Visibility = Visibility.Visible;    
-        }
-      
     }
 }
