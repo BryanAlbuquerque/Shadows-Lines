@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36518.9 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowLines", "ShadowLines.csproj", "{1D4D1AF0-B996-4AD9-BB1F-12C71B327E16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowLines", "ShadowLines.csproj", "{2B08D037-0455-48A3-A215-5BF0B6B5F68E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1D4D1AF0-B996-4AD9-BB1F-12C71B327E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D4D1AF0-B996-4AD9-BB1F-12C71B327E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D4D1AF0-B996-4AD9-BB1F-12C71B327E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D4D1AF0-B996-4AD9-BB1F-12C71B327E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B08D037-0455-48A3-A215-5BF0B6B5F68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B08D037-0455-48A3-A215-5BF0B6B5F68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B08D037-0455-48A3-A215-5BF0B6B5F68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B08D037-0455-48A3-A215-5BF0B6B5F68E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D0050122-88CD-47B0-926D-5734584A99BF}
+		SolutionGuid = {A904753B-46D9-43DB-BF2C-4A62110F2720}
 	EndGlobalSection
 EndGlobal
