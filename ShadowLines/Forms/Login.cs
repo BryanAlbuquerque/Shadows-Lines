@@ -60,5 +60,10 @@ namespace ShadowLines
                 MessageBox.Show("Usuário ou senha inválidos.");
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
     }
 }
