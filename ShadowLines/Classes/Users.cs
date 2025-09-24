@@ -1,37 +1,37 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
+using System.Windows.Forms;
 
-namespace ShadowLines.Models
+namespace ShadowLines.Classes
 {
     internal class Users
     {
         public static string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public int AuthenticateUser(string username, string passwordID)
+        public int AuthenticateUser(string username, string password)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query =
-                    @"SELECT Nivel_Acesso
-                      FROM Funcionarios 
-                      WHERE Nome = @Username 
-                      AND ID_Funcionario = @PasswordID";
+                  @"SELECT Nivel_Acesso
+                  FROM Funcionarios 
+                  WHERE Nome = @Username 
+                  AND ID_Funcionario = @Password";
 
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Username", username);
-                command.Parameters.AddWithValue("@PasswordID", passwordID);
+                command.Parameters.AddWithValue("@Password", password);
 
                 try
                 {
                     connection.Open();
                     object result = command.ExecuteScalar();
                     return result == null ? 0 : Convert.ToInt32(result);
-                    // 0 = não autenticado
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Erro: " + ex.Message);
+                    MessageBox.Show("Erro ao autenticar: " + ex.Message);
                     return 0;
                 }
             }

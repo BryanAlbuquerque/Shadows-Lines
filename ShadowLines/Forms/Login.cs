@@ -1,6 +1,8 @@
-﻿using System;
+﻿using ShadowLines.Classes;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
+using ShadowLines.Forms;
 
 namespace ShadowLines
 {
@@ -21,6 +23,42 @@ namespace ShadowLines
             };
 
             this.Controls.Add(panel);
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string name = txtUsername.Text;
+            string password = txtPassword.Text;
+
+            Users user = new Users();
+
+            int accessLevel = user.AuthenticateUser(name, password);
+
+            if (accessLevel == 1)
+            {
+                MessageBox.Show("Login realizado com sucesso!");
+                Menu01 menu = new Menu01();
+                menu.Show();
+                this.Hide();
+            }
+            else if(accessLevel == 2)
+            {
+                MessageBox.Show("Login realizado com sucesso!");
+                Menu02 menu = new Menu02();
+                menu.Show();
+                this.Hide();
+            }
+            else if (accessLevel == 3)
+            {
+                MessageBox.Show("Login realizado com sucesso!");
+                Menu03 menu = new Menu03();
+                menu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuário ou senha inválidos.");
+            }
         }
     }
 }
