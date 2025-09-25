@@ -32,13 +32,13 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roundedPanel1 = new RoundedPanel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnAgendar = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.roundedPanel1 = new RoundedPanel();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAgendar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -79,26 +79,24 @@
             this.panel1.Size = new System.Drawing.Size(243, 500);
             this.panel1.TabIndex = 10;
             // 
-            // roundedPanel1
+            // guna2GradientButton3
             // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.White;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
-            this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
-            this.roundedPanel1.Location = new System.Drawing.Point(194, 1);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(72, 500);
-            this.roundedPanel1.TabIndex = 1;
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(250, 22);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(381, 42);
-            this.guna2HtmlLabel5.TabIndex = 12;
-            this.guna2HtmlLabel5.Text = "_____________________";
+            this.guna2GradientButton3.BorderRadius = 5;
+            this.guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton3.FillColor = System.Drawing.Color.Black;
+            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Blue;
+            this.guna2GradientButton3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton3.Location = new System.Drawing.Point(51, 309);
+            this.guna2GradientButton3.Name = "guna2GradientButton3";
+            this.guna2GradientButton3.Size = new System.Drawing.Size(144, 45);
+            this.guna2GradientButton3.TabIndex = 20;
+            this.guna2GradientButton3.Text = "Funcionarios";
             // 
             // guna2GradientButton2
             // 
@@ -119,6 +117,17 @@
             this.guna2GradientButton2.TabIndex = 16;
             this.guna2GradientButton2.Text = "Agendar Horários";
             // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.BorderRadius = 20;
+            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.Location = new System.Drawing.Point(194, 1);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(72, 500);
+            this.roundedPanel1.TabIndex = 1;
+            // 
             // guna2GradientButton1
             // 
             this.guna2GradientButton1.BorderRadius = 5;
@@ -137,25 +146,6 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(144, 45);
             this.guna2GradientButton1.TabIndex = 19;
             this.guna2GradientButton1.Text = "Relatórios";
-            // 
-            // btnAgendar
-            // 
-            this.btnAgendar.BorderRadius = 5;
-            this.btnAgendar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgendar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgendar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgendar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAgendar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAgendar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAgendar.FillColor = System.Drawing.Color.Black;
-            this.btnAgendar.FillColor2 = System.Drawing.Color.Blue;
-            this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(51, 122);
-            this.btnAgendar.Name = "btnAgendar";
-            this.btnAgendar.Size = new System.Drawing.Size(144, 45);
-            this.btnAgendar.TabIndex = 17;
-            this.btnAgendar.Text = "Agendamento";
             // 
             // btnClientes
             // 
@@ -176,24 +166,34 @@
             this.btnClientes.TabIndex = 18;
             this.btnClientes.Text = "Clientes";
             // 
-            // guna2GradientButton3
+            // btnAgendar
             // 
-            this.guna2GradientButton3.BorderRadius = 5;
-            this.guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Black;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Blue;
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(51, 309);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(144, 45);
-            this.guna2GradientButton3.TabIndex = 20;
-            this.guna2GradientButton3.Text = "Funcionarios";
+            this.btnAgendar.BorderRadius = 5;
+            this.btnAgendar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgendar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgendar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgendar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgendar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgendar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAgendar.FillColor = System.Drawing.Color.Black;
+            this.btnAgendar.FillColor2 = System.Drawing.Color.Blue;
+            this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendar.ForeColor = System.Drawing.Color.White;
+            this.btnAgendar.Location = new System.Drawing.Point(51, 122);
+            this.btnAgendar.Name = "btnAgendar";
+            this.btnAgendar.Size = new System.Drawing.Size(144, 45);
+            this.btnAgendar.TabIndex = 17;
+            this.btnAgendar.Text = "Agendamento";
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(250, 22);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(381, 42);
+            this.guna2HtmlLabel5.TabIndex = 12;
+            this.guna2HtmlLabel5.Text = "_____________________";
             // 
             // Menu03
             // 
@@ -205,7 +205,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Name = "Menu03";
-            this.Text = "Menu03";
+            this.Text = "Tela Principal";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

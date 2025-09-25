@@ -205,7 +205,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Name = "Menu01";
-            this.Text = "Menu01";
+            this.Text = "Tela Principal";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
