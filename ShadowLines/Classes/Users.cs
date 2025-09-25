@@ -9,7 +9,16 @@ namespace ShadowLines.Classes
         public static string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public int AuthenticateUser(string username, string password)
+        public string UserName { get; set; }
+        public int Password { get; set; }
+
+        public Users(string userName, int password)
+        {
+            UserName = userName;
+            Password = password;
+        }
+
+        public int AuthenticateUser(string username, int password)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

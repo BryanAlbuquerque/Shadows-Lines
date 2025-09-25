@@ -28,9 +28,9 @@ namespace ShadowLines
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string name = txtUsername.Text;
-            string password = txtPassword.Text;
+            int password = int.Parse(txtPassword.Text);
 
-            Users user = new Users();
+            Users user = new Users(name, password);
 
             int accessLevel = user.AuthenticateUser(name, password);
 
