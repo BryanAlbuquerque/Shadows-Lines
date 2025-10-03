@@ -176,6 +176,7 @@
     <Compile Include="Classes\Panel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Classes\WaitList.cs" />
     <Compile Include="Classes\Users.cs" />
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>

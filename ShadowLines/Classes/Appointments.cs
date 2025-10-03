@@ -13,7 +13,7 @@ namespace ShadowLines.Classes
         public string Situation { get; set; }
         public string Payment { get; set; }
 
-        public static string connectionString =
+        private string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
         public Appointments(int clientID, DateTime dateAppointments, string service, int employeeID, double value, string situation, string payment)
