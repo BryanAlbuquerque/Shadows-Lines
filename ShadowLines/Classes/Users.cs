@@ -18,7 +18,7 @@ namespace ShadowLines.Classes
             Password = password;
         }
 
-        public int AuthenticateUser(string username, int password)
+        public int AuthenticateUser(string userName, int password)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -29,7 +29,7 @@ namespace ShadowLines.Classes
                   AND ID_Funcionario = @Password";
 
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Username", username);
+                command.Parameters.AddWithValue("@Username", userName);
                 command.Parameters.AddWithValue("@Password", password);
 
                 try
