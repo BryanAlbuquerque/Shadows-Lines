@@ -1,8 +1,7 @@
 ﻿using ShadowLines.Classes;
-using System;
-using System.Drawing;
-using System.Windows.Forms;
 using ShadowLines.Forms;
+using System;
+using System.Windows.Forms;
 
 namespace ShadowLines
 {
@@ -12,17 +11,10 @@ namespace ShadowLines
         {
             InitializeComponent();
 
-            RoundedPanel panel = new RoundedPanel()
-            {
-                BorderRadius = 50,
-                BorderColor = Color.Blue,
-                BorderSize = 3,
-                BackColor = Color.LightGray,
-                Size = new Size(200, 100),
-                Location = new Point(50, 50)
-            };
+            this.StartPosition = FormStartPosition.CenterScreen;
 
-            this.Controls.Add(panel);
+            var fundo = new CustomBackgroundPanel();
+            this.Controls.Add(fundo);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -63,7 +55,7 @@ namespace ShadowLines
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
         }
     }
 }

@@ -173,11 +173,20 @@
   <ItemGroup>
     <Compile Include="Classes\Appointments.cs" />
     <Compile Include="Classes\Costumers.cs" />
+    <Compile Include="Classes\CustomBackgroundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Classes\Panel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Classes\WaitList.cs" />
     <Compile Include="Classes\Users.cs" />
+    <Compile Include="Forms\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +213,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
