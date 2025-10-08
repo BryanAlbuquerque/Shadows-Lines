@@ -173,6 +173,7 @@
   <ItemGroup>
     <Compile Include="Classes\Appointments.cs" />
     <Compile Include="Classes\Costumers.cs" />
+    <Compile Include="Classes\CostumersData.cs" />
     <Compile Include="Classes\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
     </Compile>
