@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ShadowLines.Classes;
+using System;
+using System.Numerics;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -32,7 +27,7 @@ namespace ShadowLines.Forms
             txtEmail.Visible = true;
 
             lblData.Visible = true;
-            txtData.Visible = true;
+            dtData.Visible = true;
 
             lblEnd.Visible = true;
             txtEnd.Visible = true;
@@ -47,7 +42,23 @@ namespace ShadowLines.Forms
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
+            string name = txtNome.Text;
+            string cpf = txtCPF.Text;
+            int number = int.Parse(txtTelefone.Text);
+            string email = txtEmail.Text;
+            DateTime dateTime = DateTime.Parse(dtData.ToString());
+            string adress = txtEnd.Text;
 
+            if (string.IsNullOrEmpty(name) ||
+               string.IsNullOrEmpty(email) ||
+               string.IsNullOrEmpty(adress))
+            {
+                MessageBox.Show("Erro! Existem espaços em branco!");
+            }
+            else if (Costumers.AddCustomer(name, cpf, number, email, dateTime, adress))
+            {
+                MessageBox.Show("Entrada realizado com sucesso!");
+            }
         }
     }
 }

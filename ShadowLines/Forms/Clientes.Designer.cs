@@ -43,13 +43,13 @@
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEnd = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTelefone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCPF = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNome = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDados = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnCadastrar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dtData = new System.Windows.Forms.DateTimePicker();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +67,7 @@
             // 
             // customBackgroundPanel1
             // 
+            this.customBackgroundPanel1.Controls.Add(this.dtData);
             this.customBackgroundPanel1.Controls.Add(this.btnClose);
             this.customBackgroundPanel1.Controls.Add(this.btnEnviar);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel1);
@@ -79,7 +80,6 @@
             this.customBackgroundPanel1.Controls.Add(this.txtEmail);
             this.customBackgroundPanel1.Controls.Add(this.txtEnd);
             this.customBackgroundPanel1.Controls.Add(this.txtTelefone);
-            this.customBackgroundPanel1.Controls.Add(this.txtData);
             this.customBackgroundPanel1.Controls.Add(this.txtCPF);
             this.customBackgroundPanel1.Controls.Add(this.txtNome);
             this.customBackgroundPanel1.Controls.Add(this.btnDados);
@@ -172,7 +172,7 @@
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(183, 249);
+            this.lblData.Location = new System.Drawing.Point(183, 260);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(140, 20);
             this.lblData.TabIndex = 23;
@@ -274,27 +274,6 @@
             this.txtTelefone.Size = new System.Drawing.Size(161, 36);
             this.txtTelefone.TabIndex = 17;
             this.txtTelefone.Visible = false;
-            // 
-            // txtData
-            // 
-            this.txtData.BorderColor = System.Drawing.Color.DimGray;
-            this.txtData.BorderRadius = 5;
-            this.txtData.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtData.DefaultText = "";
-            this.txtData.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtData.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtData.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtData.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtData.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(183, 270);
-            this.txtData.Name = "txtData";
-            this.txtData.PlaceholderText = "";
-            this.txtData.SelectedText = "";
-            this.txtData.Size = new System.Drawing.Size(161, 36);
-            this.txtData.TabIndex = 16;
-            this.txtData.Visible = false;
             // 
             // txtCPF
             // 
@@ -401,6 +380,14 @@
             this.guna2HtmlLabel5.TabIndex = 27;
             this.guna2HtmlLabel5.Text = "_____________________";
             // 
+            // dtData
+            // 
+            this.dtData.Location = new System.Drawing.Point(183, 286);
+            this.dtData.Name = "dtData";
+            this.dtData.Size = new System.Drawing.Size(161, 20);
+            this.dtData.TabIndex = 29;
+            this.dtData.Visible = false;
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -428,7 +415,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtEnd;
         private Guna.UI2.WinForms.Guna2TextBox txtTelefone;
-        private Guna.UI2.WinForms.Guna2TextBox txtData;
         private Guna.UI2.WinForms.Guna2TextBox txtCPF;
         private Guna.UI2.WinForms.Guna2TextBox txtNome;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNome;
@@ -440,5 +426,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnEnviar;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2GradientButton btnClose;
+        private System.Windows.Forms.DateTimePicker dtData;
     }
 }

@@ -1,16 +1,18 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
+using System.Numerics;
 using System.Windows.Forms;
 
-namespace ShadowLines.Models
+namespace ShadowLines.Classes
 {
     class Costumers
     {
         public static string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
+     
         public static bool AddCustomer
-            (string name, int cpf, int number,
+            (string name, string cpf, int number,
             string email, DateTime birthday, string adress)
         {
             using (var conexao = new SqlConnection(connectionString))
