@@ -18,5 +18,10 @@ namespace ShadowLines.Forms
             clientes.Show();
             this.Hide();
         }
+
+        private void btnAgendar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
