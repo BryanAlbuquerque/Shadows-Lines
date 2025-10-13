@@ -14,10 +14,7 @@ Projeto sistema para um(a) recepcionista de um Studio de Tatto preencher agendam
   
 **02** o usuário vai ter os mesmos acessos anteriores e agora podendo
 - Gerar relatórios
-- Dados completos clientes e alterações dos dados - *Cadastro clientes*
 - Clientes com pagamento em aberto
-
-**03** o usuário vai ter os mesmos acessos anteriores e agora podendo
 - Cadastrar funcionarios
 - Excluir ou alterar dados funcionarios
 - Alterar nivél de acesso
