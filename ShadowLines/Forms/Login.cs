@@ -40,13 +40,6 @@ namespace ShadowLines
                 menu.Show();
                 this.Hide();
             }
-            else if (accessLevel == 3)
-            {
-                MessageBox.Show("Login realizado com sucesso!");
-                Menu03 menu = new Menu03();
-                menu.Show();
-                this.Hide();
-            }
             else
             {
                 MessageBox.Show("Usuário ou senha inválidos.");

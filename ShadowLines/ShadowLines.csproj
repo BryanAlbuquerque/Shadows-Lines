@@ -212,12 +212,6 @@
     <Compile Include="Forms\Menu02.Designer.cs">
       <DependentUpon>Menu02.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Menu03.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Menu03.Designer.cs">
-      <DependentUpon>Menu03.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Clientes.resx">
@@ -234,9 +228,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu02.resx">
       <DependentUpon>Menu02.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Menu03.resx">
-      <DependentUpon>Menu03.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
