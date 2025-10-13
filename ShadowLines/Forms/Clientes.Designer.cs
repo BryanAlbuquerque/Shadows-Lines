@@ -30,7 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.customBackgroundPanel1 = new CustomBackgroundPanel();
+            this.customBackground = new CustomBackgroundPanel();
+            this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnEnviar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -47,11 +48,10 @@
             this.txtNome = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDados = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnCadastrar = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dtData = new System.Windows.Forms.DateTimePicker();
-            this.customBackgroundPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.customBackground.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel3
@@ -65,32 +65,53 @@
             this.guna2HtmlLabel3.TabIndex = 10;
             this.guna2HtmlLabel3.Text = "Shadows & Lines";
             // 
-            // customBackgroundPanel1
+            // customBackground
             // 
-            this.customBackgroundPanel1.Controls.Add(this.dtData);
-            this.customBackgroundPanel1.Controls.Add(this.btnClose);
-            this.customBackgroundPanel1.Controls.Add(this.btnEnviar);
-            this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel1);
-            this.customBackgroundPanel1.Controls.Add(this.lblTelefone);
-            this.customBackgroundPanel1.Controls.Add(this.lblEnd);
-            this.customBackgroundPanel1.Controls.Add(this.lblData);
-            this.customBackgroundPanel1.Controls.Add(this.lblEmail);
-            this.customBackgroundPanel1.Controls.Add(this.lblCPF);
-            this.customBackgroundPanel1.Controls.Add(this.lblNome);
-            this.customBackgroundPanel1.Controls.Add(this.txtEmail);
-            this.customBackgroundPanel1.Controls.Add(this.txtEnd);
-            this.customBackgroundPanel1.Controls.Add(this.txtTelefone);
-            this.customBackgroundPanel1.Controls.Add(this.txtCPF);
-            this.customBackgroundPanel1.Controls.Add(this.txtNome);
-            this.customBackgroundPanel1.Controls.Add(this.btnDados);
-            this.customBackgroundPanel1.Controls.Add(this.btnCadastrar);
-            this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox1);
-            this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel5);
-            this.customBackgroundPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customBackgroundPanel1.Location = new System.Drawing.Point(0, 0);
-            this.customBackgroundPanel1.Name = "customBackgroundPanel1";
-            this.customBackgroundPanel1.Size = new System.Drawing.Size(799, 447);
-            this.customBackgroundPanel1.TabIndex = 0;
+            this.customBackground.Controls.Add(this.txtData);
+            this.customBackground.Controls.Add(this.btnClose);
+            this.customBackground.Controls.Add(this.btnEnviar);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel1);
+            this.customBackground.Controls.Add(this.lblTelefone);
+            this.customBackground.Controls.Add(this.lblEnd);
+            this.customBackground.Controls.Add(this.lblData);
+            this.customBackground.Controls.Add(this.lblEmail);
+            this.customBackground.Controls.Add(this.lblCPF);
+            this.customBackground.Controls.Add(this.lblNome);
+            this.customBackground.Controls.Add(this.txtEmail);
+            this.customBackground.Controls.Add(this.txtEnd);
+            this.customBackground.Controls.Add(this.txtTelefone);
+            this.customBackground.Controls.Add(this.txtCPF);
+            this.customBackground.Controls.Add(this.txtNome);
+            this.customBackground.Controls.Add(this.btnDados);
+            this.customBackground.Controls.Add(this.btnCadastrar);
+            this.customBackground.Controls.Add(this.picLogo);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel5);
+            this.customBackground.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customBackground.Location = new System.Drawing.Point(0, 0);
+            this.customBackground.Name = "customBackground";
+            this.customBackground.Size = new System.Drawing.Size(799, 447);
+            this.customBackground.TabIndex = 0;
+            // 
+            // txtData
+            // 
+            this.txtData.BorderColor = System.Drawing.Color.DimGray;
+            this.txtData.BorderRadius = 5;
+            this.txtData.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtData.DefaultText = "";
+            this.txtData.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtData.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtData.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtData.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtData.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtData.Location = new System.Drawing.Point(183, 270);
+            this.txtData.Name = "txtData";
+            this.txtData.PlaceholderText = "";
+            this.txtData.SelectedText = "";
+            this.txtData.Size = new System.Drawing.Size(161, 36);
+            this.txtData.TabIndex = 29;
+            this.txtData.Visible = false;
             // 
             // btnClose
             // 
@@ -172,7 +193,7 @@
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(183, 260);
+            this.lblData.Location = new System.Drawing.Point(183, 249);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(140, 20);
             this.lblData.TabIndex = 23;
@@ -336,6 +357,7 @@
             this.btnDados.Size = new System.Drawing.Size(144, 38);
             this.btnDados.TabIndex = 13;
             this.btnDados.Text = "Dados";
+            this.btnDados.Click += new System.EventHandler(this.btnDados_Click_1);
             // 
             // btnCadastrar
             // 
@@ -358,17 +380,17 @@
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // guna2PictureBox1
+            // picLogo
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 24);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(143, 119);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 11;
-            this.guna2PictureBox1.TabStop = false;
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.ImageRotate = 0F;
+            this.picLogo.Location = new System.Drawing.Point(3, 24);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(143, 119);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 11;
+            this.picLogo.TabStop = false;
             // 
             // guna2HtmlLabel5
             // 
@@ -380,26 +402,18 @@
             this.guna2HtmlLabel5.TabIndex = 27;
             this.guna2HtmlLabel5.Text = "_____________________";
             // 
-            // dtData
-            // 
-            this.dtData.Location = new System.Drawing.Point(183, 286);
-            this.dtData.Name = "dtData";
-            this.dtData.Size = new System.Drawing.Size(161, 20);
-            this.dtData.TabIndex = 29;
-            this.dtData.Visible = false;
-            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 447);
-            this.Controls.Add(this.customBackgroundPanel1);
+            this.Controls.Add(this.customBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Clientes";
             this.Text = "Clientes";
-            this.customBackgroundPanel1.ResumeLayout(false);
-            this.customBackgroundPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.customBackground.ResumeLayout(false);
+            this.customBackground.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -407,8 +421,8 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private CustomBackgroundPanel customBackgroundPanel1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private CustomBackgroundPanel customBackground;
+        private Guna.UI2.WinForms.Guna2PictureBox picLogo;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2GradientButton btnCadastrar;
         private Guna.UI2.WinForms.Guna2GradientButton btnDados;
@@ -426,6 +440,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnEnviar;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2GradientButton btnClose;
-        private System.Windows.Forms.DateTimePicker dtData;
+        private Guna.UI2.WinForms.Guna2TextBox txtData;
     }
 }

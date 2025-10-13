@@ -27,12 +27,12 @@ namespace ShadowLines.Forms
             txtEmail.Visible = true;
 
             lblData.Visible = true;
-            dtData.Visible = true;
+            txtData.Visible = true;
 
             lblEnd.Visible = true;
             txtEnd.Visible = true;
 
-            btnEnviar.Visible = true;
+            btnEnviar.Visible = true;   
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -43,22 +43,33 @@ namespace ShadowLines.Forms
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             string name = txtNome.Text;
-            string cpf = txtCPF.Text;
-            int number = int.Parse(txtTelefone.Text);
-            string email = txtEmail.Text;
-            DateTime dateTime = DateTime.Parse(dtData.ToString());
-            string adress = txtEnd.Text;
+            string cpf = txtCPF.Text.Trim();
+            string number = txtTelefone.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string adress = txtEnd.Text.Trim();
 
-            if (string.IsNullOrEmpty(name) ||
-               string.IsNullOrEmpty(email) ||
-               string.IsNullOrEmpty(adress))
+            if (!DateTime.TryParse(txtData.Text, out DateTime date))
             {
-                MessageBox.Show("Erro! Existem espaços em branco!");
+                MessageBox.Show("Data inválida. Use o formato DD/MM/AAAA.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else if (Costumers.AddCustomer(name, cpf, number, email, dateTime, adress))
-            {
-                MessageBox.Show("Entrada realizado com sucesso!");
-            }
+
+            Costumers.AddCustomer(name, cpf, number, email, date, adress);
+
+            txtNome.Clear();
+            txtCPF.Clear();
+            txtTelefone.Clear();
+            txtEmail.Clear();
+            txtData.Clear();
+            txtEnd.Clear();
+
+        }
+
+        private void btnDados_Click_1(object sender, EventArgs e)
+        {
+            ClientesDados clientesDados = new ClientesDados();
+            clientesDados.Show();
+            this.Hide();
         }
     }
 }

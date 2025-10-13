@@ -188,6 +188,12 @@
     <Compile Include="Forms\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ClientesDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientesDados.Designer.cs">
+      <DependentUpon>ClientesDados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientesDados.resx">
+      <DependentUpon>ClientesDados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
