@@ -34,24 +34,25 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnCancel = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnEspera = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnAgendar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
             this.roundedPanel1 = new RoundedPanel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblTelefone = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblEnd = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblEmail = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblCPF = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblNome = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEnd = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtTelefone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCPF = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtNome = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblPagamento = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblValor = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblFuncionario = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblServico = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCliente = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtFuncionarioID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPagamento = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtServico = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtClienteID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnAgendar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -65,7 +66,7 @@
             this.panel1.Controls.Add(this.guna2PictureBox2);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnEspera);
-            this.panel1.Controls.Add(this.btnAgendar);
+            this.panel1.Controls.Add(this.btnAgendamentos);
             this.panel1.Controls.Add(this.btnClientes);
             this.panel1.Controls.Add(this.roundedPanel1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
@@ -133,25 +134,25 @@
             this.btnEspera.TabIndex = 5;
             this.btnEspera.Text = "Lista de espera";
             // 
-            // btnAgendar
+            // btnAgendamentos
             // 
-            this.btnAgendar.BorderRadius = 5;
-            this.btnAgendar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgendar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgendar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgendar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAgendar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAgendar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAgendar.FillColor = System.Drawing.Color.Black;
-            this.btnAgendar.FillColor2 = System.Drawing.Color.DimGray;
-            this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(72, 155);
-            this.btnAgendar.Name = "btnAgendar";
-            this.btnAgendar.Size = new System.Drawing.Size(144, 47);
-            this.btnAgendar.TabIndex = 4;
-            this.btnAgendar.Text = "Agendar Horários";
-            this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
+            this.btnAgendamentos.BorderRadius = 5;
+            this.btnAgendamentos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgendamentos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgendamentos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgendamentos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgendamentos.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgendamentos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAgendamentos.FillColor = System.Drawing.Color.Black;
+            this.btnAgendamentos.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnAgendamentos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendamentos.ForeColor = System.Drawing.Color.White;
+            this.btnAgendamentos.Location = new System.Drawing.Point(72, 155);
+            this.btnAgendamentos.Name = "btnAgendamentos";
+            this.btnAgendamentos.Size = new System.Drawing.Size(144, 47);
+            this.btnAgendamentos.TabIndex = 4;
+            this.btnAgendamentos.Text = "Agendar Horários";
+            this.btnAgendamentos.Click += new System.EventHandler(this.btnAgendar_Click);
             // 
             // btnClientes
             // 
@@ -216,6 +217,197 @@
             this.guna2PictureBox1.TabIndex = 9;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // txtValor
+            // 
+            this.txtValor.BorderColor = System.Drawing.Color.DimGray;
+            this.txtValor.BorderRadius = 5;
+            this.txtValor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtValor.DefaultText = "";
+            this.txtValor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtValor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtValor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtValor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtValor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtValor.Location = new System.Drawing.Point(287, 285);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.PlaceholderText = "";
+            this.txtValor.SelectedText = "";
+            this.txtValor.Size = new System.Drawing.Size(161, 36);
+            this.txtValor.TabIndex = 41;
+            this.txtValor.Visible = false;
+            // 
+            // lblData
+            // 
+            this.lblData.BackColor = System.Drawing.Color.Transparent;
+            this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.Location = new System.Drawing.Point(512, 115);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(41, 20);
+            this.lblData.TabIndex = 40;
+            this.lblData.Text = "Data ";
+            this.lblData.Visible = false;
+            // 
+            // lblPagamento
+            // 
+            this.lblPagamento.BackColor = System.Drawing.Color.Transparent;
+            this.lblPagamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPagamento.Location = new System.Drawing.Point(512, 264);
+            this.lblPagamento.Name = "lblPagamento";
+            this.lblPagamento.Size = new System.Drawing.Size(94, 20);
+            this.lblPagamento.TabIndex = 39;
+            this.lblPagamento.Text = "Pagamento";
+            this.lblPagamento.Visible = false;
+            // 
+            // lblValor
+            // 
+            this.lblValor.BackColor = System.Drawing.Color.Transparent;
+            this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValor.Location = new System.Drawing.Point(287, 264);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(45, 20);
+            this.lblValor.TabIndex = 38;
+            this.lblValor.Text = "Valor";
+            this.lblValor.Visible = false;
+            // 
+            // lblFuncionario
+            // 
+            this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
+            this.lblFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFuncionario.Location = new System.Drawing.Point(512, 190);
+            this.lblFuncionario.Name = "lblFuncionario";
+            this.lblFuncionario.Size = new System.Drawing.Size(143, 20);
+            this.lblFuncionario.TabIndex = 37;
+            this.lblFuncionario.Text = "ID do Funcionario";
+            this.lblFuncionario.Visible = false;
+            // 
+            // lblServico
+            // 
+            this.lblServico.BackColor = System.Drawing.Color.Transparent;
+            this.lblServico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServico.Location = new System.Drawing.Point(287, 190);
+            this.lblServico.Name = "lblServico";
+            this.lblServico.Size = new System.Drawing.Size(64, 20);
+            this.lblServico.TabIndex = 36;
+            this.lblServico.Text = "Serviço";
+            this.lblServico.Visible = false;
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.BackColor = System.Drawing.Color.Transparent;
+            this.lblCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Location = new System.Drawing.Point(287, 115);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(104, 20);
+            this.lblCliente.TabIndex = 35;
+            this.lblCliente.Text = "ID do Cliente";
+            this.lblCliente.Visible = false;
+            // 
+            // txtFuncionarioID
+            // 
+            this.txtFuncionarioID.BorderColor = System.Drawing.Color.DimGray;
+            this.txtFuncionarioID.BorderRadius = 5;
+            this.txtFuncionarioID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFuncionarioID.DefaultText = "";
+            this.txtFuncionarioID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtFuncionarioID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtFuncionarioID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFuncionarioID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFuncionarioID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFuncionarioID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFuncionarioID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFuncionarioID.Location = new System.Drawing.Point(512, 211);
+            this.txtFuncionarioID.Name = "txtFuncionarioID";
+            this.txtFuncionarioID.PlaceholderText = "";
+            this.txtFuncionarioID.SelectedText = "";
+            this.txtFuncionarioID.Size = new System.Drawing.Size(161, 36);
+            this.txtFuncionarioID.TabIndex = 34;
+            this.txtFuncionarioID.Visible = false;
+            // 
+            // txtPagamento
+            // 
+            this.txtPagamento.BorderColor = System.Drawing.Color.DimGray;
+            this.txtPagamento.BorderRadius = 5;
+            this.txtPagamento.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPagamento.DefaultText = "";
+            this.txtPagamento.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPagamento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPagamento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPagamento.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPagamento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPagamento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPagamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPagamento.Location = new System.Drawing.Point(512, 285);
+            this.txtPagamento.Name = "txtPagamento";
+            this.txtPagamento.PlaceholderText = "";
+            this.txtPagamento.SelectedText = "";
+            this.txtPagamento.Size = new System.Drawing.Size(161, 36);
+            this.txtPagamento.TabIndex = 33;
+            this.txtPagamento.Visible = false;
+            // 
+            // txtServico
+            // 
+            this.txtServico.BorderColor = System.Drawing.Color.DimGray;
+            this.txtServico.BorderRadius = 5;
+            this.txtServico.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtServico.DefaultText = "";
+            this.txtServico.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtServico.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtServico.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtServico.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtServico.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtServico.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtServico.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtServico.Location = new System.Drawing.Point(287, 211);
+            this.txtServico.Name = "txtServico";
+            this.txtServico.PlaceholderText = "";
+            this.txtServico.SelectedText = "";
+            this.txtServico.Size = new System.Drawing.Size(161, 36);
+            this.txtServico.TabIndex = 31;
+            this.txtServico.Visible = false;
+            // 
+            // txtClienteID
+            // 
+            this.txtClienteID.BorderColor = System.Drawing.Color.DimGray;
+            this.txtClienteID.BorderRadius = 5;
+            this.txtClienteID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtClienteID.DefaultText = "";
+            this.txtClienteID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtClienteID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtClienteID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtClienteID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtClienteID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtClienteID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtClienteID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtClienteID.Location = new System.Drawing.Point(287, 138);
+            this.txtClienteID.Name = "txtClienteID";
+            this.txtClienteID.PlaceholderText = "";
+            this.txtClienteID.SelectedText = "";
+            this.txtClienteID.Size = new System.Drawing.Size(161, 36);
+            this.txtClienteID.TabIndex = 30;
+            this.txtClienteID.Visible = false;
+            // 
+            // btnAgendar
+            // 
+            this.btnAgendar.BorderRadius = 5;
+            this.btnAgendar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgendar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgendar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgendar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgendar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgendar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAgendar.FillColor = System.Drawing.Color.Black;
+            this.btnAgendar.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendar.ForeColor = System.Drawing.Color.White;
+            this.btnAgendar.Location = new System.Drawing.Point(422, 354);
+            this.btnAgendar.Name = "btnAgendar";
+            this.btnAgendar.Size = new System.Drawing.Size(131, 37);
+            this.btnAgendar.TabIndex = 12;
+            this.btnAgendar.Text = "Agendar";
+            this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click_1);
+            // 
             // txtData
             // 
             this.txtData.BorderColor = System.Drawing.Color.DimGray;
@@ -229,184 +421,13 @@
             this.txtData.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(335, 285);
+            this.txtData.Location = new System.Drawing.Point(512, 138);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderText = "";
             this.txtData.SelectedText = "";
             this.txtData.Size = new System.Drawing.Size(161, 36);
-            this.txtData.TabIndex = 41;
+            this.txtData.TabIndex = 42;
             this.txtData.Visible = false;
-            // 
-            // lblTelefone
-            // 
-            this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
-            this.lblTelefone.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(560, 115);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(72, 20);
-            this.lblTelefone.TabIndex = 40;
-            this.lblTelefone.Text = "Telefone";
-            this.lblTelefone.Visible = false;
-            // 
-            // lblEnd
-            // 
-            this.lblEnd.BackColor = System.Drawing.Color.Transparent;
-            this.lblEnd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnd.Location = new System.Drawing.Point(560, 264);
-            this.lblEnd.Name = "lblEnd";
-            this.lblEnd.Size = new System.Drawing.Size(81, 20);
-            this.lblEnd.TabIndex = 39;
-            this.lblEnd.Text = "Endereço";
-            this.lblEnd.Visible = false;
-            // 
-            // lblData
-            // 
-            this.lblData.BackColor = System.Drawing.Color.Transparent;
-            this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(335, 264);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(140, 20);
-            this.lblData.TabIndex = 38;
-            this.lblData.Text = "Data Nascimento";
-            this.lblData.Visible = false;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(560, 190);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 20);
-            this.lblEmail.TabIndex = 37;
-            this.lblEmail.Text = "Email";
-            this.lblEmail.Visible = false;
-            // 
-            // lblCPF
-            // 
-            this.lblCPF.BackColor = System.Drawing.Color.Transparent;
-            this.lblCPF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPF.Location = new System.Drawing.Point(335, 190);
-            this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(36, 20);
-            this.lblCPF.TabIndex = 36;
-            this.lblCPF.Text = "CPF";
-            this.lblCPF.Visible = false;
-            // 
-            // lblNome
-            // 
-            this.lblNome.BackColor = System.Drawing.Color.Transparent;
-            this.lblNome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(335, 115);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(49, 20);
-            this.lblNome.TabIndex = 35;
-            this.lblNome.Text = "Nome";
-            this.lblNome.Visible = false;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BorderColor = System.Drawing.Color.DimGray;
-            this.txtEmail.BorderRadius = 5;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultText = "";
-            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(560, 211);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PlaceholderText = "";
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.Size = new System.Drawing.Size(161, 36);
-            this.txtEmail.TabIndex = 34;
-            this.txtEmail.Visible = false;
-            // 
-            // txtEnd
-            // 
-            this.txtEnd.BorderColor = System.Drawing.Color.DimGray;
-            this.txtEnd.BorderRadius = 5;
-            this.txtEnd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEnd.DefaultText = "";
-            this.txtEnd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEnd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEnd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEnd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEnd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEnd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEnd.Location = new System.Drawing.Point(560, 285);
-            this.txtEnd.Name = "txtEnd";
-            this.txtEnd.PlaceholderText = "";
-            this.txtEnd.SelectedText = "";
-            this.txtEnd.Size = new System.Drawing.Size(161, 36);
-            this.txtEnd.TabIndex = 33;
-            this.txtEnd.Visible = false;
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.BorderColor = System.Drawing.Color.DimGray;
-            this.txtTelefone.BorderRadius = 5;
-            this.txtTelefone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTelefone.DefaultText = "";
-            this.txtTelefone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTelefone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTelefone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTelefone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTelefone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTelefone.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTelefone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTelefone.Location = new System.Drawing.Point(560, 138);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.PlaceholderText = "";
-            this.txtTelefone.SelectedText = "";
-            this.txtTelefone.Size = new System.Drawing.Size(161, 36);
-            this.txtTelefone.TabIndex = 32;
-            this.txtTelefone.Visible = false;
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.BorderColor = System.Drawing.Color.DimGray;
-            this.txtCPF.BorderRadius = 5;
-            this.txtCPF.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCPF.DefaultText = "";
-            this.txtCPF.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCPF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCPF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCPF.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCPF.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCPF.Location = new System.Drawing.Point(335, 211);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.PlaceholderText = "";
-            this.txtCPF.SelectedText = "";
-            this.txtCPF.Size = new System.Drawing.Size(161, 36);
-            this.txtCPF.TabIndex = 31;
-            this.txtCPF.Visible = false;
-            // 
-            // txtNome
-            // 
-            this.txtNome.BorderColor = System.Drawing.Color.DimGray;
-            this.txtNome.BorderRadius = 5;
-            this.txtNome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNome.DefaultText = "";
-            this.txtNome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNome.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNome.Location = new System.Drawing.Point(335, 138);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.PlaceholderText = "";
-            this.txtNome.SelectedText = "";
-            this.txtNome.Size = new System.Drawing.Size(161, 36);
-            this.txtNome.TabIndex = 30;
-            this.txtNome.Visible = false;
             // 
             // Menu01
             // 
@@ -414,23 +435,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 496);
             this.Controls.Add(this.txtData);
+            this.Controls.Add(this.btnAgendar);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.lblTelefone);
-            this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.lblEnd);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblData);
+            this.Controls.Add(this.guna2HtmlLabel3);
+            this.Controls.Add(this.lblPagamento);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lblValor);
             this.Controls.Add(this.guna2HtmlLabel5);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtTelefone);
-            this.Controls.Add(this.lblCPF);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtEnd);
+            this.Controls.Add(this.lblFuncionario);
+            this.Controls.Add(this.lblServico);
+            this.Controls.Add(this.txtClienteID);
+            this.Controls.Add(this.lblCliente);
+            this.Controls.Add(this.txtServico);
+            this.Controls.Add(this.txtFuncionarioID);
+            this.Controls.Add(this.txtPagamento);
             this.Name = "Menu01";
-            this.Text = "s";
+            this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu01_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -448,22 +471,23 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2GradientButton btnClientes;
-        private Guna.UI2.WinForms.Guna2GradientButton btnAgendar;
+        private Guna.UI2.WinForms.Guna2GradientButton btnAgendamentos;
         private Guna.UI2.WinForms.Guna2GradientButton btnEspera;
         private Guna.UI2.WinForms.Guna2GradientButton btnCancel;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2TextBox txtData;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTelefone;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblEnd;
+        private Guna.UI2.WinForms.Guna2TextBox txtValor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblEmail;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblCPF;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblNome;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
-        private Guna.UI2.WinForms.Guna2TextBox txtEnd;
-        private Guna.UI2.WinForms.Guna2TextBox txtTelefone;
-        private Guna.UI2.WinForms.Guna2TextBox txtCPF;
-        private Guna.UI2.WinForms.Guna2TextBox txtNome;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPagamento;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblValor;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblFuncionario;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblServico;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCliente;
+        private Guna.UI2.WinForms.Guna2TextBox txtFuncionarioID;
+        private Guna.UI2.WinForms.Guna2TextBox txtPagamento;
+        private Guna.UI2.WinForms.Guna2TextBox txtServico;
+        private Guna.UI2.WinForms.Guna2TextBox txtClienteID;
+        private Guna.UI2.WinForms.Guna2GradientButton btnAgendar;
+        private Guna.UI2.WinForms.Guna2TextBox txtData;
     }
 }

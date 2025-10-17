@@ -8,13 +8,16 @@ DataAgendamento DATETIME NOT NULL,
 Servico NVARCHAR(100),
 FuncionarioID INT,
 Valor MONEY,
-Situacao VARCHAR(30),
-Pagamento VARCHAR(50)
+Situacao VARCHAR(30) Default 'Em Aberto',
+Pagamento VARCHAR(50) Default 'Pendente'
 )
 
-ALTER TABLE Agendamentos
-ADD CONSTRAINT DF_Agendamentos_Situacao DEFAULT 'Pendente' FOR Situacao;
+drop table Agendamentos
 
+insert into Agendamentos
+(ClienteID, DataAgendamento, Servico, FuncionarioID, Valor)
+Values
+(30, '12/02/2026 15:00', 'Tatto', 173, 200.00)
 
 SELECT * FROM Agendamentos
 
