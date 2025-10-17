@@ -17,3 +17,6 @@ Projeto sistema para um(a) recepcionista de um Studio de Tatto preencher agendam
 - Cadastrar funcionarios
 - Excluir ou alterar dados funcionarios
 - Alterar nivél de acesso
+
+**03** FUNCIONARIOS
+Os funcionarios com o nível de acesso em 3 são aqueles que vão prestar os serviços
