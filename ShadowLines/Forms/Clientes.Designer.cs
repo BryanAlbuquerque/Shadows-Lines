@@ -50,6 +50,7 @@
             this.btnCadastrar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.customBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +68,7 @@
             // 
             // customBackground
             // 
+            this.customBackground.Controls.Add(this.btnVoltar);
             this.customBackground.Controls.Add(this.txtData);
             this.customBackground.Controls.Add(this.btnClose);
             this.customBackground.Controls.Add(this.btnEnviar);
@@ -104,6 +106,7 @@
             this.txtData.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtData.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtData.Location = new System.Drawing.Point(183, 270);
             this.txtData.Name = "txtData";
@@ -245,6 +248,7 @@
             this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Location = new System.Drawing.Point(408, 196);
             this.txtEmail.Name = "txtEmail";
@@ -266,6 +270,7 @@
             this.txtEnd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEnd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEnd.ForeColor = System.Drawing.Color.Black;
             this.txtEnd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEnd.Location = new System.Drawing.Point(408, 270);
             this.txtEnd.Name = "txtEnd";
@@ -287,6 +292,7 @@
             this.txtTelefone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTelefone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelefone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTelefone.ForeColor = System.Drawing.Color.Black;
             this.txtTelefone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelefone.Location = new System.Drawing.Point(408, 123);
             this.txtTelefone.Name = "txtTelefone";
@@ -308,6 +314,7 @@
             this.txtCPF.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCPF.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCPF.ForeColor = System.Drawing.Color.Black;
             this.txtCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCPF.Location = new System.Drawing.Point(183, 196);
             this.txtCPF.Name = "txtCPF";
@@ -329,6 +336,7 @@
             this.txtNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNome.ForeColor = System.Drawing.Color.Black;
             this.txtNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNome.Location = new System.Drawing.Point(183, 123);
             this.txtNome.Name = "txtNome";
@@ -352,7 +360,7 @@
             this.btnDados.FillColor2 = System.Drawing.Color.DimGray;
             this.btnDados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDados.ForeColor = System.Drawing.Color.White;
-            this.btnDados.Location = new System.Drawing.Point(643, 100);
+            this.btnDados.Location = new System.Drawing.Point(652, 144);
             this.btnDados.Name = "btnDados";
             this.btnDados.Size = new System.Drawing.Size(144, 38);
             this.btnDados.TabIndex = 13;
@@ -373,7 +381,7 @@
             this.btnCadastrar.FillColor2 = System.Drawing.Color.DimGray;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(643, 56);
+            this.btnCadastrar.Location = new System.Drawing.Point(652, 100);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(144, 38);
             this.btnCadastrar.TabIndex = 12;
@@ -401,6 +409,27 @@
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(381, 42);
             this.guna2HtmlLabel5.TabIndex = 27;
             this.guna2HtmlLabel5.Text = "_____________________";
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.Transparent;
+            this.btnVoltar.BorderRadius = 5;
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoltar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoltar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoltar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoltar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoltar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoltar.FillColor = System.Drawing.Color.Black;
+            this.btnVoltar.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
+            this.btnVoltar.Location = new System.Drawing.Point(652, 56);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(144, 38);
+            this.btnVoltar.TabIndex = 30;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Clientes
             // 
@@ -441,5 +470,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2GradientButton btnClose;
         private Guna.UI2.WinForms.Guna2TextBox txtData;
+        private Guna.UI2.WinForms.Guna2GradientButton btnVoltar;
     }
 }

@@ -10,6 +10,7 @@ namespace ShadowLines.Forms
         public Clientes()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -69,6 +70,13 @@ namespace ShadowLines.Forms
         {
             ClientesDados clientesDados = new ClientesDados();
             clientesDados.Show();
+            this.Hide();
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Menu01 menu = new Menu01();
+            menu.Show();
             this.Hide();
         }
     }

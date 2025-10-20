@@ -36,6 +36,7 @@
             this.btnEspera = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.roundedPanel1 = new RoundedPanel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -52,7 +53,7 @@
             this.txtClienteID = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAgendar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
-            this.roundedPanel1 = new RoundedPanel();
+            this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -174,6 +175,17 @@
             this.btnClientes.Text = "Clientes";
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.BorderRadius = 20;
+            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(72, 500);
+            this.roundedPanel1.TabIndex = 1;
+            // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
@@ -218,6 +230,7 @@
             this.txtValor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtValor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtValor.Location = new System.Drawing.Point(287, 285);
             this.txtValor.Name = "txtValor";
@@ -305,6 +318,7 @@
             this.txtFuncionarioID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFuncionarioID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFuncionarioID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFuncionarioID.ForeColor = System.Drawing.Color.Black;
             this.txtFuncionarioID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFuncionarioID.Location = new System.Drawing.Point(512, 211);
             this.txtFuncionarioID.Name = "txtFuncionarioID";
@@ -326,6 +340,7 @@
             this.txtPagamento.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPagamento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPagamento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPagamento.ForeColor = System.Drawing.Color.Black;
             this.txtPagamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPagamento.Location = new System.Drawing.Point(512, 285);
             this.txtPagamento.Name = "txtPagamento";
@@ -347,6 +362,7 @@
             this.txtServico.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtServico.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtServico.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtServico.ForeColor = System.Drawing.Color.Black;
             this.txtServico.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtServico.Location = new System.Drawing.Point(287, 211);
             this.txtServico.Name = "txtServico";
@@ -368,6 +384,7 @@
             this.txtClienteID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtClienteID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtClienteID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtClienteID.ForeColor = System.Drawing.Color.Black;
             this.txtClienteID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtClienteID.Location = new System.Drawing.Point(287, 138);
             this.txtClienteID.Name = "txtClienteID";
@@ -410,6 +427,7 @@
             this.txtData.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtData.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtData.Location = new System.Drawing.Point(512, 138);
             this.txtData.Name = "txtData";
@@ -419,22 +437,33 @@
             this.txtData.TabIndex = 42;
             this.txtData.Visible = false;
             // 
-            // roundedPanel1
+            // btnDesconectar
             // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.White;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
-            this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
-            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(72, 500);
-            this.roundedPanel1.TabIndex = 1;
+            this.btnDesconectar.BorderRadius = 5;
+            this.btnDesconectar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDesconectar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDesconectar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDesconectar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDesconectar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDesconectar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDesconectar.FillColor = System.Drawing.Color.Black;
+            this.btnDesconectar.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnDesconectar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesconectar.ForeColor = System.Drawing.Color.White;
+            this.btnDesconectar.Location = new System.Drawing.Point(765, 3);
+            this.btnDesconectar.Name = "btnDesconectar";
+            this.btnDesconectar.Size = new System.Drawing.Size(135, 35);
+            this.btnDesconectar.TabIndex = 43;
+            this.btnDesconectar.Text = "Desconectar";
+            this.btnDesconectar.Visible = false;
+            this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
             // Menu01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 496);
+            this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.btnAgendar);
             this.Controls.Add(this.txtValor);
@@ -490,5 +519,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtClienteID;
         private Guna.UI2.WinForms.Guna2GradientButton btnAgendar;
         private Guna.UI2.WinForms.Guna2TextBox txtData;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDesconectar;
     }
 }

@@ -10,7 +10,7 @@ namespace ShadowLines.Forms
         public Menu01()
         {
             InitializeComponent();
-
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -68,6 +68,13 @@ namespace ShadowLines.Forms
             txtData.Text = DateTime.Now.ToString();
 
 
+        }
+
+        private void btnDesconectar_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

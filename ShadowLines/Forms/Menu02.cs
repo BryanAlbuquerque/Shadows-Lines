@@ -15,6 +15,7 @@ namespace ShadowLines.Forms
         public Menu02()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

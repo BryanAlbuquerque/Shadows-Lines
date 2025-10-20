@@ -16,6 +16,7 @@ namespace ShadowLines.Forms
         public ClientesDados()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void ClientesDados_Load(object sender, EventArgs e)
