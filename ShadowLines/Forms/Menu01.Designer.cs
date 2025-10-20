@@ -36,7 +36,6 @@
             this.btnEspera = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.roundedPanel1 = new RoundedPanel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -53,6 +52,7 @@
             this.txtClienteID = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAgendar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
+            this.roundedPanel1 = new RoundedPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -173,17 +173,6 @@
             this.btnClientes.TabIndex = 3;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.White;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
-            this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
-            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(72, 500);
-            this.roundedPanel1.TabIndex = 1;
             // 
             // guna2HtmlLabel3
             // 
@@ -406,6 +395,7 @@
             this.btnAgendar.Size = new System.Drawing.Size(131, 37);
             this.btnAgendar.TabIndex = 12;
             this.btnAgendar.Text = "Agendar";
+            this.btnAgendar.Visible = false;
             this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click_1);
             // 
             // txtData
@@ -428,6 +418,17 @@
             this.txtData.Size = new System.Drawing.Size(161, 36);
             this.txtData.TabIndex = 42;
             this.txtData.Visible = false;
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.BorderRadius = 20;
+            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(72, 500);
+            this.roundedPanel1.TabIndex = 1;
             // 
             // Menu01
             // 

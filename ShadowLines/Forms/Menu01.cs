@@ -1,6 +1,6 @@
-﻿using System;
-using ShadowLines.Classes;
-using ShadowLines.Forms;
+﻿using ShadowLines.Classes;
+using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -10,6 +10,7 @@ namespace ShadowLines.Forms
         public Menu01()
         {
             InitializeComponent();
+
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -38,6 +39,8 @@ namespace ShadowLines.Forms
 
             lblPagamento.Visible = true;
             txtPagamento.Visible = true;
+
+            btnAgendar.Visible = true;
         }
 
         private void btnAgendar_Click_1(object sender, EventArgs e)
@@ -63,6 +66,8 @@ namespace ShadowLines.Forms
         private void Menu01_Load(object sender, EventArgs e)
         {
             txtData.Text = DateTime.Now.ToString();
+
+
         }
     }
 }
