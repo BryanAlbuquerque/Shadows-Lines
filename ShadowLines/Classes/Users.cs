@@ -1,24 +1,38 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
-using System.Windows.Forms;
 
 namespace ShadowLines.Classes
 {
     internal class Users
     {
-        public static string connectionString =
+        private static string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
         public string UserName { get; set; }
-        public int Password { get; set; }
+        public string Password { get; set; }
 
-        public Users(string userName, int password)
+        public Users(string userName, string password)
         {
             UserName = userName;
             Password = password;
         }
 
-        public int AuthenticateUser(string userName, int password)
+        public string ValidateFields()
+        {
+            if (string.IsNullOrWhiteSpace(UserName) || string.IsNullOrWhiteSpace(Password))
+                return "Erro! Existem campos em branco.";
+
+            if (!long.TryParse(Password, out _))
+                return "CPF inválido. Digite apenas números.";
+
+            return null;
+        }
+
+        /// <summary>
+        /// Retorna o nível de acesso do usuário. 
+        /// Se retornar 0, significa falha na autenticação.
+        /// </summary>
+        public int AuthenticateUser()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -26,22 +40,27 @@ namespace ShadowLines.Classes
                   @"SELECT Nivel_Acesso
                   FROM Funcionarios 
                   WHERE Nome = @Username 
-                  AND ID_Funcionario = @Password";
+                  AND FuncionarioID = @PasswordValue";
 
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Username", userName);
-                command.Parameters.AddWithValue("@Password", password);
+                command.Parameters.AddWithValue("@Username", UserName);
+                command.Parameters.AddWithValue("@PasswordValue", long.Parse(Password));
 
                 try
                 {
                     connection.Open();
                     object result = command.ExecuteScalar();
-                    return result == null ? 0 : Convert.ToInt32(result);
+
+                    if (result != null && int.TryParse(result.ToString(), out int nivel))
+                    {
+                        return nivel; // 1 ou 2, conforme o BD
+                    }
+
+                    return 0; // falha na autenticação
                 }
-                catch (Exception ex)
+                catch
                 {
-                    MessageBox.Show("Erro ao autenticar: " + ex.Message);
-                    return 0;
+                    throw; // será tratado no formulário
                 }
             }
         }

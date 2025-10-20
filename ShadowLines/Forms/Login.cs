@@ -2,6 +2,7 @@
 using ShadowLines.Forms;
 using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ShadowLines
 {
@@ -19,32 +20,47 @@ namespace ShadowLines
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string name = txtUsername.Text;
-            int password = int.Parse(txtPassword.Text);
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
 
-            Users user = new Users(name, password);
+            var user = new Users(username, password);
 
-            int accessLevel = user.AuthenticateUser(name, password);
-
-            if (accessLevel == 1)
+            string erro = user.ValidateFields();
+            if (erro != null)
             {
-                MessageBox.Show("Login realizado com sucesso!");
-                Menu01 menu = new Menu01();
-                menu.Show();
-                this.Hide();
+                MessageBox.Show(erro, "Validação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else if(accessLevel == 2)
+
+            try
             {
-                MessageBox.Show("Login realizado com sucesso!");
-                Menu02 menu = new Menu02();
-                menu.Show();
-                this.Hide();
+                int accessLevel = user.AuthenticateUser();
+
+                if (accessLevel == 1)
+                {
+                    MessageBox.Show("Login realizado com sucesso!");
+                    Menu01 menu = new Menu01();
+                    menu.Show();
+                    this.Hide(); // Esconde a tela de login
+                }
+                else if (accessLevel == 2)
+                {
+                    MessageBox.Show("Login realizado com sucesso!");
+                    Menu02 menu = new Menu02();
+                    menu.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuário ou senha inválidos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Usuário ou senha inválidos.");
+                MessageBox.Show("Erro ao autenticar: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnClose_Click(object sender, EventArgs e)
         {
