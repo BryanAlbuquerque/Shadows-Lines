@@ -36,7 +36,6 @@
             this.btnEspera = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.roundedPanel1 = new RoundedPanel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -54,6 +53,7 @@
             this.btnAgendar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.roundedPanel1 = new RoundedPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -72,7 +72,7 @@
             this.panel1.Controls.Add(this.roundedPanel1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(269, 500);
+            this.panel1.Size = new System.Drawing.Size(269, 531);
             this.panel1.TabIndex = 2;
             // 
             // guna2PictureBox3
@@ -175,17 +175,6 @@
             this.btnClientes.Text = "Clientes";
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.White;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
-            this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
-            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(72, 500);
-            this.roundedPanel1.TabIndex = 1;
-            // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
@@ -232,7 +221,7 @@
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(287, 285);
+            this.txtValor.Location = new System.Drawing.Point(825, 475);
             this.txtValor.Name = "txtValor";
             this.txtValor.PlaceholderText = "";
             this.txtValor.SelectedText = "";
@@ -244,7 +233,7 @@
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(512, 115);
+            this.lblData.Location = new System.Drawing.Point(825, 87);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(41, 20);
             this.lblData.TabIndex = 40;
@@ -255,7 +244,7 @@
             // 
             this.lblPagamento.BackColor = System.Drawing.Color.Transparent;
             this.lblPagamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPagamento.Location = new System.Drawing.Point(512, 264);
+            this.lblPagamento.Location = new System.Drawing.Point(825, 236);
             this.lblPagamento.Name = "lblPagamento";
             this.lblPagamento.Size = new System.Drawing.Size(94, 20);
             this.lblPagamento.TabIndex = 39;
@@ -266,7 +255,7 @@
             // 
             this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(287, 264);
+            this.lblValor.Location = new System.Drawing.Point(825, 454);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(45, 20);
             this.lblValor.TabIndex = 38;
@@ -277,7 +266,7 @@
             // 
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFuncionario.Location = new System.Drawing.Point(512, 190);
+            this.lblFuncionario.Location = new System.Drawing.Point(825, 162);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(143, 20);
             this.lblFuncionario.TabIndex = 37;
@@ -288,7 +277,7 @@
             // 
             this.lblServico.BackColor = System.Drawing.Color.Transparent;
             this.lblServico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServico.Location = new System.Drawing.Point(287, 190);
+            this.lblServico.Location = new System.Drawing.Point(825, 380);
             this.lblServico.Name = "lblServico";
             this.lblServico.Size = new System.Drawing.Size(64, 20);
             this.lblServico.TabIndex = 36;
@@ -299,7 +288,7 @@
             // 
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(287, 115);
+            this.lblCliente.Location = new System.Drawing.Point(825, 305);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(104, 20);
             this.lblCliente.TabIndex = 35;
@@ -320,7 +309,7 @@
             this.txtFuncionarioID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFuncionarioID.ForeColor = System.Drawing.Color.Black;
             this.txtFuncionarioID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFuncionarioID.Location = new System.Drawing.Point(512, 211);
+            this.txtFuncionarioID.Location = new System.Drawing.Point(825, 183);
             this.txtFuncionarioID.Name = "txtFuncionarioID";
             this.txtFuncionarioID.PlaceholderText = "";
             this.txtFuncionarioID.SelectedText = "";
@@ -342,7 +331,7 @@
             this.txtPagamento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPagamento.ForeColor = System.Drawing.Color.Black;
             this.txtPagamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPagamento.Location = new System.Drawing.Point(512, 285);
+            this.txtPagamento.Location = new System.Drawing.Point(825, 257);
             this.txtPagamento.Name = "txtPagamento";
             this.txtPagamento.PlaceholderText = "";
             this.txtPagamento.SelectedText = "";
@@ -364,7 +353,7 @@
             this.txtServico.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtServico.ForeColor = System.Drawing.Color.Black;
             this.txtServico.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtServico.Location = new System.Drawing.Point(287, 211);
+            this.txtServico.Location = new System.Drawing.Point(825, 401);
             this.txtServico.Name = "txtServico";
             this.txtServico.PlaceholderText = "";
             this.txtServico.SelectedText = "";
@@ -386,7 +375,7 @@
             this.txtClienteID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtClienteID.ForeColor = System.Drawing.Color.Black;
             this.txtClienteID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtClienteID.Location = new System.Drawing.Point(287, 138);
+            this.txtClienteID.Location = new System.Drawing.Point(825, 328);
             this.txtClienteID.Name = "txtClienteID";
             this.txtClienteID.PlaceholderText = "";
             this.txtClienteID.SelectedText = "";
@@ -407,7 +396,7 @@
             this.btnAgendar.FillColor2 = System.Drawing.Color.DimGray;
             this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(422, 354);
+            this.btnAgendar.Location = new System.Drawing.Point(681, 47);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(131, 37);
             this.btnAgendar.TabIndex = 12;
@@ -429,7 +418,7 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(512, 138);
+            this.txtData.Location = new System.Drawing.Point(825, 110);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderText = "";
             this.txtData.SelectedText = "";
@@ -450,19 +439,29 @@
             this.btnDesconectar.FillColor2 = System.Drawing.Color.DimGray;
             this.btnDesconectar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDesconectar.ForeColor = System.Drawing.Color.White;
-            this.btnDesconectar.Location = new System.Drawing.Point(765, 3);
+            this.btnDesconectar.Location = new System.Drawing.Point(860, 3);
             this.btnDesconectar.Name = "btnDesconectar";
             this.btnDesconectar.Size = new System.Drawing.Size(135, 35);
             this.btnDesconectar.TabIndex = 43;
             this.btnDesconectar.Text = "Desconectar";
-            this.btnDesconectar.Visible = false;
             this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.BorderRadius = 20;
+            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(72, 530);
+            this.roundedPanel1.TabIndex = 1;
             // 
             // Menu01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 496);
+            this.ClientSize = new System.Drawing.Size(998, 523);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.btnAgendar);

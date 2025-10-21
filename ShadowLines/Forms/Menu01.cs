@@ -67,7 +67,8 @@ namespace ShadowLines.Forms
         {
             txtData.Text = DateTime.Now.ToString();
 
-
+            LoadAppointments helper = new LoadAppointments();
+            helper.LoadAppointment(flowLayoutPanelAgendamentos);
         }
 
         private void btnDesconectar_Click(object sender, EventArgs e)

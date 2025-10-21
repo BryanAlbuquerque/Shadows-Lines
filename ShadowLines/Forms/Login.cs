@@ -11,7 +11,7 @@ namespace ShadowLines
         {
             InitializeComponent();
 
-            this.StartPosition = FormStartPosition.CenterScreen;
+            StartPosition = FormStartPosition.CenterScreen;
 
             var fundo = new CustomBackgroundPanel();
             this.Controls.Add(fundo);
