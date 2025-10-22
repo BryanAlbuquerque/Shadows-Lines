@@ -179,12 +179,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Appointments.cs" />
+    <Compile Include="Classes\AppointmentsModel.cs" />
     <Compile Include="Classes\Costumers.cs" />
     <Compile Include="Classes\CostumersData.cs" />
     <Compile Include="Classes\LoadAppointments.cs" />
     <Compile Include="Design\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Design\PainelAgendamentos.cs" />
     <Compile Include="Design\Panel.cs">
       <SubType>Component</SubType>
     </Compile>

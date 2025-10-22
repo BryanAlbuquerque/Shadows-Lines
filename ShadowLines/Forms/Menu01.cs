@@ -1,4 +1,5 @@
 ﻿using ShadowLines.Classes;
+using ShadowLines.Design;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -63,12 +64,13 @@ namespace ShadowLines.Forms
             }
         }
 
+        private PainelAgendamentos painelAgendamentos;
         private void Menu01_Load(object sender, EventArgs e)
         {
             txtData.Text = DateTime.Now.ToString();
 
-            LoadAppointments helper = new LoadAppointments();
-            helper.LoadAppointment(flowLayoutPanelAgendamentos);
+            painelAgendamentos = new PainelAgendamentos();
+            this.Controls.Add(painelAgendamentos.CriarPainel());
         }
 
         private void btnDesconectar_Click(object sender, EventArgs e)
