@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnCancel = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnMudanca = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnEspera = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -54,6 +54,7 @@
             this.btnAgendar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -65,7 +66,7 @@
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.guna2PictureBox3);
             this.panel1.Controls.Add(this.guna2PictureBox2);
-            this.panel1.Controls.Add(this.btnCancel);
+            this.panel1.Controls.Add(this.btnMudanca);
             this.panel1.Controls.Add(this.btnEspera);
             this.panel1.Controls.Add(this.btnAgendamentos);
             this.panel1.Controls.Add(this.btnClientes);
@@ -97,24 +98,24 @@
             this.guna2PictureBox2.TabIndex = 10;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // btnCancel
+            // btnMudanca
             // 
-            this.btnCancel.BorderRadius = 5;
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCancel.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancel.FillColor = System.Drawing.Color.Black;
-            this.btnCancel.FillColor2 = System.Drawing.Color.DimGray;
-            this.btnCancel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(72, 270);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(144, 51);
-            this.btnCancel.TabIndex = 6;
-            this.btnCancel.Text = "Mudança Horarios";
+            this.btnMudanca.BorderRadius = 5;
+            this.btnMudanca.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMudanca.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMudanca.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMudanca.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMudanca.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMudanca.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMudanca.FillColor = System.Drawing.Color.Black;
+            this.btnMudanca.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnMudanca.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMudanca.ForeColor = System.Drawing.Color.White;
+            this.btnMudanca.Location = new System.Drawing.Point(72, 270);
+            this.btnMudanca.Name = "btnMudanca";
+            this.btnMudanca.Size = new System.Drawing.Size(144, 51);
+            this.btnMudanca.TabIndex = 6;
+            this.btnMudanca.Text = "Mudança Horarios";
             // 
             // btnEspera
             // 
@@ -232,7 +233,7 @@
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(480, 300);
+            this.txtValor.Location = new System.Drawing.Point(705, 270);
             this.txtValor.Name = "txtValor";
             this.txtValor.PlaceholderText = "";
             this.txtValor.SelectedText = "";
@@ -244,7 +245,7 @@
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(480, 126);
+            this.lblData.Location = new System.Drawing.Point(505, 170);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(41, 20);
             this.lblData.TabIndex = 40;
@@ -255,7 +256,7 @@
             // 
             this.lblPagamento.BackColor = System.Drawing.Color.Transparent;
             this.lblPagamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPagamento.Location = new System.Drawing.Point(276, 279);
+            this.lblPagamento.Location = new System.Drawing.Point(501, 249);
             this.lblPagamento.Name = "lblPagamento";
             this.lblPagamento.Size = new System.Drawing.Size(150, 20);
             this.lblPagamento.TabIndex = 39;
@@ -266,7 +267,7 @@
             // 
             this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(480, 279);
+            this.lblValor.Location = new System.Drawing.Point(705, 249);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(45, 20);
             this.lblValor.TabIndex = 38;
@@ -277,7 +278,7 @@
             // 
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFuncionario.Location = new System.Drawing.Point(276, 202);
+            this.lblFuncionario.Location = new System.Drawing.Point(690, 172);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(143, 20);
             this.lblFuncionario.TabIndex = 37;
@@ -288,7 +289,7 @@
             // 
             this.lblServico.BackColor = System.Drawing.Color.Transparent;
             this.lblServico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServico.Location = new System.Drawing.Point(480, 202);
+            this.lblServico.Location = new System.Drawing.Point(301, 249);
             this.lblServico.Name = "lblServico";
             this.lblServico.Size = new System.Drawing.Size(64, 20);
             this.lblServico.TabIndex = 36;
@@ -299,7 +300,7 @@
             // 
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(276, 126);
+            this.lblCliente.Location = new System.Drawing.Point(301, 170);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(104, 20);
             this.lblCliente.TabIndex = 35;
@@ -320,7 +321,7 @@
             this.txtFuncionarioID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFuncionarioID.ForeColor = System.Drawing.Color.Black;
             this.txtFuncionarioID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFuncionarioID.Location = new System.Drawing.Point(276, 223);
+            this.txtFuncionarioID.Location = new System.Drawing.Point(690, 193);
             this.txtFuncionarioID.Name = "txtFuncionarioID";
             this.txtFuncionarioID.PlaceholderText = "";
             this.txtFuncionarioID.SelectedText = "";
@@ -342,7 +343,7 @@
             this.txtPagamento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPagamento.ForeColor = System.Drawing.Color.Black;
             this.txtPagamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPagamento.Location = new System.Drawing.Point(276, 300);
+            this.txtPagamento.Location = new System.Drawing.Point(501, 270);
             this.txtPagamento.Name = "txtPagamento";
             this.txtPagamento.PlaceholderText = "";
             this.txtPagamento.SelectedText = "";
@@ -364,7 +365,7 @@
             this.txtServico.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtServico.ForeColor = System.Drawing.Color.Black;
             this.txtServico.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtServico.Location = new System.Drawing.Point(480, 223);
+            this.txtServico.Location = new System.Drawing.Point(301, 270);
             this.txtServico.Name = "txtServico";
             this.txtServico.PlaceholderText = "";
             this.txtServico.SelectedText = "";
@@ -386,7 +387,7 @@
             this.txtClienteID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtClienteID.ForeColor = System.Drawing.Color.Black;
             this.txtClienteID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtClienteID.Location = new System.Drawing.Point(276, 149);
+            this.txtClienteID.Location = new System.Drawing.Point(301, 193);
             this.txtClienteID.Name = "txtClienteID";
             this.txtClienteID.PlaceholderText = "";
             this.txtClienteID.SelectedText = "";
@@ -407,7 +408,7 @@
             this.btnAgendar.FillColor2 = System.Drawing.Color.DimGray;
             this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(373, 374);
+            this.btnAgendar.Location = new System.Drawing.Point(508, 338);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(131, 37);
             this.btnAgendar.TabIndex = 12;
@@ -429,7 +430,7 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(480, 149);
+            this.txtData.Location = new System.Drawing.Point(505, 193);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderText = "";
             this.txtData.SelectedText = "";
@@ -457,11 +458,23 @@
             this.btnDesconectar.Text = "Desconectar";
             this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(405, 109);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(316, 26);
+            this.lblTitulo.TabIndex = 44;
+            this.lblTitulo.Text = "Agendar horários para clientes";
+            this.lblTitulo.Visible = false;
+            // 
             // Menu01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 523);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.btnAgendar);
@@ -502,7 +515,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnClientes;
         private Guna.UI2.WinForms.Guna2GradientButton btnAgendamentos;
         private Guna.UI2.WinForms.Guna2GradientButton btnEspera;
-        private Guna.UI2.WinForms.Guna2GradientButton btnCancel;
+        private Guna.UI2.WinForms.Guna2GradientButton btnMudanca;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2TextBox txtValor;
@@ -519,5 +532,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnAgendar;
         private Guna.UI2.WinForms.Guna2TextBox txtData;
         private Guna.UI2.WinForms.Guna2GradientButton btnDesconectar;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
     }
 }

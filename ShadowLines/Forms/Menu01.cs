@@ -25,6 +25,8 @@ namespace ShadowLines.Forms
 
         private void btnAgendar_Click(object sender, EventArgs e)
         {
+
+            lblTitulo.Visible = true;
             lblCliente.Visible = true;
             txtClienteID.Visible = true;
 
@@ -44,6 +46,8 @@ namespace ShadowLines.Forms
             txtPagamento.Visible = true;
 
             btnAgendar.Visible = true;
+
+            painelAgendamentos.CriarPainel().Visible = false;
         }
 
         private void btnAgendar_Click_1(object sender, EventArgs e)
