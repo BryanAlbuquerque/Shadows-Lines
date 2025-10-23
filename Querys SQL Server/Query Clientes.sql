@@ -12,6 +12,7 @@ Endereco NVARCHAR(200),
 DataCadastro DATETIME DEFAULT GETDATE()
 );
 
+
 SELECT * FROM Clientes
 
 

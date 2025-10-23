@@ -7,7 +7,7 @@ namespace ShadowLines.Classes
     internal class AgendamentoData
     {
         private string connectionString =
-            "Data Source=SEU_SERVIDOR;Initial Catalog=SUA_DATABASE;Integrated Security=True;";
+            "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
         public List<Agendamento> ObterAgendamentosDoDia()
         {
@@ -17,7 +17,7 @@ namespace ShadowLines.Classes
                 SELECT 
                     A.AgendamentoID,
                     A.ClienteID,
-                    C.Nome AS NomeCliente,
+                    C.Nome_Completo AS NomeCliente,
                     A.DataAgendamento,
                     A.Servico,
                     A.FuncionarioID,
