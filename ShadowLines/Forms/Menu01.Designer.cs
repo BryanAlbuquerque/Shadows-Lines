@@ -232,7 +232,7 @@
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(825, 475);
+            this.txtValor.Location = new System.Drawing.Point(480, 300);
             this.txtValor.Name = "txtValor";
             this.txtValor.PlaceholderText = "";
             this.txtValor.SelectedText = "";
@@ -244,7 +244,7 @@
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(825, 87);
+            this.lblData.Location = new System.Drawing.Point(480, 126);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(41, 20);
             this.lblData.TabIndex = 40;
@@ -255,18 +255,18 @@
             // 
             this.lblPagamento.BackColor = System.Drawing.Color.Transparent;
             this.lblPagamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPagamento.Location = new System.Drawing.Point(825, 236);
+            this.lblPagamento.Location = new System.Drawing.Point(276, 279);
             this.lblPagamento.Name = "lblPagamento";
-            this.lblPagamento.Size = new System.Drawing.Size(94, 20);
+            this.lblPagamento.Size = new System.Drawing.Size(150, 20);
             this.lblPagamento.TabIndex = 39;
-            this.lblPagamento.Text = "Pagamento";
+            this.lblPagamento.Text = "Status Pagamento";
             this.lblPagamento.Visible = false;
             // 
             // lblValor
             // 
             this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(825, 454);
+            this.lblValor.Location = new System.Drawing.Point(480, 279);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(45, 20);
             this.lblValor.TabIndex = 38;
@@ -277,7 +277,7 @@
             // 
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFuncionario.Location = new System.Drawing.Point(825, 162);
+            this.lblFuncionario.Location = new System.Drawing.Point(276, 202);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(143, 20);
             this.lblFuncionario.TabIndex = 37;
@@ -288,7 +288,7 @@
             // 
             this.lblServico.BackColor = System.Drawing.Color.Transparent;
             this.lblServico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServico.Location = new System.Drawing.Point(825, 380);
+            this.lblServico.Location = new System.Drawing.Point(480, 202);
             this.lblServico.Name = "lblServico";
             this.lblServico.Size = new System.Drawing.Size(64, 20);
             this.lblServico.TabIndex = 36;
@@ -299,7 +299,7 @@
             // 
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(825, 305);
+            this.lblCliente.Location = new System.Drawing.Point(276, 126);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(104, 20);
             this.lblCliente.TabIndex = 35;
@@ -320,7 +320,7 @@
             this.txtFuncionarioID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFuncionarioID.ForeColor = System.Drawing.Color.Black;
             this.txtFuncionarioID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFuncionarioID.Location = new System.Drawing.Point(825, 183);
+            this.txtFuncionarioID.Location = new System.Drawing.Point(276, 223);
             this.txtFuncionarioID.Name = "txtFuncionarioID";
             this.txtFuncionarioID.PlaceholderText = "";
             this.txtFuncionarioID.SelectedText = "";
@@ -342,7 +342,7 @@
             this.txtPagamento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPagamento.ForeColor = System.Drawing.Color.Black;
             this.txtPagamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPagamento.Location = new System.Drawing.Point(825, 257);
+            this.txtPagamento.Location = new System.Drawing.Point(276, 300);
             this.txtPagamento.Name = "txtPagamento";
             this.txtPagamento.PlaceholderText = "";
             this.txtPagamento.SelectedText = "";
@@ -364,7 +364,7 @@
             this.txtServico.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtServico.ForeColor = System.Drawing.Color.Black;
             this.txtServico.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtServico.Location = new System.Drawing.Point(825, 401);
+            this.txtServico.Location = new System.Drawing.Point(480, 223);
             this.txtServico.Name = "txtServico";
             this.txtServico.PlaceholderText = "";
             this.txtServico.SelectedText = "";
@@ -386,7 +386,7 @@
             this.txtClienteID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtClienteID.ForeColor = System.Drawing.Color.Black;
             this.txtClienteID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtClienteID.Location = new System.Drawing.Point(825, 328);
+            this.txtClienteID.Location = new System.Drawing.Point(276, 149);
             this.txtClienteID.Name = "txtClienteID";
             this.txtClienteID.PlaceholderText = "";
             this.txtClienteID.SelectedText = "";
@@ -407,7 +407,7 @@
             this.btnAgendar.FillColor2 = System.Drawing.Color.DimGray;
             this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(825, 44);
+            this.btnAgendar.Location = new System.Drawing.Point(373, 374);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(131, 37);
             this.btnAgendar.TabIndex = 12;
@@ -429,7 +429,7 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(825, 110);
+            this.txtData.Location = new System.Drawing.Point(480, 149);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderText = "";
             this.txtData.SelectedText = "";

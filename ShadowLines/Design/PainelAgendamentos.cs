@@ -40,7 +40,7 @@ namespace ShadowLines.Design
                 Label lblInfo = new Label
                 {
                     AutoSize = false,
-                    Size = new Size(580, 100),
+                    Size = new Size(400, 100),
                     Location = new Point(10, y),
                     Font = new Font("Segoe UI", 10, FontStyle.Regular),
                     BackColor = Color.Red,
@@ -57,9 +57,9 @@ namespace ShadowLines.Design
                 if (ag.Situacao == "Cancelado")
                     lblInfo.BackColor = Color.Red;
                 else if (ag.Pagamento == "Pago")
-                    lblInfo.BackColor = Color.LightGreen;
+                    lblInfo.BackColor = Color.White;
                 else
-                    lblInfo.BackColor = Color.Blue;
+                    lblInfo.BackColor = Color.White;
 
                 painel.Controls.Add(lblInfo);
                 y += 80;

@@ -8,6 +8,8 @@ namespace ShadowLines.Forms
 {
     public partial class Menu01 : Form
     {
+
+        private PainelAgendamentos painelAgendamentos;
         public Menu01()
         {
             InitializeComponent();
@@ -64,7 +66,6 @@ namespace ShadowLines.Forms
             }
         }
 
-        private PainelAgendamentos painelAgendamentos;
         private void Menu01_Load(object sender, EventArgs e)
         {
             txtData.Text = DateTime.Now.ToString();
