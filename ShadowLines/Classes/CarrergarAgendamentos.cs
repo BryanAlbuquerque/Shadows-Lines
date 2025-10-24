@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace ShadowLines.Classes
 {
-    internal class AgendamentosDiarios
+    internal class CarrergarAgendamentos
     {
-        private string connectionString =
+        private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
         public List<Agendamentos> ObterAgendamentosDoDia()

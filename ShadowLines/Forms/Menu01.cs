@@ -22,17 +22,26 @@ namespace ShadowLines.Forms
             lblTitulo.Visible = visivel;
             lblCliente.Visible = visivel;
             txtClienteID.Visible = visivel;
+
             lblData.Visible = visivel;
             txtData.Visible = visivel;
+
             lblServico.Visible = visivel;
             txtServico.Visible = visivel;
+
             lblFuncionario.Visible = visivel;
             txtFuncionarioID.Visible = visivel;
+
             lblValor.Visible = visivel;
             txtValor.Visible = visivel;
+
             lblPagamento.Visible = visivel;
             txtPagamento.Visible = visivel;
+
             btnAgendar.Visible = visivel;
+
+            lblDesign.Visible = visivel;
+            lblCancelar.Visible = visivel;
         }
 
         private void Menu01_Load(object sender, EventArgs e)
@@ -72,7 +81,7 @@ namespace ShadowLines.Forms
                 decimal valor = decimal.Parse(txtValor.Text);
                 string pagamento = txtPagamento.Text;
 
-                var novoAgendamento = new Agendamento
+                var novoAgendamento = new FazerAgendamento
                     (clientId, dataHora, servico, employeeId, valor, pagamento);
                 novoAgendamento.RegisterAppointments();
             }
@@ -80,6 +89,12 @@ namespace ShadowLines.Forms
             {
                 MessageBox.Show("Erro: " + ex.Message);
             }
+        }
+
+        private void lblCancelar_Click(object sender, EventArgs e)
+        {
+            AlternarCamposAgendamento(false);
+            painelAgendamentosUI.Visible = true;
         }
     }
 }

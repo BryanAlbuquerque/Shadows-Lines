@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Classes
 {
-    internal class Agendamento
+    internal class FazerAgendamento
     {
         public int ClientID { get; set; }
         public DateTime DateAppointments { get; set; }
@@ -18,7 +18,7 @@ namespace ShadowLines.Classes
         private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public Agendamento(int clientID, DateTime dateAppointments, string service,
+        public FazerAgendamento(int clientID, DateTime dateAppointments, string service,
             int employeeID, decimal value, string payment)
         {
             ClientID = clientID;
