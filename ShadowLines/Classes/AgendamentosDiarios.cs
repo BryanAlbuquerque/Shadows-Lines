@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 namespace ShadowLines.Classes
 {
-    internal class AgendamentoData
+    internal class AgendamentosDiarios
     {
         private string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public List<Agendamento> ObterAgendamentosDoDia()
+        public List<Agendamentos> ObterAgendamentosDoDia()
         {
-            List<Agendamento> lista = new List<Agendamento>();
+            List<Agendamentos> lista = new List<Agendamentos>();
 
             string query = @"
                 SELECT 
@@ -37,7 +37,7 @@ namespace ShadowLines.Classes
 
                 while (dr.Read())
                 {
-                    lista.Add(new Agendamento
+                    lista.Add(new Agendamentos
                     {
                         AgendamentoID = Convert.ToInt32(dr["AgendamentoID"]),
                         ClienteID = Convert.ToInt32(dr["ClienteID"]),

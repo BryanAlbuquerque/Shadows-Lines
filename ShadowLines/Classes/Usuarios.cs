@@ -3,7 +3,7 @@ using System;
 
 namespace ShadowLines.Classes
 {
-    internal class Users
+    internal class Usuarios
     {
         private static string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
@@ -11,13 +11,13 @@ namespace ShadowLines.Classes
         public string UserName { get; set; }
         public string Password { get; set; }
 
-        public Users(string userName, string password)
+        public Usuarios(string userName, string password)
         {
             UserName = userName;
             Password = password;
         }
 
-        public string ValidateFields()
+        public string ValidarCampos()
         {
             if (string.IsNullOrWhiteSpace(UserName) || string.IsNullOrWhiteSpace(Password))
                 return "Erro! Existem campos em branco.";
@@ -32,7 +32,7 @@ namespace ShadowLines.Classes
         /// Retorna o nível de acesso do usuário. 
         /// Se retornar 0, significa falha na autenticação.
         /// </summary>
-        public int AuthenticateUser()
+        public int AutenticarUsuario()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

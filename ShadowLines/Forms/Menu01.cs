@@ -10,10 +10,42 @@ namespace ShadowLines.Forms
     {
 
         private PainelAgendamentos painelAgendamentos;
+        private Panel painelAgendamentosUI;
         public Menu01()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+        }
+
+        private void AlternarCamposAgendamento(bool visivel)
+        {
+            lblTitulo.Visible = visivel;
+            lblCliente.Visible = visivel;
+            txtClienteID.Visible = visivel;
+            lblData.Visible = visivel;
+            txtData.Visible = visivel;
+            lblServico.Visible = visivel;
+            txtServico.Visible = visivel;
+            lblFuncionario.Visible = visivel;
+            txtFuncionarioID.Visible = visivel;
+            lblValor.Visible = visivel;
+            txtValor.Visible = visivel;
+            lblPagamento.Visible = visivel;
+            txtPagamento.Visible = visivel;
+            btnAgendar.Visible = visivel;
+        }
+
+        private void Menu01_Load(object sender, EventArgs e)
+        {
+            txtData.Text = DateTime.Now.ToString();
+
+            painelAgendamentos = new PainelAgendamentos();
+            painelAgendamentosUI = painelAgendamentos.CriarPainel();
+            this.Controls.Add(painelAgendamentosUI);
+
+            // mostra painel de agendamentos e esconde os campos de cadastro
+            painelAgendamentosUI.Visible = true;
+            AlternarCamposAgendamento(false);
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -23,34 +55,13 @@ namespace ShadowLines.Forms
             this.Hide();
         }
 
-        private void btnAgendar_Click(object sender, EventArgs e)
+        private void btnAgendamentos_Click(object sender, EventArgs e)
         {
-
-            lblTitulo.Visible = true;
-            lblCliente.Visible = true;
-            txtClienteID.Visible = true;
-
-            lblData.Visible = true;
-            txtData.Visible = true;
-
-            lblServico.Visible = true;
-            txtServico.Visible = true;
-
-            lblFuncionario.Visible = true;
-            txtFuncionarioID.Visible = true;
-
-            lblValor.Visible = true;
-            txtValor.Visible = true;
-
-            lblPagamento.Visible = true;
-            txtPagamento.Visible = true;
-
-            btnAgendar.Visible = true;
-
-            painelAgendamentos.CriarPainel().Visible = false;
+            painelAgendamentosUI.Visible = false; // esconde o painel com agendamentos
+            AlternarCamposAgendamento(true);      // mostra os campos para novo agendamento
         }
 
-        private void btnAgendar_Click_1(object sender, EventArgs e)
+        private void btnAgendar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -61,28 +72,14 @@ namespace ShadowLines.Forms
                 decimal valor = decimal.Parse(txtValor.Text);
                 string pagamento = txtPagamento.Text;
 
-                var novoAgendamento = new Appointments(clientId, dataHora, servico, employeeId, valor, pagamento);
+                var novoAgendamento = new Agendamento
+                    (clientId, dataHora, servico, employeeId, valor, pagamento);
                 novoAgendamento.RegisterAppointments();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex.Message);
             }
-        }
-
-        private void Menu01_Load(object sender, EventArgs e)
-        {
-            txtData.Text = DateTime.Now.ToString();
-
-            painelAgendamentos = new PainelAgendamentos();
-            this.Controls.Add(painelAgendamentos.CriarPainel());
-        }
-
-        private void btnDesconectar_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            login.Show();
-            this.Hide();
         }
     }
 }

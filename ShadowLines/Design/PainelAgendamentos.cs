@@ -10,11 +10,11 @@ namespace ShadowLines.Design
     internal class PainelAgendamentos
     {
         private Panel painel;
-        private AgendamentoData agendamentoData;
+        private AgendamentosDiarios agendamentoData;
 
         public PainelAgendamentos()
         {
-            agendamentoData = new AgendamentoData();
+            agendamentoData = new AgendamentosDiarios();
         }
 
         public Panel CriarPainel()
@@ -33,7 +33,7 @@ namespace ShadowLines.Design
 
         private void CarregarInformacoes()
         {
-            List<Agendamento> agendamentos = agendamentoData.ObterAgendamentosDoDia();
+            List<Agendamento> agendamentos = AgendamentosDiarios.ObterAgendamentosDoDia();
 
             int y = 10;
             foreach (Agendamento ag in agendamentos)

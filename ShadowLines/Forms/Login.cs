@@ -22,9 +22,9 @@ namespace ShadowLines
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            var user = new Users(username, password);
+            var usuario = new Usuarios(username, password);
 
-            string erro = user.ValidateFields();
+            string erro = usuario.ValidarCampos();
             if (erro != null)
             {
                 MessageBox.Show(erro, "Validação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -33,7 +33,7 @@ namespace ShadowLines
 
             try
             {
-                int accessLevel = user.AuthenticateUser();
+                int accessLevel = usuario.AutenticarUsuario();
 
                 if (accessLevel == 1)
                 {

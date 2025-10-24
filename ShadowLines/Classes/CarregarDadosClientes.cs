@@ -4,12 +4,12 @@ using System;
 
 namespace ShadowLines.Classes
 {
-    internal class CostumersData
+    internal class CarregarDadosClientes
     {
         public static string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
         
-        public DataTable LoadData()
+        public DataTable CarregarDados()
         {
             using (var conexao = new SqlConnection(connectionString))
             {

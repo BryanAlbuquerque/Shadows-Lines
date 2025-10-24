@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShadowLines.Classes
 {
-    internal class WaitList
+    internal class ListaDeEspera
     {
     }
 }

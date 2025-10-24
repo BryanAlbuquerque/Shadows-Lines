@@ -55,7 +55,7 @@ namespace ShadowLines.Forms
                 return;
             }
 
-            Costumers.AddCustomer(name, cpf, number, email, date, adress);
+            CadastrarClientes.AdicionarCliente(name, cpf, number, email, date, adress);
 
             txtNome.Clear();
             txtCPF.Clear();

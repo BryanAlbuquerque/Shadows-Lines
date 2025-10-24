@@ -154,7 +154,7 @@
             this.btnAgendamentos.Size = new System.Drawing.Size(144, 47);
             this.btnAgendamentos.TabIndex = 4;
             this.btnAgendamentos.Text = "Agendar Horários";
-            this.btnAgendamentos.Click += new System.EventHandler(this.btnAgendar_Click);
+            this.btnAgendamentos.Click += new System.EventHandler(this.btnAgendamentos_Click);
             // 
             // btnClientes
             // 
@@ -414,7 +414,7 @@
             this.btnAgendar.TabIndex = 12;
             this.btnAgendar.Text = "Agendar";
             this.btnAgendar.Visible = false;
-            this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click_1);
+            this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
             // 
             // txtData
             // 
@@ -456,7 +456,6 @@
             this.btnDesconectar.Size = new System.Drawing.Size(135, 35);
             this.btnDesconectar.TabIndex = 43;
             this.btnDesconectar.Text = "Desconectar";
-            this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
             // lblTitulo
             // 

@@ -4,12 +4,12 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Classes
 {
-    class Costumers
+    class CadastrarClientes
     {
         public static string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public static bool AddCustomer(
+        public static bool AdicionarCliente(
             string name, string cpf, string number,
             string email, DateTime birthday, string adress)
         {

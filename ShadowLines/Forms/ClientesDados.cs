@@ -1,12 +1,5 @@
 ﻿using ShadowLines.Classes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -21,9 +14,9 @@ namespace ShadowLines.Forms
 
         private void ClientesDados_Load(object sender, EventArgs e)
         {
-            CostumersData costumersData = new CostumersData();
+            CarregarDadosClientes clientes = new CarregarDadosClientes();
 
-            dtCostumers.DataSource = costumersData.LoadData();
+            dtCostumers.DataSource = clientes.CarregarDados();
         }
 
         private void btnVoltar_Click_1(object sender, EventArgs e)

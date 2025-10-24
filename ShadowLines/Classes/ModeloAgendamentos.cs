@@ -2,7 +2,7 @@
 
 namespace ShadowLines.Classes
 {
-    internal class Agendamento
+    internal class Agendamentos
     {
         public int AgendamentoID { get; set; }
         public int ClienteID { get; set; }
