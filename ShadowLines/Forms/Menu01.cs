@@ -103,5 +103,20 @@ namespace ShadowLines.Forms
             login.Show();
             this.Hide();
         }
+
+        private void btnMudanca_Click(object sender, EventArgs e)
+        {
+            AlternarCamposAgendamento(false);
+            painelAgendamentosUI.Visible = true;
+
+            lblTitulo2.Visible = true;
+            lblClient.Visible = true;
+            txtCliente.Visible = true;
+
+            lblMudarData.Visible = true;
+            txtMudarData.Visible = true;
+
+            btnReagendar.Visible = true;
+        }
     }
 }

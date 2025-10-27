@@ -6,7 +6,7 @@ namespace ShadowLines.Classes
 {
     class CadastrarClientes
     {
-        public static string connectionString =
+        private static string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
         public static bool AdicionarCliente(

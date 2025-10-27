@@ -183,6 +183,7 @@
     <Compile Include="Classes\CadastrarClientes.cs" />
     <Compile Include="Classes\CarregarDadosClientes.cs" />
     <Compile Include="Classes\CarrergarAgendamentos.cs" />
+    <Compile Include="Classes\MudarHorario.cs" />
     <Compile Include="Design\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
     </Compile>
