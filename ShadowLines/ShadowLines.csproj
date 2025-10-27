@@ -190,7 +190,6 @@
     <Compile Include="Design\Panel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Classes\ListaDeEspera.cs" />
     <Compile Include="Classes\Usuarios.cs" />
     <Compile Include="Forms\Clientes.cs">
       <SubType>Form</SubType>

@@ -41,7 +41,7 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -62,7 +62,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(162, 315);
+            this.txtPassword.Location = new System.Drawing.Point(182, 317);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PlaceholderText = "";
             this.txtPassword.SelectedText = "";
@@ -83,7 +83,7 @@
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(162, 230);
+            this.txtUsername.Location = new System.Drawing.Point(182, 232);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "";
             this.txtUsername.SelectedText = "";
@@ -103,7 +103,7 @@
             this.btnLogin.FillColor2 = System.Drawing.Color.Blue;
             this.btnLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(189, 363);
+            this.btnLogin.Location = new System.Drawing.Point(210, 368);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(120, 32);
             this.btnLogin.TabIndex = 7;
@@ -119,13 +119,16 @@
             // 
             // customBackgroundPanel1
             // 
+            this.customBackgroundPanel1.Controls.Add(this.txtUsername);
+            this.customBackgroundPanel1.Controls.Add(this.txtPassword);
+            this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel4);
+            this.customBackgroundPanel1.Controls.Add(this.btnLogin);
             this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox3);
             this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox2);
             this.customBackgroundPanel1.Controls.Add(this.btnClose);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel3);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel2);
             this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox1);
-            this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.customBackgroundPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customBackgroundPanel1.Location = new System.Drawing.Point(0, 0);
             this.customBackgroundPanel1.Name = "customBackgroundPanel1";
@@ -136,7 +139,7 @@
             // 
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(127, 315);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(147, 317);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(35, 29);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -147,7 +150,7 @@
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(127, 229);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(141, 231);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(35, 29);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -179,7 +182,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(128, 283);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(147, 285);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(95, 26);
             this.guna2HtmlLabel3.TabIndex = 3;
@@ -190,7 +193,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(128, 198);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(147, 200);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(63, 26);
             this.guna2HtmlLabel2.TabIndex = 2;
@@ -202,32 +205,29 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Black;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 25);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(58, 42);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(133, 120);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2HtmlLabel1
+            // guna2HtmlLabel4
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(181, 67);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(275, 42);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Shadow & Lines";
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Blue;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(197, 72);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(267, 39);
+            this.guna2HtmlLabel4.TabIndex = 48;
+            this.guna2HtmlLabel4.Text = "Shadows & Lines";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(492, 565);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.customBackgroundPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
@@ -247,13 +247,13 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnLogin;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private CustomBackgroundPanel customBackgroundPanel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2GradientButton btnClose;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
     }
 }
 

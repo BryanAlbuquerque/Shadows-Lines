@@ -49,6 +49,10 @@ namespace ShadowLines
                     menu.Show();
                     this.Hide();
                 }
+                else if (accessLevel == 3)
+                {
+                    MessageBox.Show("Nivél de acesso não valido para login!");
+                }
                 else
                 {
                     MessageBox.Show("Usuário ou senha inválidos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
