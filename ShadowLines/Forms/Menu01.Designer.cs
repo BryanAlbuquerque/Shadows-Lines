@@ -182,7 +182,7 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Navy;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(313, 12);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(246, 35);
@@ -447,6 +447,7 @@
             this.btnDesconectar.Size = new System.Drawing.Size(135, 35);
             this.btnDesconectar.TabIndex = 43;
             this.btnDesconectar.Text = "Desconectar";
+            this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
             // lblTitulo
             // 
@@ -464,7 +465,7 @@
             this.lblCancelar.AutoSize = true;
             this.lblCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCancelar.ForeColor = System.Drawing.Color.Red;
+            this.lblCancelar.ForeColor = System.Drawing.Color.Navy;
             this.lblCancelar.Location = new System.Drawing.Point(546, 390);
             this.lblCancelar.Name = "lblCancelar";
             this.lblCancelar.Size = new System.Drawing.Size(67, 15);

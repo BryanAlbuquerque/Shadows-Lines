@@ -1,6 +1,5 @@
 ﻿using ShadowLines.Classes;
 using System;
-using System.Numerics;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -13,64 +12,44 @@ namespace ShadowLines.Forms
             StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        private void Clientes_Load(object sender, EventArgs e)
         {
-            lblNome.Visible = true;
-            txtNome.Visible = true;
-
-            lblCPF.Visible = true;
-            txtCPF.Visible = true;
-
-            lblTelefone.Visible = true;
-            txtTelefone.Visible = true;
-
-            lblEmail.Visible = true;
-            txtEmail.Visible = true;
-
-            lblData.Visible = true;
-            txtData.Visible = true;
-
-            lblEnd.Visible = true;
-            txtEnd.Visible = true;
-
-            btnEnviar.Visible = true;   
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void BtnCadastrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void btnEnviar_Click(object sender, EventArgs e)
-        {
-            string name = txtNome.Text;
-            string cpf = txtCPF.Text.Trim();
-            string number = txtTelefone.Text.Trim();
+            string nome = txtNome.Text;
+            string cpf = txtCpf.Text.Trim();
+            string numero = txtTelefone.Text.Trim();
             string email = txtEmail.Text.Trim();
-            string adress = txtEnd.Text.Trim();
+            string endereco = txtEndereco.Text.Trim();
 
-            if (!DateTime.TryParse(txtData.Text, out DateTime date))
+            if (!DateTime.TryParse(txtDataNascimento.Text, out DateTime data))
             {
                 MessageBox.Show("Data inválida. Use o formato DD/MM/AAAA.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            CadastrarClientes.AdicionarCliente(name, cpf, number, email, date, adress);
+            CadastrarClientes.AdicionarCliente(nome, cpf, numero, email, data, endereco);
 
             txtNome.Clear();
-            txtCPF.Clear();
+            txtCpf.Clear();
             txtTelefone.Clear();
             txtEmail.Clear();
-            txtData.Clear();
-            txtEnd.Clear();
-
+            txtDataNascimento.Clear();
+            txtEndereco.Clear();
         }
 
-        private void btnDados_Click_1(object sender, EventArgs e)
+        private void btnDados_Click(object sender, EventArgs e)
         {
-            ClientesDados clientesDados = new ClientesDados();
-            clientesDados.Show();
+            ClientesDados dados = new ClientesDados();
+            dados.Show();
             this.Hide();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

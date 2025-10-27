@@ -96,5 +96,12 @@ namespace ShadowLines.Forms
             AlternarCamposAgendamento(false);
             painelAgendamentosUI.Visible = true;
         }
+
+        private void btnDesconectar_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
