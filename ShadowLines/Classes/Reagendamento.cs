@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 
 namespace ShadowLines.Classes
 {
-    internal class MudarHorario
+    internal class Reagendamento
     {
         private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";

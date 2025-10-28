@@ -63,7 +63,6 @@
             this.lblClient = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTitulo2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnReagendar = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.lblCancela = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -601,25 +600,11 @@
             this.btnReagendar.Text = "Reagendar";
             this.btnReagendar.Visible = false;
             // 
-            // lblCancela
-            // 
-            this.lblCancela.AutoSize = true;
-            this.lblCancela.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblCancela.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCancela.ForeColor = System.Drawing.Color.Blue;
-            this.lblCancela.Location = new System.Drawing.Point(519, 390);
-            this.lblCancela.Name = "lblCancela";
-            this.lblCancela.Size = new System.Drawing.Size(75, 17);
-            this.lblCancela.TabIndex = 54;
-            this.lblCancela.Text = "Cancelar";
-            this.lblCancela.Visible = false;
-            // 
             // Menu01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 523);
-            this.Controls.Add(this.lblCancela);
             this.Controls.Add(this.btnReagendar);
             this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.txtMudarData);
@@ -695,6 +680,5 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblClient;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo2;
         private Guna.UI2.WinForms.Guna2GradientButton btnReagendar;
-        private System.Windows.Forms.Label lblCancela;
     }
 }

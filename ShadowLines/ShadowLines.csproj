@@ -179,11 +179,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\FazerAgendamento.cs" />
-    <Compile Include="Classes\ModeloAgendamentos.cs" />
+    <Compile Include="Models\ModeloAgendamentos.cs" />
     <Compile Include="Classes\CadastrarClientes.cs" />
     <Compile Include="Classes\CarregarDadosClientes.cs" />
     <Compile Include="Classes\CarrergarAgendamentos.cs" />
-    <Compile Include="Classes\MudarHorario.cs" />
+    <Compile Include="Classes\Reagendamento.cs" />
     <Compile Include="Design\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
     </Compile>

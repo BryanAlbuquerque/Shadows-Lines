@@ -42,6 +42,7 @@ namespace ShadowLines.Forms
             btnAgendar.Visible = visivel;
 
             lblDesign.Visible = visivel;
+
             lblCancelar.Visible = visivel;
 
 
@@ -58,7 +59,7 @@ namespace ShadowLines.Forms
             txtMudarData.Visible = visivel;
 
             btnReagendar.Visible = visivel;
-            lblCancela.Visible = visivel;
+            lblCancelar.Visible = visivel;
         }
         private void Menu01_Load(object sender, EventArgs e)
         {
@@ -111,6 +112,7 @@ namespace ShadowLines.Forms
         private void lblCancelar_Click(object sender, EventArgs e)
         {
             AlternarCamposAgendamento(false);
+            Reagendamento(false);
             painelAgendamentosUI.Visible = true;
         }
 
