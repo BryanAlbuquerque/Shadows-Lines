@@ -19,6 +19,7 @@ namespace ShadowLines.Forms
 
         private void AlternarCamposAgendamento(bool visivel)
         {
+            //Novo Agendamento
             lblTitulo.Visible = visivel;
             lblCliente.Visible = visivel;
             txtClienteID.Visible = visivel;
@@ -42,8 +43,23 @@ namespace ShadowLines.Forms
 
             lblDesign.Visible = visivel;
             lblCancelar.Visible = visivel;
+
+
         }
 
+        public void Reagendamento(bool visivel)
+        {
+            //Reagendamento
+            lblTitulo2.Visible = visivel;
+            lblClient.Visible = visivel;
+            txtCliente.Visible = visivel;
+
+            lblMudarData.Visible = visivel;
+            txtMudarData.Visible = visivel;
+
+            btnReagendar.Visible = visivel;
+            lblCancela.Visible = visivel;
+        }
         private void Menu01_Load(object sender, EventArgs e)
         {
             txtData.Text = DateTime.Now.ToString();
@@ -66,8 +82,9 @@ namespace ShadowLines.Forms
 
         private void btnAgendamentos_Click(object sender, EventArgs e)
         {
-            painelAgendamentosUI.Visible = false; // esconde o painel com agendamentos
-            AlternarCamposAgendamento(true);      // mostra os campos para novo agendamento
+            painelAgendamentosUI.Visible = false;
+            AlternarCamposAgendamento(true);
+            Reagendamento(false);
         }
 
         private void btnAgendar_Click(object sender, EventArgs e)
@@ -106,17 +123,9 @@ namespace ShadowLines.Forms
 
         private void btnMudanca_Click(object sender, EventArgs e)
         {
+            painelAgendamentosUI.Visible = false; // esconde o painel com agendamentos
             AlternarCamposAgendamento(false);
-            painelAgendamentosUI.Visible = true;
-
-            lblTitulo2.Visible = true;
-            lblClient.Visible = true;
-            txtCliente.Visible = true;
-
-            lblMudarData.Visible = true;
-            txtMudarData.Visible = true;
-
-            btnReagendar.Visible = true;
+            Reagendamento(true);      // mostra os campos para novo agendamento
         }
     }
 }
