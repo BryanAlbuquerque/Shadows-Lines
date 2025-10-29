@@ -178,6 +178,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CalculoValorServico.cs" />
     <Compile Include="Classes\FazerAgendamento.cs" />
     <Compile Include="Models\ModeloAgendamentos.cs" />
     <Compile Include="Classes\CadastrarClientes.cs" />

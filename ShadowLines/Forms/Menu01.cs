@@ -27,7 +27,7 @@ namespace ShadowLines.Forms
             lblData.Visible = visivel;
             txtData.Visible = visivel;
 
-            lblServico.Visible = visivel;
+            toolServicos.Visible = visivel;
             txtServico.Visible = visivel;
 
             lblFuncionario.Visible = visivel;
@@ -59,7 +59,7 @@ namespace ShadowLines.Forms
             txtMudarData.Visible = visivel;
 
             btnReagendar.Visible = visivel;
-            lblCancelar.Visible = visivel;
+            
         }
         private void Menu01_Load(object sender, EventArgs e)
         {
@@ -69,9 +69,9 @@ namespace ShadowLines.Forms
             painelAgendamentosUI = painelAgendamentos.CriarPainel();
             this.Controls.Add(painelAgendamentosUI);
 
-            // mostra painel de agendamentos e esconde os campos de cadastro
             painelAgendamentosUI.Visible = true;
             AlternarCamposAgendamento(false);
+
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -128,6 +128,42 @@ namespace ShadowLines.Forms
             painelAgendamentosUI.Visible = false; // esconde o painel com agendamentos
             AlternarCamposAgendamento(false);
             Reagendamento(true);      // mostra os campos para novo agendamento
+        }
+
+        private void TattoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtServico.Text = "Tatto";
+
+            CalculoValorServico calculo = new CalculoValorServico();
+
+            calculo.ValorFinal(txtServico.Text, valor);
+
+            txtValor.Text = calculo.Valor.ToString();
+        }
+
+        private void remoçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtServico.Text = "Remoção";
+        }
+
+        private void reconstruçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtServico.Text = "Reconstrução";
+        }
+
+        private void coberturaDeTatuagemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtServico.Text = "Cobertura de Tatuagem";
+        }
+
+        private void consultoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtServico.Text = "Consultoria";
+        }
+
+        private void tatuagemPersonalizadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtServico.Text = "Tatuagem Personalizada";
         }
     }
 }

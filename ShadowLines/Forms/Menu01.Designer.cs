@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu01));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnMudanca = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnSituacao = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.roundedPanel1 = new RoundedPanel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,7 +44,6 @@
             this.lblPagamento = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblValor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblFuncionario = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblServico = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCliente = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtFuncionarioID = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPagamento = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,7 +54,6 @@
             this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCancelar = new System.Windows.Forms.Label();
-            this.lblDesign = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtMudarData = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblMudarData = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -63,15 +61,28 @@
             this.lblClient = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTitulo2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnReagendar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblDesign = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolServicos = new System.Windows.Forms.ToolStripMenuItem();
+            this.TattoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.remoçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reconstruçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.coberturaDeTatuagemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tatuagemPersonalizadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.roundedPanel1 = new RoundedPanel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.guna2PictureBox4);
             this.panel1.Controls.Add(this.btnMudanca);
             this.panel1.Controls.Add(this.guna2PictureBox3);
             this.panel1.Controls.Add(this.guna2PictureBox2);
@@ -83,6 +94,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(269, 531);
             this.panel1.TabIndex = 2;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(31, 226);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(43, 38);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox4.TabIndex = 13;
+            this.guna2PictureBox4.TabStop = false;
             // 
             // btnMudanca
             // 
@@ -185,17 +207,6 @@
             this.btnClientes.Text = "Clientes";
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.White;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
-            this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
-            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(72, 530);
-            this.roundedPanel1.TabIndex = 1;
-            // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
@@ -282,17 +293,6 @@
             this.lblFuncionario.TabIndex = 37;
             this.lblFuncionario.Text = "ID do Funcionario";
             this.lblFuncionario.Visible = false;
-            // 
-            // lblServico
-            // 
-            this.lblServico.BackColor = System.Drawing.Color.Transparent;
-            this.lblServico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServico.Location = new System.Drawing.Point(301, 249);
-            this.lblServico.Name = "lblServico";
-            this.lblServico.Size = new System.Drawing.Size(64, 20);
-            this.lblServico.TabIndex = 36;
-            this.lblServico.Text = "Serviço";
-            this.lblServico.Visible = false;
             // 
             // lblCliente
             // 
@@ -406,7 +406,7 @@
             this.btnAgendar.FillColor2 = System.Drawing.Color.DimGray;
             this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(508, 338);
+            this.btnAgendar.Location = new System.Drawing.Point(508, 331);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(143, 37);
             this.btnAgendar.TabIndex = 12;
@@ -460,11 +460,11 @@
             // 
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(423, 117);
+            this.lblTitulo.Location = new System.Drawing.Point(301, 127);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(316, 26);
+            this.lblTitulo.Size = new System.Drawing.Size(271, 26);
             this.lblTitulo.TabIndex = 44;
-            this.lblTitulo.Text = "Agendar horários para clientes";
+            this.lblTitulo.Text = "Agendamento dos clientes";
             this.lblTitulo.Visible = false;
             // 
             // lblCancelar
@@ -473,24 +473,13 @@
             this.lblCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCancelar.ForeColor = System.Drawing.Color.Blue;
-            this.lblCancelar.Location = new System.Drawing.Point(544, 390);
+            this.lblCancelar.Location = new System.Drawing.Point(546, 390);
             this.lblCancelar.Name = "lblCancelar";
             this.lblCancelar.Size = new System.Drawing.Size(75, 17);
             this.lblCancelar.TabIndex = 45;
             this.lblCancelar.Text = "Cancelar";
             this.lblCancelar.Visible = false;
             this.lblCancelar.Click += new System.EventHandler(this.lblCancelar_Click);
-            // 
-            // lblDesign
-            // 
-            this.lblDesign.BackColor = System.Drawing.Color.Transparent;
-            this.lblDesign.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesign.Location = new System.Drawing.Point(387, 345);
-            this.lblDesign.Name = "lblDesign";
-            this.lblDesign.Size = new System.Drawing.Size(381, 42);
-            this.lblDesign.TabIndex = 46;
-            this.lblDesign.Text = "_____________________";
-            this.lblDesign.Visible = false;
             // 
             // guna2HtmlLabel1
             // 
@@ -517,7 +506,7 @@
             this.txtMudarData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMudarData.ForeColor = System.Drawing.Color.Black;
             this.txtMudarData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMudarData.Location = new System.Drawing.Point(479, 270);
+            this.txtMudarData.Location = new System.Drawing.Point(805, 419);
             this.txtMudarData.Name = "txtMudarData";
             this.txtMudarData.PlaceholderText = "";
             this.txtMudarData.SelectedText = "";
@@ -529,7 +518,7 @@
             // 
             this.lblMudarData.BackColor = System.Drawing.Color.Transparent;
             this.lblMudarData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMudarData.Location = new System.Drawing.Point(479, 247);
+            this.lblMudarData.Location = new System.Drawing.Point(805, 396);
             this.lblMudarData.Name = "lblMudarData";
             this.lblMudarData.Size = new System.Drawing.Size(41, 20);
             this.lblMudarData.TabIndex = 50;
@@ -550,7 +539,7 @@
             this.txtCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCliente.ForeColor = System.Drawing.Color.Black;
             this.txtCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCliente.Location = new System.Drawing.Point(479, 193);
+            this.txtCliente.Location = new System.Drawing.Point(805, 354);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.PlaceholderText = "";
             this.txtCliente.SelectedText = "";
@@ -562,7 +551,7 @@
             // 
             this.lblClient.BackColor = System.Drawing.Color.Transparent;
             this.lblClient.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClient.Location = new System.Drawing.Point(479, 170);
+            this.lblClient.Location = new System.Drawing.Point(805, 331);
             this.lblClient.Name = "lblClient";
             this.lblClient.Size = new System.Drawing.Size(104, 20);
             this.lblClient.TabIndex = 49;
@@ -573,7 +562,7 @@
             // 
             this.lblTitulo2.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo2.Location = new System.Drawing.Point(454, 117);
+            this.lblTitulo2.Location = new System.Drawing.Point(778, 280);
             this.lblTitulo2.Name = "lblTitulo2";
             this.lblTitulo2.Size = new System.Drawing.Size(208, 26);
             this.lblTitulo2.TabIndex = 52;
@@ -593,20 +582,110 @@
             this.btnReagendar.FillColor2 = System.Drawing.Color.DimGray;
             this.btnReagendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReagendar.ForeColor = System.Drawing.Color.White;
-            this.btnReagendar.Location = new System.Drawing.Point(488, 350);
+            this.btnReagendar.Location = new System.Drawing.Point(817, 482);
             this.btnReagendar.Name = "btnReagendar";
-            this.btnReagendar.Size = new System.Drawing.Size(143, 37);
+            this.btnReagendar.Size = new System.Drawing.Size(134, 37);
             this.btnReagendar.TabIndex = 53;
             this.btnReagendar.Text = "Reagendar";
             this.btnReagendar.Visible = false;
+            // 
+            // lblDesign
+            // 
+            this.lblDesign.BackColor = System.Drawing.Color.Transparent;
+            this.lblDesign.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesign.Location = new System.Drawing.Point(382, 345);
+            this.lblDesign.Name = "lblDesign";
+            this.lblDesign.Size = new System.Drawing.Size(381, 42);
+            this.lblDesign.TabIndex = 46;
+            this.lblDesign.Text = "_____________________";
+            this.lblDesign.Visible = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolServicos});
+            this.menuStrip1.Location = new System.Drawing.Point(283, 243);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(230, 26);
+            this.menuStrip1.TabIndex = 54;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolServicos
+            // 
+            this.toolServicos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TattoToolStripMenuItem,
+            this.remoçãoToolStripMenuItem,
+            this.reconstruçãoToolStripMenuItem,
+            this.coberturaDeTatuagemToolStripMenuItem,
+            this.consultoriaToolStripMenuItem,
+            this.tatuagemPersonalizadaToolStripMenuItem});
+            this.toolServicos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolServicos.Name = "toolServicos";
+            this.toolServicos.Size = new System.Drawing.Size(102, 22);
+            this.toolServicos.Text = "  Serviços ";
+            // 
+            // TattoToolStripMenuItem
+            // 
+            this.TattoToolStripMenuItem.Name = "TattoToolStripMenuItem";
+            this.TattoToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.TattoToolStripMenuItem.Text = "Tatto";
+            this.TattoToolStripMenuItem.Click += new System.EventHandler(this.TattoToolStripMenuItem_Click);
+            // 
+            // remoçãoToolStripMenuItem
+            // 
+            this.remoçãoToolStripMenuItem.Name = "remoçãoToolStripMenuItem";
+            this.remoçãoToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.remoçãoToolStripMenuItem.Text = "Remoção";
+            this.remoçãoToolStripMenuItem.Click += new System.EventHandler(this.remoçãoToolStripMenuItem_Click);
+            // 
+            // reconstruçãoToolStripMenuItem
+            // 
+            this.reconstruçãoToolStripMenuItem.Name = "reconstruçãoToolStripMenuItem";
+            this.reconstruçãoToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.reconstruçãoToolStripMenuItem.Text = "Reconstrução";
+            this.reconstruçãoToolStripMenuItem.Click += new System.EventHandler(this.reconstruçãoToolStripMenuItem_Click);
+            // 
+            // coberturaDeTatuagemToolStripMenuItem
+            // 
+            this.coberturaDeTatuagemToolStripMenuItem.Name = "coberturaDeTatuagemToolStripMenuItem";
+            this.coberturaDeTatuagemToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.coberturaDeTatuagemToolStripMenuItem.Text = "Cobertura de tatuagem";
+            this.coberturaDeTatuagemToolStripMenuItem.Click += new System.EventHandler(this.coberturaDeTatuagemToolStripMenuItem_Click);
+            // 
+            // consultoriaToolStripMenuItem
+            // 
+            this.consultoriaToolStripMenuItem.Name = "consultoriaToolStripMenuItem";
+            this.consultoriaToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.consultoriaToolStripMenuItem.Text = "Consultoria";
+            this.consultoriaToolStripMenuItem.Click += new System.EventHandler(this.consultoriaToolStripMenuItem_Click);
+            // 
+            // tatuagemPersonalizadaToolStripMenuItem
+            // 
+            this.tatuagemPersonalizadaToolStripMenuItem.Name = "tatuagemPersonalizadaToolStripMenuItem";
+            this.tatuagemPersonalizadaToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.tatuagemPersonalizadaToolStripMenuItem.Text = "Tatuagem personalizada";
+            this.tatuagemPersonalizadaToolStripMenuItem.Click += new System.EventHandler(this.tatuagemPersonalizadaToolStripMenuItem_Click);
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.BorderRadius = 20;
+            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(79, 530);
+            this.roundedPanel1.TabIndex = 1;
             // 
             // Menu01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 523);
-            this.Controls.Add(this.btnReagendar);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.lblTitulo2);
+            this.Controls.Add(this.btnReagendar);
             this.Controls.Add(this.txtMudarData);
             this.Controls.Add(this.lblMudarData);
             this.Controls.Add(this.txtCliente);
@@ -625,20 +704,22 @@
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.lblFuncionario);
-            this.Controls.Add(this.lblServico);
             this.Controls.Add(this.txtClienteID);
             this.Controls.Add(this.lblCliente);
-            this.Controls.Add(this.txtServico);
             this.Controls.Add(this.txtFuncionarioID);
             this.Controls.Add(this.txtPagamento);
             this.Controls.Add(this.lblDesign);
+            this.Controls.Add(this.txtServico);
             this.Name = "Menu01";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu01_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -658,7 +739,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPagamento;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblValor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblFuncionario;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblServico;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCliente;
         private Guna.UI2.WinForms.Guna2TextBox txtFuncionarioID;
         private Guna.UI2.WinForms.Guna2TextBox txtPagamento;
@@ -669,7 +749,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnDesconectar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
         private System.Windows.Forms.Label lblCancelar;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblDesign;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2GradientButton btnMudanca;
         private Guna.UI2.WinForms.Guna2GradientButton btnClientes;
@@ -680,5 +759,15 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblClient;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo2;
         private Guna.UI2.WinForms.Guna2GradientButton btnReagendar;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblDesign;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolServicos;
+        private System.Windows.Forms.ToolStripMenuItem TattoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem remoçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reconstruçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem coberturaDeTatuagemToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultoriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tatuagemPersonalizadaToolStripMenuItem;
     }
 }
