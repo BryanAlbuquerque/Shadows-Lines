@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu01));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnMudanca = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnSituacao = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -70,11 +67,9 @@
             this.coberturaDeTatuagemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tatuagemPersonalizadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblUsuario = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.roundedPanel1 = new RoundedPanel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -82,29 +77,17 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.guna2PictureBox4);
+            this.panel1.Controls.Add(this.guna2HtmlLabel1);
             this.panel1.Controls.Add(this.btnMudanca);
-            this.panel1.Controls.Add(this.guna2PictureBox3);
-            this.panel1.Controls.Add(this.guna2PictureBox2);
+            this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Controls.Add(this.btnSituacao);
             this.panel1.Controls.Add(this.btnAgendamentos);
             this.panel1.Controls.Add(this.btnClientes);
             this.panel1.Controls.Add(this.roundedPanel1);
-            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Location = new System.Drawing.Point(-3, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(269, 531);
+            this.panel1.Size = new System.Drawing.Size(248, 685);
             this.panel1.TabIndex = 2;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(31, 226);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(43, 38);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox4.TabIndex = 13;
-            this.guna2PictureBox4.TabStop = false;
             // 
             // btnMudanca
             // 
@@ -116,37 +99,15 @@
             this.btnMudanca.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMudanca.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMudanca.FillColor = System.Drawing.Color.Black;
-            this.btnMudanca.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnMudanca.FillColor2 = System.Drawing.Color.Navy;
             this.btnMudanca.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMudanca.ForeColor = System.Drawing.Color.White;
-            this.btnMudanca.Location = new System.Drawing.Point(72, 218);
+            this.btnMudanca.Location = new System.Drawing.Point(65, 288);
             this.btnMudanca.Name = "btnMudanca";
             this.btnMudanca.Size = new System.Drawing.Size(144, 51);
             this.btnMudanca.TabIndex = 12;
             this.btnMudanca.Text = "Mudança Horarios";
             this.btnMudanca.Click += new System.EventHandler(this.btnMudanca_Click);
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(31, 100);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(43, 36);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 11;
-            this.guna2PictureBox3.TabStop = false;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(31, 163);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(43, 38);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 10;
-            this.guna2PictureBox2.TabStop = false;
             // 
             // btnSituacao
             // 
@@ -158,10 +119,10 @@
             this.btnSituacao.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSituacao.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSituacao.FillColor = System.Drawing.Color.Black;
-            this.btnSituacao.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnSituacao.FillColor2 = System.Drawing.Color.Navy;
             this.btnSituacao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSituacao.ForeColor = System.Drawing.Color.White;
-            this.btnSituacao.Location = new System.Drawing.Point(72, 288);
+            this.btnSituacao.Location = new System.Drawing.Point(65, 358);
             this.btnSituacao.Name = "btnSituacao";
             this.btnSituacao.Size = new System.Drawing.Size(144, 51);
             this.btnSituacao.TabIndex = 6;
@@ -177,10 +138,10 @@
             this.btnAgendamentos.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAgendamentos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAgendamentos.FillColor = System.Drawing.Color.Black;
-            this.btnAgendamentos.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnAgendamentos.FillColor2 = System.Drawing.Color.Navy;
             this.btnAgendamentos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendamentos.ForeColor = System.Drawing.Color.White;
-            this.btnAgendamentos.Location = new System.Drawing.Point(72, 155);
+            this.btnAgendamentos.Location = new System.Drawing.Point(65, 225);
             this.btnAgendamentos.Name = "btnAgendamentos";
             this.btnAgendamentos.Size = new System.Drawing.Size(144, 47);
             this.btnAgendamentos.TabIndex = 4;
@@ -197,10 +158,10 @@
             this.btnClientes.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClientes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnClientes.FillColor = System.Drawing.Color.Black;
-            this.btnClientes.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnClientes.FillColor2 = System.Drawing.Color.Navy;
             this.btnClientes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.White;
-            this.btnClientes.Location = new System.Drawing.Point(72, 98);
+            this.btnClientes.Location = new System.Drawing.Point(65, 168);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(144, 38);
             this.btnClientes.TabIndex = 3;
@@ -211,7 +172,7 @@
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(250, 25);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(341, 31);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(381, 42);
             this.guna2HtmlLabel5.TabIndex = 8;
@@ -221,9 +182,9 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(226, 3);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(78, 64);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(89, 87);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 9;
             this.guna2PictureBox1.TabStop = false;
@@ -242,7 +203,7 @@
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(705, 270);
+            this.txtValor.Location = new System.Drawing.Point(725, 315);
             this.txtValor.Name = "txtValor";
             this.txtValor.PlaceholderText = "";
             this.txtValor.SelectedText = "";
@@ -254,7 +215,7 @@
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(505, 170);
+            this.lblData.Location = new System.Drawing.Point(525, 215);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(41, 20);
             this.lblData.TabIndex = 40;
@@ -265,7 +226,7 @@
             // 
             this.lblPagamento.BackColor = System.Drawing.Color.Transparent;
             this.lblPagamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPagamento.Location = new System.Drawing.Point(501, 249);
+            this.lblPagamento.Location = new System.Drawing.Point(521, 294);
             this.lblPagamento.Name = "lblPagamento";
             this.lblPagamento.Size = new System.Drawing.Size(150, 20);
             this.lblPagamento.TabIndex = 39;
@@ -276,7 +237,7 @@
             // 
             this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(705, 249);
+            this.lblValor.Location = new System.Drawing.Point(725, 294);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(45, 20);
             this.lblValor.TabIndex = 38;
@@ -287,7 +248,7 @@
             // 
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFuncionario.Location = new System.Drawing.Point(705, 172);
+            this.lblFuncionario.Location = new System.Drawing.Point(725, 217);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(143, 20);
             this.lblFuncionario.TabIndex = 37;
@@ -298,7 +259,7 @@
             // 
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(301, 170);
+            this.lblCliente.Location = new System.Drawing.Point(321, 215);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(104, 20);
             this.lblCliente.TabIndex = 35;
@@ -319,7 +280,7 @@
             this.txtFuncionarioID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFuncionarioID.ForeColor = System.Drawing.Color.Black;
             this.txtFuncionarioID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFuncionarioID.Location = new System.Drawing.Point(705, 193);
+            this.txtFuncionarioID.Location = new System.Drawing.Point(725, 238);
             this.txtFuncionarioID.Name = "txtFuncionarioID";
             this.txtFuncionarioID.PlaceholderText = "";
             this.txtFuncionarioID.SelectedText = "";
@@ -341,7 +302,7 @@
             this.txtPagamento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPagamento.ForeColor = System.Drawing.Color.Black;
             this.txtPagamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPagamento.Location = new System.Drawing.Point(501, 270);
+            this.txtPagamento.Location = new System.Drawing.Point(521, 315);
             this.txtPagamento.Name = "txtPagamento";
             this.txtPagamento.PlaceholderText = "";
             this.txtPagamento.SelectedText = "";
@@ -363,7 +324,7 @@
             this.txtServico.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtServico.ForeColor = System.Drawing.Color.Black;
             this.txtServico.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtServico.Location = new System.Drawing.Point(301, 270);
+            this.txtServico.Location = new System.Drawing.Point(321, 315);
             this.txtServico.Name = "txtServico";
             this.txtServico.PlaceholderText = "";
             this.txtServico.SelectedText = "";
@@ -385,7 +346,7 @@
             this.txtClienteID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtClienteID.ForeColor = System.Drawing.Color.Black;
             this.txtClienteID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtClienteID.Location = new System.Drawing.Point(301, 193);
+            this.txtClienteID.Location = new System.Drawing.Point(321, 238);
             this.txtClienteID.Name = "txtClienteID";
             this.txtClienteID.PlaceholderText = "";
             this.txtClienteID.SelectedText = "";
@@ -403,10 +364,10 @@
             this.btnAgendar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAgendar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAgendar.FillColor = System.Drawing.Color.Black;
-            this.btnAgendar.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnAgendar.FillColor2 = System.Drawing.Color.Navy;
             this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(508, 331);
+            this.btnAgendar.Location = new System.Drawing.Point(528, 376);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(143, 37);
             this.btnAgendar.TabIndex = 12;
@@ -428,7 +389,7 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(505, 193);
+            this.txtData.Location = new System.Drawing.Point(525, 238);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderText = "";
             this.txtData.SelectedText = "";
@@ -446,12 +407,12 @@
             this.btnDesconectar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDesconectar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDesconectar.FillColor = System.Drawing.Color.Black;
-            this.btnDesconectar.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnDesconectar.FillColor2 = System.Drawing.Color.Navy;
             this.btnDesconectar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDesconectar.ForeColor = System.Drawing.Color.White;
-            this.btnDesconectar.Location = new System.Drawing.Point(860, 3);
+            this.btnDesconectar.Location = new System.Drawing.Point(999, 3);
             this.btnDesconectar.Name = "btnDesconectar";
-            this.btnDesconectar.Size = new System.Drawing.Size(135, 35);
+            this.btnDesconectar.Size = new System.Drawing.Size(133, 32);
             this.btnDesconectar.TabIndex = 43;
             this.btnDesconectar.Text = "Desconectar";
             this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
@@ -460,7 +421,7 @@
             // 
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(301, 127);
+            this.lblTitulo.Location = new System.Drawing.Point(321, 172);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(271, 26);
             this.lblTitulo.TabIndex = 44;
@@ -473,7 +434,7 @@
             this.lblCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCancelar.ForeColor = System.Drawing.Color.Blue;
-            this.lblCancelar.Location = new System.Drawing.Point(546, 390);
+            this.lblCancelar.Location = new System.Drawing.Point(566, 435);
             this.lblCancelar.Name = "lblCancelar";
             this.lblCancelar.Size = new System.Drawing.Size(75, 17);
             this.lblCancelar.TabIndex = 45;
@@ -484,11 +445,11 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(325, 12);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(51, 80);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(246, 35);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(158, 24);
             this.guna2HtmlLabel1.TabIndex = 47;
             this.guna2HtmlLabel1.Text = "Shadows & Lines";
             // 
@@ -506,7 +467,7 @@
             this.txtMudarData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMudarData.ForeColor = System.Drawing.Color.Black;
             this.txtMudarData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMudarData.Location = new System.Drawing.Point(805, 419);
+            this.txtMudarData.Location = new System.Drawing.Point(943, 556);
             this.txtMudarData.Name = "txtMudarData";
             this.txtMudarData.PlaceholderText = "";
             this.txtMudarData.SelectedText = "";
@@ -518,7 +479,7 @@
             // 
             this.lblMudarData.BackColor = System.Drawing.Color.Transparent;
             this.lblMudarData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMudarData.Location = new System.Drawing.Point(805, 396);
+            this.lblMudarData.Location = new System.Drawing.Point(943, 533);
             this.lblMudarData.Name = "lblMudarData";
             this.lblMudarData.Size = new System.Drawing.Size(41, 20);
             this.lblMudarData.TabIndex = 50;
@@ -539,7 +500,7 @@
             this.txtCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCliente.ForeColor = System.Drawing.Color.Black;
             this.txtCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCliente.Location = new System.Drawing.Point(805, 354);
+            this.txtCliente.Location = new System.Drawing.Point(943, 479);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.PlaceholderText = "";
             this.txtCliente.SelectedText = "";
@@ -551,7 +512,7 @@
             // 
             this.lblClient.BackColor = System.Drawing.Color.Transparent;
             this.lblClient.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClient.Location = new System.Drawing.Point(805, 331);
+            this.lblClient.Location = new System.Drawing.Point(943, 456);
             this.lblClient.Name = "lblClient";
             this.lblClient.Size = new System.Drawing.Size(104, 20);
             this.lblClient.TabIndex = 49;
@@ -562,7 +523,7 @@
             // 
             this.lblTitulo2.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo2.Location = new System.Drawing.Point(778, 280);
+            this.lblTitulo2.Location = new System.Drawing.Point(906, 414);
             this.lblTitulo2.Name = "lblTitulo2";
             this.lblTitulo2.Size = new System.Drawing.Size(208, 26);
             this.lblTitulo2.TabIndex = 52;
@@ -578,11 +539,11 @@
             this.btnReagendar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReagendar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReagendar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReagendar.FillColor = System.Drawing.Color.Black;
-            this.btnReagendar.FillColor2 = System.Drawing.Color.DimGray;
+            this.btnReagendar.FillColor = System.Drawing.Color.Navy;
+            this.btnReagendar.FillColor2 = System.Drawing.Color.Black;
             this.btnReagendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReagendar.ForeColor = System.Drawing.Color.White;
-            this.btnReagendar.Location = new System.Drawing.Point(817, 482);
+            this.btnReagendar.Location = new System.Drawing.Point(803, 555);
             this.btnReagendar.Name = "btnReagendar";
             this.btnReagendar.Size = new System.Drawing.Size(134, 37);
             this.btnReagendar.TabIndex = 53;
@@ -593,7 +554,7 @@
             // 
             this.lblDesign.BackColor = System.Drawing.Color.Transparent;
             this.lblDesign.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesign.Location = new System.Drawing.Point(382, 345);
+            this.lblDesign.Location = new System.Drawing.Point(425, 390);
             this.lblDesign.Name = "lblDesign";
             this.lblDesign.Size = new System.Drawing.Size(381, 42);
             this.lblDesign.TabIndex = 46;
@@ -605,9 +566,9 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolServicos});
-            this.menuStrip1.Location = new System.Drawing.Point(283, 243);
+            this.menuStrip1.Location = new System.Drawing.Point(303, 288);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(230, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(127, 26);
             this.menuStrip1.TabIndex = 54;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -622,8 +583,9 @@
             this.tatuagemPersonalizadaToolStripMenuItem});
             this.toolServicos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolServicos.Name = "toolServicos";
-            this.toolServicos.Size = new System.Drawing.Size(102, 22);
-            this.toolServicos.Text = "  Serviços ";
+            this.toolServicos.Size = new System.Drawing.Size(119, 22);
+            this.toolServicos.Text = "  Serviços  ➜";
+            this.toolServicos.Click += new System.EventHandler(this.toolServicos_Click);
             // 
             // TattoToolStripMenuItem
             // 
@@ -667,6 +629,17 @@
             this.tatuagemPersonalizadaToolStripMenuItem.Text = "Tatuagem personalizada";
             this.tatuagemPersonalizadaToolStripMenuItem.Click += new System.EventHandler(this.tatuagemPersonalizadaToolStripMenuItem_Click);
             // 
+            // lblUsuario
+            // 
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.Blue;
+            this.lblUsuario.Location = new System.Drawing.Point(255, 12);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(115, 35);
+            this.lblUsuario.TabIndex = 55;
+            this.lblUsuario.Text = "Usuario";
+            // 
             // roundedPanel1
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.White;
@@ -675,14 +648,15 @@
             this.roundedPanel1.BorderSize = 2;
             this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(79, 530);
+            this.roundedPanel1.Size = new System.Drawing.Size(50, 684);
             this.roundedPanel1.TabIndex = 1;
             // 
             // Menu01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 523);
+            this.ClientSize = new System.Drawing.Size(1135, 679);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.btnReagendar);
@@ -690,14 +664,12 @@
             this.Controls.Add(this.lblMudarData);
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.lblClient);
-            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.lblCancelar);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.btnAgendar);
             this.Controls.Add(this.txtValor);
-            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblPagamento);
             this.Controls.Add(this.panel1);
@@ -714,9 +686,7 @@
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu01_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -732,8 +702,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2GradientButton btnAgendamentos;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2TextBox txtValor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPagamento;
@@ -760,7 +728,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo2;
         private Guna.UI2.WinForms.Guna2GradientButton btnReagendar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDesign;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolServicos;
         private System.Windows.Forms.ToolStripMenuItem TattoToolStripMenuItem;
@@ -769,5 +736,6 @@
         private System.Windows.Forms.ToolStripMenuItem coberturaDeTatuagemToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tatuagemPersonalizadaToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblUsuario;
     }
 }

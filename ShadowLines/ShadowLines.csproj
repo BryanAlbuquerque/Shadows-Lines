@@ -178,9 +178,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\CalculoValorServico.cs" />
     <Compile Include="Classes\FazerAgendamento.cs" />
-    <Compile Include="Models\ModeloAgendamentos.cs" />
+    <Compile Include="Classes\LucroDiario.cs" />
+    <Compile Include="Design\PainelLucroDiario.cs" />
+    <Compile Include="Models\LucroDiarioModel.cs" />
+    <Compile Include="Models\SessaoUsuarioModel.cs" />
+    <Compile Include="Models\AgendamentosModel.cs" />
     <Compile Include="Classes\CadastrarClientes.cs" />
     <Compile Include="Classes\CarregarDadosClientes.cs" />
     <Compile Include="Classes\CarrergarAgendamentos.cs" />

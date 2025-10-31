@@ -5,7 +5,7 @@ namespace ShadowLines.Classes
 {
     internal class Usuarios
     {
-        private static string connectionString =
+        private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
         public string UserName { get; set; }
@@ -34,35 +34,38 @@ namespace ShadowLines.Classes
         /// </summary>
         public int AutenticarUsuario()
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                string query =
-                  @"SELECT Nivel_Acesso
-                  FROM Funcionarios 
-                  WHERE Nome = @Username 
-                  AND FuncionarioID = @PasswordValue";
-
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Username", UserName);
-                command.Parameters.AddWithValue("@PasswordValue", long.Parse(Password));
-
-                try
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    connection.Open();
-                    object result = command.ExecuteScalar();
+                    string query =
+                      @"SELECT Nome, Nivel_Acesso
+                        FROM Funcionarios 
+                        WHERE Nome = @Username 
+                        AND FuncionarioID = @PasswordValue";
 
-                    if (result != null && int.TryParse(result.ToString(), out int nivel))
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@Username", UserName);
+                    command.Parameters.AddWithValue("@PasswordValue", long.Parse(Password));
+
+                    try
                     {
-                        return nivel; // 1 ou 2, conforme o BD
-                    }
+                        connection.Open();
+                        SqlDataReader reader = command.ExecuteReader();
 
-                    return 0; // falha na autenticação
+                        if (reader.Read())
+                        {
+                            SessaoUsuarioModel.NomeUsuario = reader["Nome"].ToString();
+                            SessaoUsuarioModel.NivelAcesso = Convert.ToInt32(reader["Nivel_Acesso"]);
+
+                            return SessaoUsuarioModel.NivelAcesso; // 1, 2 ou 3 conforme BD
+                        }
+
+                        return 0; // Falha de autenticação
+                    }
+                    catch
+                    {
+                        throw;
+                    }
                 }
-                catch
-                {
-                    throw; // será tratado no formulário
-                }
-            }
         }
     }
 }

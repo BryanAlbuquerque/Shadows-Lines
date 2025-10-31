@@ -11,6 +11,7 @@ namespace ShadowLines.Forms
 
         private PainelAgendamentos painelAgendamentos;
         private Panel painelAgendamentosUI;
+
         public Menu01()
         {
             InitializeComponent();
@@ -63,6 +64,7 @@ namespace ShadowLines.Forms
         }
         private void Menu01_Load(object sender, EventArgs e)
         {
+            lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
             txtData.Text = DateTime.Now.ToString();
 
             painelAgendamentos = new PainelAgendamentos();
@@ -133,37 +135,48 @@ namespace ShadowLines.Forms
         private void TattoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Tatto";
-
-            CalculoValorServico calculo = new CalculoValorServico();
-
-            calculo.ValorFinal(txtServico.Text, valor);
-
-            txtValor.Text = calculo.Valor.ToString();
+            txtValor.Text = "250.00";
+            toolServicos.Text = "Serviços ➜";
         }
 
         private void remoçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Remoção";
+            txtValor.Text = "500.00";
+            toolServicos.Text = "Serviços ➜";
         }
 
         private void reconstruçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Reconstrução";
+            txtValor.Text = "150.00";
+            toolServicos.Text = "Serviços ➜";
         }
 
         private void coberturaDeTatuagemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Cobertura de Tatuagem";
+            txtValor.Text = "200.00";
+            toolServicos.Text = "Serviços ➜";
         }
 
         private void consultoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Consultoria";
+            txtValor.Text = "50.00";
+            toolServicos.Text = "Serviços ➜";
         }
 
         private void tatuagemPersonalizadaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Tatuagem Personalizada";
+            txtValor.Text = "500.00";
+            toolServicos.Text = "Serviços ➜";
+        }
+
+        private void toolServicos_Click(object sender, EventArgs e)
+        {
+            toolServicos.Text = "Serviços ⬇";
         }
     }
 }

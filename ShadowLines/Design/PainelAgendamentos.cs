@@ -19,11 +19,11 @@ namespace ShadowLines.Design
         {
             painel = new Panel
             {
-                Location = new Point(250, 80),
+                Location = new Point(250, 100),
                 Size = new Size(600, 400),
                 BackColor = Color.White,
                 AutoScroll = true,
-                BorderStyle = BorderStyle.FixedSingle
+                BorderStyle = BorderStyle.Fixed3D
             };
 
             CarregarInformacoes();
