@@ -17,7 +17,7 @@ namespace ShadowLines.Design
                 Location = new Point(750, 100),
                 Size = new Size(350, 200),
                 BackColor = Color.FromArgb(240, 248, 255),
-                BorderStyle = BorderStyle.FixedSingle
+                BorderStyle = BorderStyle.None,
             };
 
             // Carregar as informações do banco

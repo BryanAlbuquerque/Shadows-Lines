@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\onedrive\\documentos\\shadows \u0026 lines\\shadowlines\\forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\design\\painellucrodiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:design\\painellucrodiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\design\\painelagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:design\\painelagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\classes\\lucrodiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:classes\\lucrodiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\onedrive\\documentos\\shadows \u0026 lines\\shadowlines\\ui\\painelagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:ui\\painelagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\models\\lucrodiariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:models\\lucrodiariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\onedrive\\documentos\\shadows \u0026 lines\\shadowlines\\classes\\carrergaragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:classes\\carrergaragendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\onedrive\\documentos\\shadows \u0026 lines\\shadowlines\\forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,73 +22,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LucroDiarioModel.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Models\\LucroDiarioModel.cs",
-              "RelativeDocumentMoniker": "Models\\LucroDiarioModel.cs",
-              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Models\\LucroDiarioModel.cs",
-              "RelativeToolTip": "Models\\LucroDiarioModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T15:17:52.858Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LucroDiario.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Classes\\LucroDiario.cs",
-              "RelativeDocumentMoniker": "Classes\\LucroDiario.cs",
-              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Classes\\LucroDiario.cs",
-              "RelativeToolTip": "Classes\\LucroDiario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T15:13:54.433Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PainelAgendamentos.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Design\\PainelAgendamentos.cs",
-              "RelativeDocumentMoniker": "Design\\PainelAgendamentos.cs",
-              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Design\\PainelAgendamentos.cs",
-              "RelativeToolTip": "Design\\PainelAgendamentos.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T15:41:28.669Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PainelLucroDiario.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Design\\PainelLucroDiario.cs",
-              "RelativeDocumentMoniker": "Design\\PainelLucroDiario.cs",
-              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Design\\PainelLucroDiario.cs",
-              "RelativeToolTip": "Design\\PainelLucroDiario.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowBAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T15:41:53.71Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Menu01.cs",
               "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs",
               "RelativeDocumentMoniker": "Forms\\Menu01.cs",
-              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs",
-              "RelativeToolTip": "Forms\\Menu01.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAArwJUAAAAiAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs*",
+              "RelativeToolTip": "Forms\\Menu01.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wCIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T14:49:31.733Z",
               "IsPinned": true,
@@ -112,12 +40,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Menu01.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs",
               "RelativeDocumentMoniker": "Forms\\Menu01.cs",
-              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs [Design]",
-              "RelativeToolTip": "Forms\\Menu01.cs [Design]",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs [Design]*",
+              "RelativeToolTip": "Forms\\Menu01.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T14:49:03.357Z",
               "IsPinned": true,
@@ -133,15 +61,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CarrergarAgendamentos.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Classes\\CarrergarAgendamentos.cs",
-              "RelativeDocumentMoniker": "Classes\\CarrergarAgendamentos.cs",
-              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\Classes\\CarrergarAgendamentos.cs",
-              "RelativeToolTip": "Classes\\CarrergarAgendamentos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PainelAgendamentos.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\UI\\PainelAgendamentos.cs",
+              "RelativeDocumentMoniker": "UI\\PainelAgendamentos.cs",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Shadows \u0026 Lines\\ShadowLines\\UI\\PainelAgendamentos.cs",
+              "RelativeToolTip": "UI\\PainelAgendamentos.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvx8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T14:25:14.998Z",
+              "WhenOpened": "2025-11-03T16:27:12.008Z",
               "EditorCaption": ""
             }
           ]

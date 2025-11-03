@@ -59,7 +59,7 @@
             this.lblTitulo2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnReagendar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblDesign = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.toolServicos = new System.Windows.Forms.ToolStripMenuItem();
             this.TattoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.remoçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,7 +71,7 @@
             this.roundedPanel1 = new RoundedPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,7 +118,6 @@
             this.btnMudanca.Size = new System.Drawing.Size(144, 51);
             this.btnMudanca.TabIndex = 12;
             this.btnMudanca.Text = "Mudança Horarios";
-            this.btnMudanca.Click += new System.EventHandler(this.btnMudanca_Click);
             // 
             // guna2PictureBox1
             // 
@@ -561,16 +560,18 @@
             this.lblDesign.Text = "_____________________";
             this.lblDesign.Visible = false;
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolServicos});
-            this.menuStrip1.Location = new System.Drawing.Point(303, 288);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(127, 26);
-            this.menuStrip1.TabIndex = 54;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip.Location = new System.Drawing.Point(308, 288);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.ShowItemToolTips = true;
+            this.menuStrip.Size = new System.Drawing.Size(127, 26);
+            this.menuStrip.TabIndex = 54;
+            this.menuStrip.Text = "menuStrip1";
             // 
             // toolServicos
             // 
@@ -657,7 +658,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 679);
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.btnReagendar);
             this.Controls.Add(this.txtMudarData);
@@ -688,8 +689,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -728,7 +729,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo2;
         private Guna.UI2.WinForms.Guna2GradientButton btnReagendar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDesign;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem toolServicos;
         private System.Windows.Forms.ToolStripMenuItem TattoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem remoçãoToolStripMenuItem;

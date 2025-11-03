@@ -14,7 +14,7 @@ namespace ShadowLines.Forms
         private Panel painelAgendamentosUI;
 
         private PainelLucroDiario painelLucroDiario;
-        private Panel paineLucroDiario;
+        private Panel paineLucroDiarioUI;
 
         public Menu01()
         {
@@ -32,7 +32,7 @@ namespace ShadowLines.Forms
             lblData.Visible = visivel;
             txtData.Visible = visivel;
 
-            toolServicos.Visible = visivel;
+            menuStrip.Visible = visivel;
             txtServico.Visible = visivel;
 
             lblFuncionario.Visible = visivel;
@@ -77,10 +77,12 @@ namespace ShadowLines.Forms
             this.Controls.Add(painelAgendamentosUI);
 
             //Adiciona o painel de lucro diário ao formulário
-            var painelLucro = new PainelLucroDiario();
-            this.Controls.Add(painelLucro.CriarPainel());
+            painelLucroDiario = new PainelLucroDiario();
+            paineLucroDiarioUI = painelLucroDiario.CriarPainel();
+            this.Controls.Add(paineLucroDiarioUI);
 
             painelAgendamentosUI.Visible = true;
+            paineLucroDiarioUI.Visible = true;
             AlternarCamposAgendamento(false);
 
         }
@@ -95,10 +97,9 @@ namespace ShadowLines.Forms
         private void btnAgendamentos_Click(object sender, EventArgs e)
         {
             painelAgendamentosUI.Visible = false;
-            AlternarCamposAgendamento(true);
+            paineLucroDiarioUI.Visible = false;
             Reagendamento(false);
-
-            painelLucroDiario.Visible = false;
+            AlternarCamposAgendamento(true);
         }
         private void btnAgendar_Click(object sender, EventArgs e)
         {
@@ -126,6 +127,7 @@ namespace ShadowLines.Forms
             AlternarCamposAgendamento(false);
             Reagendamento(false);
             painelAgendamentosUI.Visible = true;
+            paineLucroDiarioUI.Visible = true;
         }
 
         private void btnDesconectar_Click(object sender, EventArgs e)
@@ -137,9 +139,10 @@ namespace ShadowLines.Forms
 
         private void btnMudanca_Click(object sender, EventArgs e)
         {
-            painelAgendamentosUI.Visible = false; // esconde o painel com agendamentos
+            painelAgendamentosUI.Visible = false;
+            paineLucroDiarioUI.Visible = false;
             AlternarCamposAgendamento(false);
-            Reagendamento(true);      // mostra os campos para novo agendamento
+            Reagendamento(true);  
         }
 
         private void TattoToolStripMenuItem_Click(object sender, EventArgs e)
