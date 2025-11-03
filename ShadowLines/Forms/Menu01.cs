@@ -65,11 +65,15 @@ namespace ShadowLines.Forms
 
             btnReagendar.Visible = visivel;
 
+            lblDesign2.Visible = visivel; 
+            lblCancelar.Visible = visivel;
+
         }
         private void Menu01_Load(object sender, EventArgs e)
         {
             lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
             txtData.Text = DateTime.Now.ToString();
+            txtMudarData.Text = DateTime.Now.ToString();
 
             //Adiciona o painel de agendamentos ao formulário
             painelAgendamentos = new PainelAgendamentos();
@@ -137,14 +141,6 @@ namespace ShadowLines.Forms
             this.Hide();
         }
 
-        private void btnMudanca_Click(object sender, EventArgs e)
-        {
-            painelAgendamentosUI.Visible = false;
-            paineLucroDiarioUI.Visible = false;
-            AlternarCamposAgendamento(false);
-            Reagendamento(true);  
-        }
-
         private void TattoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Tatto";
@@ -190,6 +186,23 @@ namespace ShadowLines.Forms
         private void toolServicos_Click(object sender, EventArgs e)
         {
             toolServicos.Text = "Serviços ⬇";
+        }
+
+        private void btnMudanca_Click(object sender, EventArgs e)
+        {
+            painelAgendamentosUI.Visible = false;
+            paineLucroDiarioUI.Visible = false;
+            AlternarCamposAgendamento(false);
+            Reagendamento(true);
+        }
+
+        private void btnReagendar_Click(object sender, EventArgs e)
+        {
+            int clientId = int.Parse(txtCliente.Text);
+            DateTime novaDataHora = DateTime.Parse(txtMudarData.Text);
+
+            Reagendamento reagendamento = new Reagendamento();
+            reagendamento.AlterarHorario(clientId, novaDataHora);
         }
     }
 }
