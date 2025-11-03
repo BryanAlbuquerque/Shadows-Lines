@@ -1,7 +1,7 @@
 ﻿using System;
-using ShadowLines.Models;
-using Microsoft.Data.SqlClient;
 using System.Collections.Generic;
+using Microsoft.Data.SqlClient;
+using ShadowLines.Models;
 
 namespace ShadowLines.Classes
 {
@@ -10,15 +10,18 @@ namespace ShadowLines.Classes
         private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-
-        public List<LucroDiarioModel> ObterlucroDiario()
+        public LucroDiarioModel ObterLucroDiario()
         {
-            List<LucroDiarioModel> lista = new List<LucroDiarioModel>();
+            LucroDiarioModel model = new LucroDiarioModel();
 
             string query = @"
                 SELECT 
-                    COUNT(AgendamentoID) AS QuantidadeAgendamentos,
-                    SUM(Valor) AS LucroTotal FROM Agendamentos";
+                    COUNT(*) AS QuantidadeAgendamentos,
+                    SUM(Valor) AS LucroTotal,
+                    SUM(CASE WHEN Pagamento = 'Pago' THEN 1 ELSE 0 END) AS QuantidadePagos,
+                    SUM(CASE WHEN Situacao = 'Finalizado' THEN 1 ELSE 0 END) AS QuantidadeFinalizados
+                FROM Agendamentos
+                WHERE CONVERT(date, DataAgendamento) = CONVERT(date, GETDATE());";
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -26,19 +29,17 @@ namespace ShadowLines.Classes
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataReader dr = cmd.ExecuteReader();
 
-                while (dr.Read())
+                if (dr.Read())
                 {
-                    lista.Add(new LucroDiarioModel
-                    {
-                       LucroTotal = Convert.ToDecimal(dr["LucroTotal"]),
-                       QuantidadeAgendamentos = Convert.ToInt32(dr["QuantidadeAgendamentos"])
-                    });
+                    model.QuantidadeAgendamentos = dr["QuantidadeAgendamentos"] != DBNull.Value ? Convert.ToInt32(dr["QuantidadeAgendamentos"]) : 0;
+                    model.LucroTotal = dr["LucroTotal"] != DBNull.Value ? Convert.ToDecimal(dr["LucroTotal"]) : 0;
+                    model.QuantidadePagos = dr["QuantidadePagos"] != DBNull.Value ? Convert.ToInt32(dr["QuantidadePagos"]) : 0;
+                    model.QuantidadeFinalizados = dr["QuantidadeFinalizados"] != DBNull.Value ? Convert.ToInt32(dr["QuantidadeFinalizados"]) : 0;
                 }
                 dr.Close();
             }
 
-            return lista;
+            return model;
         }
     }
-
 }

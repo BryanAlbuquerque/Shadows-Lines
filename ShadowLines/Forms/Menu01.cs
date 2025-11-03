@@ -2,6 +2,7 @@
 using ShadowLines.Design;
 using System;
 using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -11,6 +12,9 @@ namespace ShadowLines.Forms
 
         private PainelAgendamentos painelAgendamentos;
         private Panel painelAgendamentosUI;
+
+        private PainelLucroDiario painelLucroDiario;
+        private Panel paineLucroDiario;
 
         public Menu01()
         {
@@ -60,16 +64,21 @@ namespace ShadowLines.Forms
             txtMudarData.Visible = visivel;
 
             btnReagendar.Visible = visivel;
-            
+
         }
         private void Menu01_Load(object sender, EventArgs e)
         {
             lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
             txtData.Text = DateTime.Now.ToString();
 
+            //Adiciona o painel de agendamentos ao formulário
             painelAgendamentos = new PainelAgendamentos();
             painelAgendamentosUI = painelAgendamentos.CriarPainel();
             this.Controls.Add(painelAgendamentosUI);
+
+            //Adiciona o painel de lucro diário ao formulário
+            var painelLucro = new PainelLucroDiario();
+            this.Controls.Add(painelLucro.CriarPainel());
 
             painelAgendamentosUI.Visible = true;
             AlternarCamposAgendamento(false);
@@ -88,22 +97,23 @@ namespace ShadowLines.Forms
             painelAgendamentosUI.Visible = false;
             AlternarCamposAgendamento(true);
             Reagendamento(false);
-        }
 
+            painelLucroDiario.Visible = false;
+        }
         private void btnAgendar_Click(object sender, EventArgs e)
         {
             try
             {
                 int clientId = int.Parse(txtClienteID.Text);
-                int employeeId = int.Parse(txtFuncionarioID.Text);
+                int funcionarioId = int.Parse(txtFuncionarioID.Text);
                 DateTime dataHora = DateTime.Parse(txtData.Text);
                 string servico = txtServico.Text;
                 decimal valor = decimal.Parse(txtValor.Text);
                 string pagamento = txtPagamento.Text;
 
                 var novoAgendamento = new FazerAgendamento
-                    (clientId, dataHora, servico, employeeId, valor, pagamento);
-                novoAgendamento.RegisterAppointments();
+                    (clientId, dataHora, servico, funcionarioId, valor, pagamento);
+                novoAgendamento.RegistrarAgendamento();
             }
             catch (Exception ex)
             {
@@ -135,42 +145,42 @@ namespace ShadowLines.Forms
         private void TattoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Tatto";
-            txtValor.Text = "250.00";
+            txtValor.Text = "250";
             toolServicos.Text = "Serviços ➜";
         }
 
         private void remoçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Remoção";
-            txtValor.Text = "500.00";
+            txtValor.Text = "500";
             toolServicos.Text = "Serviços ➜";
         }
 
         private void reconstruçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Reconstrução";
-            txtValor.Text = "150.00";
+            txtValor.Text = "150";
             toolServicos.Text = "Serviços ➜";
         }
 
         private void coberturaDeTatuagemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Cobertura de Tatuagem";
-            txtValor.Text = "200.00";
+            txtValor.Text = "200";
             toolServicos.Text = "Serviços ➜";
         }
 
         private void consultoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Consultoria";
-            txtValor.Text = "50.00";
+            txtValor.Text = "50";
             toolServicos.Text = "Serviços ➜";
         }
 
         private void tatuagemPersonalizadaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtServico.Text = "Tatuagem Personalizada";
-            txtValor.Text = "500.00";
+            txtValor.Text = "500";
             toolServicos.Text = "Serviços ➜";
         }
 

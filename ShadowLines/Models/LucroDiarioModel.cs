@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShadowLines.Models
 {
@@ -10,6 +6,7 @@ namespace ShadowLines.Models
     {
         public int QuantidadeAgendamentos { get; set; }
         public decimal LucroTotal { get; set; }
-
+        public int QuantidadePagos { get; set; }   
+        public int QuantidadeFinalizados { get; set; }
     }
 }

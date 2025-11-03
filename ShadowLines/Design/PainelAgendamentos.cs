@@ -20,7 +20,7 @@ namespace ShadowLines.Design
             painel = new Panel
             {
                 Location = new Point(250, 100),
-                Size = new Size(600, 400),
+                Size = new Size(500, 400),
                 BackColor = Color.White,
                 AutoScroll = true,
                 BorderStyle = BorderStyle.Fixed3D

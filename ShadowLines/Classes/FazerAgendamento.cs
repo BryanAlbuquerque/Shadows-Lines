@@ -8,27 +8,26 @@ namespace ShadowLines.Classes
     internal class FazerAgendamento
     {
         public int ClientID { get; set; }
-        public DateTime DateAppointments { get; set; }
-        public string Service { get; set; }
-        public int EmployeeID { get; set; }
-        public decimal Value { get; set; }
-        public string Payment { get; set; }
-        public string Situation { get; set; }
+        public int FuncionarioID { get; set; }
+        public DateTime DataAgendamento { get; set; }
+        public string Servico { get; set; }
+        public decimal Valor { get; set; }
+        public string Pagamento { get; set; }
 
         private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public FazerAgendamento(int clientID, DateTime dateAppointments, string service,
-            int employeeID, decimal value, string payment)
+        public FazerAgendamento(int clientID, DateTime dataAgendamento, string servico, 
+            int funcionarioID, decimal valor, string pagamento)
         {
             ClientID = clientID;
-            DateAppointments = dateAppointments;
-            Service = service;
-            EmployeeID = employeeID;
-            Value = value;
-            Payment = payment;
-            Situation = "Em Aberto";
+            FuncionarioID = funcionarioID;
+            DataAgendamento = dataAgendamento;
+            Servico = servico;
+            Valor = valor;
+            Pagamento = pagamento;
         }
+
 
         // 🔹 1. Verifica se o funcionário já tem agendamento
         private bool IsAvailable()
@@ -41,8 +40,8 @@ namespace ShadowLines.Classes
 
                 using (var command = new SqlCommand(query, conexao))
                 {
-                    command.Parameters.AddWithValue("@FuncionarioID", EmployeeID);
-                    command.Parameters.AddWithValue("@DataAgendamento", DateAppointments);
+                    command.Parameters.AddWithValue("@FuncionarioID", FuncionarioID);
+                    command.Parameters.AddWithValue("@DataAgendamento", DataAgendamento);
 
                     conexao.Open();
                     int count = (int)command.ExecuteScalar();
@@ -53,7 +52,7 @@ namespace ShadowLines.Classes
         }
 
         // 🔹 2. Cadastra o agendamento (se disponível)
-        public bool RegisterAppointments()
+        public bool RegistrarAgendamento()
         {
             if (!IsAvailable())
             {
@@ -73,11 +72,11 @@ namespace ShadowLines.Classes
                 using (var command = new SqlCommand(query, conexao))
                 {
                     command.Parameters.AddWithValue("@ClienteID", ClientID);
-                    command.Parameters.AddWithValue("@FuncionarioID", EmployeeID);
-                    command.Parameters.AddWithValue("@DataAgendamento", DateAppointments);
-                    command.Parameters.AddWithValue("@Servico", Service);
-                    command.Parameters.AddWithValue("@Valor", Value);
-                    command.Parameters.AddWithValue("@Pagamento", Payment);
+                    command.Parameters.AddWithValue("@FuncionarioID", FuncionarioID);
+                    command.Parameters.AddWithValue("@DataAgendamento", DataAgendamento);
+                    command.Parameters.AddWithValue("@Servico", Servico);
+                    command.Parameters.AddWithValue("@Valor", Valor);
+                    command.Parameters.AddWithValue("@Pagamento", Pagamento);
 
                     conexao.Open();
                     int rows = command.ExecuteNonQuery();
