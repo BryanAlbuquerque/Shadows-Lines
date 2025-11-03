@@ -10,18 +10,18 @@ namespace ShadowLines.Classes
         private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public void AlterarHorario(int agendamentoId, DateTime novoHorario)
+        public void AlterarHorario(int clienteId, DateTime novoHorario)
         {
             using (var conexao = new SqlConnection(connectionString))
             {
                 string query = @"
                     UPDATE Agendamentos
                     SET DataAgendamento = @novoHorario
-                    WHERE AgendamentoID = @agendamentoId";
+                    WHERE ClienteId = @clienteId";
                 using (var comando = new SqlCommand(query, conexao))
                 {
                     comando.Parameters.AddWithValue("@novoHorario", novoHorario);
-                    comando.Parameters.AddWithValue("@agendamentoId", agendamentoId);
+                    comando.Parameters.AddWithValue("@clienteId", clienteId);
                     try
                     {
                         conexao.Open();

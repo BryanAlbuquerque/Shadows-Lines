@@ -65,7 +65,7 @@ namespace ShadowLines.Design
 
             Label lblPagos = new Label
             {
-                Text = $"✅ Já Pagos e Finalizados: {dados.QuantidadePagos}",
+                Text = $"✅ Já Pagos ou Finalizados: {dados.QuantidadePagos}",
                 Font = new Font("Segoe UI", 11, FontStyle.Regular),
                 Location = new Point(10, y),
                 AutoSize = true
