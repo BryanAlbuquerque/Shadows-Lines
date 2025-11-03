@@ -86,9 +86,9 @@ namespace ShadowLines.Design
 
                 // 🎨 Cor de fundo por status
                 if (ag.Situacao == "Cancelado")
-                    card.BackColor = Color.FromArgb(255, 230, 230);
+                    card.BackColor = Color.Red;
                 else if (ag.Pagamento == "Pago")
-                    card.BackColor = Color.FromArgb(255, 255, 210);
+                    card.BackColor = Color.YellowGreen;
                 else
                     card.BackColor = Color.FromArgb(255, 250, 235);
 
@@ -110,7 +110,7 @@ namespace ShadowLines.Design
                 Label lblVazio = new Label
                 {
                     Text = "Nenhum agendamento para hoje.",
-                    Font = new Font("Segoe UI", 12, FontStyle.Italic),
+                    Font = new Font("Segoe UI", 16, FontStyle.Italic),
                     AutoSize = true,
                     Location = new Point(20, 20)
                 };
