@@ -67,7 +67,18 @@ namespace ShadowLines.Forms
 
             lblDesign2.Visible = visivel; 
             lblCancelar.Visible = visivel;
+        }
 
+        public void UI(bool visivel) 
+        { 
+            Red.Visible = visivel;
+            lblCancelado.Visible = visivel;
+
+            YellowGreen.Visible = visivel;
+            lblPago.Visible = visivel;
+
+            White.Visible = visivel;
+            lblPendente.Visible = visivel;
         }
         private void Menu01_Load(object sender, EventArgs e)
         {
@@ -104,6 +115,7 @@ namespace ShadowLines.Forms
             paineLucroDiarioUI.Visible = false;
             Reagendamento(false);
             AlternarCamposAgendamento(true);
+            UI(false);
         }
         private void btnAgendar_Click(object sender, EventArgs e)
         {
@@ -132,6 +144,7 @@ namespace ShadowLines.Forms
             Reagendamento(false);
             painelAgendamentosUI.Visible = true;
             paineLucroDiarioUI.Visible = true;
+            UI(true);
         }
 
         private void btnDesconectar_Click(object sender, EventArgs e)
@@ -194,6 +207,7 @@ namespace ShadowLines.Forms
             paineLucroDiarioUI.Visible = false;
             AlternarCamposAgendamento(false);
             Reagendamento(true);
+            UI(false);
         }
 
         private void btnReagendar_Click(object sender, EventArgs e)

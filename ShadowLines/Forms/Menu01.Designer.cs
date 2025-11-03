@@ -36,6 +36,7 @@
             this.btnSituacao = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.roundedPanel1 = new RoundedPanel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -69,13 +70,12 @@
             this.lblUsuario = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblDesign2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCancelar = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.roundedPanel1 = new RoundedPanel();
+            this.YellowGreen = new System.Windows.Forms.TextBox();
+            this.White = new System.Windows.Forms.TextBox();
+            this.Red = new System.Windows.Forms.TextBox();
+            this.lblCancelado = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblPago = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblPendente = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.menuStrip.SuspendLayout();
@@ -196,6 +196,17 @@
             this.btnClientes.TabIndex = 3;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.BorderRadius = 20;
+            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(50, 684);
+            this.roundedPanel1.TabIndex = 1;
             // 
             // guna2HtmlLabel5
             // 
@@ -661,88 +672,77 @@
             this.lblCancelar.Visible = false;
             this.lblCancelar.Click += new System.EventHandler(this.lblCancelar_Click);
             // 
-            // textBox1
+            // YellowGreen
             // 
-            this.textBox1.BackColor = System.Drawing.Color.YellowGreen;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox1.Location = new System.Drawing.Point(478, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(21, 20);
-            this.textBox1.TabIndex = 57;
+            this.YellowGreen.BackColor = System.Drawing.Color.YellowGreen;
+            this.YellowGreen.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.YellowGreen.Location = new System.Drawing.Point(478, 79);
+            this.YellowGreen.Name = "YellowGreen";
+            this.YellowGreen.ReadOnly = true;
+            this.YellowGreen.Size = new System.Drawing.Size(21, 20);
+            this.YellowGreen.TabIndex = 57;
             // 
-            // textBox2
+            // White
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Beige;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox2.Location = new System.Drawing.Point(575, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(21, 20);
-            this.textBox2.TabIndex = 58;
+            this.White.BackColor = System.Drawing.Color.Beige;
+            this.White.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.White.Location = new System.Drawing.Point(575, 79);
+            this.White.Name = "White";
+            this.White.ReadOnly = true;
+            this.White.Size = new System.Drawing.Size(21, 20);
+            this.White.TabIndex = 58;
             // 
-            // textBox3
+            // Red
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Red;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox3.Location = new System.Drawing.Point(339, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(21, 20);
-            this.textBox3.TabIndex = 59;
+            this.Red.BackColor = System.Drawing.Color.Red;
+            this.Red.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Red.Location = new System.Drawing.Point(339, 79);
+            this.Red.Name = "Red";
+            this.Red.ReadOnly = true;
+            this.Red.Size = new System.Drawing.Size(21, 20);
+            this.Red.TabIndex = 59;
             // 
-            // guna2HtmlLabel2
+            // lblCancelado
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(363, 79);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(89, 20);
-            this.guna2HtmlLabel2.TabIndex = 60;
-            this.guna2HtmlLabel2.Text = "Cancelado";
+            this.lblCancelado.BackColor = System.Drawing.Color.Transparent;
+            this.lblCancelado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCancelado.Location = new System.Drawing.Point(363, 79);
+            this.lblCancelado.Name = "lblCancelado";
+            this.lblCancelado.Size = new System.Drawing.Size(89, 20);
+            this.lblCancelado.TabIndex = 60;
+            this.lblCancelado.Text = "Cancelado";
             // 
-            // guna2HtmlLabel3
+            // lblPago
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(503, 79);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(44, 20);
-            this.guna2HtmlLabel3.TabIndex = 61;
-            this.guna2HtmlLabel3.Text = "Pago";
+            this.lblPago.BackColor = System.Drawing.Color.Transparent;
+            this.lblPago.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPago.Location = new System.Drawing.Point(503, 79);
+            this.lblPago.Name = "lblPago";
+            this.lblPago.Size = new System.Drawing.Size(44, 20);
+            this.lblPago.TabIndex = 61;
+            this.lblPago.Text = "Pago";
             // 
-            // guna2HtmlLabel4
+            // lblPendente
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(599, 79);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(80, 20);
-            this.guna2HtmlLabel4.TabIndex = 62;
-            this.guna2HtmlLabel4.Text = "Pendente";
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.White;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
-            this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
-            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(50, 684);
-            this.roundedPanel1.TabIndex = 1;
+            this.lblPendente.BackColor = System.Drawing.Color.Transparent;
+            this.lblPendente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPendente.Location = new System.Drawing.Point(599, 79);
+            this.lblPendente.Name = "lblPendente";
+            this.lblPendente.Size = new System.Drawing.Size(80, 20);
+            this.lblPendente.TabIndex = 62;
+            this.lblPendente.Text = "Pendente";
             // 
             // Menu01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 679);
-            this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblPendente);
+            this.Controls.Add(this.lblPago);
+            this.Controls.Add(this.lblCancelado);
+            this.Controls.Add(this.Red);
+            this.Controls.Add(this.White);
+            this.Controls.Add(this.YellowGreen);
             this.Controls.Add(this.btnReagendar);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.menuStrip);
@@ -827,11 +827,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblUsuario;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDesign2;
         private System.Windows.Forms.Label lblCancelar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private System.Windows.Forms.TextBox YellowGreen;
+        private System.Windows.Forms.TextBox White;
+        private System.Windows.Forms.TextBox Red;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCancelado;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPago;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPendente;
     }
 }
