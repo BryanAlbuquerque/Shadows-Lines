@@ -19,10 +19,10 @@ namespace ShadowLines
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
+            string NomeUsuario = txtNomeUsuario.Text;
+            string SenhaId = txtSenhaId.Text;
 
-            var usuario = new Usuarios(username, password);
+            var usuario = new Usuarios(NomeUsuario, SenhaId);
 
             string erro = usuario.ValidarCampos();
             if (erro != null)
@@ -51,7 +51,7 @@ namespace ShadowLines
                 }
                 else if (accessLevel == 3)
                 {
-                    MessageBox.Show("Nivél de acesso não valido para login!");
+                    MessageBox.Show("Nível de acesso não valido para login!");
                 }
                 else
                 {

@@ -10,27 +10,27 @@ namespace ShadowLines.Classes
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
         public static bool AdicionarCliente(
-            string name, string cpf, string number,
-            string email, DateTime birthday, string adress)
+            string nome, string cpf, string telefone,
+            string email, DateTime aniversario, string endereco)
         {
-            if (string.IsNullOrWhiteSpace(name) ||
+            if (string.IsNullOrWhiteSpace(nome) ||
                 string.IsNullOrWhiteSpace(cpf) ||
-                string.IsNullOrWhiteSpace(number) ||
+                string.IsNullOrWhiteSpace(telefone) ||
                 string.IsNullOrWhiteSpace(email) ||
-                string.IsNullOrWhiteSpace(adress))
+                string.IsNullOrWhiteSpace(endereco))
             {
                 MessageBox.Show("Erro! Existem campos em branco.", "Validação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
             // Conversão de string para tipos numéricos
-            if (!long.TryParse(cpf, out long cpfValue))
+            if (!long.TryParse(cpf, out long NumeroCpf))
             {
                 MessageBox.Show("CPF inválido. Digite apenas números.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
-            if (!long.TryParse(number, out long phoneValue))
+            if (!long.TryParse(telefone, out long NumeroTelefone))
             {
                 MessageBox.Show("Telefone inválido. Digite apenas números.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
@@ -42,16 +42,16 @@ namespace ShadowLines.Classes
                     INSERT INTO Clientes 
                     (Nome_Completo, CPF, Telefone, Email, Data_Nascimento, Endereco, DataCadastro)
                     VALUES 
-                    (@name, @cpf, @number, @email, @birthday, @adress, GETDATE())";
+                    (@nome, @cpf, @telefone, @email, @aniversario, @endereco, GETDATE())";
 
                 using (var comando = new SqlCommand(query, conexao))
                 {
-                    comando.Parameters.AddWithValue("@name", name);
-                    comando.Parameters.AddWithValue("@cpf", cpfValue);
-                    comando.Parameters.AddWithValue("@number", phoneValue);
+                    comando.Parameters.AddWithValue("@nome", nome);
+                    comando.Parameters.AddWithValue("@cpf", NumeroCpf);
+                    comando.Parameters.AddWithValue("@telefone", NumeroTelefone);
                     comando.Parameters.AddWithValue("@email", email);
-                    comando.Parameters.AddWithValue("@birthday", birthday);
-                    comando.Parameters.AddWithValue("@adress", adress);
+                    comando.Parameters.AddWithValue("@aniversario", aniversario);
+                    comando.Parameters.AddWithValue("@endereco", endereco);
 
                     try
                     {

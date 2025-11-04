@@ -31,11 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu01));
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnMudanca = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnMudanca = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSituacao = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.roundedPanel1 = new RoundedPanel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -76,7 +77,6 @@
             this.lblPago = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPendente = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.roundedPanel1 = new RoundedPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.menuStrip.SuspendLayout();
@@ -108,6 +108,17 @@
             this.guna2HtmlLabel1.TabIndex = 47;
             this.guna2HtmlLabel1.Text = "Shadows & Lines";
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(15, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(89, 87);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 9;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // btnMudanca
             // 
             this.btnMudanca.BorderRadius = 5;
@@ -127,17 +138,6 @@
             this.btnMudanca.TabIndex = 12;
             this.btnMudanca.Text = "Mudança Horarios";
             this.btnMudanca.Click += new System.EventHandler(this.btnMudanca_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(15, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(89, 87);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 9;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // btnSituacao
             // 
@@ -197,6 +197,17 @@
             this.btnClientes.TabIndex = 3;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.BorderRadius = 20;
+            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(50, 684);
+            this.roundedPanel1.TabIndex = 1;
             // 
             // guna2HtmlLabel5
             // 
@@ -724,20 +735,9 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(890, 485);
+            this.monthCalendar1.Location = new System.Drawing.Point(725, 444);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 63;
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.White;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
-            this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
-            this.roundedPanel1.Location = new System.Drawing.Point(215, -2);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(50, 684);
-            this.roundedPanel1.TabIndex = 1;
             // 
             // Menu01
             // 

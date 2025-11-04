@@ -156,6 +156,7 @@
             this.txtDataNascimento.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDataNascimento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDataNascimento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDataNascimento.ForeColor = System.Drawing.Color.Black;
             this.txtDataNascimento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDataNascimento.Location = new System.Drawing.Point(606, 318);
             this.txtDataNascimento.Name = "txtDataNascimento";
@@ -177,6 +178,7 @@
             this.txtEndereco.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEndereco.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEndereco.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEndereco.ForeColor = System.Drawing.Color.Black;
             this.txtEndereco.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEndereco.Location = new System.Drawing.Point(394, 318);
             this.txtEndereco.Name = "txtEndereco";
@@ -198,6 +200,7 @@
             this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Location = new System.Drawing.Point(194, 318);
             this.txtEmail.Name = "txtEmail";
@@ -249,6 +252,7 @@
             this.txtTelefone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTelefone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelefone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTelefone.ForeColor = System.Drawing.Color.Black;
             this.txtTelefone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelefone.Location = new System.Drawing.Point(606, 214);
             this.txtTelefone.Name = "txtTelefone";
@@ -270,6 +274,7 @@
             this.txtCpf.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCpf.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCpf.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCpf.ForeColor = System.Drawing.Color.Black;
             this.txtCpf.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCpf.Location = new System.Drawing.Point(394, 214);
             this.txtCpf.Name = "txtCpf";
@@ -291,6 +296,7 @@
             this.txtNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNome.ForeColor = System.Drawing.Color.Black;
             this.txtNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNome.Location = new System.Drawing.Point(194, 214);
             this.txtNome.Name = "txtNome";

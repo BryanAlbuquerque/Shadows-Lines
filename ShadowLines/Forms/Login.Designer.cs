@@ -30,65 +30,65 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSenhaId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNomeUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.customBackgroundPanel1 = new CustomBackgroundPanel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtPassword
+            // txtSenhaId
             // 
-            this.txtPassword.BorderColor = System.Drawing.Color.DimGray;
-            this.txtPassword.BorderRadius = 5;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(182, 317);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PlaceholderText = "";
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(200, 30);
-            this.txtPassword.TabIndex = 6;
+            this.txtSenhaId.BorderColor = System.Drawing.Color.DimGray;
+            this.txtSenhaId.BorderRadius = 5;
+            this.txtSenhaId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSenhaId.DefaultText = "";
+            this.txtSenhaId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSenhaId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSenhaId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSenhaId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSenhaId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSenhaId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSenhaId.ForeColor = System.Drawing.Color.Black;
+            this.txtSenhaId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSenhaId.Location = new System.Drawing.Point(182, 317);
+            this.txtSenhaId.Name = "txtSenhaId";
+            this.txtSenhaId.PlaceholderText = "";
+            this.txtSenhaId.SelectedText = "";
+            this.txtSenhaId.Size = new System.Drawing.Size(200, 30);
+            this.txtSenhaId.TabIndex = 6;
             // 
-            // txtUsername
+            // txtNomeUsuario
             // 
-            this.txtUsername.BorderColor = System.Drawing.Color.DimGray;
-            this.txtUsername.BorderRadius = 5;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "";
-            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(182, 232);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PlaceholderText = "";
-            this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(200, 28);
-            this.txtUsername.TabIndex = 5;
+            this.txtNomeUsuario.BorderColor = System.Drawing.Color.DimGray;
+            this.txtNomeUsuario.BorderRadius = 5;
+            this.txtNomeUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNomeUsuario.DefaultText = "";
+            this.txtNomeUsuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNomeUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNomeUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNomeUsuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNomeUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNomeUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNomeUsuario.ForeColor = System.Drawing.Color.Black;
+            this.txtNomeUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNomeUsuario.Location = new System.Drawing.Point(182, 232);
+            this.txtNomeUsuario.Name = "txtNomeUsuario";
+            this.txtNomeUsuario.PlaceholderText = "";
+            this.txtNomeUsuario.SelectedText = "";
+            this.txtNomeUsuario.Size = new System.Drawing.Size(200, 28);
+            this.txtNomeUsuario.TabIndex = 5;
             // 
             // btnLogin
             // 
@@ -119,8 +119,8 @@
             // 
             // customBackgroundPanel1
             // 
-            this.customBackgroundPanel1.Controls.Add(this.txtUsername);
-            this.customBackgroundPanel1.Controls.Add(this.txtPassword);
+            this.customBackgroundPanel1.Controls.Add(this.txtNomeUsuario);
+            this.customBackgroundPanel1.Controls.Add(this.txtSenhaId);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel4);
             this.customBackgroundPanel1.Controls.Add(this.btnLogin);
             this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox3);
@@ -134,6 +134,17 @@
             this.customBackgroundPanel1.Name = "customBackgroundPanel1";
             this.customBackgroundPanel1.Size = new System.Drawing.Size(492, 565);
             this.customBackgroundPanel1.TabIndex = 10;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Blue;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(197, 72);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(267, 39);
+            this.guna2HtmlLabel4.TabIndex = 48;
+            this.guna2HtmlLabel4.Text = "Shadows & Lines";
             // 
             // guna2PictureBox3
             // 
@@ -212,17 +223,6 @@
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Blue;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(197, 72);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(267, 39);
-            this.guna2HtmlLabel4.TabIndex = 48;
-            this.guna2HtmlLabel4.Text = "Shadows & Lines";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,8 +242,8 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private Guna.UI2.WinForms.Guna2TextBox txtUsername;
+        private Guna.UI2.WinForms.Guna2TextBox txtSenhaId;
+        private Guna.UI2.WinForms.Guna2TextBox txtNomeUsuario;
         private Guna.UI2.WinForms.Guna2GradientButton btnLogin;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private CustomBackgroundPanel customBackgroundPanel1;

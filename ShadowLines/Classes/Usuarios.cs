@@ -8,30 +8,26 @@ namespace ShadowLines.Classes
         private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public string UserName { get; set; }
-        public string Password { get; set; }
+        public string NomeUsuario { get; set; }
+        public string SenhaId{ get; set; }
 
-        public Usuarios(string userName, string password)
+        public Usuarios(string nomeUsuario, string senhaId)
         {
-            UserName = userName;
-            Password = password;
+            NomeUsuario = nomeUsuario;
+            SenhaId = senhaId;
         }
 
         public string ValidarCampos()
         {
-            if (string.IsNullOrWhiteSpace(UserName) || string.IsNullOrWhiteSpace(Password))
+            if (string.IsNullOrWhiteSpace(NomeUsuario) || string.IsNullOrWhiteSpace(SenhaId))
                 return "Erro! Existem campos em branco.";
 
-            if (!long.TryParse(Password, out _))
-                return "CPF inválido. Digite apenas números.";
+            if (!long.TryParse(SenhaId, out _))
+                return "Inválido. Digite apenas números.";
 
             return null;
         }
 
-        /// <summary>
-        /// Retorna o nível de acesso do usuário. 
-        /// Se retornar 0, significa falha na autenticação.
-        /// </summary>
         public int AutenticarUsuario()
         {
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -39,12 +35,12 @@ namespace ShadowLines.Classes
                     string query =
                       @"SELECT Nome, Nivel_Acesso
                         FROM Funcionarios 
-                        WHERE Nome = @Username 
-                        AND FuncionarioID = @PasswordValue";
+                        WHERE Nome = @NomeUsuario
+                        AND FuncionarioID = @SenhaId";
 
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@Username", UserName);
-                    command.Parameters.AddWithValue("@PasswordValue", long.Parse(Password));
+                    command.Parameters.AddWithValue("@NomeUsuario", NomeUsuario);
+                    command.Parameters.AddWithValue("@SenhaId", long.Parse(SenhaId));
 
                     try
                     {
