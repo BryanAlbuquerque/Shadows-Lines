@@ -65,7 +65,7 @@ namespace ShadowLines.Forms
 
             btnReagendar.Visible = visivel;
 
-            lblDesign2.Visible = visivel; 
+            lblDesign.Visible = visivel;
             lblCancelar.Visible = visivel;
         }
 
@@ -147,11 +147,9 @@ namespace ShadowLines.Forms
             UI(true);
         }
 
-        private void btnDesconectar_Click(object sender, EventArgs e)
+        private void toolServicos_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
-            this.Hide();
+            toolServicos.Text = "Serviços ⬇";
         }
 
         private void TattoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -159,6 +157,7 @@ namespace ShadowLines.Forms
             txtServico.Text = "Tatto";
             txtValor.Text = "250";
             toolServicos.Text = "Serviços ➜";
+
         }
 
         private void remoçãoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -166,6 +165,7 @@ namespace ShadowLines.Forms
             txtServico.Text = "Remoção";
             txtValor.Text = "500";
             toolServicos.Text = "Serviços ➜";
+
         }
 
         private void reconstruçãoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -173,6 +173,7 @@ namespace ShadowLines.Forms
             txtServico.Text = "Reconstrução";
             txtValor.Text = "150";
             toolServicos.Text = "Serviços ➜";
+
         }
 
         private void coberturaDeTatuagemToolStripMenuItem_Click(object sender, EventArgs e)
@@ -180,6 +181,7 @@ namespace ShadowLines.Forms
             txtServico.Text = "Cobertura de Tatuagem";
             txtValor.Text = "200";
             toolServicos.Text = "Serviços ➜";
+
         }
 
         private void consultoriaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -187,6 +189,7 @@ namespace ShadowLines.Forms
             txtServico.Text = "Consultoria";
             txtValor.Text = "50";
             toolServicos.Text = "Serviços ➜";
+
         }
 
         private void tatuagemPersonalizadaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -196,12 +199,7 @@ namespace ShadowLines.Forms
             toolServicos.Text = "Serviços ➜";
         }
 
-        private void toolServicos_Click(object sender, EventArgs e)
-        {
-            toolServicos.Text = "Serviços ⬇";
-        }
-
-        private void btnMudanca_Click(object sender, EventArgs e)
+        private void btnReagendamento_Click(object sender, EventArgs e)
         {
             painelAgendamentosUI.Visible = false;
             paineLucroDiarioUI.Visible = false;
@@ -212,11 +210,11 @@ namespace ShadowLines.Forms
 
         private void btnReagendar_Click(object sender, EventArgs e)
         {
-            int clientId = int.Parse(txtCliente.Text);
-            DateTime novaDataHora = DateTime.Parse(txtMudarData.Text);
+            int clienteId = int.Parse(txtCliente.Text);
+            DateTime novaData = DateTime.Parse(txtMudarData.Text);
 
-            Reagendamento reagendamento = new Reagendamento();
-            reagendamento.AlterarHorario(clientId, novaDataHora);
+            var reagendamento = new Reagendamento();
+            reagendamento.AlterarHorario(clienteId, novaData);
         }
     }
 }

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\menu01.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\menu01.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\classes\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:classes\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\menu01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\ui\\painelagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:ui\\painelagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Login.cs",
-              "RelativeDocumentMoniker": "Forms\\Login.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Login.cs",
-              "RelativeToolTip": "Forms\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAANAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Menu01.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Menu01.Designer.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.Designer.cs",
+              "RelativeToolTip": "Forms\\Menu01.Designer.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAASwI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:18:13.908Z",
+              "WhenOpened": "2025-11-07T17:39:37.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Login.cs",
-              "RelativeDocumentMoniker": "Forms\\Login.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Login.cs [Design]",
-              "RelativeToolTip": "Forms\\Login.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "PainelAgendamentos.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\UI\\PainelAgendamentos.cs",
+              "RelativeDocumentMoniker": "UI\\PainelAgendamentos.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\UI\\PainelAgendamentos.cs",
+              "RelativeToolTip": "UI\\PainelAgendamentos.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAwwFwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:18:11.862Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-07T17:16:43.341Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Classes\\Usuarios.cs",
-              "RelativeDocumentMoniker": "Classes\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Classes\\Usuarios.cs",
-              "RelativeToolTip": "Classes\\Usuarios.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBQAAAAJAAAAAAAAAA==",
+              "Title": "Menu01.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs",
+              "RelativeDocumentMoniker": "Forms\\Menu01.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs",
+              "RelativeToolTip": "Forms\\Menu01.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAqwEMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T14:15:49.238Z",
+              "WhenOpened": "2025-11-07T17:16:35.624Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu01.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs",
+              "RelativeDocumentMoniker": "Forms\\Menu01.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Menu01.cs [Design]",
+              "RelativeToolTip": "Forms\\Menu01.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T14:20:27.487Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

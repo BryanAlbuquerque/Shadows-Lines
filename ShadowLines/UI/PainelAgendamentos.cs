@@ -90,7 +90,7 @@ namespace ShadowLines.Design
                 else if (ag.Pagamento == "Pago")
                     card.BackColor = Color.YellowGreen;
                 else
-                    card.BackColor = Color.FromArgb(255, 250, 235);
+                    card.BackColor = Color.Aqua;
 
                 // Adiciona tudo ao painel do card
                 card.Controls.Add(lblNome);
