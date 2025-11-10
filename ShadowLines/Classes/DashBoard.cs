@@ -1,0 +1,91 @@
+﻿using Microsoft.Data.SqlClient;
+using System;
+using System.Collections.Generic;
+
+namespace ShadowLines.Classes
+{
+    public class Dashboard
+    {
+        private string connectionString =
+            "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=True";
+
+        public int ObterTotalAgendamentosHoje()
+        {
+            using (SqlConnection conexao = new SqlConnection(connectionString))
+            {
+                string query = @"SELECT COUNT(*) FROM Agendamentos 
+                                 WHERE CONVERT(date, DataHora) = CONVERT(date, GETDATE())";
+
+                SqlCommand cmd = new SqlCommand(query, conexao);
+                conexao.Open();
+                return (int)cmd.ExecuteScalar();
+            }
+        }
+
+        public int ObterAgendamentosCanceladosHoje()
+        {
+            using (SqlConnection conexao = new SqlConnection(connectionString))
+            {
+                string query = @"SELECT COUNT(*) FROM Agendamentos 
+                                 WHERE Status = 'Cancelado'
+                                 AND CONVERT(date, DataHora) = CONVERT(date, GETDATE())";
+
+                SqlCommand cmd = new SqlCommand(query, conexao);
+                conexao.Open();
+                return (int)cmd.ExecuteScalar();
+            }
+        }
+
+        public decimal ObterValorTotalAgendamentosHoje()
+        {
+            using (SqlConnection conexao = new SqlConnection(connectionString))
+            {
+                string query = @"SELECT SUM(Valor) FROM Agendamentos 
+                                 WHERE CONVERT(date, DataHora) = CONVERT(date, GETDATE())";
+
+                SqlCommand cmd = new SqlCommand(query, conexao);
+                conexao.Open();
+                object result = cmd.ExecuteScalar();
+                return result == DBNull.Value ? 0 : Convert.ToDecimal(result);
+            }
+        }
+
+        public List<AgendamentoInfo> ObterAgendamentosDoDia()
+        {
+            List<AgendamentoInfo> lista = new List<AgendamentoInfo>();
+
+            using (SqlConnection conexao = new SqlConnection(connectionString))
+            {
+                string query = @"
+                    SELECT c.Nome_Completo, a.Servico, a.Valor
+                    FROM Agendamentos a
+                    INNER JOIN Clientes c ON c.Id = a.ClienteId
+                    WHERE CONVERT(date, a.DataHora) = CONVERT(date, GETDATE())";
+
+                SqlCommand cmd = new SqlCommand(query, conexao);
+                conexao.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    lista.Add(new AgendamentoInfo
+                    {
+                        NomeCliente = reader.GetString(0),
+                        Servico = reader.GetString(1),
+                        Valor = reader.GetDecimal(2)
+                    });
+                }
+            }
+
+            return lista;
+        }
+    }
+
+    public class AgendamentoInfo
+    {
+        public string NomeCliente { get; set; }
+        public string Servico { get; set; }
+        public decimal Valor { get; set; }
+    }
+}

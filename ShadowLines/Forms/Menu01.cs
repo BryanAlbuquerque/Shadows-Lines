@@ -1,20 +1,11 @@
 ﻿using ShadowLines.Classes;
-using ShadowLines.Design;
 using System;
-using System.Drawing;
-using System.Globalization;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
     public partial class Menu01 : Form
     {
-
-        private PainelAgendamentos painelAgendamentos;
-        private Panel painelAgendamentosUI;
-
-        private PainelLucroDiario painelLucroDiario;
-        private Panel paineLucroDiarioUI;
 
         public Menu01()
         {
@@ -86,18 +77,7 @@ namespace ShadowLines.Forms
             txtData.Text = DateTime.Now.ToString();
             txtMudarData.Text = DateTime.Now.ToString();
 
-            //Adiciona o painel de agendamentos ao formulário
-            painelAgendamentos = new PainelAgendamentos();
-            painelAgendamentosUI = painelAgendamentos.CriarPainel();
-            this.Controls.Add(painelAgendamentosUI);
-
-            //Adiciona o painel de lucro diário ao formulário
-            painelLucroDiario = new PainelLucroDiario();
-            paineLucroDiarioUI = painelLucroDiario.CriarPainel();
-            this.Controls.Add(paineLucroDiarioUI);
-
-            painelAgendamentosUI.Visible = true;
-            paineLucroDiarioUI.Visible = true;
+           
             AlternarCamposAgendamento(false);
 
         }
@@ -111,8 +91,7 @@ namespace ShadowLines.Forms
 
         private void btnAgendamentos_Click(object sender, EventArgs e)
         {
-            painelAgendamentosUI.Visible = false;
-            paineLucroDiarioUI.Visible = false;
+          
             Reagendamento(false);
             AlternarCamposAgendamento(true);
             UI(false);
@@ -142,8 +121,6 @@ namespace ShadowLines.Forms
         {
             AlternarCamposAgendamento(false);
             Reagendamento(false);
-            painelAgendamentosUI.Visible = true;
-            paineLucroDiarioUI.Visible = true;
             UI(true);
         }
 
@@ -201,8 +178,6 @@ namespace ShadowLines.Forms
 
         private void btnReagendamento_Click(object sender, EventArgs e)
         {
-            painelAgendamentosUI.Visible = false;
-            paineLucroDiarioUI.Visible = false;
             AlternarCamposAgendamento(false);
             Reagendamento(true);
             UI(false);
