@@ -188,6 +188,10 @@
     <Compile Include="UI\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UI\PainelAgendamentosUI.cs" />
+    <Compile Include="UI\PainelCanceladosDiaUI.cs" />
+    <Compile Include="UI\PainelTotalAgendamentosUI.cs" />
+    <Compile Include="UI\PainelValorTotalDiarioUI.cs" />
     <Compile Include="UI\Panel.cs">
       <SubType>Component</SubType>
     </Compile>

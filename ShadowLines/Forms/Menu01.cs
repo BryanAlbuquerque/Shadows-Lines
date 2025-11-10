@@ -1,5 +1,7 @@
 ﻿using ShadowLines.Classes;
+using ShadowLines.Design;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -59,27 +61,28 @@ namespace ShadowLines.Forms
             lblDesign.Visible = visivel;
             lblCancelar.Visible = visivel;
         }
-
-        public void UI(bool visivel) 
-        { 
-            Red.Visible = visivel;
-            lblCancelado.Visible = visivel;
-
-            YellowGreen.Visible = visivel;
-            lblPago.Visible = visivel;
-
-            White.Visible = visivel;
-            lblPendente.Visible = visivel;
-        }
         private void Menu01_Load(object sender, EventArgs e)
         {
+            var painelTotal = new PainelTotalAgendamentosUI().CriarPainel();
+            painelTotal.Location = new Point(250, 130);
+            this.Controls.Add(painelTotal);
+
+            var painelCancelados = new PainelCanceladosDiaUI().CriarPainel();
+            painelCancelados.Location = new Point(520, 130);
+            this.Controls.Add(painelCancelados);
+
+            var painelValor = new PainelValorTotalDiarioUI().CriarPainel();
+            painelValor.Location = new Point(800, 130);
+            this.Controls.Add(painelValor);
+
+            var painel = new PainelAgendamentosUI().CriarPainel();
+            this.Controls.Add(painel);
+
             lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
             txtData.Text = DateTime.Now.ToString();
             txtMudarData.Text = DateTime.Now.ToString();
-
            
             AlternarCamposAgendamento(false);
-
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -94,7 +97,6 @@ namespace ShadowLines.Forms
           
             Reagendamento(false);
             AlternarCamposAgendamento(true);
-            UI(false);
         }
         private void btnAgendar_Click(object sender, EventArgs e)
         {
@@ -121,7 +123,6 @@ namespace ShadowLines.Forms
         {
             AlternarCamposAgendamento(false);
             Reagendamento(false);
-            UI(true);
         }
 
         private void toolServicos_Click(object sender, EventArgs e)
@@ -180,7 +181,6 @@ namespace ShadowLines.Forms
         {
             AlternarCamposAgendamento(false);
             Reagendamento(true);
-            UI(false);
         }
 
         private void btnReagendar_Click(object sender, EventArgs e)

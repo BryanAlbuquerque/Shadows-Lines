@@ -1,0 +1,144 @@
+﻿using ShadowLines.Classes;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace ShadowLines.Design
+{
+    internal class PainelAgendamentosUI
+    {
+        private Panel painel;
+        private Dashboard dashboard;
+
+        public PainelAgendamentosUI()
+        {
+            dashboard = new Dashboard();
+        }
+
+        public Panel CriarPainel()
+        {
+            painel = new Panel
+            {
+                Location = new Point(250, 250),
+                Size = new Size(550, 550),
+                AutoScroll = true,
+                BorderStyle = BorderStyle.None,
+                BackColor = Color.FromArgb(245, 245, 245)
+            };
+
+            CarregarInformacoes();
+            return painel;
+        }
+
+        private void CarregarInformacoes()
+        {
+            // usa var para evitar problemas de resolução do tipo
+            var agendamentos = dashboard.ObterAgendamentosDoDia();
+
+            int y = 15;
+
+            foreach (var ag in agendamentos)
+            {
+                // Card principal
+                Panel card = new Panel
+                {
+                    Size = new Size(510, 150),
+                    Location = new Point(20, y),
+                    BackColor = Color.White,
+                    BorderStyle = BorderStyle.FixedSingle,
+                    Padding = new Padding(10)
+                };
+
+                // sombra suave do card (pintura leve)
+                card.Paint += (s, e) =>
+                {
+                    e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                    using (var sombra = new SolidBrush(Color.FromArgb(30, 0, 0, 0)))
+                    {
+                        // desenha sombra por trás (shifted)
+                        e.Graphics.FillRectangle(sombra, new Rectangle(4, 4, card.Width - 4, card.Height - 4));
+                    }
+                };
+
+                // Nome do cliente
+                Label lblNome = new Label
+                {
+                    Text = $"👤 Cliente: {ag.NomeCliente}",
+                    Font = new Font("Segoe UI", 12, FontStyle.Bold),
+                    ForeColor = Color.Black,
+                    AutoSize = true,
+                    Location = new Point(10, 10)
+                };
+
+                // Data e horário
+                Label lblData = new Label
+                {
+                    Text = $"📅 Data: {ag.DataAgendamento:dd/MM/yyyy HH:mm}",
+                    Font = new Font("Segoe UI", 10),
+                    AutoSize = true,
+                    Location = new Point(10, 40)
+                };
+
+                // Serviço
+                Label lblServico = new Label
+                {
+                    Text = $"💼 Serviço: {ag.Servico}",
+                    Font = new Font("Segoe UI", 10),
+                    AutoSize = true,
+                    Location = new Point(10, 65)
+                };
+
+                // Valor
+                Label lblValor = new Label
+                {
+                    Text = $"💰 Valor: R$ {ag.Valor:N2}",
+                    Font = new Font("Segoe UI", 10),
+                    AutoSize = true,
+                    Location = new Point(350, 65),
+                    TextAlign = ContentAlignment.MiddleRight
+                };
+
+                // Situação e pagamento
+                Label lblSitPagamento = new Label
+                {
+                    Text = $"⚙️ Situação: {ag.Situacao}    💳 Pagamento: {ag.Pagamento}",
+                    Font = new Font("Segoe UI", 10),
+                    AutoSize = true,
+                    Location = new Point(10, 95)
+                };
+
+                // cor automática por status
+                if (!string.IsNullOrEmpty(ag.Situacao) && ag.Situacao.Equals("Cancelado", StringComparison.OrdinalIgnoreCase))
+                    card.BackColor = Color.FromArgb(255, 230, 230); // vermelho suave
+                else if (!string.IsNullOrEmpty(ag.Pagamento) && ag.Pagamento.Equals("Pago", StringComparison.OrdinalIgnoreCase))
+                    card.BackColor = Color.FromArgb(220, 255, 220); // verde suave
+                else
+                    card.BackColor = Color.FromArgb(235, 245, 255); // azul suave
+
+                // adicionar ao card
+                card.Controls.Add(lblNome);
+                card.Controls.Add(lblData);
+                card.Controls.Add(lblServico);
+                card.Controls.Add(lblValor);
+                card.Controls.Add(lblSitPagamento);
+
+                painel.Controls.Add(card);
+
+                y += card.Height + 16;
+            }
+
+            if (agendamentos == null || agendamentos.Count == 0)
+            {
+                Label lblVazio = new Label
+                {
+                    Text = "Nenhum agendamento encontrado para hoje.",
+                    Font = new Font("Segoe UI", 16, FontStyle.Italic),
+                    AutoSize = true,
+                    Location = new Point(40, 40)
+                };
+                painel.Controls.Add(lblVazio);
+            }
+        }
+    }
+}
