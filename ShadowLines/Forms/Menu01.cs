@@ -1,21 +1,33 @@
 ﻿using ShadowLines.Classes;
 using ShadowLines.Design;
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
     public partial class Menu01 : Form
     {
-
+        private Panel painelAgendamentosUI;
+        private Panel painelCanceladosDiaUI;
+        private Panel painelTotalAgendamentosUI;
+        private Panel painelValorTotalDiarioUI;
         public Menu01()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+
+            painelAgendamentosUI = new PainelAgendamentosUI().CriarPainel();
+            painelCanceladosDiaUI = new PainelCanceladosDiaUI().CriarPainel();
+            painelTotalAgendamentosUI = new PainelTotalAgendamentosUI().CriarPainel();
+            painelValorTotalDiarioUI = new PainelValorTotalDiarioUI().CriarPainel();
+
+            this.Controls.Add(painelAgendamentosUI);
+            this.Controls.Add(painelCanceladosDiaUI);
+            this.Controls.Add(painelTotalAgendamentosUI);
+            this.Controls.Add(painelValorTotalDiarioUI);
         }
 
-        private void AlternarCamposAgendamento(bool visivel)
+        private void Agendamento(bool visivel)
         {
             //Novo Agendamento
             lblTitulo.Visible = visivel;
@@ -40,10 +52,7 @@ namespace ShadowLines.Forms
             btnAgendar.Visible = visivel;
 
             lblDesign.Visible = visivel;
-
             lblCancelar.Visible = visivel;
-
-
         }
 
         public void Reagendamento(bool visivel)
@@ -61,28 +70,25 @@ namespace ShadowLines.Forms
             lblDesign.Visible = visivel;
             lblCancelar.Visible = visivel;
         }
+
+        public void Interface(bool visivel)
+        {
+            painelAgendamentosUI.Visible = visivel;
+            painelCanceladosDiaUI.Visible = visivel;
+            painelTotalAgendamentosUI.Visible = visivel;
+            painelValorTotalDiarioUI.Visible = visivel;
+
+        }
+
         private void Menu01_Load(object sender, EventArgs e)
         {
-            var painelTotal = new PainelTotalAgendamentosUI().CriarPainel();
-            painelTotal.Location = new Point(250, 130);
-            this.Controls.Add(painelTotal);
-
-            var painelCancelados = new PainelCanceladosDiaUI().CriarPainel();
-            painelCancelados.Location = new Point(520, 130);
-            this.Controls.Add(painelCancelados);
-
-            var painelValor = new PainelValorTotalDiarioUI().CriarPainel();
-            painelValor.Location = new Point(800, 130);
-            this.Controls.Add(painelValor);
-
-            var painel = new PainelAgendamentosUI().CriarPainel();
-            this.Controls.Add(painel);
-
             lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
             txtData.Text = DateTime.Now.ToString();
             txtMudarData.Text = DateTime.Now.ToString();
-           
-            AlternarCamposAgendamento(false);
+
+            Agendamento(false);
+            Reagendamento(false);
+            Interface(true);
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -94,9 +100,10 @@ namespace ShadowLines.Forms
 
         private void btnAgendamentos_Click(object sender, EventArgs e)
         {
-          
+            Interface(false);
             Reagendamento(false);
-            AlternarCamposAgendamento(true);
+            Agendamento(true);
+
         }
         private void btnAgendar_Click(object sender, EventArgs e)
         {
@@ -109,7 +116,7 @@ namespace ShadowLines.Forms
                 decimal valor = decimal.Parse(txtValor.Text);
                 string pagamento = txtPagamento.Text;
 
-                var novoAgendamento = new FazerAgendamento
+                Agendamento novoAgendamento = new Agendamento
                     (clientId, dataHora, servico, funcionarioId, valor, pagamento);
                 novoAgendamento.RegistrarAgendamento();
             }
@@ -121,7 +128,8 @@ namespace ShadowLines.Forms
 
         private void lblCancelar_Click(object sender, EventArgs e)
         {
-            AlternarCamposAgendamento(false);
+            Interface(true);
+            Agendamento(false);
             Reagendamento(false);
         }
 
@@ -179,13 +187,14 @@ namespace ShadowLines.Forms
 
         private void btnReagendamento_Click(object sender, EventArgs e)
         {
-            AlternarCamposAgendamento(false);
+            Interface(false);
+            Agendamento(false);
             Reagendamento(true);
         }
 
         private void btnReagendar_Click(object sender, EventArgs e)
         {
-            int clienteId = int.Parse(txtCliente.Text);
+            string clienteId = txtCliente.Text;
             DateTime novaData = DateTime.Parse(txtMudarData.Text);
 
             var reagendamento = new Reagendamento();

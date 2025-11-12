@@ -50,6 +50,15 @@ namespace ShadowLines.Classes
             }
         }
 
+        public class AgendamentoInfo
+        {
+            public string NomeCliente { get; set; }
+            public string Servico { get; set; }
+            public decimal Valor { get; set; }
+            public DateTime DataAgendamento { get; set; }
+            public string Situacao { get; set; }
+            public string Pagamento { get; set; }
+        }
         public List<AgendamentoInfo> ObterAgendamentosDoDia()
         {
             List<AgendamentoInfo> lista = new List<AgendamentoInfo>();
@@ -57,15 +66,16 @@ namespace ShadowLines.Classes
             using (SqlConnection conexao = new SqlConnection(connectionString))
             {
                 string query = @"
-            SELECT c.Nome_Completo,
+                SELECT c.Nome_Completo,
                    a.Servico,
                    a.Valor,
                    a.DataAgendamento,
                    a.Situacao,
                    a.Pagamento
-            FROM Agendamentos a
-            INNER JOIN Clientes c ON c.ClienteID = a.ClienteID
-            WHERE CONVERT(date, a.DataAgendamento) = CONVERT(date, GETDATE())";
+                   FROM Agendamentos a
+                   INNER JOIN Clientes c 
+                   ON c.ClienteID = a.ClienteID
+                   WHERE CONVERT(date, a.DataAgendamento) = CONVERT(date, GETDATE())";
 
                 SqlCommand cmd = new SqlCommand(query, conexao);
                 conexao.Open();
@@ -87,16 +97,6 @@ namespace ShadowLines.Classes
             }
 
             return lista;
-        }
-
-        public class AgendamentoInfo
-        {
-            public string NomeCliente { get; set; }
-            public string Servico { get; set; }
-            public decimal Valor { get; set; }
-            public DateTime DataAgendamento { get; set; }
-            public string Situacao { get; set; }
-            public string Pagamento { get; set; }
         }
     }
 }

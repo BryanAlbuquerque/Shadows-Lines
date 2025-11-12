@@ -179,7 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DashBoard.cs" />
-    <Compile Include="Classes\FazerAgendamento.cs" />
+    <Compile Include="Classes\Agendamento.cs" />
     <Compile Include="Models\SessaoUsuarioModel.cs" />
     <Compile Include="Models\AgendamentosModel.cs" />
     <Compile Include="Classes\CadastrarClientes.cs" />

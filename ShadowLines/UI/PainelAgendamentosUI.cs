@@ -33,14 +33,12 @@ namespace ShadowLines.Design
 
         private void CarregarInformacoes()
         {
-            // usa var para evitar problemas de resolução do tipo
             var agendamentos = dashboard.ObterAgendamentosDoDia();
 
             int y = 15;
 
             foreach (var ag in agendamentos)
             {
-                // Card principal
                 Panel card = new Panel
                 {
                     Size = new Size(510, 150),
@@ -50,18 +48,15 @@ namespace ShadowLines.Design
                     Padding = new Padding(10)
                 };
 
-                // sombra suave do card (pintura leve)
                 card.Paint += (s, e) =>
                 {
                     e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
                     using (var sombra = new SolidBrush(Color.FromArgb(30, 0, 0, 0)))
                     {
-                        // desenha sombra por trás (shifted)
                         e.Graphics.FillRectangle(sombra, new Rectangle(4, 4, card.Width - 4, card.Height - 4));
                     }
                 };
 
-                // Nome do cliente
                 Label lblNome = new Label
                 {
                     Text = $"👤 Cliente: {ag.NomeCliente}",
@@ -71,7 +66,6 @@ namespace ShadowLines.Design
                     Location = new Point(10, 10)
                 };
 
-                // Data e horário
                 Label lblData = new Label
                 {
                     Text = $"📅 Data: {ag.DataAgendamento:dd/MM/yyyy HH:mm}",
@@ -80,7 +74,6 @@ namespace ShadowLines.Design
                     Location = new Point(10, 40)
                 };
 
-                // Serviço
                 Label lblServico = new Label
                 {
                     Text = $"💼 Serviço: {ag.Servico}",
@@ -89,7 +82,6 @@ namespace ShadowLines.Design
                     Location = new Point(10, 65)
                 };
 
-                // Valor
                 Label lblValor = new Label
                 {
                     Text = $"💰 Valor: R$ {ag.Valor:N2}",
@@ -99,7 +91,6 @@ namespace ShadowLines.Design
                     TextAlign = ContentAlignment.MiddleRight
                 };
 
-                // Situação e pagamento
                 Label lblSitPagamento = new Label
                 {
                     Text = $"⚙️ Situação: {ag.Situacao}    💳 Pagamento: {ag.Pagamento}",
@@ -108,15 +99,13 @@ namespace ShadowLines.Design
                     Location = new Point(10, 95)
                 };
 
-                // cor automática por status
                 if (!string.IsNullOrEmpty(ag.Situacao) && ag.Situacao.Equals("Cancelado", StringComparison.OrdinalIgnoreCase))
-                    card.BackColor = Color.FromArgb(255, 230, 230); // vermelho suave
+                    card.BackColor = Color.FromArgb(255, 230, 230); 
                 else if (!string.IsNullOrEmpty(ag.Pagamento) && ag.Pagamento.Equals("Pago", StringComparison.OrdinalIgnoreCase))
-                    card.BackColor = Color.FromArgb(220, 255, 220); // verde suave
+                    card.BackColor = Color.FromArgb(220, 255, 220); 
                 else
-                    card.BackColor = Color.FromArgb(235, 245, 255); // azul suave
+                    card.BackColor = Color.FromArgb(235, 245, 255); 
 
-                // adicionar ao card
                 card.Controls.Add(lblNome);
                 card.Controls.Add(lblData);
                 card.Controls.Add(lblServico);

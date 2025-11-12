@@ -10,7 +10,7 @@ namespace ShadowLines.Classes
         private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public void AlterarHorario(int clienteId, DateTime novoHorario)
+        public void AlterarHorario(string clienteId, DateTime novoHorario)
         {
             using (var conexao = new SqlConnection(connectionString))
             {
@@ -26,13 +26,22 @@ namespace ShadowLines.Classes
                     {
                         conexao.Open();
                         int rowsAffected = comando.ExecuteNonQuery();
+
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Horário alterado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
-                        else
+                        else if(rowsAffected < 0)
                         {
                             MessageBox.Show("Nenhum agendamento encontrado com o ID fornecido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if (string.IsNullOrEmpty(clienteId)) 
+                        {
+                            MessageBox.Show("Erro! Existem espaços em branco");
+                        }
+                        else if(novoHorario < DateTime.Now) 
+                        {
+                            MessageBox.Show("Permitido somente datas futuras");
                         }
                     }
                     catch (Exception ex)

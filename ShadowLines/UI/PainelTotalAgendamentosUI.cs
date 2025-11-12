@@ -18,6 +18,7 @@ namespace ShadowLines.Design
             Panel panel = new Panel
             {
                 Size = new Size(250, 120),
+                Location = new Point(250, 130),
                 BackColor = Color.White,
                 BorderStyle = BorderStyle.FixedSingle,
                 Padding = new Padding(15)

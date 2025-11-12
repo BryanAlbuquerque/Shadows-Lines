@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Classes
 {
-    internal class FazerAgendamento
+    internal class Agendamento
     {
         public int ClientID { get; set; }
         public int FuncionarioID { get; set; }
@@ -17,7 +17,7 @@ namespace ShadowLines.Classes
         private readonly string connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public FazerAgendamento(int clientID, DateTime dataAgendamento, string servico, 
+        public Agendamento(int clientID, DateTime dataAgendamento, string servico, 
             int funcionarioID, decimal valor, string pagamento)
         {
             ClientID = clientID;
@@ -29,7 +29,6 @@ namespace ShadowLines.Classes
         }
 
 
-        // 🔹 1. Verifica se o funcionário já tem agendamento
         private bool IsAvailable()
         {
             using (var conexao = new SqlConnection(connectionString))
@@ -46,7 +45,7 @@ namespace ShadowLines.Classes
                     conexao.Open();
                     int count = (int)command.ExecuteScalar();
 
-                    return count == 0; // true = disponível
+                    return count == 0;
                 }
             }
         }
