@@ -72,9 +72,25 @@
             this.lblCancelar = new System.Windows.Forms.Label();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.btnFechar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.imgData = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.imgCliente = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.imgServico = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.imgFuncionario = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.imgValor = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.imgStatus = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.imgClienteReagendamento = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.imgDataReagendamento = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgServico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgFuncionario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgValor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgClienteReagendamento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDataReagendamento)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -152,6 +168,7 @@
             this.btnSituacao.Size = new System.Drawing.Size(144, 51);
             this.btnSituacao.TabIndex = 6;
             this.btnSituacao.Text = "Situação do Agendamento";
+            this.btnSituacao.Click += new System.EventHandler(this.btnSituacao_Click);
             // 
             // btnAgendamentos
             // 
@@ -228,8 +245,9 @@
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(725, 315);
+            this.txtValor.Location = new System.Drawing.Point(318, 272);
             this.txtValor.Name = "txtValor";
+            this.txtValor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtValor.PlaceholderText = "";
             this.txtValor.SelectedText = "";
             this.txtValor.Size = new System.Drawing.Size(161, 36);
@@ -240,7 +258,7 @@
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(525, 215);
+            this.lblData.Location = new System.Drawing.Point(629, 351);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(41, 20);
             this.lblData.TabIndex = 40;
@@ -251,7 +269,7 @@
             // 
             this.lblPagamento.BackColor = System.Drawing.Color.Transparent;
             this.lblPagamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPagamento.Location = new System.Drawing.Point(521, 294);
+            this.lblPagamento.Location = new System.Drawing.Point(322, 350);
             this.lblPagamento.Name = "lblPagamento";
             this.lblPagamento.Size = new System.Drawing.Size(150, 20);
             this.lblPagamento.TabIndex = 39;
@@ -262,7 +280,7 @@
             // 
             this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(725, 294);
+            this.lblValor.Location = new System.Drawing.Point(318, 251);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(45, 20);
             this.lblValor.TabIndex = 38;
@@ -273,7 +291,7 @@
             // 
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFuncionario.Location = new System.Drawing.Point(725, 217);
+            this.lblFuncionario.Location = new System.Drawing.Point(629, 252);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(143, 20);
             this.lblFuncionario.TabIndex = 37;
@@ -284,7 +302,7 @@
             // 
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(321, 215);
+            this.lblCliente.Location = new System.Drawing.Point(318, 157);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(104, 20);
             this.lblCliente.TabIndex = 35;
@@ -305,11 +323,12 @@
             this.txtFuncionarioID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFuncionarioID.ForeColor = System.Drawing.Color.Black;
             this.txtFuncionarioID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFuncionarioID.Location = new System.Drawing.Point(725, 238);
+            this.txtFuncionarioID.Location = new System.Drawing.Point(629, 273);
             this.txtFuncionarioID.Name = "txtFuncionarioID";
-            this.txtFuncionarioID.PlaceholderText = "";
+            this.txtFuncionarioID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtFuncionarioID.PlaceholderText = "Digite o ID do funcionario";
             this.txtFuncionarioID.SelectedText = "";
-            this.txtFuncionarioID.Size = new System.Drawing.Size(161, 36);
+            this.txtFuncionarioID.Size = new System.Drawing.Size(169, 36);
             this.txtFuncionarioID.TabIndex = 34;
             this.txtFuncionarioID.Visible = false;
             // 
@@ -327,9 +346,10 @@
             this.txtPagamento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPagamento.ForeColor = System.Drawing.Color.Black;
             this.txtPagamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPagamento.Location = new System.Drawing.Point(521, 315);
+            this.txtPagamento.Location = new System.Drawing.Point(322, 371);
             this.txtPagamento.Name = "txtPagamento";
-            this.txtPagamento.PlaceholderText = "";
+            this.txtPagamento.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPagamento.PlaceholderText = "Pendente ou Pago";
             this.txtPagamento.SelectedText = "";
             this.txtPagamento.Size = new System.Drawing.Size(161, 36);
             this.txtPagamento.TabIndex = 33;
@@ -349,11 +369,12 @@
             this.txtServico.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtServico.ForeColor = System.Drawing.Color.Black;
             this.txtServico.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtServico.Location = new System.Drawing.Point(321, 315);
+            this.txtServico.Location = new System.Drawing.Point(629, 182);
             this.txtServico.Name = "txtServico";
-            this.txtServico.PlaceholderText = "";
+            this.txtServico.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtServico.PlaceholderText = "Clique acima para escolher";
             this.txtServico.SelectedText = "";
-            this.txtServico.Size = new System.Drawing.Size(161, 36);
+            this.txtServico.Size = new System.Drawing.Size(169, 36);
             this.txtServico.TabIndex = 31;
             this.txtServico.Visible = false;
             // 
@@ -371,9 +392,10 @@
             this.txtClienteID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtClienteID.ForeColor = System.Drawing.Color.Black;
             this.txtClienteID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtClienteID.Location = new System.Drawing.Point(321, 238);
+            this.txtClienteID.Location = new System.Drawing.Point(318, 180);
             this.txtClienteID.Name = "txtClienteID";
-            this.txtClienteID.PlaceholderText = "";
+            this.txtClienteID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtClienteID.PlaceholderText = "Digite o ID do Cliente";
             this.txtClienteID.SelectedText = "";
             this.txtClienteID.Size = new System.Drawing.Size(161, 36);
             this.txtClienteID.TabIndex = 30;
@@ -392,7 +414,7 @@
             this.btnAgendar.FillColor2 = System.Drawing.Color.Navy;
             this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(528, 376);
+            this.btnAgendar.Location = new System.Drawing.Point(469, 438);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(143, 37);
             this.btnAgendar.TabIndex = 12;
@@ -414,11 +436,12 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(525, 238);
+            this.txtData.Location = new System.Drawing.Point(629, 371);
             this.txtData.Name = "txtData";
+            this.txtData.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtData.PlaceholderText = "";
             this.txtData.SelectedText = "";
-            this.txtData.Size = new System.Drawing.Size(161, 36);
+            this.txtData.Size = new System.Drawing.Size(169, 36);
             this.txtData.TabIndex = 42;
             this.txtData.Visible = false;
             // 
@@ -445,7 +468,7 @@
             // 
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(321, 172);
+            this.lblTitulo.Location = new System.Drawing.Point(341, 79);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(271, 26);
             this.lblTitulo.TabIndex = 44;
@@ -466,8 +489,9 @@
             this.txtMudarData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMudarData.ForeColor = System.Drawing.Color.Black;
             this.txtMudarData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMudarData.Location = new System.Drawing.Point(521, 315);
+            this.txtMudarData.Location = new System.Drawing.Point(478, 332);
             this.txtMudarData.Name = "txtMudarData";
+            this.txtMudarData.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMudarData.PlaceholderText = "";
             this.txtMudarData.SelectedText = "";
             this.txtMudarData.Size = new System.Drawing.Size(165, 36);
@@ -478,7 +502,7 @@
             // 
             this.lblMudarData.BackColor = System.Drawing.Color.Transparent;
             this.lblMudarData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMudarData.Location = new System.Drawing.Point(521, 292);
+            this.lblMudarData.Location = new System.Drawing.Point(478, 309);
             this.lblMudarData.Name = "lblMudarData";
             this.lblMudarData.Size = new System.Drawing.Size(41, 20);
             this.lblMudarData.TabIndex = 50;
@@ -499,8 +523,9 @@
             this.txtCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCliente.ForeColor = System.Drawing.Color.Black;
             this.txtCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCliente.Location = new System.Drawing.Point(525, 238);
+            this.txtCliente.Location = new System.Drawing.Point(478, 241);
             this.txtCliente.Name = "txtCliente";
+            this.txtCliente.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCliente.PlaceholderText = "";
             this.txtCliente.SelectedText = "";
             this.txtCliente.Size = new System.Drawing.Size(161, 36);
@@ -511,7 +536,7 @@
             // 
             this.lblClient.BackColor = System.Drawing.Color.Transparent;
             this.lblClient.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClient.Location = new System.Drawing.Point(525, 215);
+            this.lblClient.Location = new System.Drawing.Point(478, 218);
             this.lblClient.Name = "lblClient";
             this.lblClient.Size = new System.Drawing.Size(104, 20);
             this.lblClient.TabIndex = 49;
@@ -522,7 +547,7 @@
             // 
             this.lblTitulo2.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo2.Location = new System.Drawing.Point(478, 172);
+            this.lblTitulo2.Location = new System.Drawing.Point(447, 151);
             this.lblTitulo2.Name = "lblTitulo2";
             this.lblTitulo2.Size = new System.Drawing.Size(208, 26);
             this.lblTitulo2.TabIndex = 52;
@@ -542,9 +567,9 @@
             this.btnReagendar.FillColor2 = System.Drawing.Color.Black;
             this.btnReagendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReagendar.ForeColor = System.Drawing.Color.White;
-            this.btnReagendar.Location = new System.Drawing.Point(528, 376);
+            this.btnReagendar.Location = new System.Drawing.Point(475, 438);
             this.btnReagendar.Name = "btnReagendar";
-            this.btnReagendar.Size = new System.Drawing.Size(143, 37);
+            this.btnReagendar.Size = new System.Drawing.Size(132, 37);
             this.btnReagendar.TabIndex = 53;
             this.btnReagendar.Text = "Reagendar";
             this.btnReagendar.Visible = false;
@@ -554,7 +579,7 @@
             // 
             this.lblDesign.BackColor = System.Drawing.Color.Transparent;
             this.lblDesign.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesign.Location = new System.Drawing.Point(418, 396);
+            this.lblDesign.Location = new System.Drawing.Point(351, 448);
             this.lblDesign.Name = "lblDesign";
             this.lblDesign.Size = new System.Drawing.Size(381, 42);
             this.lblDesign.TabIndex = 46;
@@ -567,7 +592,7 @@
             this.menuStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolServicos});
-            this.menuStrip.Location = new System.Drawing.Point(308, 288);
+            this.menuStrip.Location = new System.Drawing.Point(610, 156);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.ShowItemToolTips = true;
             this.menuStrip.Size = new System.Drawing.Size(127, 26);
@@ -648,7 +673,7 @@
             this.lblCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCancelar.ForeColor = System.Drawing.Color.Blue;
-            this.lblCancelar.Location = new System.Drawing.Point(566, 442);
+            this.lblCancelar.Location = new System.Drawing.Point(499, 494);
             this.lblCancelar.Name = "lblCancelar";
             this.lblCancelar.Size = new System.Drawing.Size(75, 17);
             this.lblCancelar.TabIndex = 45;
@@ -682,38 +707,134 @@
             this.btnFechar.TabIndex = 63;
             this.btnFechar.Text = "Fechar";
             // 
+            // imgData
+            // 
+            this.imgData.Image = ((System.Drawing.Image)(resources.GetObject("imgData.Image")));
+            this.imgData.ImageRotate = 0F;
+            this.imgData.Location = new System.Drawing.Point(573, 359);
+            this.imgData.Name = "imgData";
+            this.imgData.Size = new System.Drawing.Size(59, 50);
+            this.imgData.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgData.TabIndex = 64;
+            this.imgData.TabStop = false;
+            // 
+            // imgCliente
+            // 
+            this.imgCliente.Image = ((System.Drawing.Image)(resources.GetObject("imgCliente.Image")));
+            this.imgCliente.ImageRotate = 0F;
+            this.imgCliente.Location = new System.Drawing.Point(263, 179);
+            this.imgCliente.Name = "imgCliente";
+            this.imgCliente.Size = new System.Drawing.Size(61, 37);
+            this.imgCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCliente.TabIndex = 65;
+            this.imgCliente.TabStop = false;
+            // 
+            // imgServico
+            // 
+            this.imgServico.Image = ((System.Drawing.Image)(resources.GetObject("imgServico.Image")));
+            this.imgServico.ImageRotate = 0F;
+            this.imgServico.Location = new System.Drawing.Point(580, 172);
+            this.imgServico.Name = "imgServico";
+            this.imgServico.Size = new System.Drawing.Size(49, 48);
+            this.imgServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgServico.TabIndex = 66;
+            this.imgServico.TabStop = false;
+            // 
+            // imgFuncionario
+            // 
+            this.imgFuncionario.Image = ((System.Drawing.Image)(resources.GetObject("imgFuncionario.Image")));
+            this.imgFuncionario.ImageRotate = 0F;
+            this.imgFuncionario.Location = new System.Drawing.Point(580, 260);
+            this.imgFuncionario.Name = "imgFuncionario";
+            this.imgFuncionario.Size = new System.Drawing.Size(46, 49);
+            this.imgFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgFuncionario.TabIndex = 67;
+            this.imgFuncionario.TabStop = false;
+            // 
+            // imgValor
+            // 
+            this.imgValor.Image = ((System.Drawing.Image)(resources.GetObject("imgValor.Image")));
+            this.imgValor.ImageRotate = 0F;
+            this.imgValor.Location = new System.Drawing.Point(277, 259);
+            this.imgValor.Name = "imgValor";
+            this.imgValor.Size = new System.Drawing.Size(44, 50);
+            this.imgValor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgValor.TabIndex = 68;
+            this.imgValor.TabStop = false;
+            // 
+            // imgStatus
+            // 
+            this.imgStatus.Image = ((System.Drawing.Image)(resources.GetObject("imgStatus.Image")));
+            this.imgStatus.ImageRotate = 0F;
+            this.imgStatus.Location = new System.Drawing.Point(256, 341);
+            this.imgStatus.Name = "imgStatus";
+            this.imgStatus.Size = new System.Drawing.Size(77, 76);
+            this.imgStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgStatus.TabIndex = 69;
+            this.imgStatus.TabStop = false;
+            // 
+            // imgClienteReagendamento
+            // 
+            this.imgClienteReagendamento.Image = ((System.Drawing.Image)(resources.GetObject("imgClienteReagendamento.Image")));
+            this.imgClienteReagendamento.ImageRotate = 0F;
+            this.imgClienteReagendamento.Location = new System.Drawing.Point(424, 237);
+            this.imgClienteReagendamento.Name = "imgClienteReagendamento";
+            this.imgClienteReagendamento.Size = new System.Drawing.Size(61, 37);
+            this.imgClienteReagendamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgClienteReagendamento.TabIndex = 70;
+            this.imgClienteReagendamento.TabStop = false;
+            // 
+            // imgDataReagendamento
+            // 
+            this.imgDataReagendamento.Image = ((System.Drawing.Image)(resources.GetObject("imgDataReagendamento.Image")));
+            this.imgDataReagendamento.ImageRotate = 0F;
+            this.imgDataReagendamento.Location = new System.Drawing.Point(424, 322);
+            this.imgDataReagendamento.Name = "imgDataReagendamento";
+            this.imgDataReagendamento.Size = new System.Drawing.Size(59, 50);
+            this.imgDataReagendamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgDataReagendamento.TabIndex = 71;
+            this.imgDataReagendamento.TabStop = false;
+            // 
             // Menu01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 679);
-            this.Controls.Add(this.btnFechar);
-            this.Controls.Add(this.btnReagendar);
-            this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.menuStrip);
-            this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.txtMudarData);
             this.Controls.Add(this.lblMudarData);
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.lblClient);
+            this.Controls.Add(this.imgDataReagendamento);
+            this.Controls.Add(this.imgClienteReagendamento);
+            this.Controls.Add(this.lblPagamento);
+            this.Controls.Add(this.txtPagamento);
+            this.Controls.Add(this.imgStatus);
+            this.Controls.Add(this.txtValor);
+            this.Controls.Add(this.lblValor);
+            this.Controls.Add(this.imgValor);
+            this.Controls.Add(this.imgFuncionario);
+            this.Controls.Add(this.txtServico);
+            this.Controls.Add(this.imgServico);
+            this.Controls.Add(this.menuStrip);
+            this.Controls.Add(this.lblCliente);
+            this.Controls.Add(this.txtClienteID);
+            this.Controls.Add(this.imgCliente);
+            this.Controls.Add(this.lblData);
+            this.Controls.Add(this.txtData);
+            this.Controls.Add(this.imgData);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.btnReagendar);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.lblCancelar);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnDesconectar);
-            this.Controls.Add(this.txtData);
             this.Controls.Add(this.btnAgendar);
-            this.Controls.Add(this.txtValor);
-            this.Controls.Add(this.lblData);
-            this.Controls.Add(this.lblPagamento);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblValor);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.lblFuncionario);
-            this.Controls.Add(this.txtClienteID);
-            this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.txtFuncionarioID);
-            this.Controls.Add(this.txtPagamento);
             this.Controls.Add(this.lblDesign);
-            this.Controls.Add(this.txtServico);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu01";
@@ -724,6 +845,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgServico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgFuncionario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgValor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgClienteReagendamento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDataReagendamento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -773,5 +902,13 @@
         private System.Windows.Forms.Label lblCancelar;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2GradientButton btnFechar;
+        private Guna.UI2.WinForms.Guna2PictureBox imgData;
+        private Guna.UI2.WinForms.Guna2PictureBox imgServico;
+        private Guna.UI2.WinForms.Guna2PictureBox imgCliente;
+        private Guna.UI2.WinForms.Guna2PictureBox imgFuncionario;
+        private Guna.UI2.WinForms.Guna2PictureBox imgValor;
+        private Guna.UI2.WinForms.Guna2PictureBox imgStatus;
+        private Guna.UI2.WinForms.Guna2PictureBox imgDataReagendamento;
+        private Guna.UI2.WinForms.Guna2PictureBox imgClienteReagendamento;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using ShadowLines.Classes;
-using ShadowLines.Design;
+using ShadowLines.UI;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -11,6 +12,7 @@ namespace ShadowLines.Forms
         private Panel painelCanceladosDiaUI;
         private Panel painelTotalAgendamentosUI;
         private Panel painelValorTotalDiarioUI;
+
         public Menu01()
         {
             InitializeComponent();
@@ -53,6 +55,13 @@ namespace ShadowLines.Forms
 
             lblDesign.Visible = visivel;
             lblCancelar.Visible = visivel;
+
+            imgCliente.Visible = visivel;
+            imgServico.Visible = visivel;
+            imgFuncionario.Visible = visivel;
+            imgStatus.Visible = visivel;
+            imgValor.Visible = visivel;
+            imgData.Visible = visivel;
         }
 
         public void Reagendamento(bool visivel)
@@ -69,6 +78,9 @@ namespace ShadowLines.Forms
 
             lblDesign.Visible = visivel;
             lblCancelar.Visible = visivel;
+
+            imgClienteReagendamento.Visible = visivel;
+            imgDataReagendamento.Visible = visivel;
         }
 
         public void Interface(bool visivel)
@@ -199,6 +211,11 @@ namespace ShadowLines.Forms
 
             var reagendamento = new Reagendamento();
             reagendamento.AlterarHorario(clienteId, novaData);
+        }
+
+        private void btnSituacao_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

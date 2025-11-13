@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using ShadowLines.Classes;
 
-namespace ShadowLines.Design
+namespace ShadowLines.UI
 {
     internal class PainelCanceladosDiaUI
     {

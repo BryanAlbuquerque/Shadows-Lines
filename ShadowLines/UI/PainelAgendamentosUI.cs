@@ -1,10 +1,9 @@
 ﻿using ShadowLines.Classes;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ShadowLines.Design
+namespace ShadowLines.UI
 {
     internal class PainelAgendamentosUI
     {
@@ -46,15 +45,6 @@ namespace ShadowLines.Design
                     BackColor = Color.White,
                     BorderStyle = BorderStyle.FixedSingle,
                     Padding = new Padding(10)
-                };
-
-                card.Paint += (s, e) =>
-                {
-                    e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                    using (var sombra = new SolidBrush(Color.FromArgb(30, 0, 0, 0)))
-                    {
-                        e.Graphics.FillRectangle(sombra, new Rectangle(4, 4, card.Width - 4, card.Height - 4));
-                    }
                 };
 
                 Label lblNome = new Label
