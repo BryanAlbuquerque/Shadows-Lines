@@ -1,97 +1,160 @@
 ﻿using System;
-using System.Data;
+using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
-using System.Windows.Forms;
 
 namespace ShadowLines.Classes
 {
     internal class Agendamento
     {
-        public int ClientID { get; set; }
+        private readonly static string _connectionString =
+            "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
+
+        public int AgendamentoID { get; set; }
+        public int ClienteID { get; set; }
         public int FuncionarioID { get; set; }
         public DateTime DataAgendamento { get; set; }
         public string Servico { get; set; }
         public decimal Valor { get; set; }
+        public string Situacao { get; set; }
         public string Pagamento { get; set; }
 
-        private readonly string connectionString =
-            "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
-
-        public Agendamento(int clientID, DateTime dataAgendamento, string servico, 
-            int funcionarioID, decimal valor, string pagamento)
+        // ==============================
+        //   SELECT - LISTAR TODOS
+        // ==============================
+        public static List<Agendamento> Listar()
         {
-            ClientID = clientID;
-            FuncionarioID = funcionarioID;
-            DataAgendamento = dataAgendamento;
-            Servico = servico;
-            Valor = valor;
-            Pagamento = pagamento;
+            var lista = new List<Agendamento>();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = "SELECT * FROM Agendamentos ORDER BY DataAgendamento DESC";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    conn.Open();
+                    using (SqlDataReader r = cmd.ExecuteReader())
+                    {
+                        while (r.Read())
+                        {
+                            lista.Add(new Agendamento()
+                            {
+                                AgendamentoID = r.GetInt32(r.GetOrdinal("AgendamentoID")),
+                                ClienteID = r.GetInt32(r.GetOrdinal("ClienteID")),
+                                FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
+                                DataAgendamento = r.GetDateTime(r.GetOrdinal("DataAgendamento")),
+                                Servico = r["Servico"].ToString(),
+                                Valor = (decimal)r["Valor"],
+                                Situacao = r["Situacao"].ToString(),
+                                Pagamento = r["Pagamento"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+
+            return lista;
         }
 
-
-        private bool IsAvailable()
+        // ==============================
+        //  SELECT POR CLIENTE
+        // ==============================
+        public static List<Agendamento> ListarPorCliente(int clienteId)
         {
-            using (var conexao = new SqlConnection(connectionString))
+            var lista = new List<Agendamento>();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"SELECT COUNT(*) FROM Agendamentos
-                                 WHERE FuncionarioID = @FuncionarioID 
-                                 AND DataAgendamento = @DataAgendamento";
+                string query = @"SELECT * FROM Agendamentos 
+                                 WHERE ClienteID = @ID
+                                 ORDER BY DataAgendamento DESC";
 
-                using (var command = new SqlCommand(query, conexao))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    command.Parameters.AddWithValue("@FuncionarioID", FuncionarioID);
-                    command.Parameters.AddWithValue("@DataAgendamento", DataAgendamento);
+                    cmd.Parameters.AddWithValue("@ID", clienteId);
 
-                    conexao.Open();
-                    int count = (int)command.ExecuteScalar();
+                    conn.Open();
+                    using (SqlDataReader r = cmd.ExecuteReader())
+                    {
+                        while (r.Read())
+                        {
+                            lista.Add(new Agendamento()
+                            {
+                                AgendamentoID = r.GetInt32(r.GetOrdinal("AgendamentoID")),
+                                ClienteID = r.GetInt32(r.GetOrdinal("ClienteID")),
+                                FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
+                                DataAgendamento = r.GetDateTime(r.GetOrdinal("DataAgendamento")),
+                                Servico = r["Servico"].ToString(),
+                                Valor = (decimal)r["Valor"],
+                                Situacao = r["Situacao"].ToString(),
+                                Pagamento = r["Pagamento"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
 
-                    return count == 0;
+            return lista;
+        }
+
+        // ==============================
+        //  INSERT
+        // ==============================
+        public bool Insert()
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+                    INSERT INTO Agendamentos 
+                    (ClienteID, FuncionarioID, DataAgendamento, Servico, Valor, Pagamento)
+                    VALUES 
+                    (@ClienteID, @FuncionarioID, @DataAgendamento, @Servico, @Valor, @Pagamento)";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ClienteID", ClienteID);
+                    cmd.Parameters.AddWithValue("@FuncionarioID", FuncionarioID);
+                    cmd.Parameters.AddWithValue("@DataAgendamento", DataAgendamento);
+                    cmd.Parameters.AddWithValue("@Servico", Servico);
+                    cmd.Parameters.AddWithValue("@Valor", Valor);
+                    cmd.Parameters.AddWithValue("@Pagamento", Pagamento);
+
+                    conn.Open();
+                    return cmd.ExecuteNonQuery() > 0;
                 }
             }
         }
 
-        // 🔹 2. Cadastra o agendamento (se disponível)
-        public bool RegistrarAgendamento()
+        // ==============================
+        //  UPDATE
+        // ==============================
+        public bool Update()
         {
-            if (!IsAvailable())
+            using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                MessageBox.Show("❌ Este horário já está ocupado para este funcionário.",
-                                "Horário Indisponível",
-                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
+                string query = @"
+                    UPDATE Agendamentos SET
+                        ClienteID = @ClienteID,
+                        FuncionarioID = @FuncionarioID,
+                        DataAgendamento = @DataAgendamento,
+                        Servico = @Servico,
+                        Valor = @Valor,
+                        Pagamento = @Pagamento,
+                        Situacao = @Situacao
+                    WHERE AgendamentoID = @ID";
 
-            using (var conexao = new SqlConnection(connectionString))
-            {
-                string query = @"INSERT INTO Agendamentos 
-                                (ClienteID, FuncionarioID, DataAgendamento, Servico, Valor, Pagamento)
-                                VALUES 
-                                (@ClienteID, @FuncionarioID, @DataAgendamento, @Servico, @Valor, @Pagamento)";
-
-                using (var command = new SqlCommand(query, conexao))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    command.Parameters.AddWithValue("@ClienteID", ClientID);
-                    command.Parameters.AddWithValue("@FuncionarioID", FuncionarioID);
-                    command.Parameters.AddWithValue("@DataAgendamento", DataAgendamento);
-                    command.Parameters.AddWithValue("@Servico", Servico);
-                    command.Parameters.AddWithValue("@Valor", Valor);
-                    command.Parameters.AddWithValue("@Pagamento", Pagamento);
+                    cmd.Parameters.AddWithValue("@ID", AgendamentoID);
+                    cmd.Parameters.AddWithValue("@ClienteID", ClienteID);
+                    cmd.Parameters.AddWithValue("@FuncionarioID", FuncionarioID);
+                    cmd.Parameters.AddWithValue("@DataAgendamento", DataAgendamento);
+                    cmd.Parameters.AddWithValue("@Servico", Servico);
+                    cmd.Parameters.AddWithValue("@Valor", Valor);
+                    cmd.Parameters.AddWithValue("@Pagamento", Pagamento);
+                    cmd.Parameters.AddWithValue("@Situacao", Situacao);
 
-                    conexao.Open();
-                    int rows = command.ExecuteNonQuery();
-
-                    if (rows > 0)
-                    {
-                        MessageBox.Show("✅ Agendamento realizado com sucesso!",
-                                        "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return true;
-                    }
-                    else
-                    {
-                        MessageBox.Show("❌ Falha ao registrar o agendamento.",
-                                        "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return false;
-                    }
+                    conn.Open();
+                    return cmd.ExecuteNonQuery() > 0;
                 }
             }
         }

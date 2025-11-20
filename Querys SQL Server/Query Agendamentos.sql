@@ -21,3 +21,7 @@ Values
 
 SELECT * FROM Agendamentos
 
+UPDATE Agendamentos
+SET Situacao = 'Finalizado'
+WHERE Pagamento = 'Pago'
+

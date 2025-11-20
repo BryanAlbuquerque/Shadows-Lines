@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ShadowLines.Classes;
+using System;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -38,20 +32,61 @@ namespace ShadowLines.Forms
 
         public void PopularComboBoxClientes()
         {
-            Cliente clientes = new Cliente();
-            comboBox1.DataSource = Cliente.ListarClientes();
-            comboBox1.DisplayMember = "Nome_Completo";
-            comboBox1.ValueMember = "ClienteID";
+            var lista = Cliente.Clientes();
+
+            comboBoxCliente.DataSource = lista;
+            comboBoxCliente.DisplayMember = "Nome_Completo";
+            comboBoxCliente.ValueMember = "ClienteID";
+            comboBoxCliente.SelectedIndex = -1;
         }
 
         public void PopularComboBoxServicos()
         {
-            // Lógica para popular o ComboBox
+            var lista = Servico.ListarServicos();
+
+            comboBoxServicos.DataSource = lista;
+            comboBoxServicos.DisplayMember = "Nome";
+            comboBoxServicos.ValueMember = "ServicoID";
+            comboBoxServicos.SelectedIndex = -1;
         }
 
         public void PopularComboBoxFuncionarios()
         {
-            // Lógica para popular o ComboBox
+            var lista = Funcionario.ListarFuncionarios();
+            comboBoxFuncionarios.DataSource = lista;
+            comboBoxFuncionarios.DisplayMember = "Nome";
+            comboBoxFuncionarios.ValueMember = "FuncionarioID";
+            comboBoxFuncionarios.SelectedIndex = -1;
+        }
+
+        private void FormAgendamento_Load(object sender, EventArgs e)
+        {
+            PopularComboBoxClientes();
+            PopularComboBoxServicos();
+            PopularComboBoxFuncionarios();
+
+            txtData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+        }
+
+        private void btnAgendar_Click(object sender, EventArgs e)
+        {
+            Agendamento agendamento = new Agendamento();
+
+            agendamento.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
+            // Lógica para agendar o serviço
+            //lÓgica para agendar o VALOR
+
+            //Logica para Selecionar o Funcionario
+
+            agendamento.DataAgendamento = Convert.ToDateTime(txtData.Text);
+        }
+
+        private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            Servico servicoSelecionado = new Servico();
+            servicoSelecionado.Valor = Convert.ToDecimal(comboBoxServicos.SelectedValue);
+
+            txtValor.Text = servicoSelecionado.Valor.ToString("F2");
         }
     }
 }

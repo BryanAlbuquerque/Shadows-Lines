@@ -17,7 +17,7 @@ namespace ShadowLines.Classes
         public string Endereco { get; set; }
         public DateTime DataCadastro { get; set; }
 
-        public static List<Cliente> ListarClientes()
+        public static List<Cliente> Clientes()
         {
             var lista = new List<Cliente>();
 

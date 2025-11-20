@@ -16,6 +16,11 @@ INSERT INTO Funcionarios
 VALUES
 ('Bryan Souza', '52341546889', '07/04/2005', 'bryanalburquerque2@gmail.com', '11974217641', 'Rua Palmira crepaldi 50', 'Gerente', '2');
 
+
 SELECT * FROM Funcionarios
 
-drop Table Funcionarios
+UPDATE Funcionarios
+SET Cargo = 'Tatuador'
+WHERE FuncionarioID = '172'
+
+

@@ -42,9 +42,9 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.comboBoxCliente = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxServicos = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFuncionarios = new System.Windows.Forms.ComboBox();
             this.labelData = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -183,6 +183,7 @@
             this.btnAgendar.Size = new System.Drawing.Size(143, 37);
             this.btnAgendar.TabIndex = 70;
             this.btnAgendar.Text = "Agendar";
+            this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
             // 
             // lblFuncionario
             // 
@@ -223,15 +224,16 @@
             this.comboBoxCliente.Size = new System.Drawing.Size(290, 21);
             this.comboBoxCliente.TabIndex = 95;
             // 
-            // comboBox1
+            // comboBoxServicos
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 13;
-            this.comboBox1.Location = new System.Drawing.Point(349, 134);
-            this.comboBox1.MaximumSize = new System.Drawing.Size(1000, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(292, 21);
-            this.comboBox1.TabIndex = 96;
+            this.comboBoxServicos.FormattingEnabled = true;
+            this.comboBoxServicos.ItemHeight = 13;
+            this.comboBoxServicos.Location = new System.Drawing.Point(349, 134);
+            this.comboBoxServicos.MaximumSize = new System.Drawing.Size(1000, 0);
+            this.comboBoxServicos.Name = "comboBoxServicos";
+            this.comboBoxServicos.Size = new System.Drawing.Size(292, 21);
+            this.comboBoxServicos.TabIndex = 96;
+            this.comboBoxServicos.SelectionChangeCommitted += new System.EventHandler(this.comboBoxServicos_SelectionChangeCommitted);
             // 
             // guna2HtmlLabel1
             // 
@@ -243,15 +245,15 @@
             this.guna2HtmlLabel1.TabIndex = 97;
             this.guna2HtmlLabel1.Text = "Serviços";
             // 
-            // comboBox2
+            // comboBoxFuncionarios
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ItemHeight = 13;
-            this.comboBox2.Location = new System.Drawing.Point(313, 209);
-            this.comboBox2.MaximumSize = new System.Drawing.Size(1000, 0);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(344, 21);
-            this.comboBox2.TabIndex = 98;
+            this.comboBoxFuncionarios.FormattingEnabled = true;
+            this.comboBoxFuncionarios.ItemHeight = 13;
+            this.comboBoxFuncionarios.Location = new System.Drawing.Point(313, 209);
+            this.comboBoxFuncionarios.MaximumSize = new System.Drawing.Size(1000, 0);
+            this.comboBoxFuncionarios.Name = "comboBoxFuncionarios";
+            this.comboBoxFuncionarios.Size = new System.Drawing.Size(344, 21);
+            this.comboBoxFuncionarios.TabIndex = 98;
             // 
             // labelData
             // 
@@ -269,9 +271,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 431);
             this.Controls.Add(this.labelData);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBoxFuncionarios);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxServicos);
             this.Controls.Add(this.comboBoxCliente);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.lblPagamento);
@@ -289,6 +291,7 @@
             this.Name = "FormAgendamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agendamentos";
+            this.Load += new System.EventHandler(this.FormAgendamento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -310,9 +313,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.ComboBox comboBoxCliente;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxServicos;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxFuncionarios;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelData;
     }
 }

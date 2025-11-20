@@ -188,6 +188,8 @@
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\DashBoard.cs" />
     <Compile Include="Classes\Agendamento.cs" />
+    <Compile Include="Classes\Funcionario.cs" />
+    <Compile Include="Classes\Servico.cs" />
     <Compile Include="Forms\FormAgendamento.cs">
       <SubType>Form</SubType>
     </Compile>
