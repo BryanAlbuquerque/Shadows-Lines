@@ -14,9 +14,9 @@ namespace ShadowLines.Forms
 
         private void ClientesDados_Load(object sender, EventArgs e)
         {
-            CarregarDadosClientes clientes = new CarregarDadosClientes();
+            //CarregarDadosClientes clientes = new CarregarDadosClientes();
 
-            dtCostumers.DataSource = clientes.CarregarDados();
+            //dtCostumers.DataSource = clientes.CarregarDados();
         }
 
         private void btnVoltar_Click_1(object sender, EventArgs e)

@@ -30,15 +30,15 @@ namespace ShadowLines.Forms
                 return;
             }
 
-            if (CadastrarClientes.AdicionarCliente(nome, cpf, numero, email, data, endereco))
-            {
-                txtNome.Clear();
-                txtCpf.Clear();
-                txtTelefone.Clear();
-                txtEmail.Clear();
-                txtDataNascimento.Clear();
-                txtEndereco.Clear();
-            }
+            //if (CadastrarClientes.AdicionarCliente(nome, cpf, numero, email, data, endereco))
+            //{
+            //    txtNome.Clear();
+            //    txtCpf.Clear();
+            //    txtTelefone.Clear();
+            //    txtEmail.Clear();
+            //    txtDataNascimento.Clear();
+            //    txtEndereco.Clear();
+            //}
         }
 
         private void btnDados_Click(object sender, EventArgs e)

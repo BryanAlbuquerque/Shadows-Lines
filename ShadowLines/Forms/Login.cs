@@ -70,15 +70,5 @@ namespace ShadowLines
             Application.Exit();
         }
 
-        private void txtNomeUsuario_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            int tecla = (int)e.KeyChar;
-
-            if (!char.IsLetterOrDigit(e.KeyChar) && tecla != 8 && tecla !=9)
-            {
-                e.Handled = true;
-                MessageBox.Show("Apenas letras são permitidas neste campo.", "Validação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
     }
 }

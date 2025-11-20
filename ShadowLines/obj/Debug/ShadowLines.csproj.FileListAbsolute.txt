@@ -42,7 +42,6 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\System.Security.P
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\System.Text.Encodings.Web.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\System.Text.Json.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\System.ValueTuple.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Azure.Core.xml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Azure.Identity.xml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
@@ -212,3 +211,6 @@ C:\Users\bryan\OneDrive\Documentos\Shadows & Lines\ShadowLines\obj\Debug\ShadowL
 C:\Users\bryan\OneDrive\Documentos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLi.331D85DA.Up2Date
 C:\Users\bryan\OneDrive\Documentos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.exe
 C:\Users\bryan\OneDrive\Documentos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.pdb
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.csproj.SuggestedBindingRedirects.cache
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormAgendamento.resources
