@@ -47,6 +47,7 @@ namespace ShadowLines.Forms
             painelTotalAgendamentosUI.Visible = visivel;
             painelValorTotalDiarioUI.Visible = visivel;
 
+            iconButtonAtualizar.Visible = visivel;
         }
 
         private void Menu01_Load(object sender, EventArgs e)
@@ -74,8 +75,41 @@ namespace ShadowLines.Forms
         private void btnReagendamento_Click(object sender, EventArgs e)
         {
             Interface(false);
-            // Mdi Form Reagendamentos
+            FormReagendamento reagendamento = new FormReagendamento();
+            reagendamento.MdiParent = this;
+            reagendamento.Show();
         }
 
+        private void RecarregarPaineis()
+        {
+            // Remove os antigos
+            this.Controls.Remove(painelAgendamentosUI);
+            this.Controls.Remove(painelCanceladosDiaUI);
+            this.Controls.Remove(painelTotalAgendamentosUI);
+            this.Controls.Remove(painelValorTotalDiarioUI);
+
+            // Cria painéis novos
+            painelAgendamentosUI = new PainelAgendamentosUI().CriarPainel();
+            painelCanceladosDiaUI = new PainelCanceladosDiaUI().CriarPainel();
+            painelTotalAgendamentosUI = new PainelTotalAgendamentosUI().CriarPainel();
+            painelValorTotalDiarioUI = new PainelValorTotalDiarioUI().CriarPainel();
+
+            // Adiciona novamente
+            this.Controls.Add(painelAgendamentosUI);
+            this.Controls.Add(painelCanceladosDiaUI);
+            this.Controls.Add(painelTotalAgendamentosUI);
+            this.Controls.Add(painelValorTotalDiarioUI);
+
+            // Atualiza visualmente
+            painelAgendamentosUI.Refresh();
+            painelCanceladosDiaUI.Refresh();
+            painelTotalAgendamentosUI.Refresh();
+            painelValorTotalDiarioUI.Refresh();
+        }
+
+        private void iconButtonAtualizar_Click(object sender, EventArgs e)
+        {
+            RecarregarPaineis();
+        }
     }
 }

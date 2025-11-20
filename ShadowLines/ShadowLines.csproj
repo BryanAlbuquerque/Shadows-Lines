@@ -196,7 +196,12 @@
     <Compile Include="Forms\FormAgendamento.Designer.cs">
       <DependentUpon>FormAgendamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Reagendamento.cs" />
+    <Compile Include="Forms\FormReagendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReagendamento.Designer.cs">
+      <DependentUpon>FormReagendamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\SessaoUsuarioModel.cs" />
     <Compile Include="UI\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
@@ -258,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu02.resx">
       <DependentUpon>Menu02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReagendamento.resx">
+      <DependentUpon>FormReagendamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

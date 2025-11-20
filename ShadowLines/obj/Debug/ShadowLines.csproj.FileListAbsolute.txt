@@ -214,3 +214,4 @@ C:\Users\bryan\OneDrive\Documentos\Shadows & Lines\ShadowLines\obj\Debug\ShadowL
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.csproj.SuggestedBindingRedirects.cache
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormAgendamento.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormReagendamento.resources

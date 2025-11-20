@@ -18,9 +18,6 @@ namespace ShadowLines.Classes
         public string Situacao { get; set; }
         public string Pagamento { get; set; }
 
-        // ==============================
-        //   SELECT - LISTAR TODOS
-        // ==============================
         public static List<Agendamento> Listar()
         {
             var lista = new List<Agendamento>();
@@ -55,9 +52,6 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        // ==============================
-        //  SELECT POR CLIENTE
-        // ==============================
         public static List<Agendamento> ListarPorCliente(int clienteId)
         {
             var lista = new List<Agendamento>();
@@ -96,9 +90,6 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        // ==============================
-        //  INSERT
-        // ==============================
         public bool Insert()
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
@@ -124,34 +115,23 @@ namespace ShadowLines.Classes
             }
         }
 
-        // ==============================
-        //  UPDATE
-        // ==============================
         public bool Update()
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
                     UPDATE Agendamentos SET
-                        ClienteID = @ClienteID,
-                        FuncionarioID = @FuncionarioID,
-                        DataAgendamento = @DataAgendamento,
-                        Servico = @Servico,
-                        Valor = @Valor,
-                        Pagamento = @Pagamento,
-                        Situacao = @Situacao
-                    WHERE AgendamentoID = @ID";
+                    DataAgendamento = @DataAgendamento,
+                    Servico = @Servico,
+                    Valor = @Valor
+                    WHERE ClienteID = @ClienteID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ID", AgendamentoID);
                     cmd.Parameters.AddWithValue("@ClienteID", ClienteID);
-                    cmd.Parameters.AddWithValue("@FuncionarioID", FuncionarioID);
                     cmd.Parameters.AddWithValue("@DataAgendamento", DataAgendamento);
                     cmd.Parameters.AddWithValue("@Servico", Servico);
                     cmd.Parameters.AddWithValue("@Valor", Valor);
-                    cmd.Parameters.AddWithValue("@Pagamento", Pagamento);
-                    cmd.Parameters.AddWithValue("@Situacao", Situacao);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
