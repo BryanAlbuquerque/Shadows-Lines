@@ -15,7 +15,7 @@ namespace ShadowLines.Classes
 
 
         // 🔹 LISTAR TODOS OS SERVIÇOS (para ComboBox, Grid, etc.)
-        public static List<Servico> ListarServicos()
+        public static List<Servico> Select()
         {
             var lista = new List<Servico>();
 
@@ -44,7 +44,7 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        public static Servico SelecionarPorID(int id)
+        public static Servico SelectSet(int id)
         {
             Servico servico = null;
 

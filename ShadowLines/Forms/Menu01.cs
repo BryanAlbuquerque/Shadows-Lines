@@ -111,5 +111,12 @@ namespace ShadowLines.Forms
         {
             RecarregarPaineis();
         }
+
+        private void btnSituacao_Click(object sender, EventArgs e)
+        {
+            FormSituacao situacao = new FormSituacao();
+            situacao.MdiParent = this;
+            situacao.Show();
+        }
     }
 }

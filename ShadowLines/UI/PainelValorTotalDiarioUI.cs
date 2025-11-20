@@ -17,7 +17,7 @@ namespace ShadowLines.UI
         {
             Panel panel = new Panel
             {
-                Size = new Size(250, 120),
+                Size = new Size(270, 120),
                 Location = new Point(900, 130),
                 BackColor = Color.White,
                 BorderStyle = BorderStyle.FixedSingle,
@@ -44,7 +44,7 @@ namespace ShadowLines.UI
 
             Label descricao = new Label
             {
-                Text = "Total de valor faturado hoje",
+                Text = "Valor total estimado de faturamento hoje",
                 Font = new Font("Segoe UI", 9, FontStyle.Regular),
                 AutoSize = true,
                 ForeColor = Color.Gray,

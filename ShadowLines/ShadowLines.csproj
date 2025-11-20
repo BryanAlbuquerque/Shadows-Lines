@@ -202,6 +202,12 @@
     <Compile Include="Forms\FormReagendamento.Designer.cs">
       <DependentUpon>FormReagendamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormSituacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSituacao.Designer.cs">
+      <DependentUpon>FormSituacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\SessaoUsuarioModel.cs" />
     <Compile Include="UI\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormAgendamento.resx">
       <DependentUpon>FormAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSituacao.resx">
+      <DependentUpon>FormSituacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

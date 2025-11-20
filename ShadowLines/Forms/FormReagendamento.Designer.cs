@@ -242,6 +242,7 @@
             this.Controls.Add(this.btnReagendar);
             this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.guna2HtmlLabel5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormReagendamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reagendamento";

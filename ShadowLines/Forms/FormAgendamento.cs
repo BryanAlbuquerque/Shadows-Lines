@@ -34,7 +34,7 @@ namespace ShadowLines.Forms
 
         public void PopularComboBoxClientes()
         {
-            var lista = Cliente.Clientes();
+            var lista = Cliente.Select();
 
             comboBoxCliente.DataSource = lista;
             comboBoxCliente.DisplayMember = "Nome_Completo";
@@ -44,7 +44,7 @@ namespace ShadowLines.Forms
 
         public void PopularComboBoxServicos()
         {
-            var lista = Servico.ListarServicos();
+            var lista = Servico.Select();
 
             comboBoxServicos.DataSource = lista;
             comboBoxServicos.DisplayMember = "Nome";
@@ -54,7 +54,7 @@ namespace ShadowLines.Forms
 
         public void PopularComboBoxFuncionarios()
         {
-            var lista = Funcionario.ListarFuncionarios();
+            var lista = Funcionario.Select();
             comboBoxFuncionarios.DataSource = lista;
             comboBoxFuncionarios.DisplayMember = "Nome";
             comboBoxFuncionarios.ValueMember = "FuncionarioID";
@@ -91,7 +91,7 @@ namespace ShadowLines.Forms
 
             int servicoID = Convert.ToInt32(comboBoxServicos.SelectedValue);
 
-            Servico servicoSelecionado = Servico.SelecionarPorID(servicoID);
+            Servico servicoSelecionado = Servico.SelectSet(servicoID);
 
             if (servicoSelecionado != null)
             {

@@ -18,7 +18,7 @@ namespace ShadowLines.Classes
         public string Situacao { get; set; }
         public string Pagamento { get; set; }
 
-        public static List<Agendamento> Listar()
+        public static List<Agendamento> Select()
         {
             var lista = new List<Agendamento>();
 
@@ -52,7 +52,7 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        public static List<Agendamento> ListarPorCliente(int clienteId)
+        public static List<Agendamento> SelectedSet(int clienteId)
         {
             var lista = new List<Agendamento>();
 

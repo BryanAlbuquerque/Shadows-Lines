@@ -19,7 +19,7 @@ namespace ShadowLines.Classes
         public string Cargo { get; set; }
         public int Nivel_Acesso { get; set; }
 
-        public static List<Funcionario> ListarFuncionarios()
+        public static List<Funcionario> Select()
         {
             var lista = new List<Funcionario>();
 
@@ -54,7 +54,7 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        public static List<Funcionario> Buscar(string termo)
+        public static List<Funcionario> SelectSet(string termo)
         {
             var lista = new List<Funcionario>();
 

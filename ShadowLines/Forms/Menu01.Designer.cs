@@ -106,6 +106,7 @@
             this.btnSituacao.Size = new System.Drawing.Size(144, 51);
             this.btnSituacao.TabIndex = 6;
             this.btnSituacao.Text = "Situação do Agendamento";
+            this.btnSituacao.Click += new System.EventHandler(this.btnSituacao_Click);
             // 
             // btnAgendamentos
             // 
