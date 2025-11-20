@@ -90,9 +90,9 @@ namespace ShadowLines.UI
                 };
 
                 if (!string.IsNullOrEmpty(ag.Situacao) && ag.Situacao.Equals("Cancelado", StringComparison.OrdinalIgnoreCase))
-                    card.BackColor = Color.FromArgb(255, 230, 230); 
+                    card.BackColor = Color.Red;
                 else if (!string.IsNullOrEmpty(ag.Pagamento) && ag.Pagamento.Equals("Pago", StringComparison.OrdinalIgnoreCase))
-                    card.BackColor = Color.FromArgb(220, 255, 220); 
+                    card.BackColor = Color.LightBlue;
                 else
                     card.BackColor = Color.FromArgb(235, 245, 255); 
 

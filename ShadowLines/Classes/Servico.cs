@@ -13,6 +13,8 @@ namespace ShadowLines.Classes
         public string Nome { get; set; }
         public decimal Valor { get; set; }
 
+
+        // 🔹 LISTAR TODOS OS SERVIÇOS (para ComboBox, Grid, etc.)
         public static List<Servico> ListarServicos()
         {
             var lista = new List<Servico>();
@@ -42,37 +44,38 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        public static List<Servico> Buscar(string termo)
+        public static Servico SelecionarPorID(int id)
         {
-            var lista = new List<Servico>();
+            Servico servico = null;
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"SELECT * FROM Servicos
-                                 WHERE Nome LIKE @t";
+                string query = "SELECT * FROM Servicos WHERE ServicoID = @id";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@t", $"%{termo}%");
+                    cmd.Parameters.AddWithValue("@id", id);
 
                     conn.Open();
                     using (SqlDataReader r = cmd.ExecuteReader())
                     {
-                        while (r.Read())
+                        if (r.Read())
                         {
-                            lista.Add(new Servico
+                            servico = new Servico
                             {
                                 ServicoID = r.GetInt32(r.GetOrdinal("ServicoID")),
                                 Nome = r["Nome"].ToString(),
                                 Valor = (decimal)r["Valor"]
-                            });
+                            };
                         }
                     }
                 }
             }
 
-            return lista;
+            return servico;
         }
+
+
 
         public bool Insert()
         {

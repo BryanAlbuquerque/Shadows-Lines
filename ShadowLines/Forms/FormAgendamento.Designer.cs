@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgendamento));
             this.lblPagamento = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtPagamento = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblValor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCliente = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -59,27 +59,27 @@
             this.lblPagamento.TabIndex = 78;
             this.lblPagamento.Text = "Status Pagamento";
             // 
-            // txtPagamento
+            // txtStatus
             // 
-            this.txtPagamento.BorderColor = System.Drawing.Color.DimGray;
-            this.txtPagamento.BorderRadius = 5;
-            this.txtPagamento.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPagamento.DefaultText = "";
-            this.txtPagamento.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPagamento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPagamento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPagamento.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPagamento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPagamento.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPagamento.ForeColor = System.Drawing.Color.Black;
-            this.txtPagamento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPagamento.Location = new System.Drawing.Point(25, 279);
-            this.txtPagamento.Name = "txtPagamento";
-            this.txtPagamento.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPagamento.PlaceholderText = "Pendente ou Pago";
-            this.txtPagamento.SelectedText = "";
-            this.txtPagamento.Size = new System.Drawing.Size(246, 36);
-            this.txtPagamento.TabIndex = 73;
+            this.txtStatus.BorderColor = System.Drawing.Color.DimGray;
+            this.txtStatus.BorderRadius = 5;
+            this.txtStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStatus.DefaultText = "";
+            this.txtStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStatus.ForeColor = System.Drawing.Color.Black;
+            this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStatus.Location = new System.Drawing.Point(25, 279);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtStatus.PlaceholderText = "Pendente ou Pago";
+            this.txtStatus.SelectedText = "";
+            this.txtStatus.Size = new System.Drawing.Size(246, 36);
+            this.txtStatus.TabIndex = 73;
             // 
             // txtValor
             // 
@@ -277,7 +277,7 @@
             this.Controls.Add(this.comboBoxCliente);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.lblPagamento);
-            this.Controls.Add(this.txtPagamento);
+            this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.lblCliente);
@@ -301,7 +301,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPagamento;
-        private Guna.UI2.WinForms.Guna2TextBox txtPagamento;
+        private Guna.UI2.WinForms.Guna2TextBox txtStatus;
         private Guna.UI2.WinForms.Guna2TextBox txtValor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblValor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCliente;

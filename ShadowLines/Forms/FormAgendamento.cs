@@ -1,5 +1,6 @@
 ﻿using ShadowLines.Classes;
 using System;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -21,6 +22,7 @@ namespace ShadowLines.Forms
         {
             labelData.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
         }
+
 
         private void FormAgendamento_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -73,20 +75,28 @@ namespace ShadowLines.Forms
             Agendamento agendamento = new Agendamento();
 
             agendamento.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
-            // Lógica para agendar o serviço
-            //lÓgica para agendar o VALOR
-
-            //Logica para Selecionar o Funcionario
-
+            agendamento.Servico = comboBoxServicos.Text;
+            agendamento.FuncionarioID = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
+            agendamento.Pagamento = txtStatus.Text;
+            agendamento.Valor = Convert.ToDecimal(txtValor.Text);
             agendamento.DataAgendamento = Convert.ToDateTime(txtData.Text);
+
+            agendamento.Insert();
+            MessageBox.Show("Agendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            Servico servicoSelecionado = new Servico();
-            servicoSelecionado.Valor = Convert.ToDecimal(comboBoxServicos.SelectedValue);
+            if (comboBoxServicos.SelectedValue == null) { return; }
 
-            txtValor.Text = servicoSelecionado.Valor.ToString("F2");
+            int servicoID = Convert.ToInt32(comboBoxServicos.SelectedValue);
+
+            Servico servicoSelecionado = Servico.SelecionarPorID(servicoID);
+
+            if (servicoSelecionado != null)
+            {
+                txtValor.Text = servicoSelecionado.Valor.ToString("F2");
+            }
         }
     }
 }

@@ -40,7 +40,6 @@ namespace ShadowLines.Forms
         }
 
 
-
         public void Interface(bool visivel)
         {
             painelAgendamentosUI.Visible = visivel;
@@ -77,5 +76,6 @@ namespace ShadowLines.Forms
             Interface(false);
             // Mdi Form Reagendamentos
         }
+
     }
 }
