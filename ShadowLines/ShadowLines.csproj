@@ -195,6 +195,7 @@
       <DependentUpon>FormAgendamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Reagendamento.cs" />
+    <Compile Include="Models\SessaoUsuarioModel.cs" />
     <Compile Include="UI\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -39,6 +39,8 @@ namespace ShadowLines.Forms
             this.Controls.Add(painelValorTotalDiarioUI);
         }
 
+
+
         public void Interface(bool visivel)
         {
             painelAgendamentosUI.Visible = visivel;
@@ -64,17 +66,15 @@ namespace ShadowLines.Forms
         private void btnAgendamentos_Click(object sender, EventArgs e)
         {
             Interface(false);
+
             FormAgendamento agendamento = new FormAgendamento();
             agendamento.MdiParent = this;
             agendamento.Show();
-
-
         }
 
         private void btnReagendamento_Click(object sender, EventArgs e)
         {
             Interface(false);
-
             // Mdi Form Reagendamentos
         }
     }

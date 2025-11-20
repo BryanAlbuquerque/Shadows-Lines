@@ -23,7 +23,7 @@ namespace ShadowLines.UI
                 Size = new Size(550, 550),
                 AutoScroll = true,
                 BorderStyle = BorderStyle.None,
-                BackColor = Color.FromArgb(245, 245, 245)
+                BackColor = Color.White,
             };
 
             CarregarInformacoes();
