@@ -18,5 +18,12 @@ namespace ShadowLines.Forms
             cadastro.MdiParent = this.MdiParent;
             cadastro.Show();
         }
+
+        private void alterarDadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAlterarDadosCliente update = new FormAlterarDadosCliente();
+            update.MdiParent = this.MdiParent;
+            update.Show();
+        }
     }
 }

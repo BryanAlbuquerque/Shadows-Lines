@@ -71,6 +71,7 @@
             this.alterarDadosToolStripMenuItem.Name = "alterarDadosToolStripMenuItem";
             this.alterarDadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alterarDadosToolStripMenuItem.Text = "Alterar Dados";
+            this.alterarDadosToolStripMenuItem.Click += new System.EventHandler(this.alterarDadosToolStripMenuItem_Click);
             // 
             // excluirClienteToolStripMenuItem
             // 
@@ -89,7 +90,7 @@
             // verDadosToolStripMenuItem
             // 
             this.verDadosToolStripMenuItem.Name = "verDadosToolStripMenuItem";
-            this.verDadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verDadosToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.verDadosToolStripMenuItem.Text = "Ver dados";
             // 
             // Clientes

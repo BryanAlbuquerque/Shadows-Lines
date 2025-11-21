@@ -184,9 +184,9 @@
             this.lblTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(168, 12);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(351, 34);
+            this.lblTitulo.Size = new System.Drawing.Size(251, 34);
             this.lblTitulo.TabIndex = 108;
-            this.lblTitulo.Text = "Agendamento dos clientes";
+            this.lblTitulo.Text = "Cadastrar Clientes";
             // 
             // btnCadastrar
             // 
@@ -392,7 +392,7 @@
             // 
             this.labelData.BackColor = System.Drawing.Color.Transparent;
             this.labelData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelData.Location = new System.Drawing.Point(5, 365);
+            this.labelData.Location = new System.Drawing.Point(12, 366);
             this.labelData.Name = "labelData";
             this.labelData.Size = new System.Drawing.Size(81, 20);
             this.labelData.TabIndex = 125;
@@ -402,7 +402,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 389);
+            this.ClientSize = new System.Drawing.Size(786, 398);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.txtEndereco);
@@ -428,7 +428,6 @@
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Name = "FormCadastroClientes";
             this.Text = "FormCadastroClientes";
-            this.Load += new System.EventHandler(this.FormCadastroClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
