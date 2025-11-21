@@ -138,5 +138,24 @@ namespace ShadowLines.Classes
                 }
             }
         }
+
+
+        public bool UpdateSituacao()
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+                    UPDATE Agendamentos SET
+                    Situacao = @Situacao
+                    WHERE ClienteID = @ClienteID";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ClienteID", ClienteID);
+                    cmd.Parameters.AddWithValue("@Situacao", Situacao);
+                    conn.Open();
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
     }
 }

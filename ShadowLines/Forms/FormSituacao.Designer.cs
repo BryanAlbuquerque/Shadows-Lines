@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSituacao));
-            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
+            this.comboBoxClientes = new System.Windows.Forms.ComboBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.labelData = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblMudarData = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblServico = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblClient = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnAlterar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblTitulo2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.comboBoxSituacao = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBoxCliente
+            // comboBoxClientes
             // 
-            this.comboBoxCliente.FormattingEnabled = true;
-            this.comboBoxCliente.Location = new System.Drawing.Point(41, 143);
-            this.comboBoxCliente.Name = "comboBoxCliente";
-            this.comboBoxCliente.Size = new System.Drawing.Size(266, 21);
-            this.comboBoxCliente.TabIndex = 116;
+            this.comboBoxClientes.FormattingEnabled = true;
+            this.comboBoxClientes.Location = new System.Drawing.Point(41, 143);
+            this.comboBoxClientes.Name = "comboBoxClientes";
+            this.comboBoxClientes.Size = new System.Drawing.Size(266, 21);
+            this.comboBoxClientes.TabIndex = 116;
             // 
             // guna2PictureBox1
             // 
@@ -70,18 +70,18 @@
             this.labelData.TabIndex = 113;
             this.labelData.Text = "Data Hoje";
             // 
-            // lblMudarData
+            // lblServico
             // 
-            this.lblMudarData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblServico.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblMudarData.BackColor = System.Drawing.Color.Transparent;
-            this.lblMudarData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMudarData.Location = new System.Drawing.Point(364, 115);
-            this.lblMudarData.Name = "lblMudarData";
-            this.lblMudarData.Size = new System.Drawing.Size(41, 20);
-            this.lblMudarData.TabIndex = 109;
-            this.lblMudarData.Text = "Data ";
+            this.lblServico.BackColor = System.Drawing.Color.Transparent;
+            this.lblServico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServico.Location = new System.Drawing.Point(354, 121);
+            this.lblServico.Name = "lblServico";
+            this.lblServico.Size = new System.Drawing.Size(74, 20);
+            this.lblServico.TabIndex = 109;
+            this.lblServico.Text = "Situação";
             // 
             // lblClient
             // 
@@ -92,14 +92,13 @@
             this.lblClient.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClient.Location = new System.Drawing.Point(41, 121);
             this.lblClient.Name = "lblClient";
-            this.lblClient.Size = new System.Drawing.Size(104, 20);
+            this.lblClient.Size = new System.Drawing.Size(109, 20);
             this.lblClient.TabIndex = 108;
-            this.lblClient.Text = "ID do Cliente";
+            this.lblClient.Text = "Nome Cliente";
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAlterar.BorderRadius = 5;
             this.btnAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -112,11 +111,12 @@
             this.btnAlterar.FillColor2 = System.Drawing.Color.Black;
             this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(587, 225);
+            this.btnAlterar.Location = new System.Drawing.Point(616, 233);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(184, 34);
+            this.btnAlterar.Size = new System.Drawing.Size(161, 33);
             this.btnAlterar.TabIndex = 112;
             this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // lblTitulo2
             // 
@@ -141,44 +141,36 @@
             this.guna2HtmlLabel5.TabIndex = 114;
             this.guna2HtmlLabel5.Text = "_____________________";
             // 
-            // txtValor
+            // comboBoxSituacao
             // 
-            this.txtValor.BorderColor = System.Drawing.Color.DimGray;
-            this.txtValor.BorderRadius = 5;
-            this.txtValor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtValor.DefaultText = "";
-            this.txtValor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtValor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtValor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtValor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtValor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtValor.ForeColor = System.Drawing.Color.Black;
-            this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(354, 141);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtValor.PlaceholderText = "";
-            this.txtValor.SelectedText = "";
-            this.txtValor.Size = new System.Drawing.Size(276, 23);
-            this.txtValor.TabIndex = 120;
+            this.comboBoxSituacao.FormattingEnabled = true;
+            this.comboBoxSituacao.Items.AddRange(new object[] {
+            "Finalizado",
+            "Em Aberto",
+            "Cancelado"});
+            this.comboBoxSituacao.Location = new System.Drawing.Point(354, 143);
+            this.comboBoxSituacao.Name = "comboBoxSituacao";
+            this.comboBoxSituacao.Size = new System.Drawing.Size(266, 21);
+            this.comboBoxSituacao.TabIndex = 121;
             // 
             // FormSituacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 263);
-            this.Controls.Add(this.txtValor);
-            this.Controls.Add(this.comboBoxCliente);
+            this.ClientSize = new System.Drawing.Size(783, 273);
+            this.Controls.Add(this.comboBoxSituacao);
+            this.Controls.Add(this.comboBoxClientes);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.labelData);
-            this.Controls.Add(this.lblMudarData);
+            this.Controls.Add(this.lblServico);
             this.Controls.Add(this.lblClient);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Name = "FormSituacao";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSituacao";
+            this.Load += new System.EventHandler(this.FormSituacao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -186,14 +178,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox comboBoxCliente;
+        private System.Windows.Forms.ComboBox comboBoxClientes;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelData;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblMudarData;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblServico;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblClient;
         private Guna.UI2.WinForms.Guna2GradientButton btnAlterar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2TextBox txtValor;
+        private System.Windows.Forms.ComboBox comboBoxSituacao;
     }
 }

@@ -215,3 +215,4 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\FontAwesome.Sharp
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.csproj.SuggestedBindingRedirects.cache
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormAgendamento.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormReagendamento.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormSituacao.resources

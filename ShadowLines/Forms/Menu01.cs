@@ -114,6 +114,7 @@ namespace ShadowLines.Forms
 
         private void btnSituacao_Click(object sender, EventArgs e)
         {
+            Interface(false);
             FormSituacao situacao = new FormSituacao();
             situacao.MdiParent = this;
             situacao.Show();
