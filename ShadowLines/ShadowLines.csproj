@@ -196,6 +196,12 @@
     <Compile Include="Forms\FormAgendamento.Designer.cs">
       <DependentUpon>FormAgendamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormCadastroClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCadastroClientes.Designer.cs">
+      <DependentUpon>FormCadastroClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormReagendamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormAgendamento.resx">
       <DependentUpon>FormAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCadastroClientes.resx">
+      <DependentUpon>FormCadastroClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormSituacao.resx">
       <DependentUpon>FormSituacao.cs</DependentUpon>

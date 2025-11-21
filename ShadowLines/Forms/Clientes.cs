@@ -1,6 +1,7 @@
 ﻿using ShadowLines.Classes;
 using System;
 using System.Windows.Forms;
+using ShadowLines.Forms;
 
 namespace ShadowLines.Forms
 {
@@ -18,17 +19,17 @@ namespace ShadowLines.Forms
 
         private void BtnCadastrar_Click(object sender, EventArgs e)
         {
-            string nome = txtNome.Text;
-            string cpf = txtCpf.Text.Trim();
-            string numero = txtTelefone.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string endereco = txtEndereco.Text.Trim();
+            //string nome = txtNome.Text;
+            //string cpf = txtCpf.Text.Trim();
+            //string numero = txtTelefone.Text.Trim();
+            //string email = txtEmail.Text.Trim();
+            //string endereco = txtEndereco.Text.Trim();
 
-            if (!DateTime.TryParse(txtDataNascimento.Text, out DateTime data))
-            {
-                MessageBox.Show("Data inválida. Use o formato DD/MM/AAAA.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            //if (!DateTime.TryParse(txtDataNascimento.Text, out DateTime data))
+            //{
+            //    MessageBox.Show("Data inválida. Use o formato DD/MM/AAAA.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
 
             //if (CadastrarClientes.AdicionarCliente(nome, cpf, numero, email, data, endereco))
             //{
@@ -58,6 +59,13 @@ namespace ShadowLines.Forms
             Menu01 menu = new Menu01();
             menu.Show();
             this.Hide();
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadastroClientes cadastro = new FormCadastroClientes();
+            cadastro.MdiParent = this.MdiParent;
+            cadastro.Show();
         }
     }
 }

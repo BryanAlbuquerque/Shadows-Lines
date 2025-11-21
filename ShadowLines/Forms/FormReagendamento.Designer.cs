@@ -92,9 +92,9 @@
             this.lblClient.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClient.Location = new System.Drawing.Point(33, 113);
             this.lblClient.Name = "lblClient";
-            this.lblClient.Size = new System.Drawing.Size(104, 20);
+            this.lblClient.Size = new System.Drawing.Size(133, 20);
             this.lblClient.TabIndex = 73;
-            this.lblClient.Text = "ID do Cliente";
+            this.lblClient.Text = "Nome do Cliente";
             // 
             // btnReagendar
             // 
