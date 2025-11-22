@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
-    public partial class ClientesDados : Form
+    public partial class FormClientesDados : Form
     {
-        public ClientesDados()
+        public FormClientesDados()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
@@ -21,7 +21,7 @@ namespace ShadowLines.Forms
 
         private void btnVoltar_Click_1(object sender, EventArgs e)
         {
-            Clientes clientes = new Clientes();
+            FormClientes clientes = new FormClientes();
             clientes.Show();
             this.Hide();
         }

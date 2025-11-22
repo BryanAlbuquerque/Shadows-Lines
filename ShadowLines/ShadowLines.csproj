@@ -232,17 +232,17 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Classes\Usuarios.cs" />
-    <Compile Include="Forms\Clientes.cs">
+    <Compile Include="Forms\FormClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Clientes.Designer.cs">
-      <DependentUpon>Clientes.cs</DependentUpon>
+    <Compile Include="Forms\FormClientes.Designer.cs">
+      <DependentUpon>FormClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ClientesDados.cs">
+    <Compile Include="Forms\FormClientesDados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ClientesDados.Designer.cs">
-      <DependentUpon>ClientesDados.cs</DependentUpon>
+    <Compile Include="Forms\FormClientesDados.Designer.cs">
+      <DependentUpon>FormClientesDados.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
@@ -264,11 +264,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Clientes.resx">
-      <DependentUpon>Clientes.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormClientes.resx">
+      <DependentUpon>FormClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ClientesDados.resx">
-      <DependentUpon>ClientesDados.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormClientesDados.resx">
+      <DependentUpon>FormClientesDados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormAgendamento.resx">
       <DependentUpon>FormAgendamento.cs</DependentUpon>

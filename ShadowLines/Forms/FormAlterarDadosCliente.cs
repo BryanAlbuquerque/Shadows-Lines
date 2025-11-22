@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ShadowLines.Forms
 {
@@ -67,16 +68,17 @@ namespace ShadowLines.Forms
 
         private void comboBoxClientes_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (comboBoxClientes.SelectedValue == null) { return; }
+            if (comboBoxClientes.SelectedIndex == -1) return;
 
-            int servicoID = Convert.ToInt32(comboBoxClientes.SelectedValue);
+            int id = Convert.ToInt32(comboBoxClientes.SelectedValue);
+            var c = Cliente.SelectedSet(id);
 
-            Cliente servicoSelecionado = Cliente.SelectSet(txtNo);
-
-            if (servicoSelecionado != null)
-            {
-                txtValor.Text = servicoSelecionado.Valor.ToString("F2");
-            }
+            txtNome.Text = c.Nome_Completo;
+            txtCpf.Text = c.CPF.ToString();
+            txtTelefone.Text = c.Telefone.ToString();
+            txtEmail.Text = c.Email;
+            txtEndereco.Text = c.Endereco;
+            txtData.Text = c.Data_Nascimento?.ToString("dd/MM/yyyy");
         }
     }
 }

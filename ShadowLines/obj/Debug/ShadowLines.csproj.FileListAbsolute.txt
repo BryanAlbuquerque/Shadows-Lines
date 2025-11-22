@@ -95,8 +95,6 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.pdb
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.exe.config
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Menu01.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Menu02.resources
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Clientes.resources
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.ClientesDados.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Microsoft.Bcl.TimeProvider.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\System.Formats.Asn1.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\System.IO.Pipelines.dll
@@ -218,3 +216,5 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormSituacao.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormCadastroClientes.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormAlterarDadosCliente.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormClientes.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormClientesDados.resources

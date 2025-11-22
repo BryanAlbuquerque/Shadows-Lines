@@ -5,9 +5,9 @@ using ShadowLines.Forms;
 
 namespace ShadowLines.Forms
 {
-    public partial class Clientes : Form
+    public partial class FormClientes : Form
     {
-        public Clientes()
+        public FormClientes()
         {
             InitializeComponent();
         }

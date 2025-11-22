@@ -51,31 +51,27 @@ namespace ShadowLines.Classes
         }
 
 
-        public static List<Cliente> SelectSet(string termo)
+        public static Cliente SelectedSet(int id)
         {
-            var lista = new List<Cliente>();
+            Cliente cliente = null;
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
-                    SELECT * FROM Clientes
-                    WHERE 
-                        Nome_Completo LIKE @t
-                        OR CPF LIKE @t
-                        OR Telefone LIKE @t
-                        OR Email LIKE @t
-                        OR Endereco LIKE @t";
+                        SELECT ClienteID, Nome_Completo, CPF, Telefone, Email,
+                        Data_Nascimento, Endereco, DataCadastro
+                        FROM Clientes
+                        WHERE ClienteID = @ClienteID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@t", "%" + termo + "%");
-
+                    cmd.Parameters.AddWithValue("@ClienteID", id);
                     conn.Open();
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        while (reader.Read())
+                        if (reader.Read())
                         {
-                            lista.Add(new Cliente
+                            cliente = new Cliente
                             {
                                 ClienteID = reader.GetInt32(reader.GetOrdinal("ClienteID")),
                                 Nome_Completo = reader.GetString(reader.GetOrdinal("Nome_Completo")),
@@ -85,13 +81,13 @@ namespace ShadowLines.Classes
                                 Data_Nascimento = reader["Data_Nascimento"] as DateTime?,
                                 Endereco = reader["Endereco"] as string,
                                 DataCadastro = reader.GetDateTime(reader.GetOrdinal("DataCadastro"))
-                            });
+                            };
                         }
                     }
                 }
             }
 
-            return lista;
+            return cliente;
         }
 
         public bool Insert()

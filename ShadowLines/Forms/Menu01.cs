@@ -58,7 +58,7 @@ namespace ShadowLines.Forms
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            Clientes clientes = new Clientes();
+            FormClientes clientes = new FormClientes();
             clientes.Show();
             this.Hide();
         }
