@@ -25,5 +25,12 @@ namespace ShadowLines.Forms
             update.MdiParent = this.MdiParent;
             update.Show();
         }
+
+        private void excluirClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormExcluirCliente cliente = new FormExcluirCliente();
+            cliente.MdiParent = this.MdiParent;
+            cliente.Show();
+        }
     }
 }

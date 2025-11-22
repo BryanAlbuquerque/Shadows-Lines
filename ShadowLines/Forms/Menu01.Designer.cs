@@ -175,6 +175,7 @@
             this.btnDesconectar.Size = new System.Drawing.Size(132, 32);
             this.btnDesconectar.TabIndex = 43;
             this.btnDesconectar.Text = "Desconectar";
+            this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
             // guna2HtmlLabel5
             // 
@@ -274,7 +275,7 @@
             this.iconButtonAtualizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonAtualizar.IconSize = 35;
             this.iconButtonAtualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonAtualizar.Location = new System.Drawing.Point(685, 263);
+            this.iconButtonAtualizar.Location = new System.Drawing.Point(567, 284);
             this.iconButtonAtualizar.Name = "iconButtonAtualizar";
             this.iconButtonAtualizar.Size = new System.Drawing.Size(118, 38);
             this.iconButtonAtualizar.TabIndex = 76;

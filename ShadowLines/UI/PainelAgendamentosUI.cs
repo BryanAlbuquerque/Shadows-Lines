@@ -19,7 +19,7 @@ namespace ShadowLines.UI
         {
             painel = new Panel
             {
-                Location = new Point(250, 250),
+                Location = new Point(280, 270),
                 Size = new Size(550, 550),
                 AutoScroll = true,
                 BorderStyle = BorderStyle.None,

@@ -37,9 +37,9 @@
             this.dadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customBackgroundPanel1 = new CustomBackgroundPanel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.menuStrip1.SuspendLayout();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -86,6 +86,7 @@
             this.excluirClienteToolStripMenuItem.Name = "excluirClienteToolStripMenuItem";
             this.excluirClienteToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.excluirClienteToolStripMenuItem.Text = "Excluir Cliente";
+            this.excluirClienteToolStripMenuItem.Click += new System.EventHandler(this.excluirClienteToolStripMenuItem_Click);
             // 
             // dadosToolStripMenuItem
             // 
@@ -112,18 +113,6 @@
             this.customBackgroundPanel1.Size = new System.Drawing.Size(973, 519);
             this.customBackgroundPanel1.TabIndex = 2;
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(52, 14);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(144, 133);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 111;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
@@ -145,6 +134,18 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(498, 35);
             this.guna2HtmlLabel1.TabIndex = 113;
             this.guna2HtmlLabel1.Text = "_________________________________";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(52, 14);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(144, 133);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 111;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // FormClientes
             // 

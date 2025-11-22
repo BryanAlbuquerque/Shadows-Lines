@@ -450,6 +450,7 @@
             this.Controls.Add(this.lblFuncionario);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Name = "FormAlterarDadosCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAlterarDadosCliente";
             this.Load += new System.EventHandler(this.FormAlterarDadosCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();

@@ -119,5 +119,12 @@ namespace ShadowLines.Forms
             situacao.MdiParent = this;
             situacao.Show();
         }
+
+        private void btnDesconectar_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
