@@ -39,11 +39,19 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblUsuario = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButtonAtualizar = new FontAwesome.Sharp.IconButton();
             this.roundedPanel3 = new RoundedPanel();
             this.roundedPanel1 = new RoundedPanel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -81,7 +89,7 @@
             this.btnReagendamento.FillColor2 = System.Drawing.Color.Black;
             this.btnReagendamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReagendamento.ForeColor = System.Drawing.Color.White;
-            this.btnReagendamento.Location = new System.Drawing.Point(58, 302);
+            this.btnReagendamento.Location = new System.Drawing.Point(58, 359);
             this.btnReagendamento.Name = "btnReagendamento";
             this.btnReagendamento.Size = new System.Drawing.Size(144, 51);
             this.btnReagendamento.TabIndex = 12;
@@ -101,7 +109,7 @@
             this.btnSituacao.FillColor2 = System.Drawing.Color.Black;
             this.btnSituacao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSituacao.ForeColor = System.Drawing.Color.White;
-            this.btnSituacao.Location = new System.Drawing.Point(58, 377);
+            this.btnSituacao.Location = new System.Drawing.Point(58, 459);
             this.btnSituacao.Name = "btnSituacao";
             this.btnSituacao.Size = new System.Drawing.Size(144, 51);
             this.btnSituacao.TabIndex = 6;
@@ -121,7 +129,7 @@
             this.btnAgendamentos.FillColor2 = System.Drawing.Color.Black;
             this.btnAgendamentos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendamentos.ForeColor = System.Drawing.Color.White;
-            this.btnAgendamentos.Location = new System.Drawing.Point(58, 230);
+            this.btnAgendamentos.Location = new System.Drawing.Point(58, 272);
             this.btnAgendamentos.Name = "btnAgendamentos";
             this.btnAgendamentos.Size = new System.Drawing.Size(144, 47);
             this.btnAgendamentos.TabIndex = 4;
@@ -141,7 +149,7 @@
             this.btnClientes.FillColor2 = System.Drawing.Color.Black;
             this.btnClientes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.White;
-            this.btnClientes.Location = new System.Drawing.Point(58, 167);
+            this.btnClientes.Location = new System.Drawing.Point(58, 185);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(144, 38);
             this.btnClientes.TabIndex = 3;
@@ -183,7 +191,7 @@
             this.lblUsuario.BackColor = System.Drawing.Color.White;
             this.lblUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.Blue;
-            this.lblUsuario.Location = new System.Drawing.Point(255, 12);
+            this.lblUsuario.Location = new System.Drawing.Point(270, 22);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(115, 35);
             this.lblUsuario.TabIndex = 55;
@@ -192,17 +200,70 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.btnReagendamento);
-            this.panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.panel1.Controls.Add(this.btnClientes);
-            this.panel1.Controls.Add(this.btnAgendamentos);
-            this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Controls.Add(this.btnSituacao);
+            this.panel1.Controls.Add(this.btnReagendamento);
+            this.panel1.Controls.Add(this.btnAgendamentos);
+            this.panel1.Controls.Add(this.btnClientes);
+            this.panel1.Controls.Add(this.iconPictureBox4);
+            this.panel1.Controls.Add(this.iconPictureBox3);
+            this.panel1.Controls.Add(this.iconPictureBox2);
+            this.panel1.Controls.Add(this.iconPictureBox1);
+            this.panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 679);
             this.panel1.TabIndex = 73;
+            // 
+            // iconPictureBox4
+            // 
+            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
+            this.iconPictureBox4.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox4.IconSize = 42;
+            this.iconPictureBox4.Location = new System.Drawing.Point(19, 468);
+            this.iconPictureBox4.Name = "iconPictureBox4";
+            this.iconPictureBox4.Size = new System.Drawing.Size(50, 42);
+            this.iconPictureBox4.TabIndex = 81;
+            this.iconPictureBox4.TabStop = false;
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.IconSize = 40;
+            this.iconPictureBox3.Location = new System.Drawing.Point(19, 370);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(50, 40);
+            this.iconPictureBox3.TabIndex = 80;
+            this.iconPictureBox3.TabStop = false;
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.CalendarAlt;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 40;
+            this.iconPictureBox2.Location = new System.Drawing.Point(19, 279);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(50, 40);
+            this.iconPictureBox2.TabIndex = 79;
+            this.iconPictureBox2.TabStop = false;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 40;
+            this.iconPictureBox1.Location = new System.Drawing.Point(19, 185);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(57, 40);
+            this.iconPictureBox1.TabIndex = 78;
+            this.iconPictureBox1.TabStop = false;
             // 
             // iconButtonAtualizar
             // 
@@ -231,11 +292,10 @@
             this.roundedPanel3.BorderColor = System.Drawing.Color.White;
             this.roundedPanel3.BorderRadius = 20;
             this.roundedPanel3.BorderSize = 2;
-            this.roundedPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.roundedPanel3.ForeColor = System.Drawing.SystemColors.Control;
             this.roundedPanel3.Location = new System.Drawing.Point(205, -1);
             this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(60, 680);
+            this.roundedPanel3.Size = new System.Drawing.Size(59, 681);
             this.roundedPanel3.TabIndex = 74;
             // 
             // roundedPanel1
@@ -264,6 +324,7 @@
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.Name = "Menu01";
             this.Text = "Menu";
@@ -271,6 +332,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,5 +355,9 @@
         private System.Windows.Forms.Panel panel1;
         private RoundedPanel roundedPanel3;
         private FontAwesome.Sharp.IconButton iconButtonAtualizar;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
     }
 }
