@@ -23,7 +23,8 @@ namespace ShadowLines.Classes
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM Clientes ORDER BY ClienteID";
+                string query = @"SELECT Nome_Completo, CPF, Telefone, Email, Data_Nascimento, Endereco, DataCadastro
+                                FROM Clientes";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -34,7 +35,6 @@ namespace ShadowLines.Classes
                         {
                             lista.Add(new Cliente
                             {
-                                ClienteID = reader.GetInt32(reader.GetOrdinal("ClienteID")),
                                 Nome_Completo = reader.GetString(reader.GetOrdinal("Nome_Completo")),
                                 CPF = reader.GetInt64(reader.GetOrdinal("CPF")),
                                 Telefone = reader.GetInt64(reader.GetOrdinal("Telefone")),

@@ -32,5 +32,12 @@ namespace ShadowLines.Forms
             cliente.MdiParent = this.MdiParent;
             cliente.Show();
         }
+
+        private void visualizarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormClientesDados dados = new FormClientesDados();
+            dados.Show();
+            this.Hide();
+        }
     }
 }

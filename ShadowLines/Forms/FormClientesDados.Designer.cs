@@ -33,24 +33,16 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.customBackgroundPanel1 = new CustomBackgroundPanel();
+            this.customBackground = new CustomBackgroundPanel();
+            this.sfDataGridPanel = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.dtCostumers = new System.Windows.Forms.DataGridView();
-            this.ClienteID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome_Completo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Data_Nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customBackgroundPanel1.SuspendLayout();
+            this.customBackground.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGridPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtCostumers)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel5
@@ -80,19 +72,34 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // customBackgroundPanel1
+            // customBackground
             // 
-            this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel2);
-            this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel3);
-            this.customBackgroundPanel1.Controls.Add(this.btnVoltar);
-            this.customBackgroundPanel1.Controls.Add(this.btnClose);
-            this.customBackgroundPanel1.Controls.Add(this.picLogo);
-            this.customBackgroundPanel1.Controls.Add(this.dtCostumers);
-            this.customBackgroundPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customBackgroundPanel1.Location = new System.Drawing.Point(0, 0);
-            this.customBackgroundPanel1.Name = "customBackgroundPanel1";
-            this.customBackgroundPanel1.Size = new System.Drawing.Size(1027, 606);
-            this.customBackgroundPanel1.TabIndex = 0;
+            this.customBackground.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customBackground.Controls.Add(this.sfDataGridPanel);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel2);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel3);
+            this.customBackground.Controls.Add(this.btnVoltar);
+            this.customBackground.Controls.Add(this.btnClose);
+            this.customBackground.Controls.Add(this.picLogo);
+            this.customBackground.Location = new System.Drawing.Point(0, 0);
+            this.customBackground.Name = "customBackground";
+            this.customBackground.Size = new System.Drawing.Size(1027, 606);
+            this.customBackground.TabIndex = 0;
+            // 
+            // sfDataGridPanel
+            // 
+            this.sfDataGridPanel.AccessibleName = "Table";
+            this.sfDataGridPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sfDataGridPanel.Location = new System.Drawing.Point(62, 177);
+            this.sfDataGridPanel.Name = "sfDataGridPanel";
+            this.sfDataGridPanel.Size = new System.Drawing.Size(962, 353);
+            this.sfDataGridPanel.Style.HeaderStyle.FilterIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.sfDataGridPanel.TabIndex = 39;
+            this.sfDataGridPanel.Text = "sfDataGrid1";
             // 
             // guna2HtmlLabel2
             // 
@@ -117,6 +124,7 @@
             // 
             // btnVoltar
             // 
+            this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoltar.BackColor = System.Drawing.Color.Transparent;
             this.btnVoltar.BorderRadius = 15;
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -129,7 +137,7 @@
             this.btnVoltar.FillColor2 = System.Drawing.Color.DimGray;
             this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(903, 148);
+            this.btnVoltar.Location = new System.Drawing.Point(912, 107);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(112, 34);
             this.btnVoltar.TabIndex = 36;
@@ -138,6 +146,7 @@
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.BorderRadius = 15;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -169,97 +178,21 @@
             this.picLogo.TabIndex = 34;
             this.picLogo.TabStop = false;
             // 
-            // dtCostumers
-            // 
-            this.dtCostumers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtCostumers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ClienteID,
-            this.Nome_Completo,
-            this.CPF,
-            this.Telefone,
-            this.Email,
-            this.Data_Nascimento,
-            this.Endereco,
-            this.DataCadastro});
-            this.dtCostumers.Location = new System.Drawing.Point(48, 188);
-            this.dtCostumers.Name = "dtCostumers";
-            this.dtCostumers.Size = new System.Drawing.Size(967, 333);
-            this.dtCostumers.TabIndex = 33;
-            // 
-            // ClienteID
-            // 
-            this.ClienteID.DataPropertyName = "ClienteID";
-            this.ClienteID.HeaderText = "ClienteID";
-            this.ClienteID.Name = "ClienteID";
-            this.ClienteID.ReadOnly = true;
-            // 
-            // Nome_Completo
-            // 
-            this.Nome_Completo.DataPropertyName = "Nome_Completo";
-            this.Nome_Completo.HeaderText = "Nome_Completo";
-            this.Nome_Completo.Name = "Nome_Completo";
-            this.Nome_Completo.ReadOnly = true;
-            this.Nome_Completo.Width = 130;
-            // 
-            // CPF
-            // 
-            this.CPF.DataPropertyName = "CPF";
-            this.CPF.HeaderText = "CPF";
-            this.CPF.Name = "CPF";
-            this.CPF.ReadOnly = true;
-            // 
-            // Telefone
-            // 
-            this.Telefone.DataPropertyName = "Telefone";
-            this.Telefone.HeaderText = "Telefone";
-            this.Telefone.Name = "Telefone";
-            this.Telefone.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.Width = 135;
-            // 
-            // Data_Nascimento
-            // 
-            this.Data_Nascimento.DataPropertyName = "Data_Nascimento";
-            this.Data_Nascimento.HeaderText = "Data_Nascimento";
-            this.Data_Nascimento.Name = "Data_Nascimento";
-            this.Data_Nascimento.ReadOnly = true;
-            // 
-            // Endereco
-            // 
-            this.Endereco.DataPropertyName = "Endereco";
-            this.Endereco.HeaderText = "Endereço";
-            this.Endereco.Name = "Endereco";
-            this.Endereco.ReadOnly = true;
-            this.Endereco.Width = 135;
-            // 
-            // DataCadastro
-            // 
-            this.DataCadastro.DataPropertyName = "DataCadastro";
-            this.DataCadastro.HeaderText = "DataCadastro";
-            this.DataCadastro.Name = "DataCadastro";
-            this.DataCadastro.ReadOnly = true;
-            this.DataCadastro.Width = 130;
-            // 
-            // ClientesDados
+            // FormClientesDados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 606);
-            this.Controls.Add(this.customBackgroundPanel1);
+            this.Controls.Add(this.customBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ClientesDados";
+            this.Name = "FormClientesDados";
             this.Text = "ClientesDados";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ClientesDados_Load);
-            this.customBackgroundPanel1.ResumeLayout(false);
-            this.customBackgroundPanel1.PerformLayout();
+            this.customBackground.ResumeLayout(false);
+            this.customBackground.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGridPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtCostumers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,20 +201,12 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private CustomBackgroundPanel customBackgroundPanel1;
+        private CustomBackgroundPanel customBackground;
         private Guna.UI2.WinForms.Guna2GradientButton btnVoltar;
         private Guna.UI2.WinForms.Guna2GradientButton btnClose;
         private Guna.UI2.WinForms.Guna2PictureBox picLogo;
-        private System.Windows.Forms.DataGridView dtCostumers;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nome_Completo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Data_Nascimento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Endereco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DataCadastro;
+        private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGridPanel;
     }
 }
