@@ -373,7 +373,7 @@
             this.btnAlterar.FillColor2 = System.Drawing.Color.Navy;
             this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(736, 353);
+            this.btnAlterar.Location = new System.Drawing.Point(677, 353);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(143, 37);
             this.btnAlterar.TabIndex = 126;
@@ -423,7 +423,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 395);
+            this.ClientSize = new System.Drawing.Size(819, 395);
             this.Controls.Add(this.comboBoxClientes);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.txtEmail);

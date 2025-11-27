@@ -1,15 +1,7 @@
 ﻿using ShadowLines.Classes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace ShadowLines.Forms
 {
@@ -20,7 +12,7 @@ namespace ShadowLines.Forms
             InitializeComponent();
 
             Timer timer = new Timer();
-            timer.Interval = 1000; // 1 segundo
+            timer.Interval = 1000;
             timer.Tick += Timer_Tick;
             timer.Start();
         }

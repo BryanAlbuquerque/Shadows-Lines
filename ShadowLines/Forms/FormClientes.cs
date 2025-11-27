@@ -1,7 +1,5 @@
-﻿using ShadowLines.Classes;
-using System;
+﻿using System;
 using System.Windows.Forms;
-using ShadowLines.Forms;
 
 namespace ShadowLines.Forms
 {
@@ -39,5 +37,13 @@ namespace ShadowLines.Forms
             dados.Show();
             this.Hide();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Menu01 menu01 = new Menu01();
+            menu01.Show();
+            this.Hide();
+        }
+
     }
 }
