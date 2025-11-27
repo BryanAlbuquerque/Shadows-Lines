@@ -15,13 +15,10 @@ namespace ShadowLines.UI
 
         public Panel CriarPainel()
         {
-            Panel panel = new Panel
+            CardUI panel = new CardUI
             {
-                Size = new Size(270, 120),
-                Location = new Point(900, 130),
-                BackColor = Color.White,
-                BorderStyle = BorderStyle.FixedSingle,
-                Padding = new Padding(15)
+                Size = new Size(250, 120),
+                Location = new Point(910, 130),
             };
 
             Label titulo = new Label

@@ -254,6 +254,9 @@
       <DependentUpon>FormSituacao.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\SessaoUsuarioModel.cs" />
+    <Compile Include="UI\CardUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UI\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
     </Compile>
