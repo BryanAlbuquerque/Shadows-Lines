@@ -217,40 +217,40 @@
     <Compile Include="Classes\Agendamento.cs" />
     <Compile Include="Classes\Funcionario.cs" />
     <Compile Include="Classes\Servico.cs" />
-    <Compile Include="Forms\FormAgendamento.cs">
+    <Compile Include="Forms\Agendamentos\FormAgendamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormAgendamento.Designer.cs">
+    <Compile Include="Forms\Agendamentos\FormAgendamento.Designer.cs">
       <DependentUpon>FormAgendamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormAlterarDadosCliente.cs">
+    <Compile Include="Forms\Clientes\FormAlterarDadosCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormAlterarDadosCliente.Designer.cs">
+    <Compile Include="Forms\Clientes\FormAlterarDadosCliente.Designer.cs">
       <DependentUpon>FormAlterarDadosCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormCadastroClientes.cs">
+    <Compile Include="Forms\Clientes\FormCadastroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormCadastroClientes.Designer.cs">
+    <Compile Include="Forms\Clientes\FormCadastroClientes.Designer.cs">
       <DependentUpon>FormCadastroClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormExcluirCliente.cs">
+    <Compile Include="Forms\Clientes\FormExcluirCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormExcluirCliente.Designer.cs">
+    <Compile Include="Forms\Clientes\FormExcluirCliente.Designer.cs">
       <DependentUpon>FormExcluirCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormReagendamento.cs">
+    <Compile Include="Forms\Agendamentos\FormReagendamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormReagendamento.Designer.cs">
+    <Compile Include="Forms\Agendamentos\FormReagendamento.Designer.cs">
       <DependentUpon>FormReagendamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormSituacao.cs">
+    <Compile Include="Forms\Agendamentos\FormSituacao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormSituacao.Designer.cs">
+    <Compile Include="Forms\Agendamentos\FormSituacao.Designer.cs">
       <DependentUpon>FormSituacao.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\SessaoUsuarioModel.cs" />
@@ -265,16 +265,16 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Classes\Usuarios.cs" />
-    <Compile Include="Forms\FormClientes.cs">
+    <Compile Include="Forms\Clientes\FormClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormClientes.Designer.cs">
+    <Compile Include="Forms\Clientes\FormClientes.Designer.cs">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormClientesDados.cs">
+    <Compile Include="Forms\Clientes\FormClientesDados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormClientesDados.Designer.cs">
+    <Compile Include="Forms\Clientes\FormClientesDados.Designer.cs">
       <DependentUpon>FormClientesDados.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login.cs">
@@ -297,25 +297,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\FormClientes.resx">
+    <EmbeddedResource Include="Forms\Clientes\FormClientes.resx">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormClientesDados.resx">
+    <EmbeddedResource Include="Forms\Clientes\FormClientesDados.resx">
       <DependentUpon>FormClientesDados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormAgendamento.resx">
+    <EmbeddedResource Include="Forms\Agendamentos\FormAgendamento.resx">
       <DependentUpon>FormAgendamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormAlterarDadosCliente.resx">
+    <EmbeddedResource Include="Forms\Clientes\FormAlterarDadosCliente.resx">
       <DependentUpon>FormAlterarDadosCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormCadastroClientes.resx">
+    <EmbeddedResource Include="Forms\Clientes\FormCadastroClientes.resx">
       <DependentUpon>FormCadastroClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormExcluirCliente.resx">
+    <EmbeddedResource Include="Forms\Clientes\FormExcluirCliente.resx">
       <DependentUpon>FormExcluirCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormSituacao.resx">
+    <EmbeddedResource Include="Forms\Agendamentos\FormSituacao.resx">
       <DependentUpon>FormSituacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
@@ -327,7 +327,7 @@
     <EmbeddedResource Include="Forms\Menu02.resx">
       <DependentUpon>Menu02.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormReagendamento.resx">
+    <EmbeddedResource Include="Forms\Agendamentos\FormReagendamento.resx">
       <DependentUpon>FormReagendamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
