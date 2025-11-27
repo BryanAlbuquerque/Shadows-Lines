@@ -294,9 +294,9 @@
             this.roundedPanel3.BorderRadius = 20;
             this.roundedPanel3.BorderSize = 2;
             this.roundedPanel3.ForeColor = System.Drawing.SystemColors.Control;
-            this.roundedPanel3.Location = new System.Drawing.Point(205, -1);
+            this.roundedPanel3.Location = new System.Drawing.Point(205, 2);
             this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(59, 681);
+            this.roundedPanel3.Size = new System.Drawing.Size(91, 677);
             this.roundedPanel3.TabIndex = 74;
             // 
             // roundedPanel1

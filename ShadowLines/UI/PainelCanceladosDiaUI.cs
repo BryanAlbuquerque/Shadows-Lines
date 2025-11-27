@@ -17,8 +17,8 @@ namespace ShadowLines.UI
         {
             CardUI panel = new CardUI
             {
-                Size = new Size(250, 120),
-                Location = new Point(600, 130),
+                Size = new Size(300, 120),
+                Location = new Point(650, 130),
             };
 
             Label titulo = new Label
