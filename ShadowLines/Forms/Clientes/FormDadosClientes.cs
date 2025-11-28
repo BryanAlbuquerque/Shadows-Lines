@@ -6,10 +6,10 @@ using Syncfusion.WinForms.DataGrid.Enums;
 
 namespace ShadowLines.Forms
 {
-    public partial class FormClientesDados : Form
+    public partial class FormDadosClientes : Form
     {
         private SfDataGrid grid;
-        public FormClientesDados()
+        public FormDadosClientes()
         {
             InitializeComponent();
         }

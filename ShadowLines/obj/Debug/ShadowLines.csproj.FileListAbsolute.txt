@@ -217,7 +217,6 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormCadastroClientes.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormAlterarDadosCliente.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormClientes.resources
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormClientesDados.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormExcluirCliente.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.Core.WinForms.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.Data.WinForms.dll
@@ -236,3 +235,5 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.SfData
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.SfInput.WinForms.xml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.SfListView.WinForms.xml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.Shared.Base.xml
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormDadosAgendamentos.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormDadosClientes.resources

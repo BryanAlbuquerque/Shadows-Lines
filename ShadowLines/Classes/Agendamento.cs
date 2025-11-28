@@ -17,14 +17,28 @@ namespace ShadowLines.Classes
         public decimal Valor { get; set; }
         public string Situacao { get; set; }
         public string Pagamento { get; set; }
+        public string NomeCliente { get; set; } // Nome do cliente da tabela Clientes
+        public string NomeFuncionario { get; set; } // Nome do funcionário da tabela Funcionarios
 
         public static List<Agendamento> Select()
         {
             var lista = new List<Agendamento>();
-
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM Agendamentos ORDER BY DataAgendamento DESC";
+                string query = @"SELECT 
+                            A.AgendamentoID, 
+                            A.ClienteID, 
+                            A.FuncionarioID, 
+                            A.DataAgendamento, 
+                            A.Servico, 
+                            A.Valor, 
+                            A.Situacao, 
+                            A.Pagamento, 
+                         C.Nome_Completo AS NomeCliente, F.Nome AS NomeFuncionario
+                         FROM Agendamentos A
+                         INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
+                         INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID
+                         ORDER BY A.DataAgendamento DESC";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -42,15 +56,17 @@ namespace ShadowLines.Classes
                                 Servico = r["Servico"].ToString(),
                                 Valor = (decimal)r["Valor"],
                                 Situacao = r["Situacao"].ToString(),
-                                Pagamento = r["Pagamento"].ToString()
+                                Pagamento = r["Pagamento"].ToString(),
+                                NomeCliente = r["NomeCliente"].ToString(),
+                                NomeFuncionario = r["NomeFuncionario"].ToString()
                             });
                         }
                     }
                 }
             }
-
             return lista;
         }
+
 
         public static List<Agendamento> SelectedSet(int clienteId)
         {

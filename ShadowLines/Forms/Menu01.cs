@@ -126,5 +126,12 @@ namespace ShadowLines.Forms
             login.Show();
             this.Hide();
         }
+
+        private void btnDados_Click(object sender, EventArgs e)
+        {
+            FormDadosAgendamentos dadosAgendamentos = new FormDadosAgendamentos();
+            dadosAgendamentos.Show();
+            this.Hide();
+        }
     }
 }

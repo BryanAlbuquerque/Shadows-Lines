@@ -223,6 +223,12 @@
     <Compile Include="Forms\Agendamentos\FormAgendamento.Designer.cs">
       <DependentUpon>FormAgendamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Agendamentos\FormDadosAgendamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Agendamentos\FormDadosAgendamentos.Designer.cs">
+      <DependentUpon>FormDadosAgendamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Clientes\FormAlterarDadosCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,11 +280,11 @@
     <Compile Include="Forms\Clientes\FormClientes.Designer.cs">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Clientes\FormClientesDados.cs">
+    <Compile Include="Forms\Clientes\FormDadosClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Clientes\FormClientesDados.Designer.cs">
-      <DependentUpon>FormClientesDados.cs</DependentUpon>
+    <Compile Include="Forms\Clientes\FormDadosClientes.Designer.cs">
+      <DependentUpon>FormDadosClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
@@ -300,11 +306,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Agendamentos\FormDadosAgendamentos.resx">
+      <DependentUpon>FormDadosAgendamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes\FormClientes.resx">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Clientes\FormClientesDados.resx">
-      <DependentUpon>FormClientesDados.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Clientes\FormDadosClientes.resx">
+      <DependentUpon>FormDadosClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Agendamentos\FormAgendamento.resx">
       <DependentUpon>FormAgendamento.cs</DependentUpon>

@@ -33,7 +33,7 @@ namespace ShadowLines.Forms
 
         private void visualizarClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormClientesDados dados = new FormClientesDados();
+            FormDadosClientes dados = new FormDadosClientes();
             dados.Show();
             this.Hide();
         }
