@@ -35,7 +35,7 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.customBackground = new CustomBackgroundPanel();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.sfDataGridPanel = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -80,7 +80,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customBackground.Controls.Add(this.btnBuscar);
-            this.customBackground.Controls.Add(this.textBox1);
+            this.customBackground.Controls.Add(this.txtBuscar);
             this.customBackground.Controls.Add(this.sfDataGridPanel);
             this.customBackground.Controls.Add(this.guna2HtmlLabel2);
             this.customBackground.Controls.Add(this.guna2HtmlLabel3);
@@ -108,13 +108,14 @@
             this.btnBuscar.TabIndex = 41;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // textBox1
+            // txtBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 154);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(507, 20);
-            this.textBox1.TabIndex = 40;
+            this.txtBuscar.Location = new System.Drawing.Point(134, 154);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(507, 20);
+            this.txtBuscar.TabIndex = 40;
             // 
             // sfDataGridPanel
             // 
@@ -237,7 +238,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGridPanel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscar;
         private FontAwesome.Sharp.IconButton btnBuscar;
     }
 }

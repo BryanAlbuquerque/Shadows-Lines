@@ -41,7 +41,7 @@ namespace ShadowLines.Forms
 
         public void PopularComboBoxClientes()
         {
-            var lista = Cliente.Select();
+            var lista = Cliente.Select("%");
 
             comboBoxCliente.DataSource = lista;
             comboBoxCliente.DisplayMember = "Nome_Completo";

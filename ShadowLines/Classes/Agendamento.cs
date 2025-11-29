@@ -74,10 +74,6 @@ namespace ShadowLines.Classes
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                // Corrigindo a query para realizar uma busca adequada.
-                // Agora, a busca é feita nos campos NomeCliente, NomeFuncionario e Servico.
-                // Usamos LIKE com % para busca parcial (case-insensitive, dependendo do collation do banco).
-                // Se precisar de mais campos ou lógica diferente, ajuste conforme necessário.
                 string query = @"SELECT 
                     A.AgendamentoID, 
                     A.ClienteID, 

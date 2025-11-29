@@ -13,7 +13,7 @@ namespace ShadowLines.Forms
 
         public void PopularComboBoxClientes()
         {
-            var clientes = Classes.Cliente.Select();
+            var clientes = Classes.Cliente.Select("%");
             comboBoxClientes.DataSource = clientes;
             comboBoxClientes.DisplayMember = "Nome_Completo";
             comboBoxClientes.ValueMember = "ClienteID";

@@ -17,17 +17,30 @@ namespace ShadowLines.Classes
         public string Endereco { get; set; }
         public DateTime DataCadastro { get; set; }
 
-        public static List<Cliente> Select()
+        public static List<Cliente> Select(string termo)
         {
             var lista = new List<Cliente>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"SELECT ClienteID, Nome_Completo, CPF, Telefone, Email, Data_Nascimento, Endereco, DataCadastro
-                                FROM Clientes";
+                string query = @"SELECT 
+                                ClienteID, 
+                                Nome_Completo, 
+                                CPF, 
+                                Telefone, 
+                                Email, 
+                                Data_Nascimento, 
+                                Endereco, 
+                                DataCadastro
+                                FROM Clientes 
+                                WHERE Nome_Completo LIKE '%' + @termo + '%'
+                                OR CPF LIKE '%' + @termo + '%'
+                                OR Email LIKE '%' + @termo + '%'
+                                OR Data_Nascimento LIKE '%' + @termo + '%'";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
+                    cmd.Parameters.AddWithValue("@termo", termo);
                     conn.Open();
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {

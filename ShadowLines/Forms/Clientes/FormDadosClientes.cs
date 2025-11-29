@@ -23,7 +23,7 @@ namespace ShadowLines.Forms
             sfDataGridPanel.FilterRowPosition = RowPosition.Top;
 
             ConfigurarColunas();
-            sfDataGridPanel.DataSource = Cliente.Select();
+            sfDataGridPanel.DataSource = Cliente.Select(txtBuscar.Text);
         }
 
 
@@ -93,6 +93,11 @@ namespace ShadowLines.Forms
             {
                 this.Close(); // Fecha o formulário
             }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            sfDataGridPanel.DataSource = Cliente.Select(txtBuscar.Text);
         }
     }
 }

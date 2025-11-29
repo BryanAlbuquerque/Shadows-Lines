@@ -33,7 +33,7 @@ namespace ShadowLines.Forms
         {   
             var agendamento = Agendamento.Select();
 
-            var clientes = Cliente.Select();
+            var clientes = Cliente.Select("%");
 
             comboBoxClientes.DataSource = clientes;
             comboBoxClientes.DisplayMember = "Nome_Completo";
