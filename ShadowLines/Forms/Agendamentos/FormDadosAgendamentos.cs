@@ -94,5 +94,18 @@ namespace ShadowLines.Forms
                 this.Close();
             }
         }
+
+
+        private void Pesquisar()
+        {
+            Agendamento agendamento = new Agendamento();
+
+            sfDataGridPanel.DataSource = Agendamento.Busca(txtBusca.Text);
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            Pesquisar();
+        }
     }
 }

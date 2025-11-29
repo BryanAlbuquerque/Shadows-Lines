@@ -36,7 +36,7 @@
             this.customBackground = new CustomBackgroundPanel();
             this.btnAlterar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBusca = new System.Windows.Forms.TextBox();
             this.sfDataGridPanel = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -82,7 +82,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customBackground.Controls.Add(this.btnAlterar);
             this.customBackground.Controls.Add(this.btnBuscar);
-            this.customBackground.Controls.Add(this.textBox1);
+            this.customBackground.Controls.Add(this.txtBusca);
             this.customBackground.Controls.Add(this.sfDataGridPanel);
             this.customBackground.Controls.Add(this.guna2HtmlLabel2);
             this.customBackground.Controls.Add(this.guna2HtmlLabel3);
@@ -131,13 +131,14 @@
             this.btnBuscar.TabIndex = 41;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // textBox1
+            // txtBusca
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 154);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(507, 20);
-            this.textBox1.TabIndex = 40;
+            this.txtBusca.Location = new System.Drawing.Point(134, 154);
+            this.txtBusca.Name = "txtBusca";
+            this.txtBusca.Size = new System.Drawing.Size(507, 20);
+            this.txtBusca.TabIndex = 40;
             // 
             // sfDataGridPanel
             // 
@@ -260,7 +261,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGridPanel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBusca;
         private FontAwesome.Sharp.IconButton btnBuscar;
         private Guna.UI2.WinForms.Guna2GradientButton btnAlterar;
     }

@@ -74,8 +74,28 @@ namespace ShadowLines.Classes
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"SELECT @termo FROM Agendamentos
-                                 WHERE @termo LIKE %termo%";
+                // Corrigindo a query para realizar uma busca adequada.
+                // Agora, a busca é feita nos campos NomeCliente, NomeFuncionario e Servico.
+                // Usamos LIKE com % para busca parcial (case-insensitive, dependendo do collation do banco).
+                // Se precisar de mais campos ou lógica diferente, ajuste conforme necessário.
+                string query = @"SELECT 
+                    A.AgendamentoID, 
+                    A.ClienteID, 
+                    A.FuncionarioID, 
+                    A.DataAgendamento, 
+                    A.Servico, 
+                    A.Valor, 
+                    A.Situacao, 
+                    A.Pagamento, 
+                    C.Nome_Completo AS NomeCliente, 
+                    F.Nome AS NomeFuncionario
+                 FROM Agendamentos A
+                 INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
+                 INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID
+                 WHERE C.Nome_Completo LIKE '%' + @termo + '%' 
+                    OR F.Nome LIKE '%' + @termo + '%' 
+                    OR A.Servico LIKE '%' + @termo + '%'
+                    OR A.DataAgendamento LIKE '%' + @termo + '%'";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -95,7 +115,9 @@ namespace ShadowLines.Classes
                                 Servico = r["Servico"].ToString(),
                                 Valor = (decimal)r["Valor"],
                                 Situacao = r["Situacao"].ToString(),
-                                Pagamento = r["Pagamento"].ToString()
+                                Pagamento = r["Pagamento"].ToString(),
+                                NomeCliente = r["NomeCliente"].ToString(),
+                                NomeFuncionario = r["NomeFuncionario"].ToString() 
                             });
                         }
                     }
@@ -104,6 +126,7 @@ namespace ShadowLines.Classes
 
             return lista;
         }
+
 
         public bool Insert()
         {
