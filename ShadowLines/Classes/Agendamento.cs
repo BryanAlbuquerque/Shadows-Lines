@@ -124,6 +124,64 @@ namespace ShadowLines.Classes
             return lista;
         }
 
+        public static List<Agendamento> ListaPendentes(string termo)
+        {
+            var lista = new List<Agendamento>();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"SELECT 
+                    A.AgendamentoID, 
+                    A.ClienteID, 
+                    A.FuncionarioID, 
+                    A.DataAgendamento, 
+                    A.Servico, 
+                    A.Valor, 
+                    A.Situacao, 
+                    A.Pagamento, 
+                    C.Nome_Completo AS NomeCliente, 
+                    F.Nome AS NomeFuncionario
+
+                    FROM Agendamentos A
+                 INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
+                 INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID
+                 WHERE Pagamento = 'Pendente'
+                    OR C.Nome_Completo LIKE '%' + @termo + '%' 
+                    OR F.Nome LIKE '%' + @termo + '%' 
+                    OR A.Servico LIKE '%' + @termo + '%'
+                    OR A.DataAgendamento LIKE '%' + @termo + '%'";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@termo", termo);
+
+                    conn.Open();
+                    using (SqlDataReader r = cmd.ExecuteReader())
+                    {
+                        while (r.Read())
+                        {
+                            lista.Add(new Agendamento()
+                            {
+                                AgendamentoID = r.GetInt32(r.GetOrdinal("AgendamentoID")),
+                                ClienteID = r.GetInt32(r.GetOrdinal("ClienteID")),
+                                FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
+                                DataAgendamento = r.GetDateTime(r.GetOrdinal("DataAgendamento")),
+                                Servico = r["Servico"].ToString(),
+                                Valor = (decimal)r["Valor"],
+                                Situacao = r["Situacao"].ToString(),
+                                Pagamento = r["Pagamento"].ToString(),
+                                NomeCliente = r["NomeCliente"].ToString(),
+                                NomeFuncionario = r["NomeFuncionario"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+
+            return lista;
+        }
+
+
 
         public bool Insert()
         {

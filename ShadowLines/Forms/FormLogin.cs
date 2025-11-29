@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace ShadowLines
 {
-    public partial class Login : Form
+    public partial class FormLogin : Form
     {
-        public Login()
+        public FormLogin()
         {
             InitializeComponent();
 
@@ -38,14 +38,14 @@ namespace ShadowLines
                 if (accessLevel == 1)
                 {
                     MessageBox.Show("Login realizado com sucesso!");
-                    Menu01 menu = new Menu01();
+                    FormMenu1 menu = new FormMenu1();
                     menu.Show();
                     this.Hide(); // Esconde a tela de login
                 }
                 else if (accessLevel == 2)
                 {
                     MessageBox.Show("Login realizado com sucesso!");
-                    Menu02 menu = new Menu02();
+                    FormMenu2 menu = new FormMenu2();
                     menu.Show();
                     this.Hide();
                 }

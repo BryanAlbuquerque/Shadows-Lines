@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Linq;
+using ShadowLines.Forms.Clientes;
 
 namespace ShadowLines.Forms
 {
@@ -80,10 +81,16 @@ namespace ShadowLines.Forms
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Menu01 menu01 = new Menu01();
+            FormMenu1 menu01 = new FormMenu1();
             menu01.Show();
             this.Hide();
         }
 
+        private void clientesDevendoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPagamentoPendente pagamento = new FormPagamentoPendente();
+            pagamento.Show();
+            this.Hide();
+        }
     }
 }

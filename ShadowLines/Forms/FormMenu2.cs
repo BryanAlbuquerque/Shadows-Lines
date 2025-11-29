@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
-    public partial class Menu02 : Form
+    public partial class FormMenu2 : Form
     {
-        public Menu02()
+        public FormMenu2()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;

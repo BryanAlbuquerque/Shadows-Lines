@@ -1,5 +1,4 @@
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.csproj.AssemblyReference.cache
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Login.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Properties.Resources.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.csproj.GenerateResource.cache
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.csproj.CoreCompileInputs.cache
@@ -93,8 +92,6 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLi.331D85DA
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.exe
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.pdb
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.exe.config
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Menu01.resources
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Menu02.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Microsoft.Bcl.TimeProvider.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\System.Formats.Asn1.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\System.IO.Pipelines.dll
@@ -238,3 +235,7 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.Shared
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormDadosAgendamentos.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormDadosClientes.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Agendamentos.FormAlterarAgendamento.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.FormLogin.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormMenu1.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormMenu2.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Clientes.FormPagamentoPendente.resources

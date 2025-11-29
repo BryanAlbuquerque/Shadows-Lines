@@ -1,30 +1,17 @@
-﻿using System;
-using ShadowLines.Classes;
-using System.Windows.Forms;
+﻿using ShadowLines.Classes;
 using Syncfusion.WinForms.DataGrid;
 using Syncfusion.WinForms.DataGrid.Enums;
-using ShadowLines.Forms.Agendamentos;
+using System;
+using System.Windows.Forms;
 
-namespace ShadowLines.Forms
+namespace ShadowLines.Forms.Clientes
 {
-    public partial class FormDadosAgendamentos : Form
+    public partial class FormPagamentoPendente : Form
     {
         private SfDataGrid grid;
-        public FormDadosAgendamentos()
+        public FormPagamentoPendente()
         {
             InitializeComponent();
-        }
-
-        private void ClientesDados_Load(object sender, EventArgs e)
-        {
-
-            sfDataGridPanel.AutoGenerateColumns = false;
-            sfDataGridPanel.AllowSorting = true;
-            sfDataGridPanel.AllowFiltering = true;
-            sfDataGridPanel.FilterRowPosition = RowPosition.Top;
-
-            ConfigurarColunas();
-            sfDataGridPanel.DataSource = Agendamento.Select();
         }
 
         private void ConfigurarColunas()
@@ -73,46 +60,20 @@ namespace ShadowLines.Forms
             sfDataGridPanel.Columns.Add(pagamento);
         }
 
-
-        private void btnVoltar_Click_1(object sender, EventArgs e)
+        private void FormPagamentoPendente_Load_1(object sender, EventArgs e)
         {
-            FormMenu1 menu = new FormMenu1();
-            menu.Show();
-            this.Hide();
+            sfDataGridPanel.AutoGenerateColumns = false;
+            sfDataGridPanel.AllowSorting = true;
+            sfDataGridPanel.AllowFiltering = true;
+            sfDataGridPanel.FilterRowPosition = RowPosition.Top;
+
+            ConfigurarColunas();
+            sfDataGridPanel.DataSource = Agendamento.ListaPendentes(txtBuscar.Text);
         }
 
-        private void btnClose_Click_1(object sender, EventArgs e)
+        private void btnBuscar_Click_1(object sender, EventArgs e)
         {
-            DialogResult resultado = MessageBox.Show(
-            "Deseja realmente fechar o sistema?",
-            "Confirmar saída",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question);
-
-            if (resultado == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
-
-
-        private void Pesquisar()
-        {
-            Agendamento agendamento = new Agendamento();
-
-            sfDataGridPanel.DataSource = Agendamento.Busca(txtBusca.Text);
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            Pesquisar();
-        }
-
-        private void btnAlterar_Click(object sender, EventArgs e)
-        {
-            FormAlterarAgendamento agendamento = new FormAlterarAgendamento();
-            agendamento.MdiParent = this.MdiParent;
-            agendamento.Show();
+            sfDataGridPanel.DataSource = Agendamento.ListaPendentes(txtBuscar.Text);
         }
     }
 }

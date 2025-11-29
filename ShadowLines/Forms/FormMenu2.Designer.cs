@@ -1,6 +1,6 @@
 ﻿namespace ShadowLines.Forms
 {
-    partial class Menu02
+    partial class FormMenu2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu02));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu2));
             this.iconButtonAtualizar = new FontAwesome.Sharp.IconButton();
             this.lblUsuario = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.roundedPanel3 = new RoundedPanel();

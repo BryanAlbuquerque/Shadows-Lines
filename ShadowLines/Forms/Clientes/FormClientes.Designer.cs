@@ -40,7 +40,6 @@
             this.visualizarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fianceiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesDevendoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarStatusPagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cobrançaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frequenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesMaisFrequentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -99,7 +98,7 @@
             this.frequenciaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(284, 76);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(395, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(515, 26);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -153,7 +152,6 @@
             // 
             this.fianceiroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesDevendoToolStripMenuItem,
-            this.alterarStatusPagamentoToolStripMenuItem,
             this.cobrançaToolStripMenuItem});
             this.fianceiroToolStripMenuItem.Name = "fianceiroToolStripMenuItem";
             this.fianceiroToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
@@ -164,12 +162,7 @@
             this.clientesDevendoToolStripMenuItem.Name = "clientesDevendoToolStripMenuItem";
             this.clientesDevendoToolStripMenuItem.Size = new System.Drawing.Size(315, 22);
             this.clientesDevendoToolStripMenuItem.Text = "Clientes pagamento pendente";
-            // 
-            // alterarStatusPagamentoToolStripMenuItem
-            // 
-            this.alterarStatusPagamentoToolStripMenuItem.Name = "alterarStatusPagamentoToolStripMenuItem";
-            this.alterarStatusPagamentoToolStripMenuItem.Size = new System.Drawing.Size(315, 22);
-            this.alterarStatusPagamentoToolStripMenuItem.Text = "Alterar Status Pagamento";
+            this.clientesDevendoToolStripMenuItem.Click += new System.EventHandler(this.clientesDevendoToolStripMenuItem_Click);
             // 
             // cobrançaToolStripMenuItem
             // 
@@ -274,7 +267,6 @@
         private System.Windows.Forms.ToolStripMenuItem frequenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesMaisFrequentesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesMenosFrequentesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alterarStatusPagamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cobrançaToolStripMenuItem;
     }
 }

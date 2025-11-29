@@ -265,6 +265,12 @@
     <Compile Include="Forms\Agendamentos\FormSituacao.Designer.cs">
       <DependentUpon>FormSituacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Clientes\FormPagamentoPendente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clientes\FormPagamentoPendente.Designer.cs">
+      <DependentUpon>FormPagamentoPendente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\SessaoUsuarioModel.cs" />
     <Compile Include="UI\CardUI.cs">
       <SubType>Component</SubType>
@@ -292,23 +298,23 @@
     <Compile Include="Forms\Clientes\FormDadosClientes.Designer.cs">
       <DependentUpon>FormDadosClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login.cs">
+    <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Menu01.cs">
+    <Compile Include="Forms\FormMenu1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Menu01.Designer.cs">
-      <DependentUpon>Menu01.cs</DependentUpon>
+    <Compile Include="Forms\FormMenu1.Designer.cs">
+      <DependentUpon>FormMenu1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Menu02.cs">
+    <Compile Include="Forms\FormMenu2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Menu02.Designer.cs">
-      <DependentUpon>Menu02.cs</DependentUpon>
+    <Compile Include="Forms\FormMenu2.Designer.cs">
+      <DependentUpon>FormMenu2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -339,14 +345,17 @@
     <EmbeddedResource Include="Forms\Agendamentos\FormSituacao.resx">
       <DependentUpon>FormSituacao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Clientes\FormPagamentoPendente.resx">
+      <DependentUpon>FormPagamentoPendente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Menu01.resx">
-      <DependentUpon>Menu01.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Menu02.resx">
-      <DependentUpon>Menu02.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormMenu1.resx">
+      <DependentUpon>FormMenu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMenu2.resx">
+      <DependentUpon>FormMenu2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Agendamentos\FormReagendamento.resx">
       <DependentUpon>FormReagendamento.cs</DependentUpon>

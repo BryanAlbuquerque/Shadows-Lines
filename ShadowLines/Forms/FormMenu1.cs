@@ -6,14 +6,14 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
-    public partial class Menu01 : Form
+    public partial class FormMenu1 : Form
     {
         private Panel painelAgendamentosUI;
         private Panel painelCanceladosDiaUI;
         private Panel painelTotalAgendamentosUI;
         private Panel painelValorTotalDiarioUI;
 
-        public Menu01()
+        public FormMenu1()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
@@ -122,7 +122,7 @@ namespace ShadowLines.Forms
 
         private void btnDesconectar_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
+            FormLogin login = new FormLogin();
             login.Show();
             this.Hide();
         }
