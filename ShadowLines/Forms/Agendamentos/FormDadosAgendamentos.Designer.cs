@@ -34,6 +34,7 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.customBackground = new CustomBackgroundPanel();
+            this.btnAlterar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.sfDataGridPanel = new Syncfusion.WinForms.DataGrid.SfDataGrid();
@@ -42,7 +43,6 @@
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnAlterar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.customBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sfDataGridPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -93,6 +93,27 @@
             this.customBackground.Name = "customBackground";
             this.customBackground.Size = new System.Drawing.Size(1027, 606);
             this.customBackground.TabIndex = 0;
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAlterar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAlterar.BorderRadius = 15;
+            this.btnAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAlterar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAlterar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAlterar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAlterar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAlterar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAlterar.FillColor = System.Drawing.Color.Black;
+            this.btnAlterar.FillColor2 = System.Drawing.Color.Navy;
+            this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlterar.ForeColor = System.Drawing.Color.White;
+            this.btnAlterar.Location = new System.Drawing.Point(792, 137);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(112, 34);
+            this.btnAlterar.TabIndex = 42;
+            this.btnAlterar.Text = "Alterar";
             // 
             // btnBuscar
             // 
@@ -208,27 +229,6 @@
             this.picLogo.TabIndex = 34;
             this.picLogo.TabStop = false;
             // 
-            // btnAlterar
-            // 
-            this.btnAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAlterar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAlterar.BorderRadius = 15;
-            this.btnAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAlterar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAlterar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAlterar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAlterar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAlterar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAlterar.FillColor = System.Drawing.Color.Black;
-            this.btnAlterar.FillColor2 = System.Drawing.Color.Navy;
-            this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(792, 137);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(112, 34);
-            this.btnAlterar.TabIndex = 42;
-            this.btnAlterar.Text = "Alterar";
-            // 
             // FormDadosAgendamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,6 +236,7 @@
             this.ClientSize = new System.Drawing.Size(1027, 606);
             this.Controls.Add(this.customBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDadosAgendamentos";
             this.Text = "ClientesDados";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

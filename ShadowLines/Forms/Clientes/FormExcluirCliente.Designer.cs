@@ -163,7 +163,10 @@
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.guna2HtmlLabel5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormExcluirCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Excluir dados dos clientes";
             this.Load += new System.EventHandler(this.FormExcluirCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

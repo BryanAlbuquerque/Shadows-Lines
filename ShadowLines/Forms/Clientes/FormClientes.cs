@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace ShadowLines.Forms
 {
@@ -12,23 +13,62 @@ namespace ShadowLines.Forms
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCadastroClientes cadastro = new FormCadastroClientes();
-            cadastro.MdiParent = this.MdiParent;
-            cadastro.Show();
+            FormCadastroClientes cadastro = Application.OpenForms.OfType<FormCadastroClientes>().FirstOrDefault();
+
+
+            if (cadastro == null)
+            {
+                cadastro = new FormCadastroClientes();
+                cadastro.Show();
+            }
+            else
+            {
+                if (cadastro.WindowState == FormWindowState.Minimized)
+                {
+                    cadastro.MdiParent = this.MdiParent;
+                    cadastro.WindowState = FormWindowState.Normal;
+                }
+                cadastro.Activate();
+            }
         }
 
         private void alterarDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormAlterarDadosCliente update = new FormAlterarDadosCliente();
-            update.MdiParent = this.MdiParent;
-            update.Show();
+
+            FormAlterarDadosCliente alterar = Application.OpenForms.OfType<FormAlterarDadosCliente>().FirstOrDefault();
+            if (alterar == null)
+            {
+                alterar = new FormAlterarDadosCliente();
+                alterar.Show();
+            }
+            else
+            {
+                if (alterar.WindowState == FormWindowState.Minimized)
+                {
+                    alterar.MdiParent = this.MdiParent;
+                    alterar.WindowState = FormWindowState.Normal;
+                }
+                alterar.Activate();
+            }
         }
 
         private void excluirClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormExcluirCliente cliente = new FormExcluirCliente();
-            cliente.MdiParent = this.MdiParent;
-            cliente.Show();
+            FormExcluirCliente cliente = Application.OpenForms.OfType<FormExcluirCliente>().FirstOrDefault();
+            if (cliente == null)
+            {
+                cliente = new FormExcluirCliente();
+                cliente.Show();
+            }
+            else
+            {
+                if (cliente.WindowState == FormWindowState.Minimized)
+                {
+                    cliente.MdiParent = this.MdiParent;
+                    cliente.WindowState = FormWindowState.Normal;
+                }
+                cliente.Activate();
+            }
         }
 
         private void visualizarClientesToolStripMenuItem_Click(object sender, EventArgs e)

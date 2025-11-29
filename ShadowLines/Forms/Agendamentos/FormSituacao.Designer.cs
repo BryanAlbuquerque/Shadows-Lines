@@ -167,9 +167,10 @@
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.lblTitulo2);
             this.Controls.Add(this.guna2HtmlLabel5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSituacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormSituacao";
+            this.Text = "Alterar Situação";
             this.Load += new System.EventHandler(this.FormSituacao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);

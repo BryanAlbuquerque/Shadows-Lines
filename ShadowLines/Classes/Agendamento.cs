@@ -68,19 +68,18 @@ namespace ShadowLines.Classes
         }
 
 
-        public static List<Agendamento> SelectedSet(int clienteId)
+        public static List<Agendamento> Busca(string termo)
         {
             var lista = new List<Agendamento>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"SELECT * FROM Agendamentos 
-                                 WHERE ClienteID = @ID
-                                 ORDER BY DataAgendamento DESC";
+                string query = @"SELECT @termo FROM Agendamentos
+                                 WHERE @termo LIKE %termo%";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ID", clienteId);
+                    cmd.Parameters.AddWithValue("@termo", termo);
 
                     conn.Open();
                     using (SqlDataReader r = cmd.ExecuteReader())
@@ -168,6 +167,25 @@ namespace ShadowLines.Classes
                 {
                     cmd.Parameters.AddWithValue("@ClienteID", ClienteID);
                     cmd.Parameters.AddWithValue("@Situacao", Situacao);
+                    conn.Open();
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        public bool UpdateTable() 
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+                    UPDATE Agendamentos SET
+                    
+                    Pagamento = @Pagamento
+                    WHERE ClienteID = @ClienteID";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ClienteID", ClienteID);
+                    cmd.Parameters.AddWithValue("@Pagamento", Pagamento);
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
                 }

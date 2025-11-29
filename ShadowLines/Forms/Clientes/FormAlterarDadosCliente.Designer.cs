@@ -449,9 +449,11 @@
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.lblFuncionario);
             this.Controls.Add(this.guna2HtmlLabel5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAlterarDadosCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAlterarDadosCliente";
+            this.Text = "Alterar Dados";
             this.Load += new System.EventHandler(this.FormAlterarDadosCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();

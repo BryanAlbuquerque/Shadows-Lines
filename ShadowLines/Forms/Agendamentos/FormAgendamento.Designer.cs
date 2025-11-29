@@ -159,11 +159,11 @@
             // 
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(143, 12);
+            this.lblTitulo.Location = new System.Drawing.Point(168, 12);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(351, 34);
+            this.lblTitulo.Size = new System.Drawing.Size(300, 34);
             this.lblTitulo.TabIndex = 82;
-            this.lblTitulo.Text = "Agendamento dos clientes";
+            this.lblTitulo.Text = "Agendamento Clientes";
             // 
             // btnAgendar
             // 
@@ -288,6 +288,7 @@
             this.Controls.Add(this.lblFuncionario);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAgendamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agendamentos";

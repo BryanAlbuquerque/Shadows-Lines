@@ -39,22 +39,22 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblUsuario = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDados = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButtonAtualizar = new FontAwesome.Sharp.IconButton();
-            this.btnDados = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.roundedPanel3 = new RoundedPanel();
             this.roundedPanel1 = new RoundedPanel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -184,7 +184,7 @@
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.White;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(341, 31);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(300, 31);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(381, 42);
             this.guna2HtmlLabel5.TabIndex = 8;
@@ -195,7 +195,7 @@
             this.lblUsuario.BackColor = System.Drawing.Color.White;
             this.lblUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.Blue;
-            this.lblUsuario.Location = new System.Drawing.Point(270, 22);
+            this.lblUsuario.Location = new System.Drawing.Point(266, 22);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(115, 35);
             this.lblUsuario.TabIndex = 55;
@@ -221,6 +221,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 679);
             this.panel1.TabIndex = 73;
+            // 
+            // btnDados
+            // 
+            this.btnDados.BorderRadius = 5;
+            this.btnDados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDados.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDados.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDados.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDados.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDados.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDados.FillColor = System.Drawing.Color.Black;
+            this.btnDados.FillColor2 = System.Drawing.Color.Black;
+            this.btnDados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDados.ForeColor = System.Drawing.Color.White;
+            this.btnDados.Location = new System.Drawing.Point(55, 554);
+            this.btnDados.Name = "btnDados";
+            this.btnDados.Size = new System.Drawing.Size(144, 51);
+            this.btnDados.TabIndex = 82;
+            this.btnDados.Text = "Dados Agendamentos";
+            this.btnDados.Click += new System.EventHandler(this.btnDados_Click);
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Database;
+            this.iconPictureBox5.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.IconSize = 42;
+            this.iconPictureBox5.Location = new System.Drawing.Point(16, 560);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(50, 42);
+            this.iconPictureBox5.TabIndex = 83;
+            this.iconPictureBox5.TabStop = false;
             // 
             // iconPictureBox4
             // 
@@ -290,38 +322,6 @@
             this.iconButtonAtualizar.Visible = false;
             this.iconButtonAtualizar.Click += new System.EventHandler(this.iconButtonAtualizar_Click);
             // 
-            // btnDados
-            // 
-            this.btnDados.BorderRadius = 5;
-            this.btnDados.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDados.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDados.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDados.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDados.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDados.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDados.FillColor = System.Drawing.Color.Black;
-            this.btnDados.FillColor2 = System.Drawing.Color.Black;
-            this.btnDados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDados.ForeColor = System.Drawing.Color.White;
-            this.btnDados.Location = new System.Drawing.Point(55, 554);
-            this.btnDados.Name = "btnDados";
-            this.btnDados.Size = new System.Drawing.Size(144, 51);
-            this.btnDados.TabIndex = 82;
-            this.btnDados.Text = "Dados Agendamentos";
-            this.btnDados.Click += new System.EventHandler(this.btnDados_Click);
-            // 
-            // iconPictureBox5
-            // 
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Database;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 42;
-            this.iconPictureBox5.Location = new System.Drawing.Point(16, 560);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(50, 42);
-            this.iconPictureBox5.TabIndex = 83;
-            this.iconPictureBox5.TabStop = false;
-            // 
             // roundedPanel3
             // 
             this.roundedPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -363,6 +363,7 @@
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "Menu01";
             this.Text = "Menu";
@@ -370,11 +371,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
