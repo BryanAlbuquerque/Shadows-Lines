@@ -237,3 +237,4 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.SfList
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.Shared.Base.xml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormDadosAgendamentos.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormDadosClientes.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Agendamentos.FormAlterarAgendamento.resources

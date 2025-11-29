@@ -3,6 +3,7 @@ using ShadowLines.Classes;
 using System.Windows.Forms;
 using Syncfusion.WinForms.DataGrid;
 using Syncfusion.WinForms.DataGrid.Enums;
+using ShadowLines.Forms.Agendamentos;
 
 namespace ShadowLines.Forms
 {
@@ -105,6 +106,13 @@ namespace ShadowLines.Forms
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Pesquisar();
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            FormAlterarAgendamento agendamento = new FormAlterarAgendamento();
+            agendamento.MdiParent = this.MdiParent;
+            agendamento.Show();
         }
     }
 }

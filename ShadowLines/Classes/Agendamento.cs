@@ -85,7 +85,8 @@ namespace ShadowLines.Classes
                     A.Pagamento, 
                     C.Nome_Completo AS NomeCliente, 
                     F.Nome AS NomeFuncionario
-                 FROM Agendamentos A
+
+                    FROM Agendamentos A
                  INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
                  INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID
                  WHERE C.Nome_Completo LIKE '%' + @termo + '%' 
@@ -198,12 +199,22 @@ namespace ShadowLines.Classes
             {
                 string query = @"
                     UPDATE Agendamentos SET
-                    
+                    FuncionarioID = @FuncionarioID,
+                    Servico = @Servico, 
+                    DataAgendamento = @DataAgendamento,
+                    Valor = @Valor,
+                    Situacao = @Situacao,
                     Pagamento = @Pagamento
-                    WHERE ClienteID = @ClienteID";
+                    WHERE ClienteID = @ClienteID";  
+
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@ClienteID", ClienteID);
+                    cmd.Parameters.AddWithValue("@FuncionarioID", FuncionarioID);
+                    cmd.Parameters.AddWithValue("@Servico", Servico);
+                    cmd.Parameters.AddWithValue("@DataAgendamento", DataAgendamento);
+                    cmd.Parameters.AddWithValue("@Valor", Valor);
+                    cmd.Parameters.AddWithValue("@Situacao", Situacao);
                     cmd.Parameters.AddWithValue("@Pagamento", Pagamento);
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;

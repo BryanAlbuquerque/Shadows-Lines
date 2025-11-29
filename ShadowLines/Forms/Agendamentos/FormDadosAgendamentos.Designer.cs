@@ -114,6 +114,7 @@
             this.btnAlterar.Size = new System.Drawing.Size(112, 34);
             this.btnAlterar.TabIndex = 42;
             this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnBuscar
             // 
@@ -238,6 +239,7 @@
             this.Controls.Add(this.customBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "FormDadosAgendamentos";
             this.Text = "ClientesDados";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

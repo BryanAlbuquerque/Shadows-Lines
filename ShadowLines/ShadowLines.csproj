@@ -223,6 +223,12 @@
     <Compile Include="Forms\Agendamentos\FormAgendamento.Designer.cs">
       <DependentUpon>FormAgendamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Agendamentos\FormAlterarAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Agendamentos\FormAlterarAgendamento.Designer.cs">
+      <DependentUpon>FormAlterarAgendamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Agendamentos\FormDadosAgendamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,6 +312,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Agendamentos\FormAlterarAgendamento.resx">
+      <DependentUpon>FormAlterarAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Agendamentos\FormDadosAgendamentos.resx">
       <DependentUpon>FormDadosAgendamentos.cs</DependentUpon>
     </EmbeddedResource>
