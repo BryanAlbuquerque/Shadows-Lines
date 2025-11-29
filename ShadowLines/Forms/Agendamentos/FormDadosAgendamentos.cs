@@ -26,7 +26,6 @@ namespace ShadowLines.Forms
             sfDataGridPanel.DataSource = Agendamento.Select();
         }
 
-
         private void ConfigurarColunas()
         {
             GridTextColumn nome = new GridTextColumn();

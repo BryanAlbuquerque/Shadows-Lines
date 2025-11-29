@@ -30,7 +30,7 @@ namespace ShadowLines.Forms
             }
         }
         public void PopularComboBoxSituacao()
-        {   
+        {
             var agendamento = Agendamento.Select();
 
             var clientes = Cliente.Select("%");

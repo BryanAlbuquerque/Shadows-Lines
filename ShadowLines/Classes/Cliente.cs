@@ -1,6 +1,7 @@
-﻿using System;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
+using TheArtOfDevHtmlRenderer.Adapters;
 
 namespace ShadowLines.Classes
 {
@@ -16,6 +17,7 @@ namespace ShadowLines.Classes
         public DateTime? Data_Nascimento { get; set; }
         public string Endereco { get; set; }
         public DateTime DataCadastro { get; set; }
+
 
         public static List<Cliente> Select(string termo)
         {
