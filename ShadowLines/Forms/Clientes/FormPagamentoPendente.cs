@@ -75,5 +75,12 @@ namespace ShadowLines.Forms.Clientes
         {
             sfDataGridPanel.DataSource = Agendamento.ListaPendentes(txtBuscar.Text);
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            FormClientes clientes = new FormClientes();
+            clientes.Show();
+            this.Hide();
+        }
     }
 }

@@ -140,6 +140,7 @@
             this.btnVoltar.Size = new System.Drawing.Size(112, 34);
             this.btnVoltar.TabIndex = 45;
             this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnClose
             // 

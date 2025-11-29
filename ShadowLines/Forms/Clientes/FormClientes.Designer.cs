@@ -41,9 +41,6 @@
             this.fianceiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesDevendoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cobrançaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.frequenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesMaisFrequentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesMenosFrequentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -94,11 +91,10 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
             this.dadosToolStripMenuItem,
-            this.fianceiroToolStripMenuItem,
-            this.frequenciaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(284, 76);
+            this.fianceiroToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(477, 76);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(515, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(284, 26);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -144,7 +140,7 @@
             // visualizarClientesToolStripMenuItem
             // 
             this.visualizarClientesToolStripMenuItem.Name = "visualizarClientesToolStripMenuItem";
-            this.visualizarClientesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.visualizarClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.visualizarClientesToolStripMenuItem.Text = "Clientes";
             this.visualizarClientesToolStripMenuItem.Click += new System.EventHandler(this.visualizarClientesToolStripMenuItem_Click);
             // 
@@ -169,27 +165,6 @@
             this.cobrançaToolStripMenuItem.Name = "cobrançaToolStripMenuItem";
             this.cobrançaToolStripMenuItem.Size = new System.Drawing.Size(315, 22);
             this.cobrançaToolStripMenuItem.Text = "Cobrança";
-            // 
-            // frequenciaToolStripMenuItem
-            // 
-            this.frequenciaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientesMaisFrequentesToolStripMenuItem,
-            this.clientesMenosFrequentesToolStripMenuItem});
-            this.frequenciaToolStripMenuItem.Name = "frequenciaToolStripMenuItem";
-            this.frequenciaToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
-            this.frequenciaToolStripMenuItem.Text = "Frequencia";
-            // 
-            // clientesMaisFrequentesToolStripMenuItem
-            // 
-            this.clientesMaisFrequentesToolStripMenuItem.Name = "clientesMaisFrequentesToolStripMenuItem";
-            this.clientesMaisFrequentesToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.clientesMaisFrequentesToolStripMenuItem.Text = "Clientes mais frequentes";
-            // 
-            // clientesMenosFrequentesToolStripMenuItem
-            // 
-            this.clientesMenosFrequentesToolStripMenuItem.Name = "clientesMenosFrequentesToolStripMenuItem";
-            this.clientesMenosFrequentesToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.clientesMenosFrequentesToolStripMenuItem.Text = "Clientes menos frequentes";
             // 
             // guna2HtmlLabel4
             // 
@@ -264,9 +239,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnVoltar;
         private System.Windows.Forms.ToolStripMenuItem fianceiroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesDevendoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem frequenciaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesMaisFrequentesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesMenosFrequentesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cobrançaToolStripMenuItem;
     }
 }

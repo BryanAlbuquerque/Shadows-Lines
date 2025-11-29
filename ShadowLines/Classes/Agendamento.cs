@@ -146,10 +146,11 @@ namespace ShadowLines.Classes
                  INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
                  INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID
                  WHERE Pagamento = 'Pendente'
-                    OR C.Nome_Completo LIKE '%' + @termo + '%' 
-                    OR F.Nome LIKE '%' + @termo + '%' 
-                    OR A.Servico LIKE '%' + @termo + '%'
-                    OR A.DataAgendamento LIKE '%' + @termo + '%'";
+                    AND (C.Nome_Completo LIKE '%' + @termo + '%'
+                    AND F.Nome LIKE '%' + @termo + '%'
+                    AND A.Servico LIKE '%' + @termo + '%'
+                    AND A.DataAgendamento LIKE '%' + @termo + '%')";
+                    
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
