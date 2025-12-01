@@ -21,7 +21,7 @@ Values
 
 SELECT * FROM Agendamentos
 
-UPDATE Agendamentos
-SET Situacao = 'Finalizado'
-WHERE Pagamento = 'Pago'
+
+DELETE FROM agendamentos
+WHERE AgendamentoID = 24
 

@@ -92,5 +92,10 @@ namespace ShadowLines.Forms
             pagamento.Show();
             this.Hide();
         }
+
+        private void cobrançaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

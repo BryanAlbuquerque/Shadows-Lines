@@ -271,6 +271,12 @@
     <Compile Include="Forms\Clientes\FormPagamentoPendente.Designer.cs">
       <DependentUpon>FormPagamentoPendente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormsMenu2\FormAgendamento2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsMenu2\FormAgendamento2.Designer.cs">
+      <DependentUpon>FormAgendamento2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\SessaoUsuarioModel.cs" />
     <Compile Include="UI\CardUI.cs">
       <SubType>Component</SubType>
@@ -310,10 +316,10 @@
     <Compile Include="Forms\FormMenu1.Designer.cs">
       <DependentUpon>FormMenu1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormMenu2.cs">
+    <Compile Include="Forms\FormsMenu2\FormMenu2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormMenu2.Designer.cs">
+    <Compile Include="Forms\FormsMenu2\FormMenu2.Designer.cs">
       <DependentUpon>FormMenu2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -354,7 +360,10 @@
     <EmbeddedResource Include="Forms\FormMenu1.resx">
       <DependentUpon>FormMenu1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormMenu2.resx">
+    <EmbeddedResource Include="Forms\FormsMenu2\FormAgendamento2.resx">
+      <DependentUpon>FormAgendamento2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsMenu2\FormMenu2.resx">
       <DependentUpon>FormMenu2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Agendamentos\FormReagendamento.resx">

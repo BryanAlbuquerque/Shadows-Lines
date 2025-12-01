@@ -1,5 +1,6 @@
 ﻿using ShadowLines.Classes;
 using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -71,17 +72,37 @@ namespace ShadowLines.Forms
 
         private void btnAgendar_Click(object sender, EventArgs e)
         {
-            Agendamento agendamento = new Agendamento();
+            try
+            {
+                if (string.IsNullOrEmpty(comboBoxCliente.Text) 
+                    || string.IsNullOrEmpty(comboBoxServicos.Text)
+                    || string.IsNullOrEmpty(comboBoxFuncionarios.Text)
+                    || string.IsNullOrEmpty(txtStatus.Text)
+                    || string.IsNullOrEmpty(txtValor.Text)
+                    || string.IsNullOrEmpty(txtData.Text)) 
+                {
+                    MessageBox.Show("Erro existem espaços em branco");
+                    return;
+                }
+               
 
-            agendamento.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
-            agendamento.Servico = comboBoxServicos.Text;
-            agendamento.FuncionarioID = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
-            agendamento.Pagamento = txtStatus.Text;
-            agendamento.Valor = Convert.ToDecimal(txtValor.Text);
-            agendamento.DataAgendamento = Convert.ToDateTime(txtData.Text);
+                Agendamento agendamento = new Agendamento();
 
-            agendamento.Insert();
-            MessageBox.Show("Agendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                agendamento.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
+                agendamento.Servico = comboBoxServicos.Text;
+                agendamento.FuncionarioID = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
+                agendamento.Pagamento = txtStatus.Text;
+                agendamento.Valor = Convert.ToDecimal(txtValor.Text);
+                agendamento.DataAgendamento = Convert.ToDateTime(txtData.Text);
+
+                agendamento.Insert();
+                MessageBox.Show("Agendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SqlException ex)
+            {
+
+                MessageBox.Show($"ocorreu um erro: {ex}");
+            }
         }
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)

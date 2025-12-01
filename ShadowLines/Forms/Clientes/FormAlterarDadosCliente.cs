@@ -1,5 +1,6 @@
 ﻿using ShadowLines.Classes;
 using System;
+using System.Data.SqlClient;
 using System.Globalization;
 using System.Windows.Forms;
 
@@ -20,7 +21,7 @@ namespace ShadowLines.Forms
         private void Timer_Tick(object sender, EventArgs e)
         {
             labelData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
-        }   
+        }
 
         private void PopularComboBoxClientes()
         {
@@ -39,23 +40,42 @@ namespace ShadowLines.Forms
 
         private void Salvar()
         {
-            Cliente clientes = new Cliente();
+            try
+            {
+                if (string.IsNullOrEmpty(comboBoxClientes.Text)
+                    ||string.IsNullOrEmpty(txtNome.Text) 
+                    ||string.IsNullOrEmpty(txtCpf.Text)
+                    || string.IsNullOrEmpty(txtTelefone.Text)
+                    || string.IsNullOrEmpty(txtEmail.Text)
+                    || string.IsNullOrEmpty(txtData.Text)
+                    || string.IsNullOrEmpty(txtEndereco.Text))
+                {
+                    MessageBox.Show("Erro existem espaços em branco!");
+                    return;
+                }
+                Cliente clientes = new Cliente();
 
-            clientes.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
-            clientes.Nome_Completo = txtNome.Text;
-            clientes.CPF = Convert.ToInt64(txtCpf.Text.Replace(".", "").Replace("-", ""));
-            clientes.Telefone = Convert.ToInt64(txtTelefone.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
-            clientes.Email = txtEmail.Text;
-            clientes.Data_Nascimento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-            clientes.Endereco = txtEndereco.Text;
+                clientes.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
+                clientes.Nome_Completo = txtNome.Text;
+                clientes.CPF = Convert.ToInt64(txtCpf.Text.Replace(".", "").Replace("-", ""));
+                clientes.Telefone = Convert.ToInt64(txtTelefone.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
+                clientes.Email = txtEmail.Text;
+                clientes.Data_Nascimento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                clientes.Endereco = txtEndereco.Text;
 
-            clientes.Update();
+                clientes.Update();
 
-            MessageBox.Show("Dados alterados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Dados alterados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show($"Ocorreu um erro: {ex}");
+
+            }
         }
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            Salvar();   
+            Salvar();
         }
 
         private void comboBoxClientes_SelectionChangeCommitted(object sender, EventArgs e)

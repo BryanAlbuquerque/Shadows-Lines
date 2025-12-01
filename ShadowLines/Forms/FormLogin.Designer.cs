@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
-            this.txtSenhaId = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtNomeUsuario = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.customBackgroundPanel1 = new CustomBackgroundPanel();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.txtNomeUsuario = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSenhaId = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -48,68 +48,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtSenhaId
-            // 
-            this.txtSenhaId.BorderColor = System.Drawing.Color.DimGray;
-            this.txtSenhaId.BorderRadius = 5;
-            this.txtSenhaId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSenhaId.DefaultText = "";
-            this.txtSenhaId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSenhaId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSenhaId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSenhaId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSenhaId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSenhaId.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSenhaId.ForeColor = System.Drawing.Color.Black;
-            this.txtSenhaId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSenhaId.Location = new System.Drawing.Point(374, 278);
-            this.txtSenhaId.Name = "txtSenhaId";
-            this.txtSenhaId.PlaceholderText = "";
-            this.txtSenhaId.SelectedText = "";
-            this.txtSenhaId.Size = new System.Drawing.Size(200, 30);
-            this.txtSenhaId.TabIndex = 6;
-            // 
-            // txtNomeUsuario
-            // 
-            this.txtNomeUsuario.BorderColor = System.Drawing.Color.DimGray;
-            this.txtNomeUsuario.BorderRadius = 5;
-            this.txtNomeUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNomeUsuario.DefaultText = "";
-            this.txtNomeUsuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNomeUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNomeUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNomeUsuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNomeUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNomeUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNomeUsuario.ForeColor = System.Drawing.Color.Black;
-            this.txtNomeUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNomeUsuario.Location = new System.Drawing.Point(374, 192);
-            this.txtNomeUsuario.Name = "txtNomeUsuario";
-            this.txtNomeUsuario.PlaceholderText = "";
-            this.txtNomeUsuario.SelectedText = "";
-            this.txtNomeUsuario.Size = new System.Drawing.Size(200, 28);
-            this.txtNomeUsuario.TabIndex = 5;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BorderRadius = 10;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogin.FillColor = System.Drawing.Color.Black;
-            this.btnLogin.FillColor2 = System.Drawing.Color.Blue;
-            this.btnLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(411, 335);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(120, 32);
-            this.btnLogin.TabIndex = 7;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // guna2BorderlessForm1
             // 
@@ -167,6 +105,48 @@
             this.iconPictureBox1.TabIndex = 50;
             this.iconPictureBox1.TabStop = false;
             // 
+            // txtNomeUsuario
+            // 
+            this.txtNomeUsuario.BorderColor = System.Drawing.Color.DimGray;
+            this.txtNomeUsuario.BorderRadius = 5;
+            this.txtNomeUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNomeUsuario.DefaultText = "";
+            this.txtNomeUsuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNomeUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNomeUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNomeUsuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNomeUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNomeUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNomeUsuario.ForeColor = System.Drawing.Color.Black;
+            this.txtNomeUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNomeUsuario.Location = new System.Drawing.Point(374, 192);
+            this.txtNomeUsuario.Name = "txtNomeUsuario";
+            this.txtNomeUsuario.PlaceholderText = "";
+            this.txtNomeUsuario.SelectedText = "";
+            this.txtNomeUsuario.Size = new System.Drawing.Size(200, 28);
+            this.txtNomeUsuario.TabIndex = 5;
+            // 
+            // txtSenhaId
+            // 
+            this.txtSenhaId.BorderColor = System.Drawing.Color.DimGray;
+            this.txtSenhaId.BorderRadius = 5;
+            this.txtSenhaId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSenhaId.DefaultText = "";
+            this.txtSenhaId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSenhaId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSenhaId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSenhaId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSenhaId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSenhaId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSenhaId.ForeColor = System.Drawing.Color.Black;
+            this.txtSenhaId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSenhaId.Location = new System.Drawing.Point(374, 278);
+            this.txtSenhaId.Name = "txtSenhaId";
+            this.txtSenhaId.PlaceholderText = "";
+            this.txtSenhaId.SelectedText = "";
+            this.txtSenhaId.Size = new System.Drawing.Size(200, 30);
+            this.txtSenhaId.TabIndex = 6;
+            // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
@@ -177,6 +157,26 @@
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(267, 39);
             this.guna2HtmlLabel4.TabIndex = 48;
             this.guna2HtmlLabel4.Text = "Shadows & Lines";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BorderRadius = 10;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.FillColor = System.Drawing.Color.Black;
+            this.btnLogin.FillColor2 = System.Drawing.Color.Blue;
+            this.btnLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(411, 335);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(120, 32);
+            this.btnLogin.TabIndex = 7;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnClose
             // 
@@ -244,7 +244,7 @@
             this.guna2HtmlLabel1.TabIndex = 49;
             this.guna2HtmlLabel1.Text = "_________________________________";
             // 
-            // Login
+            // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -252,7 +252,7 @@
             this.Controls.Add(this.customBackgroundPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Login";
+            this.Name = "FormLogin";
             this.Text = "Login";
             this.customBackgroundPanel1.ResumeLayout(false);
             this.customBackgroundPanel1.PerformLayout();

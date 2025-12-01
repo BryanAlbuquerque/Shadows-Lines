@@ -1,5 +1,6 @@
 ﻿using ShadowLines.Classes;
 using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -46,14 +47,27 @@ namespace ShadowLines.Forms
             PopularComboBoxSituacao();
         }
 
-        public void Salvar() 
-        { 
-            Agendamento agendamento = new Agendamento();
-            agendamento.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
-            agendamento.Situacao = comboBoxSituacao.SelectedItem.ToString();
+        public void Salvar()
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(comboBoxClientes.Text)
+                    || string.IsNullOrEmpty(comboBoxSituacao.Text))
+                {
+                    MessageBox.Show("Erro existem espaços em branco!");
+                    return;
+                }
+                Agendamento agendamento = new Agendamento();
+                agendamento.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
+                agendamento.Situacao = comboBoxSituacao.SelectedItem.ToString();
 
-            agendamento.UpdateSituacao();
-            MessageBox.Show("Situação atualizada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                agendamento.UpdateSituacao();
+                MessageBox.Show("Situação atualizada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SqlException ex) 
+            {
+                MessageBox.Show($"Ocorreu um erro: {ex}");            
+            }
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)

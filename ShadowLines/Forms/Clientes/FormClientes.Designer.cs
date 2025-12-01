@@ -94,7 +94,7 @@
             this.fianceiroToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(477, 76);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(284, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(404, 26);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -140,7 +140,7 @@
             // visualizarClientesToolStripMenuItem
             // 
             this.visualizarClientesToolStripMenuItem.Name = "visualizarClientesToolStripMenuItem";
-            this.visualizarClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visualizarClientesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.visualizarClientesToolStripMenuItem.Text = "Clientes";
             this.visualizarClientesToolStripMenuItem.Click += new System.EventHandler(this.visualizarClientesToolStripMenuItem_Click);
             // 
@@ -165,6 +165,7 @@
             this.cobrançaToolStripMenuItem.Name = "cobrançaToolStripMenuItem";
             this.cobrançaToolStripMenuItem.Size = new System.Drawing.Size(315, 22);
             this.cobrançaToolStripMenuItem.Text = "Cobrança";
+            this.cobrançaToolStripMenuItem.Click += new System.EventHandler(this.cobrançaToolStripMenuItem_Click);
             // 
             // guna2HtmlLabel4
             // 

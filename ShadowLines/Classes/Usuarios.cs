@@ -33,7 +33,7 @@ namespace ShadowLines.Classes
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     string query =
-                      @"SELECT Nome, Nivel_Acesso
+                      @"SELECT Nome, NivelAcesso
                         FROM Funcionarios 
                         WHERE Nome = @NomeUsuario
                         AND FuncionarioID = @SenhaId";
@@ -50,7 +50,7 @@ namespace ShadowLines.Classes
                         if (reader.Read())
                         {
                             SessaoUsuarioModel.NomeUsuario = reader["Nome"].ToString();
-                            SessaoUsuarioModel.NivelAcesso = Convert.ToInt32(reader["Nivel_Acesso"]);
+                            SessaoUsuarioModel.NivelAcesso = Convert.ToInt32(reader["NivelAcesso"]);
 
                             return SessaoUsuarioModel.NivelAcesso; // 1 ou 2 conforme BD
                         }

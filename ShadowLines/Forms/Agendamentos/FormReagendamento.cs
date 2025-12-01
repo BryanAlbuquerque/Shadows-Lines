@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 using ShadowLines.Classes;
 
 namespace ShadowLines.Forms
@@ -60,15 +61,30 @@ namespace ShadowLines.Forms
         }
         private void btnReagendar_Click(object sender, EventArgs e)
         {
-            Agendamento agendamento = new Agendamento();
+            try
+            {
+                if (string.IsNullOrEmpty(comboBoxCliente.Text)
+                    || string.IsNullOrEmpty(txtData.Text)
+                    || string.IsNullOrEmpty(comboBoxServicos.Text)
+                    || string.IsNullOrEmpty(txtValor.Text)) 
+                {
+                    MessageBox.Show("Erro existem espaços em branco!");
+                    return; 
+                }
+                Agendamento agendamento = new Agendamento();
 
-            agendamento.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
-            agendamento.DataAgendamento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy HH:mm", null);
-            agendamento.Servico = comboBoxServicos.Text;
-            agendamento.Valor = Convert.ToDecimal(txtValor.Text);
+                agendamento.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
+                agendamento.DataAgendamento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy HH:mm", null);
+                agendamento.Servico = comboBoxServicos.Text;
+                agendamento.Valor = Convert.ToDecimal(txtValor.Text);
 
-            agendamento.Update();
-            MessageBox.Show("Reagendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                agendamento.Update();
+                MessageBox.Show("Reagendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show($"Erro ocorreu um erro! {ex}");
+            }
         }
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)

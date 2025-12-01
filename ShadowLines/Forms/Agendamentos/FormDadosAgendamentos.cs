@@ -9,7 +9,6 @@ namespace ShadowLines.Forms
 {
     public partial class FormDadosAgendamentos : Form
     {
-        private SfDataGrid grid;
         public FormDadosAgendamentos()
         {
             InitializeComponent();
@@ -76,9 +75,31 @@ namespace ShadowLines.Forms
 
         private void btnVoltar_Click_1(object sender, EventArgs e)
         {
-            FormMenu1 menu = new FormMenu1();
-            menu.Show();
-            this.Hide();
+            try
+            {
+                int accessLevel = usuario.AutenticarUsuario();
+
+                if (accessLevel == 1)
+                {
+                    MessageBox.Show("Login realizado com sucesso!");
+                    FormMenu1 menu = new FormMenu1();
+                    menu.Show();
+                    this.Hide();
+                }
+                else if (accessLevel == 2)
+                {
+                    MessageBox.Show("Login realizado com sucesso!");
+                    FormMenu2 menu = new FormMenu2();
+                    menu.Show();
+                    this.Hide();
+                }
+            }
+            catch (Exception ex) 
+            { 
+            
+            
+            
+            }
         }
 
         private void btnClose_Click_1(object sender, EventArgs e)

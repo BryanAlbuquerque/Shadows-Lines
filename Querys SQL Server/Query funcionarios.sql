@@ -1,20 +1,21 @@
 CREATE TABLE Funcionarios(
-FuncionarioID INT PRIMARY KEY IDENTITY(172,1),
+FuncionarioID INT PRIMARY KEY IDENTITY(150,1),
 Nome VARCHAR(50) NOT NULL,
 CPF BIGINT NOT NULL UNIQUE,
-Data_Nascimento DATE NOT NULL,
+DataNascimento DATE NOT NULL,
 Email NVARCHAR(50) NOT NULL,
 Telefone BIGINT NOT NULL,
 Endereco NVARCHAR (200),
 Cargo VARCHAR(100),
-Nivel_Acesso INT NOT NULL
+NivelAcesso INT  DEFAULT 0 NOT NULL
 )
 
+DROP TABLE Funcionarios
 
 INSERT INTO Funcionarios
-(Nome, CPF, Data_Nascimento, Email, Telefone, Endereco, Cargo, Nivel_Acesso)
+(Nome, CPF, DataNascimento, Email, Telefone, Endereco, Cargo, NivelAcesso)
 VALUES
-('Bryan Souza', '52341546889', '07/04/2005', 'bryanalburquerque2@gmail.com', '11974217641', 'Rua Palmira crepaldi 50', 'Gerente', '2');
+('Kayan Silva', '52756338875', '07/04/2002', 'KayanSilvao@gmail.com', '1197459841', 'Rua Avenida Bressiani 55', 'Tatuador', '0');
 
 
 SELECT * FROM Funcionarios

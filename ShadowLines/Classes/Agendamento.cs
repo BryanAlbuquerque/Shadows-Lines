@@ -37,8 +37,7 @@ namespace ShadowLines.Classes
                          C.Nome_Completo AS NomeCliente, F.Nome AS NomeFuncionario
                          FROM Agendamentos A
                          INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
-                         INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID
-                         ORDER BY A.DataAgendamento DESC";
+                         INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {

@@ -1,30 +1,19 @@
 ﻿using ShadowLines.Classes;
+using ShadowLines.Forms.FormsMenu2;
 using ShadowLines.UI;
-using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
-    public partial class FormMenu1 : Form
+    public partial class FormMenu2 : Form
     {
         private Panel painelAgendamentosUI;
         private Panel painelCanceladosDiaUI;
         private Panel painelTotalAgendamentosUI;
         private Panel painelValorTotalDiarioUI;
-
-        public FormMenu1()
+        public FormMenu2()
         {
             InitializeComponent();
-
-            foreach (Control ctrl in this.Controls)
-            {
-                if (ctrl is MdiClient)
-                {
-                    ctrl.BackColor = Color.White;
-                    break;
-                }
-            }
 
             painelAgendamentosUI = new PainelAgendamentosUI().CriarPainel();
             painelCanceladosDiaUI = new PainelCanceladosDiaUI().CriarPainel();
@@ -36,8 +25,6 @@ namespace ShadowLines.Forms
             this.Controls.Add(painelTotalAgendamentosUI);
             this.Controls.Add(painelValorTotalDiarioUI);
         }
-
-
         public void Interface(bool visivel)
         {
             painelAgendamentosUI.Visible = visivel;
@@ -46,36 +33,6 @@ namespace ShadowLines.Forms
             painelValorTotalDiarioUI.Visible = visivel;
 
             iconButtonAtualizar.Visible = visivel;
-        }
-
-        private void Menu01_Load(object sender, EventArgs e)
-        {
-            lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
-            Interface(true);
-        }
-
-        private void btnClientes_Click(object sender, EventArgs e)
-        {
-            FormClientes clientes = new FormClientes();
-            clientes.Show();
-            this.Hide();
-        }
-
-        private void btnAgendamentos_Click(object sender, EventArgs e)
-        {
-            Interface(false);
-
-            FormAgendamento agendamento = new FormAgendamento();
-            agendamento.MdiParent = this;
-            agendamento.Show();
-        }
-
-        private void btnReagendamento_Click(object sender, EventArgs e)
-        {
-            Interface(false);
-            FormReagendamento reagendamento = new FormReagendamento();
-            reagendamento.MdiParent = this;
-            reagendamento.Show();
         }
 
         private void RecarregarPaineis()
@@ -105,27 +62,32 @@ namespace ShadowLines.Forms
             painelValorTotalDiarioUI.Refresh();
         }
 
-        private void iconButtonAtualizar_Click(object sender, EventArgs e)
+        private void btnAgendamentos_Click(object sender, System.EventArgs e)
+        {
+            FormAgendamento2 form = new FormAgendamento2();
+            form.Show();
+            this.Hide();
+        }
+
+        private void FormMenu2_Load(object sender, System.EventArgs e)
+        {
+            lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
+            Interface(true);
+        }
+
+        private void iconButtonAtualizar_Click(object sender, System.EventArgs e)
         {
             RecarregarPaineis();
         }
 
-        private void btnSituacao_Click(object sender, EventArgs e)
-        {
-            Interface(false);
-            FormSituacao situacao = new FormSituacao();
-            situacao.MdiParent = this;
-            situacao.Show();
-        }
-
-        private void btnDesconectar_Click(object sender, EventArgs e)
+        private void btnDesconectar_Click(object sender, System.EventArgs e)
         {
             FormLogin login = new FormLogin();
             login.Show();
             this.Hide();
         }
 
-        private void btnDados_Click(object sender, EventArgs e)
+        private void btnDados_Click(object sender, System.EventArgs e)
         {
             FormDadosAgendamentos dadosAgendamentos = new FormDadosAgendamentos();
             dadosAgendamentos.Show();

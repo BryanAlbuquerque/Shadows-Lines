@@ -25,7 +25,9 @@ namespace ShadowLines.Classes
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM Funcionarios ORDER BY FuncionarioID";
+                string query = @"SELECT * FROM Funcionarios 
+                                WHERE NivelAcesso = 0                     
+                                ORDER BY FuncionarioID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -39,12 +41,12 @@ namespace ShadowLines.Classes
                                 FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
                                 Nome = r.GetString(r.GetOrdinal("Nome")),
                                 CPF = r.GetInt64(r.GetOrdinal("CPF")),
-                                Data_Nascimento = r.GetDateTime(r.GetOrdinal("Data_Nascimento")),
+                                Data_Nascimento = r.GetDateTime(r.GetOrdinal("DataNascimento")),
                                 Email = r.GetString(r.GetOrdinal("Email")),
                                 Telefone = r.GetInt64(r.GetOrdinal("Telefone")),
                                 Endereco = r["Endereco"]?.ToString(),
                                 Cargo = r["Cargo"]?.ToString(),
-                                Nivel_Acesso = r.GetInt32(r.GetOrdinal("Nivel_Acesso"))
+                                Nivel_Acesso = r.GetInt32(r.GetOrdinal("NivelAcesso"))
                             });
                         }
                     }
@@ -83,7 +85,7 @@ namespace ShadowLines.Classes
                                 FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
                                 Nome = r.GetString(r.GetOrdinal("Nome")),
                                 CPF = r.GetInt64(r.GetOrdinal("CPF")),
-                                Data_Nascimento = r.GetDateTime(r.GetOrdinal("Data_Nascimento")),
+                                Data_Nascimento = r.GetDateTime(r.GetOrdinal("DataNascimento")),
                                 Email = r.GetString(r.GetOrdinal("Email")),
                                 Telefone = r.GetInt64(r.GetOrdinal("Telefone")),
                                 Endereco = r["Endereco"]?.ToString(),
@@ -104,7 +106,7 @@ namespace ShadowLines.Classes
             {
                 string query = @"
                     INSERT INTO Funcionarios
-                    (Nome, CPF, Data_Nascimento, Email, Telefone, Endereco, Cargo, Nivel_Acesso)
+                    (Nome, CPF, DataNascimento, Email, Telefone, Endereco, Cargo, Nivel_Acesso)
                     VALUES
                     (@Nome, @CPF, @Nascimento, @Email, @Telefone, @Endereco, @Cargo, @Nivel)";
 

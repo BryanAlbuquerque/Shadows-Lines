@@ -40,7 +40,7 @@ namespace ShadowLines
                     MessageBox.Show("Login realizado com sucesso!");
                     FormMenu1 menu = new FormMenu1();
                     menu.Show();
-                    this.Hide(); // Esconde a tela de login
+                    this.Hide(); 
                 }
                 else if (accessLevel == 2)
                 {
@@ -49,7 +49,7 @@ namespace ShadowLines
                     menu.Show();
                     this.Hide();
                 }
-                else if (accessLevel == 3)
+                else if (accessLevel == 0 || accessLevel > 2)
                 {
                     MessageBox.Show("Nível de acesso não valido para login!");
                 }

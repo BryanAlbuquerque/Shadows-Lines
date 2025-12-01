@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 using ShadowLines.Classes;
 
 namespace ShadowLines.Forms.Agendamentos
@@ -79,7 +80,14 @@ namespace ShadowLines.Forms.Agendamentos
 
         public void Salvar() 
         {
-            Agendamento agendamento = new Agendamento();
+            try
+            {
+                if (string.IsNullOrEmpty(comboBoxClientes.Text)) 
+                {
+                    MessageBox.Show("Erro! escolha o nome do cliente");
+                    return;
+                }
+                Agendamento agendamento = new Agendamento();
 
                 agendamento.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
                 agendamento.FuncionarioID = Convert.ToInt32(comboBoxFuncionario.SelectedValue);
@@ -89,8 +97,13 @@ namespace ShadowLines.Forms.Agendamentos
                 agendamento.Situacao = txtSituacao.Text;
                 agendamento.Pagamento = txtPagamento.Text;
 
-            agendamento.UpdateTable();
-            MessageBox.Show("Agendamento alterado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                agendamento.UpdateTable();
+                MessageBox.Show("Agendamento alterado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show($"Ocorreu um erro: {ex}");
+            }
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
