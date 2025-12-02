@@ -147,7 +147,7 @@
             // 
             // iconPictureBox6
             // 
-            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.Database;
+            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
             this.iconPictureBox6.IconColor = System.Drawing.Color.White;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 42;
