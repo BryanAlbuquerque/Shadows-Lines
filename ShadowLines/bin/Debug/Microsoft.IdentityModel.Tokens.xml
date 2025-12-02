@@ -6209,7 +6209,7 @@
             </summary>
             <param name="key">a <see cref="T:Microsoft.IdentityModel.Tokens.X509SecurityKey"/> to convert.</param>
             <param name="representAsRsaKey">
-            <c>true</c> to represent the <paramref name="key"/> as an <see cref="T:Microsoft.IdentityModel.Tokens.RsaSecurityKey"/>, 
+            <c>true</c> to represent the <paramref name="key"/> as an <see cref="T:Microsoft.IdentityModel.Tokens.RsaSecurityKey"/>,
             <c>false</c> to represent the <paramref name="key"/> as an <see cref="T:Microsoft.IdentityModel.Tokens.X509SecurityKey"/>, using the "x5c" parameter.
             </param>
             <returns>a <see cref="T:Microsoft.IdentityModel.Tokens.JsonWebKey"/>.</returns>
@@ -8352,7 +8352,7 @@
             Instantiates a <see cref="T:Microsoft.IdentityModel.Tokens.X509SecurityKey"/> using a <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/>.
             </summary>
             <param name="certificate">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/> to use.</param>
-            <param name="keyId">The value to set for the KeyId</param>
+            <param name="keyId">The value to set for the KeyId.</param>
             <exception cref="T:System.ArgumentNullException">if <paramref name="certificate"/> is null.</exception>
             <exception cref="T:System.ArgumentNullException">if <paramref name="keyId"/> is null or empty.</exception>
         </member>
@@ -8398,14 +8398,14 @@
             Determines whether the <see cref="T:Microsoft.IdentityModel.Tokens.X509SecurityKey"/> can compute a JWK thumbprint.
             </summary>
             <returns><c>true</c> if JWK thumbprint can be computed; otherwise, <c>false</c>.</returns>
-            <remarks>https://datatracker.ietf.org/doc/html/rfc7638</remarks>
+            <remarks>See: <see href="https://datatracker.ietf.org/doc/html/rfc7638"/></remarks>
         </member>
         <member name="M:Microsoft.IdentityModel.Tokens.X509SecurityKey.ComputeJwkThumbprint">
             <summary>
             Computes a sha256 hash over the <see cref="T:Microsoft.IdentityModel.Tokens.X509SecurityKey"/>.
             </summary>
             <returns>A JWK thumbprint.</returns>
-            <remarks>https://datatracker.ietf.org/doc/html/rfc7638</remarks>
+            <remarks>See: <see href="https://datatracker.ietf.org/doc/html/rfc7638"/></remarks>
         </member>
         <member name="M:Microsoft.IdentityModel.Tokens.X509SecurityKey.Equals(System.Object)">
             <summary>

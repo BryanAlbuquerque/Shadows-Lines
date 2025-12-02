@@ -95,7 +95,9 @@ namespace ShadowLines.Forms
 
         private void cobrançaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormCobranca cobranca = new FormCobranca();
+            cobranca.MdiParent = this.MdiParent;
+            cobranca.Show();
         }
     }
 }

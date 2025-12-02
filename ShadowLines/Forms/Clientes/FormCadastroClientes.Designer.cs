@@ -65,7 +65,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(5, -1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(128, 96);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,13 +197,14 @@
             this.btnCadastrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCadastrar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCadastrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCadastrar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnCadastrar.FillColor = System.Drawing.Color.Black;
             this.btnCadastrar.FillColor2 = System.Drawing.Color.Navy;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(637, 348);
+            this.btnCadastrar.Location = new System.Drawing.Point(0, 361);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(143, 37);
+            this.btnCadastrar.Size = new System.Drawing.Size(786, 37);
             this.btnCadastrar.TabIndex = 99;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -392,7 +393,7 @@
             // 
             this.labelData.BackColor = System.Drawing.Color.Transparent;
             this.labelData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelData.Location = new System.Drawing.Point(12, 366);
+            this.labelData.Location = new System.Drawing.Point(598, 12);
             this.labelData.Name = "labelData";
             this.labelData.Size = new System.Drawing.Size(81, 20);
             this.labelData.TabIndex = 125;
