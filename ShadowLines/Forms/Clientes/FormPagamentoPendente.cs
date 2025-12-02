@@ -8,7 +8,6 @@ namespace ShadowLines.Forms.Clientes
 {
     public partial class FormPagamentoPendente : Form
     {
-        private SfDataGrid grid;
         public FormPagamentoPendente()
         {
             InitializeComponent();

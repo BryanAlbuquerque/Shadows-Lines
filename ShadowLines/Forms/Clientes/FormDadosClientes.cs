@@ -8,7 +8,6 @@ namespace ShadowLines.Forms
 {
     public partial class FormDadosClientes : Form
     {
-        private SfDataGrid grid;
         public FormDadosClientes()
         {
             InitializeComponent();
