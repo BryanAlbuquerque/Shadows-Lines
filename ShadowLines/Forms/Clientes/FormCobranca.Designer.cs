@@ -35,7 +35,7 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnAlterar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnEnviar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
@@ -114,25 +114,26 @@
             this.lblTitulo.TabIndex = 160;
             this.lblTitulo.Text = "Enviar Cobrança";
             // 
-            // btnAlterar
+            // btnEnviar
             // 
-            this.btnAlterar.BorderRadius = 5;
-            this.btnAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAlterar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAlterar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAlterar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAlterar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAlterar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAlterar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnAlterar.FillColor = System.Drawing.Color.Black;
-            this.btnAlterar.FillColor2 = System.Drawing.Color.Navy;
-            this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(0, 321);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(750, 37);
-            this.btnAlterar.TabIndex = 151;
-            this.btnAlterar.Text = "Enviar";
+            this.btnEnviar.BorderRadius = 5;
+            this.btnEnviar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEnviar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEnviar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEnviar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEnviar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEnviar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEnviar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnEnviar.FillColor = System.Drawing.Color.Black;
+            this.btnEnviar.FillColor2 = System.Drawing.Color.Navy;
+            this.btnEnviar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnviar.ForeColor = System.Drawing.Color.White;
+            this.btnEnviar.Location = new System.Drawing.Point(0, 321);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(750, 37);
+            this.btnEnviar.TabIndex = 151;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // guna2HtmlLabel5
             // 
@@ -275,7 +276,7 @@
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormCobranca";
@@ -298,7 +299,7 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
-        private Guna.UI2.WinForms.Guna2GradientButton btnAlterar;
+        private Guna.UI2.WinForms.Guna2GradientButton btnEnviar;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;

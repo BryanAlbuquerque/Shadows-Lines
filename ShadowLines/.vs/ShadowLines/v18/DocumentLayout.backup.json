@@ -7,27 +7,15 @@
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formcobranca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formcobranca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\forms\\clientes\\formcobranca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formcobranca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formalterardadoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formalterardadoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formalterardadoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formalterardadoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formexcluircliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formexcluircliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -42,7 +30,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "FormClientes.cs",
               "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormClientes.cs",
               "RelativeDocumentMoniker": "Forms\\Clientes\\FormClientes.cs",
@@ -51,12 +39,11 @@
               "ViewState": "AgIAAFEAAAAAAAAAAIA9wGIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T22:59:00.059Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "FormClientes.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormClientes.cs",
               "RelativeDocumentMoniker": "Forms\\Clientes\\FormClientes.cs",
@@ -64,8 +51,7 @@
               "RelativeToolTip": "Forms\\Clientes\\FormClientes.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T22:58:57.719Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -75,7 +61,7 @@
               "RelativeDocumentMoniker": "Forms\\Clientes\\FormCobranca.cs",
               "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormCobranca.cs",
               "RelativeToolTip": "Forms\\Clientes\\FormCobranca.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAswC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAEcAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T23:03:28.891Z",
               "IsPinned": true,
@@ -109,43 +95,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormAlterarDadosCliente.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "RelativeDocumentMoniker": "Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "RelativeToolTip": "Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAcwFUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T23:03:17.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormExcluirCliente.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormExcluirCliente.cs",
-              "RelativeDocumentMoniker": "Forms\\Clientes\\FormExcluirCliente.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormExcluirCliente.cs [Design]",
-              "RelativeToolTip": "Forms\\Clientes\\FormExcluirCliente.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T23:02:32.931Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormAlterarDadosCliente.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "RelativeDocumentMoniker": "Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormAlterarDadosCliente.cs [Design]",
-              "RelativeToolTip": "Forms\\Clientes\\FormAlterarDadosCliente.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T23:00:18.337Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

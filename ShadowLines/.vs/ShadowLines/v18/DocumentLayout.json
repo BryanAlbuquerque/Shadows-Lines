@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formcobranca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formcobranca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\forms\\clientes\\formcobranca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formcobranca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -39,8 +39,7 @@
               "ViewState": "AgIAAFEAAAAAAAAAAIA9wGIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T22:59:00.059Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -52,8 +51,7 @@
               "RelativeToolTip": "Forms\\Clientes\\FormClientes.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T22:58:57.719Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -63,7 +61,7 @@
               "RelativeDocumentMoniker": "Forms\\Clientes\\FormCobranca.cs",
               "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormCobranca.cs",
               "RelativeToolTip": "Forms\\Clientes\\FormCobranca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswFQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T23:03:28.891Z",
               "IsPinned": true,
