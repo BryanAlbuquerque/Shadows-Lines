@@ -12,11 +12,6 @@ namespace ShadowLines.Forms
             InitializeComponent();
 
             this.FormClosed += FormReagendamento_FormClosed;
-
-            Timer timer = new Timer();
-            timer.Interval = 1000; // 1 segundo
-            timer.Tick += Timer_Tick;
-            timer.Start();
         }
 
         private void FormReagendamento_FormClosed(object sender, FormClosedEventArgs e)
@@ -25,11 +20,6 @@ namespace ShadowLines.Forms
             {
                 menu.Interface(true);
             }
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            labelData.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
         }
 
         private void FormReagendamento_Load(object sender, EventArgs e)

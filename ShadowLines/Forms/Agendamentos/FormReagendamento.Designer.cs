@@ -34,7 +34,6 @@
             this.lblClient = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnReagendar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblTitulo2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labelData = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.comboBoxCliente = new System.Windows.Forms.ComboBox();
@@ -42,14 +41,20 @@
             this.comboBoxServicos = new System.Windows.Forms.ComboBox();
             this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblValor = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // txtData
             // 
-            this.txtData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtData.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtData.BorderColor = System.Drawing.Color.DimGray;
             this.txtData.BorderRadius = 5;
             this.txtData.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -62,12 +67,12 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(33, 199);
+            this.txtData.Location = new System.Drawing.Point(59, 243);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtData.PlaceholderText = "";
             this.txtData.SelectedText = "";
-            this.txtData.Size = new System.Drawing.Size(246, 30);
+            this.txtData.Size = new System.Drawing.Size(262, 30);
             this.txtData.TabIndex = 75;
             // 
             // lblMudarData
@@ -77,11 +82,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMudarData.BackColor = System.Drawing.Color.Transparent;
             this.lblMudarData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMudarData.Location = new System.Drawing.Point(33, 180);
+            this.lblMudarData.Location = new System.Drawing.Point(63, 223);
             this.lblMudarData.Name = "lblMudarData";
-            this.lblMudarData.Size = new System.Drawing.Size(41, 20);
+            this.lblMudarData.Size = new System.Drawing.Size(179, 20);
             this.lblMudarData.TabIndex = 74;
-            this.lblMudarData.Text = "Data ";
+            this.lblMudarData.Text = "Data do agendamento";
             // 
             // lblClient
             // 
@@ -90,7 +95,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblClient.BackColor = System.Drawing.Color.Transparent;
             this.lblClient.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClient.Location = new System.Drawing.Point(33, 113);
+            this.lblClient.Location = new System.Drawing.Point(59, 133);
             this.lblClient.Name = "lblClient";
             this.lblClient.Size = new System.Drawing.Size(133, 20);
             this.lblClient.TabIndex = 73;
@@ -98,9 +103,6 @@
             // 
             // btnReagendar
             // 
-            this.btnReagendar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReagendar.BorderRadius = 5;
             this.btnReagendar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReagendar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -108,13 +110,14 @@
             this.btnReagendar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReagendar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReagendar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReagendar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnReagendar.FillColor = System.Drawing.Color.Navy;
             this.btnReagendar.FillColor2 = System.Drawing.Color.Black;
             this.btnReagendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReagendar.ForeColor = System.Drawing.Color.White;
-            this.btnReagendar.Location = new System.Drawing.Point(457, 267);
+            this.btnReagendar.Location = new System.Drawing.Point(0, 327);
             this.btnReagendar.Name = "btnReagendar";
-            this.btnReagendar.Size = new System.Drawing.Size(161, 34);
+            this.btnReagendar.Size = new System.Drawing.Size(739, 34);
             this.btnReagendar.TabIndex = 77;
             this.btnReagendar.Text = "Reagendar";
             this.btnReagendar.Click += new System.EventHandler(this.btnReagendar_Click);
@@ -126,21 +129,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitulo2.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo2.ForeColor = System.Drawing.Color.Navy;
             this.lblTitulo2.Location = new System.Drawing.Point(145, 12);
             this.lblTitulo2.Name = "lblTitulo2";
             this.lblTitulo2.Size = new System.Drawing.Size(270, 34);
             this.lblTitulo2.TabIndex = 76;
             this.lblTitulo2.Text = "Reagendar Horarios";
-            // 
-            // labelData
-            // 
-            this.labelData.BackColor = System.Drawing.Color.Transparent;
-            this.labelData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelData.Location = new System.Drawing.Point(12, 281);
-            this.labelData.Name = "labelData";
-            this.labelData.Size = new System.Drawing.Size(81, 20);
-            this.labelData.TabIndex = 100;
-            this.labelData.Text = "Data Hoje";
             // 
             // guna2PictureBox1
             // 
@@ -166,7 +160,7 @@
             // comboBoxCliente
             // 
             this.comboBoxCliente.FormattingEnabled = true;
-            this.comboBoxCliente.Location = new System.Drawing.Point(33, 135);
+            this.comboBoxCliente.Location = new System.Drawing.Point(55, 155);
             this.comboBoxCliente.Name = "comboBoxCliente";
             this.comboBoxCliente.Size = new System.Drawing.Size(266, 21);
             this.comboBoxCliente.TabIndex = 103;
@@ -175,7 +169,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(329, 113);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(430, 127);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(73, 20);
             this.guna2HtmlLabel1.TabIndex = 105;
@@ -185,7 +179,7 @@
             // 
             this.comboBoxServicos.FormattingEnabled = true;
             this.comboBoxServicos.ItemHeight = 13;
-            this.comboBoxServicos.Location = new System.Drawing.Point(329, 135);
+            this.comboBoxServicos.Location = new System.Drawing.Point(434, 149);
             this.comboBoxServicos.MaximumSize = new System.Drawing.Size(1000, 0);
             this.comboBoxServicos.Name = "comboBoxServicos";
             this.comboBoxServicos.Size = new System.Drawing.Size(271, 21);
@@ -206,7 +200,7 @@
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(324, 200);
+            this.txtValor.Location = new System.Drawing.Point(429, 244);
             this.txtValor.Name = "txtValor";
             this.txtValor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtValor.PlaceholderText = "";
@@ -218,24 +212,83 @@
             // 
             this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(324, 174);
+            this.lblValor.Location = new System.Drawing.Point(430, 221);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(45, 20);
             this.lblValor.TabIndex = 106;
             this.lblValor.Text = "Valor";
             // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 36;
+            this.iconPictureBox1.Location = new System.Drawing.Point(17, 140);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(37, 36);
+            this.iconPictureBox1.TabIndex = 184;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Wpforms;
+            this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.IconSize = 39;
+            this.iconPictureBox3.Location = new System.Drawing.Point(391, 134);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(39, 39);
+            this.iconPictureBox3.TabIndex = 185;
+            this.iconPictureBox3.TabStop = false;
+            // 
+            // iconPictureBox4
+            // 
+            this.iconPictureBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.MoneyBillWave;
+            this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox4.IconSize = 36;
+            this.iconPictureBox4.Location = new System.Drawing.Point(391, 237);
+            this.iconPictureBox4.Name = "iconPictureBox4";
+            this.iconPictureBox4.Size = new System.Drawing.Size(37, 36);
+            this.iconPictureBox4.TabIndex = 187;
+            this.iconPictureBox4.TabStop = false;
+            // 
+            // iconPictureBox6
+            // 
+            this.iconPictureBox6.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
+            this.iconPictureBox6.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox6.IconSize = 36;
+            this.iconPictureBox6.Location = new System.Drawing.Point(17, 237);
+            this.iconPictureBox6.Name = "iconPictureBox6";
+            this.iconPictureBox6.Size = new System.Drawing.Size(42, 36);
+            this.iconPictureBox6.TabIndex = 188;
+            this.iconPictureBox6.TabStop = false;
+            // 
             // FormReagendamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 313);
+            this.ClientSize = new System.Drawing.Size(739, 361);
+            this.Controls.Add(this.iconPictureBox6);
+            this.Controls.Add(this.iconPictureBox4);
+            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.iconPictureBox3);
+            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.lblValor);
-            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.comboBoxServicos);
             this.Controls.Add(this.comboBoxCliente);
             this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.labelData);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.lblMudarData);
             this.Controls.Add(this.lblClient);
@@ -249,6 +302,10 @@
             this.Text = "Reagendamento";
             this.Load += new System.EventHandler(this.FormReagendamento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,7 +318,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblClient;
         private Guna.UI2.WinForms.Guna2GradientButton btnReagendar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelData;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private System.Windows.Forms.ComboBox comboBoxCliente;
@@ -269,5 +325,9 @@
         private System.Windows.Forms.ComboBox comboBoxServicos;
         private Guna.UI2.WinForms.Guna2TextBox txtValor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblValor;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
     }
 }

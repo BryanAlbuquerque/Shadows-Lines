@@ -38,13 +38,17 @@
             this.lblTitulo2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.comboBoxSituacao = new System.Windows.Forms.ComboBox();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxClientes
             // 
             this.comboBoxClientes.FormattingEnabled = true;
-            this.comboBoxClientes.Location = new System.Drawing.Point(41, 143);
+            this.comboBoxClientes.Location = new System.Drawing.Point(81, 167);
             this.comboBoxClientes.Name = "comboBoxClientes";
             this.comboBoxClientes.Size = new System.Drawing.Size(266, 21);
             this.comboBoxClientes.TabIndex = 116;
@@ -64,7 +68,7 @@
             // 
             this.labelData.BackColor = System.Drawing.Color.Transparent;
             this.labelData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelData.Location = new System.Drawing.Point(41, 225);
+            this.labelData.Location = new System.Drawing.Point(13, 241);
             this.labelData.Name = "labelData";
             this.labelData.Size = new System.Drawing.Size(81, 20);
             this.labelData.TabIndex = 113;
@@ -77,7 +81,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblServico.BackColor = System.Drawing.Color.Transparent;
             this.lblServico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServico.Location = new System.Drawing.Point(354, 121);
+            this.lblServico.Location = new System.Drawing.Point(440, 145);
             this.lblServico.Name = "lblServico";
             this.lblServico.Size = new System.Drawing.Size(74, 20);
             this.lblServico.TabIndex = 109;
@@ -90,7 +94,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblClient.BackColor = System.Drawing.Color.Transparent;
             this.lblClient.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClient.Location = new System.Drawing.Point(41, 121);
+            this.lblClient.Location = new System.Drawing.Point(84, 145);
             this.lblClient.Name = "lblClient";
             this.lblClient.Size = new System.Drawing.Size(109, 20);
             this.lblClient.TabIndex = 108;
@@ -125,6 +129,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitulo2.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo2.ForeColor = System.Drawing.Color.Navy;
             this.lblTitulo2.Location = new System.Drawing.Point(153, 20);
             this.lblTitulo2.Name = "lblTitulo2";
             this.lblTitulo2.Size = new System.Drawing.Size(444, 34);
@@ -148,16 +153,46 @@
             "Finalizado",
             "Em Aberto",
             "Cancelado"});
-            this.comboBoxSituacao.Location = new System.Drawing.Point(354, 143);
+            this.comboBoxSituacao.Location = new System.Drawing.Point(440, 167);
             this.comboBoxSituacao.Name = "comboBoxSituacao";
             this.comboBoxSituacao.Size = new System.Drawing.Size(266, 21);
             this.comboBoxSituacao.TabIndex = 121;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 36;
+            this.iconPictureBox1.Location = new System.Drawing.Point(44, 151);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(37, 36);
+            this.iconPictureBox1.TabIndex = 184;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
+            this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.IconSize = 36;
+            this.iconPictureBox5.Location = new System.Drawing.Point(402, 153);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(37, 36);
+            this.iconPictureBox5.TabIndex = 186;
+            this.iconPictureBox5.TabStop = false;
             // 
             // FormSituacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 273);
+            this.Controls.Add(this.iconPictureBox5);
+            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.comboBoxSituacao);
             this.Controls.Add(this.comboBoxClientes);
             this.Controls.Add(this.guna2PictureBox1);
@@ -173,6 +208,8 @@
             this.Text = "Alterar Situação";
             this.Load += new System.EventHandler(this.FormSituacao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +225,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private System.Windows.Forms.ComboBox comboBoxSituacao;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
     }
 }
