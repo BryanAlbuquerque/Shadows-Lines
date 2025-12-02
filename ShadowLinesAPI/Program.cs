@@ -1,21 +1,24 @@
-using MailKit.Net.Smtp;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using MimeKit;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Controllers
 builder.Services.AddControllers();
+
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Carrega configuração SMTP
-builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection("Smtp"));
+// Carrega configuração SMTP (de appsettings + user-secrets)
+builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("Smtp"));
+
+// Serviço de envio de e-mail
+builder.Services.AddScoped<EmailService>();
 
 var app = builder.Build();
 
+// Swagger no desenvolvimento
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -24,16 +27,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseRouting();
+
+// Controller endpoints
 app.MapControllers();
 
+// Executa a aplicação
 app.Run();
 
-// Classe de configuração
-public record SmtpOptions
-{
-    public string Host { get; init; }
-    public int Port { get; init; }
-    public bool UseSsl { get; init; }
-    public string User { get; init; }
-    public string Password { get; init; }
-}
+
