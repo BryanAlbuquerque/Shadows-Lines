@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("6f2f221f-8200-49e8-8756-7c0b5029338a")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShadowLinesAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+290887e4805edca31c62ccef9bf91054399aeb7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb5202c8401a6f322ee98711d3b08d6e60e7d13b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShadowLinesAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShadowLinesAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

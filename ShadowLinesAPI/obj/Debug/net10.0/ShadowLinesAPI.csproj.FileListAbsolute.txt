@@ -1,0 +1,9 @@
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLinesAPI\obj\Debug\net10.0\ShadowLinesAPI.csproj.AssemblyReference.cache
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLinesAPI\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLinesAPI\obj\Debug\net10.0\ShadowLinesAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLinesAPI\obj\Debug\net10.0\ShadowLinesAPI.AssemblyInfoInputs.cache
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLinesAPI\obj\Debug\net10.0\ShadowLinesAPI.AssemblyInfo.cs
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLinesAPI\obj\Debug\net10.0\ShadowLinesAPI.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLinesAPI\obj\Debug\net10.0\ShadowLinesAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLinesAPI\obj\Debug\net10.0\ShadowLinesAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLinesAPI\obj\Debug\net10.0\ShadowLinesAPI.sourcelink.json
