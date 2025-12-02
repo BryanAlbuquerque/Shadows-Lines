@@ -139,7 +139,7 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(68, 419);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(68, 440);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(144, 51);
             this.guna2GradientButton1.TabIndex = 86;
@@ -151,7 +151,7 @@
             this.iconPictureBox6.IconColor = System.Drawing.Color.White;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 42;
-            this.iconPictureBox6.Location = new System.Drawing.Point(29, 425);
+            this.iconPictureBox6.Location = new System.Drawing.Point(29, 446);
             this.iconPictureBox6.Name = "iconPictureBox6";
             this.iconPictureBox6.Size = new System.Drawing.Size(50, 42);
             this.iconPictureBox6.TabIndex = 87;
@@ -170,7 +170,7 @@
             this.btnDados.FillColor2 = System.Drawing.Color.Black;
             this.btnDados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDados.ForeColor = System.Drawing.Color.White;
-            this.btnDados.Location = new System.Drawing.Point(68, 329);
+            this.btnDados.Location = new System.Drawing.Point(68, 350);
             this.btnDados.Name = "btnDados";
             this.btnDados.Size = new System.Drawing.Size(144, 51);
             this.btnDados.TabIndex = 84;
@@ -183,7 +183,7 @@
             this.iconPictureBox5.IconColor = System.Drawing.Color.White;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 42;
-            this.iconPictureBox5.Location = new System.Drawing.Point(29, 335);
+            this.iconPictureBox5.Location = new System.Drawing.Point(29, 356);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(50, 42);
             this.iconPictureBox5.TabIndex = 85;
@@ -214,7 +214,7 @@
             this.btnAgendamentos.FillColor2 = System.Drawing.Color.Black;
             this.btnAgendamentos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendamentos.ForeColor = System.Drawing.Color.White;
-            this.btnAgendamentos.Location = new System.Drawing.Point(68, 239);
+            this.btnAgendamentos.Location = new System.Drawing.Point(68, 259);
             this.btnAgendamentos.Name = "btnAgendamentos";
             this.btnAgendamentos.Size = new System.Drawing.Size(144, 47);
             this.btnAgendamentos.TabIndex = 4;
@@ -246,7 +246,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.White;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 40;
-            this.iconPictureBox2.Location = new System.Drawing.Point(29, 246);
+            this.iconPictureBox2.Location = new System.Drawing.Point(29, 266);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(50, 40);
             this.iconPictureBox2.TabIndex = 79;

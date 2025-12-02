@@ -75,30 +75,21 @@ namespace ShadowLines.Forms
 
         private void btnVoltar_Click_1(object sender, EventArgs e)
         {
-            try
+            if (SessaoUsuarioModel.NivelAcesso == 1)
             {
-                int accessLevel = usuario.AutenticarUsuario();
-
-                if (accessLevel == 1)
-                {
-                    MessageBox.Show("Login realizado com sucesso!");
-                    FormMenu1 menu = new FormMenu1();
-                    menu.Show();
-                    this.Hide();
-                }
-                else if (accessLevel == 2)
-                {
-                    MessageBox.Show("Login realizado com sucesso!");
-                    FormMenu2 menu = new FormMenu2();
-                    menu.Show();
-                    this.Hide();
-                }
+                FormMenu1 menu = new FormMenu1();
+                menu.Show();
+                this.Hide();
             }
-            catch (Exception ex) 
-            { 
-            
-            
-            
+            else if (SessaoUsuarioModel.NivelAcesso == 2)
+            {
+                FormMenu2 menu = new FormMenu2();
+                menu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Erro: Nível de acesso inválido. Contate o administrador.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
