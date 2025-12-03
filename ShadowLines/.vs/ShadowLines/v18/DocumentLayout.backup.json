@@ -61,7 +61,7 @@
               "RelativeDocumentMoniker": "Forms\\Clientes\\FormCobranca.cs",
               "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormCobranca.cs",
               "RelativeToolTip": "Forms\\Clientes\\FormCobranca.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAEcAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAA7wFQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T23:03:28.891Z",
               "IsPinned": true,
@@ -77,8 +77,7 @@
               "RelativeToolTip": "Forms\\Clientes\\FormCobranca.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T22:59:04.023Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",

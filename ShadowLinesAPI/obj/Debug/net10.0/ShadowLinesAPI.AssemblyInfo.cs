@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShadowLinesAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1f9bbbc83f34174858cfc0b5bd8610ac94054d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34ecd804b9127f9b2d847fce51b86343cb2dd15e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShadowLinesAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShadowLinesAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
