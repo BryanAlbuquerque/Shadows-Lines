@@ -130,7 +130,7 @@
             this.lblTitulo2.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo2.ForeColor = System.Drawing.Color.Navy;
-            this.lblTitulo2.Location = new System.Drawing.Point(153, 20);
+            this.lblTitulo2.Location = new System.Drawing.Point(176, 12);
             this.lblTitulo2.Name = "lblTitulo2";
             this.lblTitulo2.Size = new System.Drawing.Size(444, 34);
             this.lblTitulo2.TabIndex = 111;

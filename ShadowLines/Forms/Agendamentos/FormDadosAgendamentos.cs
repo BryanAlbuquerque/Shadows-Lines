@@ -56,6 +56,7 @@ namespace ShadowLines.Forms
             GridTextColumn valor = new GridTextColumn();
             valor.MappingName = "Valor";
             valor.HeaderText = "Valor";
+            valor.Format = "C2";
             valor.Width = 220;
             sfDataGridPanel.Columns.Add(valor);
 

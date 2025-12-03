@@ -239,6 +239,7 @@
             this.btnClientes.Size = new System.Drawing.Size(144, 38);
             this.btnClientes.TabIndex = 3;
             this.btnClientes.Text = "Clientes";
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // iconPictureBox2
             // 

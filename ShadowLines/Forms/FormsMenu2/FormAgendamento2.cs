@@ -22,6 +22,7 @@ namespace ShadowLines.Forms.FormsMenu2
             labelData.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
         }
 
+        // Agendamento
         public void PopularComboBoxClientes()
         {
             var lista = Agendamento.Select();
@@ -50,6 +51,34 @@ namespace ShadowLines.Forms.FormsMenu2
             comboBoxServicos.DisplayMember = "Nome";
             comboBoxServicos.ValueMember = "ServicoID";
             comboBoxServicos.SelectedIndex = -1;
+        }
+
+        // Reagendamento    
+        public void PopularComboBoxClientesReagendamento()
+        {
+            var lista = Agendamento.Select();
+            comboBoxClientesReagendamento.DataSource = lista;
+            comboBoxClientesReagendamento.DisplayMember = "NomeCliente";
+            comboBoxClientesReagendamento.ValueMember = "ClienteID";
+            comboBoxClientesReagendamento.SelectedIndex = -1;
+        }
+        public void PopularComboBoxServicosReagendamento()
+        {
+            var lista = Servico.Select();
+            comboBoxServicosReagendamento.DataSource = lista;
+            comboBoxServicosReagendamento.DisplayMember = "Nome";
+            comboBoxServicosReagendamento.ValueMember = "ServicoID";
+            comboBoxServicosReagendamento.SelectedIndex = -1;
+        }
+
+        // Situação
+        public void PopularComboBoxClientesSituacao()
+        {
+            var lista = Agendamento.Select();
+            comboBoxClientesSituacao.DataSource = lista;
+            comboBoxClientesSituacao.DisplayMember = "NomeCliente";
+            comboBoxClientesSituacao.ValueMember = "ClienteID";
+            comboBoxClientesSituacao.SelectedIndex = -1;
         }
         private void Agendar() 
         {
@@ -96,10 +125,20 @@ namespace ShadowLines.Forms.FormsMenu2
             labelData.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
 
             txtData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+            txtDataReagendamento.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
+            // Agendamento
             PopularComboBoxClientes();
             PopularComboBoxFuncionarios();
             PopularComboBoxServicos();
+
+            // Reagendamento 
+            PopularComboBoxClientesReagendamento();
+            PopularComboBoxServicosReagendamento();
+
+            // Situação
+            PopularComboBoxClientesSituacao();
+
         }
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)
@@ -121,6 +160,73 @@ namespace ShadowLines.Forms.FormsMenu2
             FormMenu2 menu2 = new FormMenu2();
             menu2.Show();
             this.Hide();
+        }
+
+        private void Reagendar()
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(comboBoxClientesReagendamento.Text)
+                    || string.IsNullOrEmpty(comboBoxFuncionarios.Text)
+                    || string.IsNullOrEmpty(txtValor.Text)
+                    || string.IsNullOrEmpty(txtData.Text))
+                {
+                    MessageBox.Show("Erro existem espaços em branco");
+                    return;
+                }
+                Agendamento agendamento = new Agendamento();
+
+                agendamento.ClienteID = Convert.ToInt32(comboBoxClientesReagendamento.SelectedValue);
+                agendamento.Servico = comboBoxServicosReagendamento.Text;
+                agendamento.Valor = Convert.ToDecimal(txtValorReagendamento.Text);
+                agendamento.DataAgendamento = Convert.ToDateTime(txtDataReagendamento.Text);
+                agendamento.Update();
+
+                MessageBox.Show("Reagendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show($"ocorreu um erro: {ex}");
+            }
+        }
+        private void btnReagendar_Click_1(object sender, EventArgs e)
+        {
+            Reagendar();
+        }
+
+        private void Alterar()
+        {
+            if (string.IsNullOrEmpty(comboBoxClientesSituacao.Text)
+                || string.IsNullOrEmpty(comboBoxSituacao.Text))
+            {
+                MessageBox.Show("Erro existem espaços em branco");
+                return;
+            }
+
+            Agendamento agendamento = new Agendamento();
+            agendamento.ClienteID = Convert.ToInt32(comboBoxClientesSituacao.SelectedValue);
+            agendamento.Situacao = comboBoxSituacao.Text;
+
+            agendamento.UpdateSituacao();
+            MessageBox.Show("Situação alterada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            Alterar();
+        }
+
+        private void comboBoxServicosReagendamento_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (comboBoxServicosReagendamento.SelectedValue == null) { return; }
+
+            int servicoID = Convert.ToInt32(comboBoxServicos.SelectedValue);
+            Servico servicoSelecionado = Servico.SelectSet(servicoID);
+
+            if (servicoSelecionado != null)
+            {
+                txtValorReagendamento.Text = servicoSelecionado.Valor.ToString("F2");
+            }
+
         }
     }
 }

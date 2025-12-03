@@ -93,5 +93,12 @@ namespace ShadowLines.Forms
             dadosAgendamentos.Show();
             this.Hide();
         }
+
+        private void btnClientes_Click(object sender, System.EventArgs e)
+        {
+            FormClientes clientes = new FormClientes();
+            clientes.Show();
+            this.Hide();
+        }
     }
 }

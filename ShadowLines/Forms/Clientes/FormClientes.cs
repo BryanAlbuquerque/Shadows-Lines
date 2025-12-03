@@ -1,7 +1,8 @@
-﻿using System;
-using System.Windows.Forms;
-using System.Linq;
+﻿using ShadowLines.Classes;
 using ShadowLines.Forms.Clientes;
+using System;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
@@ -81,9 +82,22 @@ namespace ShadowLines.Forms
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            FormMenu1 menu01 = new FormMenu1();
-            menu01.Show();
-            this.Hide();
+            if (SessaoUsuarioModel.NivelAcesso == 1)
+            {
+                FormMenu1 menu = new FormMenu1();
+                menu.Show();
+                this.Hide();
+            }
+            else if (SessaoUsuarioModel.NivelAcesso == 2)
+            {
+                FormMenu2 menu = new FormMenu2();
+                menu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Erro: Nível de acesso inválido. Contate o administrador.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void clientesDevendoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -95,9 +109,21 @@ namespace ShadowLines.Forms
 
         private void cobrançaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCobranca cobranca = new FormCobranca();
-            cobranca.MdiParent = this.MdiParent;
-            cobranca.Show();
+            FormCobranca cobranca = Application.OpenForms.OfType<FormCobranca>().FirstOrDefault();
+            if (cobranca == null)
+            {
+                cobranca = new FormCobranca();
+                cobranca.Show();
+            }
+            else
+            {
+                if (cobranca.WindowState == FormWindowState.Minimized)
+                {
+                    cobranca.MdiParent = this.MdiParent;
+                    cobranca.WindowState = FormWindowState.Normal;
+                }
+                cobranca.Activate();
+            }
         }
     }
 }

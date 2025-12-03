@@ -52,7 +52,7 @@
             // comboBoxClientes
             // 
             this.comboBoxClientes.FormattingEnabled = true;
-            this.comboBoxClientes.Location = new System.Drawing.Point(55, 144);
+            this.comboBoxClientes.Location = new System.Drawing.Point(55, 159);
             this.comboBoxClientes.Name = "comboBoxClientes";
             this.comboBoxClientes.Size = new System.Drawing.Size(307, 21);
             this.comboBoxClientes.TabIndex = 175;
@@ -62,7 +62,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(55, 122);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(55, 137);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(208, 20);
             this.guna2HtmlLabel2.TabIndex = 174;
@@ -86,7 +86,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 36;
-            this.iconPictureBox1.Location = new System.Drawing.Point(10, 129);
+            this.iconPictureBox1.Location = new System.Drawing.Point(10, 144);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox1.TabIndex = 167;
@@ -159,7 +159,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(51, 218);
+            this.txtEmail.Location = new System.Drawing.Point(51, 244);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmail.PlaceholderText = "";
@@ -175,7 +175,7 @@
             this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 36;
-            this.iconPictureBox4.Location = new System.Drawing.Point(9, 218);
+            this.iconPictureBox4.Location = new System.Drawing.Point(9, 244);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox4.TabIndex = 178;
@@ -185,7 +185,7 @@
             // 
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFuncionario.Location = new System.Drawing.Point(9, 199);
+            this.lblFuncionario.Location = new System.Drawing.Point(9, 225);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(46, 20);
             this.lblFuncionario.TabIndex = 176;
@@ -217,7 +217,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(407, 118);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(407, 122);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(74, 20);
             this.guna2HtmlLabel1.TabIndex = 179;
@@ -254,9 +254,9 @@
             this.lblServico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblServico.Location = new System.Drawing.Point(407, 194);
             this.lblServico.Name = "lblServico";
-            this.lblServico.Size = new System.Drawing.Size(154, 20);
+            this.lblServico.Size = new System.Drawing.Size(89, 20);
             this.lblServico.TabIndex = 182;
-            this.lblServico.Text = "Motivo da exclusão";
+            this.lblServico.Text = "Mensagem";
             // 
             // FormCobranca
             // 
