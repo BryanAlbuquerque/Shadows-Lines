@@ -241,3 +241,4 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Clientes.FormPagamentoPendente.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormsMenu2.FormAgendamento2.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Clientes.FormCobranca.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormsMenu2.FormFuncionarios.resources

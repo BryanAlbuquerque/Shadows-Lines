@@ -6,14 +6,14 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
-    public partial class FormMenu1 : Form
+    public partial class FormNivelAcesso1 : Form
     {
         private Panel painelAgendamentosUI;
         private Panel painelCanceladosDiaUI;
         private Panel painelTotalAgendamentosUI;
         private Panel painelValorTotalDiarioUI;
 
-        public FormMenu1()
+        public FormNivelAcesso1()
         {
             InitializeComponent();
 

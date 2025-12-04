@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Forms.FormsMenu2
 {
-    public partial class FormAgendamento2 : Form
+    public partial class FormAgendamentoNivelAcesso2 : Form
     {
-        public FormAgendamento2()
+        public FormAgendamentoNivelAcesso2()
         {
             InitializeComponent();
 
@@ -25,10 +25,10 @@ namespace ShadowLines.Forms.FormsMenu2
         // Agendamento
         public void PopularComboBoxClientes()
         {
-            var lista = Agendamento.Select();
+            var lista = Cliente.Select("%");
 
             comboBoxClientes.DataSource = lista;
-            comboBoxClientes.DisplayMember = "NomeCliente";
+            comboBoxClientes.DisplayMember = "Nome_Completo";
             comboBoxClientes.ValueMember = "ClienteID";
             comboBoxClientes.SelectedIndex = -1;
 
@@ -157,7 +157,7 @@ namespace ShadowLines.Forms.FormsMenu2
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            FormMenu2 menu2 = new FormMenu2();
+            FormNivelAcesso2 menu2 = new FormNivelAcesso2();
             menu2.Show();
             this.Hide();
         }

@@ -84,13 +84,13 @@ namespace ShadowLines.Forms
         {
             if (SessaoUsuarioModel.NivelAcesso == 1)
             {
-                FormMenu1 menu = new FormMenu1();
+                FormNivelAcesso1 menu = new FormNivelAcesso1();
                 menu.Show();
                 this.Hide();
             }
             else if (SessaoUsuarioModel.NivelAcesso == 2)
             {
-                FormMenu2 menu = new FormMenu2();
+                FormNivelAcesso2 menu = new FormNivelAcesso2();
                 menu.Show();
                 this.Hide();
             }

@@ -4,7 +4,7 @@ GO
 CREATE TABLE Agendamentos(
 AgendamentoID INT PRIMARY KEY IDENTITY(1,1),
 ClienteID INT NOT NULL,
-DataAgendamento DATETIME NOT NULL,
+DataAgendamento DATETIME UNIQUE NOT NULL,
 Servico NVARCHAR(100),
 FuncionarioID INT,
 Valor MONEY,
@@ -24,4 +24,6 @@ SELECT * FROM Agendamentos
 
 DELETE FROM agendamentos
 WHERE AgendamentoID = 24
+
+
 

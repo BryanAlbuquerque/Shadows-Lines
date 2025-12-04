@@ -1,6 +1,6 @@
 ﻿namespace ShadowLines.Forms.FormsMenu2
 {
-    partial class FormAgendamento2
+    partial class FormAgendamentoNivelAcesso2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgendamento2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgendamentoNivelAcesso2));
             this.customBackgroundPanel1 = new CustomBackgroundPanel();
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBoxClientes = new System.Windows.Forms.ComboBox();
             this.comboBoxFuncionarios = new System.Windows.Forms.ComboBox();
             this.comboBoxServicos = new System.Windows.Forms.ComboBox();
-            this.comboBoxClientes = new System.Windows.Forms.ComboBox();
             this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
@@ -153,9 +153,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.comboBoxClientes);
             this.tabPage1.Controls.Add(this.comboBoxFuncionarios);
             this.tabPage1.Controls.Add(this.comboBoxServicos);
-            this.tabPage1.Controls.Add(this.comboBoxClientes);
             this.tabPage1.Controls.Add(this.txtData);
             this.tabPage1.Controls.Add(this.iconPictureBox6);
             this.tabPage1.Controls.Add(this.iconPictureBox5);
@@ -184,30 +184,33 @@
             this.tabPage1.Text = "Agendamentos";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // comboBoxClientes
+            // 
+            this.comboBoxClientes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxClientes.FormattingEnabled = true;
+            this.comboBoxClientes.Location = new System.Drawing.Point(69, 131);
+            this.comboBoxClientes.Name = "comboBoxClientes";
+            this.comboBoxClientes.Size = new System.Drawing.Size(331, 29);
+            this.comboBoxClientes.TabIndex = 192;
+            // 
             // comboBoxFuncionarios
             // 
+            this.comboBoxFuncionarios.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFuncionarios.FormattingEnabled = true;
             this.comboBoxFuncionarios.Location = new System.Drawing.Point(504, 203);
             this.comboBoxFuncionarios.Name = "comboBoxFuncionarios";
-            this.comboBoxFuncionarios.Size = new System.Drawing.Size(317, 26);
+            this.comboBoxFuncionarios.Size = new System.Drawing.Size(317, 29);
             this.comboBoxFuncionarios.TabIndex = 191;
             // 
             // comboBoxServicos
             // 
+            this.comboBoxServicos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxServicos.FormattingEnabled = true;
             this.comboBoxServicos.Location = new System.Drawing.Point(504, 131);
             this.comboBoxServicos.Name = "comboBoxServicos";
-            this.comboBoxServicos.Size = new System.Drawing.Size(317, 26);
+            this.comboBoxServicos.Size = new System.Drawing.Size(317, 29);
             this.comboBoxServicos.TabIndex = 190;
             this.comboBoxServicos.SelectionChangeCommitted += new System.EventHandler(this.comboBoxServicos_SelectionChangeCommitted);
-            // 
-            // comboBoxClientes
-            // 
-            this.comboBoxClientes.FormattingEnabled = true;
-            this.comboBoxClientes.Location = new System.Drawing.Point(64, 131);
-            this.comboBoxClientes.Name = "comboBoxClientes";
-            this.comboBoxClientes.Size = new System.Drawing.Size(336, 26);
-            this.comboBoxClientes.TabIndex = 189;
             // 
             // txtData
             // 
@@ -960,7 +963,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
         private System.Windows.Forms.ComboBox comboBoxFuncionarios;
         private System.Windows.Forms.ComboBox comboBoxServicos;
-        private System.Windows.Forms.ComboBox comboBoxClientes;
         private Guna.UI2.WinForms.Guna2GradientButton btnVoltar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox8;
@@ -987,5 +989,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnAlterar;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private System.Windows.Forms.ComboBox comboBoxClientes;
     }
 }

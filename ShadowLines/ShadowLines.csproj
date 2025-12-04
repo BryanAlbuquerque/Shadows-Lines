@@ -312,11 +312,17 @@
     <Compile Include="Forms\Clientes\FormPagamentoPendente.Designer.cs">
       <DependentUpon>FormPagamentoPendente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormsMenu2\FormAgendamento2.cs">
+    <Compile Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormsMenu2\FormAgendamento2.Designer.cs">
-      <DependentUpon>FormAgendamento2.cs</DependentUpon>
+    <Compile Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.Designer.cs">
+      <DependentUpon>FormAgendamentoNivelAcesso2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\FormFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\FormFuncionarios.Designer.cs">
+      <DependentUpon>FormFuncionarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\SessaoUsuarioModel.cs" />
     <Compile Include="UI\CardUI.cs">
@@ -351,17 +357,17 @@
     <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormMenu1.cs">
+    <Compile Include="Forms\FormNivelAcesso1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormMenu1.Designer.cs">
-      <DependentUpon>FormMenu1.cs</DependentUpon>
+    <Compile Include="Forms\FormNivelAcesso1.Designer.cs">
+      <DependentUpon>FormNivelAcesso1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormsMenu2\FormMenu2.cs">
+    <Compile Include="Forms\FormNivelAcesso2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormsMenu2\FormMenu2.Designer.cs">
-      <DependentUpon>FormMenu2.cs</DependentUpon>
+    <Compile Include="Forms\FormNivelAcesso2.Designer.cs">
+      <DependentUpon>FormNivelAcesso2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -401,14 +407,17 @@
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormMenu1.resx">
-      <DependentUpon>FormMenu1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormNivelAcesso1.resx">
+      <DependentUpon>FormNivelAcesso1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormsMenu2\FormAgendamento2.resx">
-      <DependentUpon>FormAgendamento2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.resx">
+      <DependentUpon>FormAgendamentoNivelAcesso2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormsMenu2\FormMenu2.resx">
-      <DependentUpon>FormMenu2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Funcionarios\FormFuncionarios.resx">
+      <DependentUpon>FormFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNivelAcesso2.resx">
+      <DependentUpon>FormNivelAcesso2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Agendamentos\FormReagendamento.resx">
       <DependentUpon>FormReagendamento.cs</DependentUpon>

@@ -38,14 +38,14 @@ namespace ShadowLines
                 if (accessLevel == 1)
                 {
                     MessageBox.Show("Login realizado com sucesso!");
-                    FormMenu1 menu = new FormMenu1();
+                    FormNivelAcesso1 menu = new FormNivelAcesso1();
                     menu.Show();
                     this.Hide(); 
                 }
                 else if (accessLevel == 2)
                 {
                     MessageBox.Show("Login realizado com sucesso!");
-                    FormMenu2 menu = new FormMenu2();
+                    FormNivelAcesso2 menu = new FormNivelAcesso2();
                     menu.Show();
                     this.Hide();
                 }

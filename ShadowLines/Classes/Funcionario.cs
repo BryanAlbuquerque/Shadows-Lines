@@ -12,12 +12,12 @@ namespace ShadowLines.Classes
         public int FuncionarioID { get; set; }
         public string Nome { get; set; }
         public long CPF { get; set; }
-        public DateTime Data_Nascimento { get; set; }
+        public DateTime DataNascimento { get; set; }
         public string Email { get; set; }
         public long Telefone { get; set; }
         public string Endereco { get; set; }
         public string Cargo { get; set; }
-        public int Nivel_Acesso { get; set; }
+        public int NivelAcesso { get; set; }
 
         public static List<Funcionario> Select()
         {
@@ -41,12 +41,12 @@ namespace ShadowLines.Classes
                                 FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
                                 Nome = r.GetString(r.GetOrdinal("Nome")),
                                 CPF = r.GetInt64(r.GetOrdinal("CPF")),
-                                Data_Nascimento = r.GetDateTime(r.GetOrdinal("DataNascimento")),
+                                DataNascimento = r.GetDateTime(r.GetOrdinal("DataNascimento")),
                                 Email = r.GetString(r.GetOrdinal("Email")),
                                 Telefone = r.GetInt64(r.GetOrdinal("Telefone")),
                                 Endereco = r["Endereco"]?.ToString(),
                                 Cargo = r["Cargo"]?.ToString(),
-                                Nivel_Acesso = r.GetInt32(r.GetOrdinal("NivelAcesso"))
+                                NivelAcesso = r.GetInt32(r.GetOrdinal("NivelAcesso"))
                             });
                         }
                     }
@@ -56,7 +56,7 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        public static List<Funcionario> SelectSet(string termo)
+        public static List<Funcionario> Buscar(string termo)
         {
             var lista = new List<Funcionario>();
 
@@ -85,12 +85,12 @@ namespace ShadowLines.Classes
                                 FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
                                 Nome = r.GetString(r.GetOrdinal("Nome")),
                                 CPF = r.GetInt64(r.GetOrdinal("CPF")),
-                                Data_Nascimento = r.GetDateTime(r.GetOrdinal("DataNascimento")),
+                                DataNascimento = r.GetDateTime(r.GetOrdinal("DataNascimento")),
                                 Email = r.GetString(r.GetOrdinal("Email")),
                                 Telefone = r.GetInt64(r.GetOrdinal("Telefone")),
                                 Endereco = r["Endereco"]?.ToString(),
                                 Cargo = r["Cargo"]?.ToString(),
-                                Nivel_Acesso = r.GetInt32(r.GetOrdinal("Nivel_Acesso"))
+                                NivelAcesso = r.GetInt32(r.GetOrdinal("NivelAcesso"))
                             });
                         }
                     }
@@ -114,12 +114,12 @@ namespace ShadowLines.Classes
                 {
                     cmd.Parameters.AddWithValue("@Nome", Nome);
                     cmd.Parameters.AddWithValue("@CPF", CPF);
-                    cmd.Parameters.AddWithValue("@Nascimento", Data_Nascimento);
+                    cmd.Parameters.AddWithValue("@Nascimento", DataNascimento);
                     cmd.Parameters.AddWithValue("@Email", Email);
                     cmd.Parameters.AddWithValue("@Telefone", Telefone);
                     cmd.Parameters.AddWithValue("@Endereco", (object)Endereco ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Cargo", (object)Cargo ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Nivel", Nivel_Acesso);
+                    cmd.Parameters.AddWithValue("@Nivel", NivelAcesso);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
@@ -135,12 +135,12 @@ namespace ShadowLines.Classes
                     UPDATE Funcionarios SET
                         Nome = @Nome,
                         CPF = @CPF,
-                        Data_Nascimento = @Nascimento,
+                        DataNascimento = @Nascimento,
                         Email = @Email,
                         Telefone = @Telefone,
                         Endereco = @Endereco,
                         Cargo = @Cargo,
-                        Nivel_Acesso = @Nivel
+                        NivelAcesso = @Nivel
                     WHERE FuncionarioID = @ID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -148,12 +148,12 @@ namespace ShadowLines.Classes
                     cmd.Parameters.AddWithValue("@ID", FuncionarioID);
                     cmd.Parameters.AddWithValue("@Nome", Nome);
                     cmd.Parameters.AddWithValue("@CPF", CPF);
-                    cmd.Parameters.AddWithValue("@Nascimento", Data_Nascimento);
+                    cmd.Parameters.AddWithValue("@Nascimento", DataNascimento);
                     cmd.Parameters.AddWithValue("@Email", Email);
                     cmd.Parameters.AddWithValue("@Telefone", Telefone);
                     cmd.Parameters.AddWithValue("@Endereco", (object)Endereco ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Cargo", (object)Cargo ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Nivel", Nivel_Acesso);
+                    cmd.Parameters.AddWithValue("@Nivel", NivelAcesso);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;

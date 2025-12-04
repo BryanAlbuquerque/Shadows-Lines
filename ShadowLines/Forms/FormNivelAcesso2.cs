@@ -5,13 +5,13 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
-    public partial class FormMenu2 : Form
+    public partial class FormNivelAcesso2 : Form
     {
         private Panel painelAgendamentosUI;
         private Panel painelCanceladosDiaUI;
         private Panel painelTotalAgendamentosUI;
         private Panel painelValorTotalDiarioUI;
-        public FormMenu2()
+        public FormNivelAcesso2()
         {
             InitializeComponent();
 
@@ -64,7 +64,7 @@ namespace ShadowLines.Forms
 
         private void btnAgendamentos_Click(object sender, System.EventArgs e)
         {
-            FormAgendamento2 form = new FormAgendamento2();
+            FormAgendamentoNivelAcesso2 form = new FormAgendamentoNivelAcesso2();
             form.Show();
             this.Hide();
         }
@@ -98,6 +98,13 @@ namespace ShadowLines.Forms
         {
             FormClientes clientes = new FormClientes();
             clientes.Show();
+            this.Hide();
+        }
+
+        private void bntFuncionarios_Click(object sender, System.EventArgs e)
+        {
+            FormFuncionarios funcionarios = new FormFuncionarios();
+            funcionarios.Show();
             this.Hide();
         }
     }
