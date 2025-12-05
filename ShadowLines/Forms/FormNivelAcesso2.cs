@@ -107,5 +107,12 @@ namespace ShadowLines.Forms
             funcionarios.Show();
             this.Hide();
         }
+
+        private void btnRelatorios_Click(object sender, System.EventArgs e)
+        {
+            FormRelatorios relatorios = new FormRelatorios();
+            relatorios.Show();
+            this.Hide();
+        }
     }
 }

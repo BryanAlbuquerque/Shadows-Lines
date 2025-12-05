@@ -34,6 +34,9 @@
             this.roundedPanel3 = new RoundedPanel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRelatorios = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bntFuncionarios = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.btnDados = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -45,16 +48,13 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.bntFuncionarios = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // iconButtonAtualizar
@@ -114,7 +114,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.guna2GradientButton3);
+            this.panel1.Controls.Add(this.btnRelatorios);
             this.panel1.Controls.Add(this.bntFuncionarios);
             this.panel1.Controls.Add(this.iconPictureBox3);
             this.panel1.Controls.Add(this.guna2GradientButton1);
@@ -132,6 +132,58 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 679);
             this.panel1.TabIndex = 80;
+            // 
+            // btnRelatorios
+            // 
+            this.btnRelatorios.BorderRadius = 5;
+            this.btnRelatorios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRelatorios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRelatorios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRelatorios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRelatorios.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRelatorios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRelatorios.FillColor = System.Drawing.Color.Black;
+            this.btnRelatorios.FillColor2 = System.Drawing.Color.Black;
+            this.btnRelatorios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorios.ForeColor = System.Drawing.Color.White;
+            this.btnRelatorios.Location = new System.Drawing.Point(68, 541);
+            this.btnRelatorios.Name = "btnRelatorios";
+            this.btnRelatorios.Size = new System.Drawing.Size(144, 51);
+            this.btnRelatorios.TabIndex = 86;
+            this.btnRelatorios.Text = "Relatórios";
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
+            // 
+            // bntFuncionarios
+            // 
+            this.bntFuncionarios.BorderRadius = 5;
+            this.bntFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bntFuncionarios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bntFuncionarios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bntFuncionarios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bntFuncionarios.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bntFuncionarios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bntFuncionarios.FillColor = System.Drawing.Color.Black;
+            this.bntFuncionarios.FillColor2 = System.Drawing.Color.Black;
+            this.bntFuncionarios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntFuncionarios.ForeColor = System.Drawing.Color.White;
+            this.bntFuncionarios.Location = new System.Drawing.Point(72, 259);
+            this.bntFuncionarios.Name = "bntFuncionarios";
+            this.bntFuncionarios.Size = new System.Drawing.Size(144, 38);
+            this.bntFuncionarios.TabIndex = 88;
+            this.bntFuncionarios.Text = "Funcionarios";
+            this.bntFuncionarios.Click += new System.EventHandler(this.bntFuncionarios_Click);
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.UserTie;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.IconSize = 40;
+            this.iconPictureBox3.Location = new System.Drawing.Point(29, 259);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(57, 40);
+            this.iconPictureBox3.TabIndex = 89;
+            this.iconPictureBox3.TabStop = false;
             // 
             // guna2GradientButton1
             // 
@@ -303,58 +355,7 @@
             this.btnDesconectar.Text = "Desconectar";
             this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.UserTie;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 40;
-            this.iconPictureBox3.Location = new System.Drawing.Point(29, 259);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(57, 40);
-            this.iconPictureBox3.TabIndex = 89;
-            this.iconPictureBox3.TabStop = false;
-            // 
-            // bntFuncionarios
-            // 
-            this.bntFuncionarios.BorderRadius = 5;
-            this.bntFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bntFuncionarios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bntFuncionarios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bntFuncionarios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bntFuncionarios.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bntFuncionarios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bntFuncionarios.FillColor = System.Drawing.Color.Black;
-            this.bntFuncionarios.FillColor2 = System.Drawing.Color.Black;
-            this.bntFuncionarios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntFuncionarios.ForeColor = System.Drawing.Color.White;
-            this.bntFuncionarios.Location = new System.Drawing.Point(72, 259);
-            this.bntFuncionarios.Name = "bntFuncionarios";
-            this.bntFuncionarios.Size = new System.Drawing.Size(144, 38);
-            this.bntFuncionarios.TabIndex = 88;
-            this.bntFuncionarios.Text = "Funcionarios";
-            this.bntFuncionarios.Click += new System.EventHandler(this.bntFuncionarios_Click);
-            // 
-            // guna2GradientButton3
-            // 
-            this.guna2GradientButton3.BorderRadius = 5;
-            this.guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Black;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(68, 541);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(144, 51);
-            this.guna2GradientButton3.TabIndex = 86;
-            this.guna2GradientButton3.Text = "Relatórios";
-            // 
-            // FormMenu2
+            // FormNivelAcesso2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -367,19 +368,19 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormMenu2";
+            this.Name = "FormNivelAcesso2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMenu2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,6 +406,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnDesconectar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private Guna.UI2.WinForms.Guna2GradientButton bntFuncionarios;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        private Guna.UI2.WinForms.Guna2GradientButton btnRelatorios;
     }
 }
