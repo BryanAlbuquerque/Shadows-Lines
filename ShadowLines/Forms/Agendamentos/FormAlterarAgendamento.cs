@@ -1,7 +1,14 @@
-﻿using System;
-using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using ShadowLines.Classes;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ShadowLines.Forms.Agendamentos
 {
@@ -11,8 +18,7 @@ namespace ShadowLines.Forms.Agendamentos
         {
             InitializeComponent();
         }
-
-        public void PopularComboBoxClientes() 
+        public void PopularComboBoxClientes()
         {
             var lista = Agendamento.Select();
 
@@ -41,11 +47,12 @@ namespace ShadowLines.Forms.Agendamentos
             comboBoxServicos.ValueMember = "ServicoID";
             comboBoxServicos.SelectedIndex = -1;
         }
+
         private void FormAlterarAgendamento_Load(object sender, EventArgs e)
         {
             PopularComboBoxClientes();
             PopularComboBoxFuncionarios();
-            PopularComboBoxServicos();  
+            PopularComboBoxServicos();
         }
 
         private void comboBoxClientes_SelectionChangeCommitted(object sender, EventArgs e)
@@ -78,11 +85,11 @@ namespace ShadowLines.Forms.Agendamentos
             }
         }
 
-        public void Salvar() 
+        private void Salvar()
         {
             try
             {
-                if (string.IsNullOrEmpty(comboBoxClientes.Text)) 
+                if (string.IsNullOrEmpty(comboBoxClientes.Text))
                 {
                     MessageBox.Show("Erro! escolha o nome do cliente");
                     return;

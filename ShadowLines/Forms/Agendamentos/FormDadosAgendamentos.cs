@@ -123,9 +123,9 @@ namespace ShadowLines.Forms
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            FormAlterarAgendamento agendamento = new FormAlterarAgendamento();
-            agendamento.MdiParent = this.MdiParent;
-            agendamento.Show();
+            FormAlterarAgendamento alterarAgendamento = new FormAlterarAgendamento();
+            alterarAgendamento.Show();
+            this.Hide();
         }
     }
 }

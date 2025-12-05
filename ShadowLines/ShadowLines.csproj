@@ -318,6 +318,12 @@
     <Compile Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.Designer.cs">
       <DependentUpon>FormAgendamentoNivelAcesso2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Funcionarios\FormAlterarDadosFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\FormAlterarDadosFuncionarios.Designer.cs">
+      <DependentUpon>FormAlterarDadosFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Funcionarios\FormFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -412,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.resx">
       <DependentUpon>FormAgendamentoNivelAcesso2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Funcionarios\FormAlterarDadosFuncionarios.resx">
+      <DependentUpon>FormAlterarDadosFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Funcionarios\FormFuncionarios.resx">
       <DependentUpon>FormFuncionarios.cs</DependentUpon>

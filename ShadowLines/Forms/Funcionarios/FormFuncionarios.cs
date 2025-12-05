@@ -1,4 +1,5 @@
 ﻿using ShadowLines.Classes;
+using ShadowLines.Forms.Funcionarios;
 using Syncfusion.WinForms.DataGrid;
 using Syncfusion.WinForms.DataGrid.Enums;
 using System;
@@ -91,7 +92,20 @@ namespace ShadowLines.Forms.FormsMenu2
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            
+            FormAlterarDadosFuncionarios formAlterar = new FormAlterarDadosFuncionarios();
+            formAlterar.Show();
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            FormNivelAcesso2 formNivelAcesso2 = new FormNivelAcesso2();
+            formNivelAcesso2.Show();
+            this.Hide();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

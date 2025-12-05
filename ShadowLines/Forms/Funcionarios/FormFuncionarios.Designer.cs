@@ -78,7 +78,7 @@
             this.btnAlterar.FillColor2 = System.Drawing.Color.Navy;
             this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(799, 137);
+            this.btnAlterar.Location = new System.Drawing.Point(805, 137);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(113, 34);
             this.btnAlterar.TabIndex = 45;
@@ -164,6 +164,7 @@
             this.btnVoltar.Size = new System.Drawing.Size(99, 34);
             this.btnVoltar.TabIndex = 36;
             this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnClose
             // 
@@ -185,6 +186,7 @@
             this.btnClose.Size = new System.Drawing.Size(34, 29);
             this.btnClose.TabIndex = 35;
             this.btnClose.Text = "X";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // picLogo
             // 
