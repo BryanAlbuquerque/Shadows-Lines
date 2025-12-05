@@ -38,12 +38,13 @@
             this.excluirClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesPagamentoPendenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fianceiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesDevendoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cobrançaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.gerarBoletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customBackgroundPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -132,7 +133,8 @@
             // dadosToolStripMenuItem
             // 
             this.dadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.visualizarClientesToolStripMenuItem});
+            this.visualizarClientesToolStripMenuItem,
+            this.clientesPagamentoPendenteToolStripMenuItem});
             this.dadosToolStripMenuItem.Name = "dadosToolStripMenuItem";
             this.dadosToolStripMenuItem.Size = new System.Drawing.Size(71, 22);
             this.dadosToolStripMenuItem.Text = "Dados";
@@ -140,30 +142,30 @@
             // visualizarClientesToolStripMenuItem
             // 
             this.visualizarClientesToolStripMenuItem.Name = "visualizarClientesToolStripMenuItem";
-            this.visualizarClientesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.visualizarClientesToolStripMenuItem.Size = new System.Drawing.Size(315, 22);
             this.visualizarClientesToolStripMenuItem.Text = "Clientes";
             this.visualizarClientesToolStripMenuItem.Click += new System.EventHandler(this.visualizarClientesToolStripMenuItem_Click);
+            // 
+            // clientesPagamentoPendenteToolStripMenuItem
+            // 
+            this.clientesPagamentoPendenteToolStripMenuItem.Name = "clientesPagamentoPendenteToolStripMenuItem";
+            this.clientesPagamentoPendenteToolStripMenuItem.Size = new System.Drawing.Size(315, 22);
+            this.clientesPagamentoPendenteToolStripMenuItem.Text = "Clientes pagamento pendente";
+            this.clientesPagamentoPendenteToolStripMenuItem.Click += new System.EventHandler(this.clientesPagamentoPendenteToolStripMenuItem_Click);
             // 
             // fianceiroToolStripMenuItem
             // 
             this.fianceiroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientesDevendoToolStripMenuItem,
-            this.cobrançaToolStripMenuItem});
+            this.cobrançaToolStripMenuItem,
+            this.gerarBoletoToolStripMenuItem});
             this.fianceiroToolStripMenuItem.Name = "fianceiroToolStripMenuItem";
             this.fianceiroToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.fianceiroToolStripMenuItem.Text = "Pagamentos";
             // 
-            // clientesDevendoToolStripMenuItem
-            // 
-            this.clientesDevendoToolStripMenuItem.Name = "clientesDevendoToolStripMenuItem";
-            this.clientesDevendoToolStripMenuItem.Size = new System.Drawing.Size(315, 22);
-            this.clientesDevendoToolStripMenuItem.Text = "Clientes pagamento pendente";
-            this.clientesDevendoToolStripMenuItem.Click += new System.EventHandler(this.clientesDevendoToolStripMenuItem_Click);
-            // 
             // cobrançaToolStripMenuItem
             // 
             this.cobrançaToolStripMenuItem.Name = "cobrançaToolStripMenuItem";
-            this.cobrançaToolStripMenuItem.Size = new System.Drawing.Size(315, 22);
+            this.cobrançaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cobrançaToolStripMenuItem.Text = "Cobrança";
             this.cobrançaToolStripMenuItem.Click += new System.EventHandler(this.cobrançaToolStripMenuItem_Click);
             // 
@@ -200,6 +202,13 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 111;
             this.guna2PictureBox1.TabStop = false;
+            // 
+            // gerarBoletoToolStripMenuItem
+            // 
+            this.gerarBoletoToolStripMenuItem.Name = "gerarBoletoToolStripMenuItem";
+            this.gerarBoletoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gerarBoletoToolStripMenuItem.Text = "Gerar boleto";
+            this.gerarBoletoToolStripMenuItem.Click += new System.EventHandler(this.gerarBoletoToolStripMenuItem_Click);
             // 
             // FormClientes
             // 
@@ -239,7 +248,8 @@
         private System.Windows.Forms.ToolStripMenuItem visualizarClientesToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2GradientButton btnVoltar;
         private System.Windows.Forms.ToolStripMenuItem fianceiroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesDevendoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cobrançaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesPagamentoPendenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gerarBoletoToolStripMenuItem;
     }
 }

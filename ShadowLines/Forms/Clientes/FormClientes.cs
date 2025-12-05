@@ -100,13 +100,6 @@ namespace ShadowLines.Forms
             }
         }
 
-        private void clientesDevendoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormPagamentoPendente pagamento = new FormPagamentoPendente();
-            pagamento.Show();
-            this.Hide();
-        }
-
         private void cobrançaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormCobranca cobranca = Application.OpenForms.OfType<FormCobranca>().FirstOrDefault();
@@ -124,6 +117,18 @@ namespace ShadowLines.Forms
                 }
                 cobranca.Activate();
             }
+        }
+
+        private void clientesPagamentoPendenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPagamentoPendente pagamento = new FormPagamentoPendente();
+            pagamento.Show();
+            this.Hide();
+        }
+
+        private void gerarBoletoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Abre o formulário de geração de boletos
         }
     }
 }

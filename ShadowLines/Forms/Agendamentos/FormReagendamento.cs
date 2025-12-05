@@ -32,10 +32,10 @@ namespace ShadowLines.Forms
 
         public void PopularComboBoxClientes()
         {
-            var lista = Cliente.Select("%");
+            var lista = Agendamento.Select();
 
             comboBoxCliente.DataSource = lista;
-            comboBoxCliente.DisplayMember = "Nome_Completo";
+            comboBoxCliente.DisplayMember = "NomeCliente";
             comboBoxCliente.ValueMember = "ClienteID";
             comboBoxCliente.SelectedIndex = -1;
         }

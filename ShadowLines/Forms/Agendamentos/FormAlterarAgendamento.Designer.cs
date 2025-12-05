@@ -442,6 +442,7 @@
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.lblFuncionario);
             this.Controls.Add(this.guna2HtmlLabel5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FormAlterarAgendamento";
             this.Text = "FormAlterarAgendamento";
             this.Load += new System.EventHandler(this.FormAlterarAgendamento_Load);

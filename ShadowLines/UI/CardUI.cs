@@ -28,13 +28,11 @@ public class CardUI : Panel
 
         this.Region = new Region(path);
 
-        // ===== SOMBRA MAIS FORTE =====
         using (SolidBrush shadowBrush = new SolidBrush(Color.FromArgb(100, 0, 0, 0)))
         {
             e.Graphics.FillRectangle(shadowBrush, 5, this.Height - 3, this.Width - 10, 6);
         }
 
-        // ===== BORDA MAIS ESCURA =====
         using (Pen borderPen = new Pen(Color.FromArgb(90, 90, 90), 3))
         {
             e.Graphics.DrawPath(borderPen, path);
