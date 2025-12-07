@@ -11,24 +11,7 @@ namespace ShadowLines.Classes
         public string NomeUsuario { get; set; }
         public string SenhaId{ get; set; }
 
-        public Usuarios(string nomeUsuario, string senhaId)
-        {
-            NomeUsuario = nomeUsuario;
-            SenhaId = senhaId;
-        }
-
-        public string ValidarCampos()
-        {
-            if (string.IsNullOrWhiteSpace(NomeUsuario) || string.IsNullOrWhiteSpace(SenhaId))
-                return "Erro! Existem campos em branco.";
-
-            if (!long.TryParse(SenhaId, out _))
-                return "Inválido. Digite apenas números.";
-
-            return null;
-        }
-
-        public int AutenticarUsuario()
+        public int Login()
         {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -40,7 +23,7 @@ namespace ShadowLines.Classes
 
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@NomeUsuario", NomeUsuario);
-                    command.Parameters.AddWithValue("@SenhaId", long.Parse(SenhaId));
+                    command.Parameters.AddWithValue("@SenhaId", SenhaId);
 
                     try
                     {

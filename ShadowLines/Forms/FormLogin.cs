@@ -2,6 +2,7 @@
 using ShadowLines.Forms;
 using System;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 
 namespace ShadowLines
 {
@@ -17,51 +18,46 @@ namespace ShadowLines
             this.Controls.Add(fundo);
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void Salvar() 
         {
-            string NomeUsuario = txtNomeUsuario.Text;
-            string SenhaId = txtSenhaId.Text;
-
-            var usuario = new Usuarios(NomeUsuario, SenhaId);
-
-            string erro = usuario.ValidarCampos();
-            if (erro != null)
+            if (string.IsNullOrEmpty(txtNomeUsuario.Text)
+                   || string.IsNullOrEmpty(txtSenhaId.Text))
             {
-                MessageBox.Show(erro, "Validação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, preencha todos os campos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             try
             {
-                int accessLevel = usuario.AutenticarUsuario();
+                Usuarios usuario = new Usuarios();
 
-                if (accessLevel == 1)
+                usuario.NomeUsuario = txtNomeUsuario.Text;
+                usuario.SenhaId = txtSenhaId.Text;
+
+                usuario.Login();
+                MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (SessaoUsuarioModel.NivelAcesso == 1)
                 {
-                    MessageBox.Show("Login realizado com sucesso!");
-                    FormNivelAcesso1 menu = new FormNivelAcesso1();
-                    menu.Show();
-                    this.Hide(); 
-                }
-                else if (accessLevel == 2)
-                {
-                    MessageBox.Show("Login realizado com sucesso!");
-                    FormNivelAcesso2 menu = new FormNivelAcesso2();
-                    menu.Show();
+                    FormNivelAcesso1 formNivelAcesso1 = new FormNivelAcesso1();
+                    formNivelAcesso1.Show();
                     this.Hide();
                 }
-                else if (accessLevel == 0 || accessLevel > 2)
+                else if (SessaoUsuarioModel.NivelAcesso == 2)
                 {
-                    MessageBox.Show("Nível de acesso não valido para login!");
-                }
-                else
-                {
-                    MessageBox.Show("Usuário ou senha inválidos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    FormNivelAcesso2 formNivelAcesso2 = new FormNivelAcesso2();
+                    formNivelAcesso2.Show();
+                    this.Hide();
                 }
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Erro ao autenticar: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao conectar! Envie print ao suporte: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+
+        }
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Salvar();   
         }
 
 
