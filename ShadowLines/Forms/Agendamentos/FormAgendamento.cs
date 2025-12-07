@@ -118,5 +118,13 @@ namespace ShadowLines.Forms
                 txtValor.Text = servicoSelecionado.Valor.ToString("F2");
             }
         }
+
+        private void comboBoxCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13) 
+            { 
+                comboBoxCliente.DataSource = Cliente.Select(comboBoxCliente.Text);
+            }
+        }
     }
 }

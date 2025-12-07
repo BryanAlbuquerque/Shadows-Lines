@@ -237,6 +237,7 @@
             this.comboBoxCliente.Name = "comboBoxCliente";
             this.comboBoxCliente.Size = new System.Drawing.Size(290, 21);
             this.comboBoxCliente.TabIndex = 95;
+            this.comboBoxCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxCliente_KeyPress);
             // 
             // comboBoxServicos
             // 
