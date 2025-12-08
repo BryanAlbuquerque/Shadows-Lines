@@ -65,7 +65,7 @@
             // 
             this.lblPagamento.BackColor = System.Drawing.Color.Transparent;
             this.lblPagamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPagamento.Location = new System.Drawing.Point(70, 291);
+            this.lblPagamento.Location = new System.Drawing.Point(55, 274);
             this.lblPagamento.Name = "lblPagamento";
             this.lblPagamento.Size = new System.Drawing.Size(150, 20);
             this.lblPagamento.TabIndex = 78;
@@ -85,7 +85,7 @@
             this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtStatus.ForeColor = System.Drawing.Color.Black;
             this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStatus.Location = new System.Drawing.Point(107, 313);
+            this.txtStatus.Location = new System.Drawing.Point(92, 296);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtStatus.PlaceholderText = "Pendente ou Pago";
@@ -107,7 +107,7 @@
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(107, 216);
+            this.txtValor.Location = new System.Drawing.Point(92, 199);
             this.txtValor.Name = "txtValor";
             this.txtValor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtValor.PlaceholderText = "";
@@ -119,7 +119,7 @@
             // 
             this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(70, 194);
+            this.lblValor.Location = new System.Drawing.Point(55, 177);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(45, 20);
             this.lblValor.TabIndex = 77;
@@ -129,7 +129,7 @@
             // 
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(107, 121);
+            this.lblCliente.Location = new System.Drawing.Point(92, 104);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(133, 20);
             this.lblCliente.TabIndex = 75;
@@ -139,7 +139,7 @@
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(490, 291);
+            this.lblData.Location = new System.Drawing.Point(475, 274);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(181, 20);
             this.lblData.TabIndex = 79;
@@ -159,7 +159,7 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(530, 313);
+            this.txtData.Location = new System.Drawing.Point(515, 296);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtData.PlaceholderText = "";
@@ -203,7 +203,7 @@
             // 
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFuncionario.Location = new System.Drawing.Point(531, 208);
+            this.lblFuncionario.Location = new System.Drawing.Point(516, 191);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(148, 20);
             this.lblFuncionario.TabIndex = 76;
@@ -233,7 +233,7 @@
             // comboBoxCliente
             // 
             this.comboBoxCliente.FormattingEnabled = true;
-            this.comboBoxCliente.Location = new System.Drawing.Point(107, 143);
+            this.comboBoxCliente.Location = new System.Drawing.Point(92, 126);
             this.comboBoxCliente.Name = "comboBoxCliente";
             this.comboBoxCliente.Size = new System.Drawing.Size(290, 21);
             this.comboBoxCliente.TabIndex = 95;
@@ -243,7 +243,7 @@
             // 
             this.comboBoxServicos.FormattingEnabled = true;
             this.comboBoxServicos.ItemHeight = 13;
-            this.comboBoxServicos.Location = new System.Drawing.Point(530, 143);
+            this.comboBoxServicos.Location = new System.Drawing.Point(515, 126);
             this.comboBoxServicos.MaximumSize = new System.Drawing.Size(1000, 0);
             this.comboBoxServicos.Name = "comboBoxServicos";
             this.comboBoxServicos.Size = new System.Drawing.Size(344, 21);
@@ -254,7 +254,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(530, 121);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(515, 104);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(73, 20);
             this.guna2HtmlLabel1.TabIndex = 97;
@@ -264,7 +264,7 @@
             // 
             this.comboBoxFuncionarios.FormattingEnabled = true;
             this.comboBoxFuncionarios.ItemHeight = 13;
-            this.comboBoxFuncionarios.Location = new System.Drawing.Point(530, 231);
+            this.comboBoxFuncionarios.Location = new System.Drawing.Point(515, 214);
             this.comboBoxFuncionarios.MaximumSize = new System.Drawing.Size(1000, 0);
             this.comboBoxFuncionarios.Name = "comboBoxFuncionarios";
             this.comboBoxFuncionarios.Size = new System.Drawing.Size(344, 21);
@@ -274,7 +274,7 @@
             // 
             this.labelData.BackColor = System.Drawing.Color.Transparent;
             this.labelData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelData.Location = new System.Drawing.Point(530, 12);
+            this.labelData.Location = new System.Drawing.Point(9, 365);
             this.labelData.Name = "labelData";
             this.labelData.Size = new System.Drawing.Size(81, 20);
             this.labelData.TabIndex = 99;
@@ -288,7 +288,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 36;
-            this.iconPictureBox2.Location = new System.Drawing.Point(487, 216);
+            this.iconPictureBox2.Location = new System.Drawing.Point(472, 199);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox2.TabIndex = 182;
@@ -302,7 +302,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 36;
-            this.iconPictureBox1.Location = new System.Drawing.Point(68, 128);
+            this.iconPictureBox1.Location = new System.Drawing.Point(53, 111);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(37, 36);
             this.iconPictureBox1.TabIndex = 183;
@@ -316,7 +316,7 @@
             this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 36;
-            this.iconPictureBox3.Location = new System.Drawing.Point(487, 128);
+            this.iconPictureBox3.Location = new System.Drawing.Point(472, 111);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox3.TabIndex = 184;
@@ -330,7 +330,7 @@
             this.iconPictureBox6.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 36;
-            this.iconPictureBox6.Location = new System.Drawing.Point(487, 313);
+            this.iconPictureBox6.Location = new System.Drawing.Point(472, 296);
             this.iconPictureBox6.Name = "iconPictureBox6";
             this.iconPictureBox6.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox6.TabIndex = 185;
@@ -344,7 +344,7 @@
             this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 36;
-            this.iconPictureBox4.Location = new System.Drawing.Point(68, 216);
+            this.iconPictureBox4.Location = new System.Drawing.Point(53, 199);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(37, 36);
             this.iconPictureBox4.TabIndex = 186;
@@ -358,7 +358,7 @@
             this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 36;
-            this.iconPictureBox5.Location = new System.Drawing.Point(63, 313);
+            this.iconPictureBox5.Location = new System.Drawing.Point(48, 296);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox5.TabIndex = 187;

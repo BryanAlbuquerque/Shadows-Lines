@@ -23,13 +23,15 @@ namespace ShadowLines.Classes
                             C.Nome_Completo AS NomeCliente,
                             A.Servico,
                             A.DataAgendamento,
-                            A.Situacao
+                            A.Valor,
+                            A.Pagamento,
+                            A.Situacao,
+                            F.Nome AS NomeFuncionario
                         FROM Agendamentos A
                         INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
+                        INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID  
                         WHERE 
                             A.DataAgendamento >= CAST(GETDATE() AS DATE)
-                        AND 
-                            A.Situacao = 'Em Aberto'
                         ORDER BY 
                             A.DataAgendamento ASC";
 
@@ -47,7 +49,10 @@ namespace ShadowLines.Classes
                                 NomeCliente = r["NomeCliente"].ToString(),
                                 Servicos = r["Servico"].ToString(),
                                 DataAgendamento = r.GetDateTime(r.GetOrdinal("DataAgendamento")),
-                                Situacao = r["Situacao"].ToString()
+                                Valor = r.GetDecimal(r.GetOrdinal("Valor")),
+                                Pagamento = r["Pagamento"].ToString(),
+                                Situacao = r["Situacao"].ToString(),
+                                NomeFuncionario = r["NomeFuncionario"].ToString()
                             });
                         }
                     }
@@ -55,6 +60,7 @@ namespace ShadowLines.Classes
             }
             return lista;
         }
+
 
 
         public static List<AgendamentoModel> Busca(string termo)
@@ -194,7 +200,7 @@ namespace ShadowLines.Classes
             }
         }
 
-        private bool PodeCriarNovoAgendamento(int clienteId)
+        public bool PodeCriarNovoAgendamento(int clienteId)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {

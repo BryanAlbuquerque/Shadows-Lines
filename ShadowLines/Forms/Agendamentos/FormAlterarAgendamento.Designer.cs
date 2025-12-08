@@ -416,6 +416,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(956, 512);
+            this.Controls.Add(this.comboBoxFuncionario);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.iconPictureBox5);
             this.Controls.Add(this.iconPictureBox7);
@@ -425,7 +426,6 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.comboBoxClientes);
             this.Controls.Add(this.iconPictureBox1);
-            this.Controls.Add(this.comboBoxFuncionario);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.txtSituacao);
             this.Controls.Add(this.comboBoxServicos);

@@ -74,22 +74,21 @@ namespace ShadowLines.Forms
             txtData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
         }
 
-        private void btnAgendar_Click(object sender, EventArgs e)
+        private void Salvar() 
         {
-            try
-            {
-                if (string.IsNullOrEmpty(comboBoxCliente.Text) 
+            if (string.IsNullOrEmpty(comboBoxCliente.Text)
                     || string.IsNullOrEmpty(comboBoxServicos.Text)
                     || string.IsNullOrEmpty(comboBoxFuncionarios.Text)
                     || string.IsNullOrEmpty(txtStatus.Text)
                     || string.IsNullOrEmpty(txtValor.Text)
-                    || string.IsNullOrEmpty(txtData.Text)) 
-                {
-                    MessageBox.Show("Erro existem espaços em branco");
-                    return;
-                }
-               
+                    || string.IsNullOrEmpty(txtData.Text))
+            {
+                MessageBox.Show("Erro existem espaços em branco");
+                return;
+            }
 
+            try
+            {
                 AgendamentoModel ag = new AgendamentoModel();
 
                 ag.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
@@ -106,8 +105,27 @@ namespace ShadowLines.Forms
             }
             catch (SqlException ex)
             {
-               MessageBox.Show($"ocorreu um erro: {ex}");
+                MessageBox.Show($"ocorreu um erro: {ex}");
             }
+
+        }
+        private void btnAgendar_Click(object sender, EventArgs e)
+        {
+            Agendamento agendamento = new Agendamento();
+            int clienteId = Convert.ToInt32(comboBoxCliente.SelectedValue);
+
+            if (!agendamento.PodeCriarNovoAgendamento(clienteId))
+            {
+                MessageBox.Show(
+                    "Este cliente ainda possui um agendamento pendente e não pode criar outro.",
+                    "Atenção",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return; 
+            }
+
+            Salvar();
         }
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)

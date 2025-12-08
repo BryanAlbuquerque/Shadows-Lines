@@ -17,8 +17,6 @@ namespace ShadowLines.Forms.Agendamentos
         {
             List<AgendamentoModel> lista = Agendamento.Select();
 
-            MessageBox.Show(lista.Count.ToString());
-
             comboBoxClientes.DataSource = lista;
             comboBoxClientes.DisplayMember = "Display";
             comboBoxClientes.ValueMember = "AgendamentoID";
@@ -59,15 +57,20 @@ namespace ShadowLines.Forms.Agendamentos
             if (comboBoxClientes.SelectedIndex == -1) return;
 
             int id = Convert.ToInt32(comboBoxClientes.SelectedValue);
-            var c = Agendamento.Select();
 
-            comboBoxFuncionario.Text = c.Find(x => x.AgendamentoID == id)?.NomeFuncionario;
-            comboBoxServicos.Text = c.Find(x => x.AgendamentoID == id)?.Servicos;
+            List<AgendamentoModel> lista = Agendamento.Select();
 
-            txtData.Text = c.Find(x => x.AgendamentoID == id)?.DataAgendamento.ToString("dd/MM/yyyy HH:mm");
-            txtValor.Text = c.Find(x => x.AgendamentoID == id)?.Valor.ToString("F2");
-            txtSituacao.Text = c.Find(x => x.AgendamentoID == id)?.Situacao;
-            txtPagamento.Text = c.Find(x => x.AgendamentoID == id)?.Pagamento;
+            AgendamentoModel ag = lista.Find(x => x.AgendamentoID == id);
+
+            if (ag == null) return;
+
+            comboBoxFuncionario.Text = ag.NomeFuncionario;
+            comboBoxServicos.Text = ag.Servicos;
+
+            txtData.Text = ag.DataAgendamento.ToString("dd/MM/yyyy HH:mm");
+            txtValor.Text = ag.Valor.ToString("F2");
+            txtSituacao.Text = ag.Situacao;
+            txtPagamento.Text = ag.Pagamento;
         }
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)
