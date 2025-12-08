@@ -53,18 +53,20 @@ namespace ShadowLines.Forms
             comboBoxServicos.ValueMember = "ServicoID";
             comboBoxServicos.SelectedIndex = -1;
         }
-        private void btnReagendar_Click(object sender, EventArgs e)
+
+        private void Salvar() 
         {
-            try
-            {
-                if (string.IsNullOrEmpty(comboBoxCliente.Text)
+            if (string.IsNullOrEmpty(comboBoxCliente.Text)
                     || string.IsNullOrEmpty(txtData.Text)
                     || string.IsNullOrEmpty(comboBoxServicos.Text)
-                    || string.IsNullOrEmpty(txtValor.Text)) 
-                {
-                    MessageBox.Show("Erro existem espaços em branco!");
-                    return; 
-                }
+                    || string.IsNullOrEmpty(txtValor.Text))
+            {
+                MessageBox.Show("Erro existem espaços em branco!");
+                return;
+            }
+
+            try
+            {
                 AgendamentoModel ag = new AgendamentoModel();
 
                 ag.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
@@ -80,6 +82,11 @@ namespace ShadowLines.Forms
             {
                 MessageBox.Show($"Erro ocorreu um erro! {ex}");
             }
+
+        }
+        private void btnReagendar_Click(object sender, EventArgs e)
+        {
+            Salvar();
         }
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)

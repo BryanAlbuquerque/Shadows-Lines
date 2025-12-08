@@ -178,7 +178,7 @@ namespace ShadowLines.Classes
 
 
         // Regras de negocio
-        private int GetUltimoAgendamentoId(int clienteId)
+        public int GetUltimoAgendamentoId(int clienteId)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -261,11 +261,6 @@ namespace ShadowLines.Classes
 
         public bool Update(AgendamentoModel ag)
         {
-            ag.AgendamentoID = GetUltimoAgendamentoId(ag.ClienteID);
-
-            if (ag.AgendamentoID == 0)
-                return false;
-
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
@@ -299,9 +294,9 @@ namespace ShadowLines.Classes
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
-            UPDATE Agendamentos SET
-            Situacao = @Situacao
-            WHERE AgendamentoID = @AgendamentoID";
+                    UPDATE Agendamentos SET
+                    Situacao = @Situacao
+                    WHERE AgendamentoID = @AgendamentoID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
