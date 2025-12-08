@@ -1,14 +1,8 @@
 ﻿using Microsoft.Data.SqlClient;
 using ShadowLines.Classes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ShadowLines.Models;
 
 namespace ShadowLines.Forms.Agendamentos
 {
@@ -24,7 +18,7 @@ namespace ShadowLines.Forms.Agendamentos
 
             comboBoxClientes.DataSource = lista;
             comboBoxClientes.DisplayMember = "NomeCliente";
-            comboBoxClientes.ValueMember = "ClienteID";
+            comboBoxClientes.ValueMember = "AgendamentoID";
             comboBoxClientes.SelectedIndex = -1;
 
         }
@@ -50,8 +44,8 @@ namespace ShadowLines.Forms.Agendamentos
 
         private void FormAlterarAgendamento_Load(object sender, EventArgs e)
         {
-            comboBoxCliente.AutoCompleteMode = AutoCompleteMode.Suggest;
-            comboBoxCliente.AutoCompleteSource = AutoCompleteSource.ListItems;
+            comboBoxClientes.AutoCompleteMode = AutoCompleteMode.Suggest;
+            comboBoxClientes.AutoCompleteSource = AutoCompleteSource.ListItems;
 
             PopularComboBoxClientes();
             PopularComboBoxFuncionarios();
@@ -66,7 +60,7 @@ namespace ShadowLines.Forms.Agendamentos
             var c = Agendamento.Select();
 
             comboBoxFuncionario.Text = c.Find(x => x.ClienteID == id)?.NomeFuncionario;
-            comboBoxServicos.Text = c.Find(x => x.ClienteID == id)?.Servico;
+            comboBoxServicos.Text = c.Find(x => x.ClienteID == id)?.Servicos;
 
             txtData.Text = c.Find(x => x.ClienteID == id)?.DataAgendamento.ToString("dd/MM/yyyy HH:mm");
             txtValor.Text = c.Find(x => x.ClienteID == id)?.Valor.ToString("F2");
@@ -97,17 +91,18 @@ namespace ShadowLines.Forms.Agendamentos
                     MessageBox.Show("Erro! escolha o nome do cliente");
                     return;
                 }
+                AgendamentoModel ag = new AgendamentoModel();
+
+                ag.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
+                ag.FuncionarioID = Convert.ToInt32(comboBoxFuncionario.SelectedValue);
+                ag.DataAgendamento = DateTime.Parse(txtData.Text);
+                ag.Servicos = comboBoxServicos.Text;
+                ag.Valor = decimal.Parse(txtValor.Text);
+                ag.Situacao = txtSituacao.Text;
+                ag.Pagamento = txtPagamento.Text;
+
                 Agendamento agendamento = new Agendamento();
-
-                agendamento.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
-                agendamento.FuncionarioID = Convert.ToInt32(comboBoxFuncionario.SelectedValue);
-                agendamento.DataAgendamento = DateTime.Parse(txtData.Text);
-                agendamento.Servico = comboBoxServicos.Text;
-                agendamento.Valor = decimal.Parse(txtValor.Text);
-                agendamento.Situacao = txtSituacao.Text;
-                agendamento.Pagamento = txtPagamento.Text;
-
-                agendamento.UpdateTable();
+                agendamento.UpdateTable(ag);
                 MessageBox.Show("Agendamento alterado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (SqlException ex)

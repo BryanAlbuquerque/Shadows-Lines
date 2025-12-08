@@ -2,6 +2,7 @@
 using Microsoft.Data.SqlClient;
 using System;
 using System.Windows.Forms;
+using ShadowLines.Models;   
 
 namespace ShadowLines.Forms.FormsMenu2
 {
@@ -96,16 +97,18 @@ namespace ShadowLines.Forms.FormsMenu2
                 }
 
 
+                AgendamentoModel ag = new AgendamentoModel();
+
+                ag.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
+                ag.Servicos = comboBoxServicos.Text;
+                ag.FuncionarioID = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
+                ag.Pagamento = txtStatus.Text;
+                ag.Valor = Convert.ToDecimal(txtValor.Text);
+                ag.DataAgendamento = Convert.ToDateTime(txtData.Text);
+
                 Agendamento agendamento = new Agendamento();
 
-                agendamento.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
-                agendamento.Servico = comboBoxServicos.Text;
-                agendamento.FuncionarioID = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
-                agendamento.Pagamento = txtStatus.Text;
-                agendamento.Valor = Convert.ToDecimal(txtValor.Text);
-                agendamento.DataAgendamento = Convert.ToDateTime(txtData.Text);
-
-                agendamento.Insert();
+                agendamento.Insert(ag);
                 MessageBox.Show("Agendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (SqlException ex)
@@ -182,13 +185,15 @@ namespace ShadowLines.Forms.FormsMenu2
                     MessageBox.Show("Erro existem espaços em branco");
                     return;
                 }
-                Agendamento agendamento = new Agendamento();
+                AgendamentoModel ag = new AgendamentoModel();
 
-                agendamento.ClienteID = Convert.ToInt32(comboBoxClientesReagendamento.SelectedValue);
-                agendamento.Servico = comboBoxServicosReagendamento.Text;
-                agendamento.Valor = Convert.ToDecimal(txtValorReagendamento.Text);
-                agendamento.DataAgendamento = Convert.ToDateTime(txtDataReagendamento.Text);
-                agendamento.Update();
+                ag.ClienteID = Convert.ToInt32(comboBoxClientesReagendamento.SelectedValue);
+                ag.Servicos = comboBoxServicosReagendamento.Text;
+                ag.Valor = Convert.ToDecimal(txtValorReagendamento.Text);
+                ag.DataAgendamento = Convert.ToDateTime(txtDataReagendamento.Text);
+
+                Agendamento agendamento = new Agendamento();
+                agendamento.Update(ag);
 
                 MessageBox.Show("Reagendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -211,11 +216,12 @@ namespace ShadowLines.Forms.FormsMenu2
                 return;
             }
 
-            Agendamento agendamento = new Agendamento();
-            agendamento.ClienteID = Convert.ToInt32(comboBoxClientesSituacao.SelectedValue);
-            agendamento.Situacao = comboBoxSituacao.Text;
+            AgendamentoModel ag = new AgendamentoModel();
+            ag.ClienteID = Convert.ToInt32(comboBoxClientesSituacao.SelectedValue);
+            ag.Situacao = comboBoxSituacao.Text;
 
-            agendamento.UpdateSituacao();
+            Agendamento agendamento = new Agendamento();
+            agendamento.UpdateSituacao(ag);
             MessageBox.Show("Situação alterada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void btnAlterar_Click(object sender, EventArgs e)

@@ -2,6 +2,7 @@
 using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using ShadowLines.Models;
 
 namespace ShadowLines.Forms
 {
@@ -38,7 +39,7 @@ namespace ShadowLines.Forms
 
             comboBoxClientes.DataSource = clientes;
             comboBoxClientes.DisplayMember = "Nome_Completo";
-            comboBoxClientes.ValueMember = "ClienteID";
+            comboBoxClientes.ValueMember = "AgendamentoID";
             comboBoxClientes.SelectedIndex = -1;
         }
 
@@ -60,11 +61,12 @@ namespace ShadowLines.Forms
                     MessageBox.Show("Erro existem espaços em branco!");
                     return;
                 }
-                Agendamento agendamento = new Agendamento();
-                agendamento.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
-                agendamento.Situacao = comboBoxSituacao.SelectedItem.ToString();
+                AgendamentoModel ag = new AgendamentoModel();
+                ag.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
+                ag.Situacao = comboBoxSituacao.SelectedItem.ToString();
 
-                agendamento.UpdateSituacao();
+                Agendamento agendamento = new Agendamento();
+                agendamento.UpdateSituacao(ag);
                 MessageBox.Show("Situação atualizada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (SqlException ex) 

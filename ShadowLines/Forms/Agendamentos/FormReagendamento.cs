@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 using ShadowLines.Classes;
+using ShadowLines.Models;
 
 namespace ShadowLines.Forms
 {
@@ -39,7 +40,7 @@ namespace ShadowLines.Forms
 
             comboBoxCliente.DataSource = lista;
             comboBoxCliente.DisplayMember = "NomeCliente";
-            comboBoxCliente.ValueMember = "ClienteID";
+            comboBoxCliente.ValueMember = "AgendamentoID";
             comboBoxCliente.SelectedIndex = -1;
         }
 
@@ -64,14 +65,15 @@ namespace ShadowLines.Forms
                     MessageBox.Show("Erro existem espaços em branco!");
                     return; 
                 }
+                AgendamentoModel ag = new AgendamentoModel();
+
+                ag.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
+                ag.DataAgendamento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy HH:mm", null);
+                ag.Servicos = comboBoxServicos.Text;
+                ag.Valor = Convert.ToDecimal(txtValor.Text);
+
                 Agendamento agendamento = new Agendamento();
-
-                agendamento.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
-                agendamento.DataAgendamento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy HH:mm", null);
-                agendamento.Servico = comboBoxServicos.Text;
-                agendamento.Valor = Convert.ToDecimal(txtValor.Text);
-
-                agendamento.Update();
+                agendamento.Update(ag);
                 MessageBox.Show("Reagendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (SqlException ex)

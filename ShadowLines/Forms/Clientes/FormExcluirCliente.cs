@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using ShadowLines.Classes;
+using ShadowLines.Models;
 
 namespace ShadowLines.Forms
 {
@@ -30,7 +31,7 @@ namespace ShadowLines.Forms
 
         public void Salvar() 
         {
-            Cliente cliente = new Cliente();
+            Cliente clientes = new Cliente();
             if (comboBoxClientes.SelectedIndex == -1)
             {
                 MessageBox.Show("Por favor, selecione um cliente para excluir.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -45,8 +46,11 @@ namespace ShadowLines.Forms
             {
                 try
                 {
+                    ClienteModel cliente = new ClienteModel();
+
                     cliente.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
-                    cliente.Delete();
+
+                    clientes.Delete(cliente);
                     MessageBox.Show("Cliente excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)

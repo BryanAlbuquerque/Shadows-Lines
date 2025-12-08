@@ -106,8 +106,7 @@ namespace ShadowLines.Forms
             }
             catch (SqlException ex)
             {
-
-                MessageBox.Show($"ocorreu um erro: {ex}");
+               MessageBox.Show($"ocorreu um erro: {ex}");
             }
         }
 

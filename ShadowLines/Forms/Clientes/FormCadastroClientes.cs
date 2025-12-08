@@ -1,4 +1,5 @@
 ﻿using ShadowLines.Classes;
+using ShadowLines.Models;
 using System;
 using System.Data.SqlClient;
 using System.Globalization;
@@ -37,16 +38,17 @@ namespace ShadowLines.Forms
                     MessageBox.Show("Erro existem espaços em branco!");
                     return;
                 }
+                ClienteModel cliente = new ClienteModel();
+
+                cliente.Nome_Completo = txtNome.Text;
+                cliente.CPF = Convert.ToInt64(txtCpf.Text.Replace(".", "").Replace("-", ""));
+                cliente.Telefone = Convert.ToInt64(txtTelefone.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
+                cliente.Email = txtEmail.Text;
+                cliente.Data_Nascimento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                cliente.Endereco = txtEndereco.Text;
+
                 Cliente clientes = new Cliente();
-
-                clientes.Nome_Completo = txtNome.Text;
-                clientes.CPF = Convert.ToInt64(txtCpf.Text.Replace(".", "").Replace("-", ""));
-                clientes.Telefone = Convert.ToInt64(txtTelefone.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
-                clientes.Email = txtEmail.Text;
-                clientes.Data_Nascimento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                clientes.Endereco = txtEndereco.Text;
-
-                clientes.Insert();
+                clientes.Insert(cliente);
 
                 MessageBox.Show("Cliente cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

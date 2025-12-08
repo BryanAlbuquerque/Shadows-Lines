@@ -171,9 +171,64 @@ namespace ShadowLines.Classes
         }
 
 
+        // Regras de negocio
+        private int GetUltimoAgendamentoId(int clienteId)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+                    SELECT TOP 1 AgendamentoID 
+                    FROM Agendamentos
+                    WHERE ClienteID = @ClienteID
+                    ORDER BY DataAgendamento DESC";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ClienteID", clienteId);
+
+                    conn.Open();
+                    object result = cmd.ExecuteScalar();
+
+                    return result != null ? Convert.ToInt32(result) : 0;
+                }
+            }
+        }
+
+        private bool PodeCriarNovoAgendamento(int clienteId)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+                    SELECT TOP 1 Situacao 
+                    FROM Agendamentos
+                    WHERE ClienteID = @ClienteID
+                    ORDER BY DataAgendamento DESC";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ClienteID", clienteId);
+
+                    conn.Open();
+                    var result = cmd.ExecuteScalar();
+
+                    if (result == null)
+                        return true;  // nunca agendou antes
+
+                    string situacao = result.ToString();
+
+                    return situacao == "Finalizado" || situacao == "Cancelado";
+                }
+            }
+        }
+
+
+
 
         public bool Insert(AgendamentoModel ag)
         {
+            if (!PodeCriarNovoAgendamento(ag.ClienteID))
+                return false;
+
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
@@ -197,8 +252,14 @@ namespace ShadowLines.Classes
             }
         }
 
+
         public bool Update(AgendamentoModel ag)
         {
+            ag.AgendamentoID = GetUltimoAgendamentoId(ag.ClienteID);
+
+            if (ag.AgendamentoID == 0)
+                return false;
+
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
@@ -206,11 +267,11 @@ namespace ShadowLines.Classes
                     DataAgendamento = @DataAgendamento,
                     Servico = @Servicos,
                     Valor = @Valor
-                    WHERE ClienteID = @ClienteID";
+                    WHERE AgendamentoID = @AgendamentoID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ClienteID", ag.ClienteID);
+                    cmd.Parameters.AddWithValue("@AgendamentoID", ag.AgendamentoID);
                     cmd.Parameters.AddWithValue("@DataAgendamento", ag.DataAgendamento);
                     cmd.Parameters.AddWithValue("@Servicos", ag.Servicos);
                     cmd.Parameters.AddWithValue("@Valor", ag.Valor);
@@ -221,52 +282,66 @@ namespace ShadowLines.Classes
             }
         }
 
-
         public bool UpdateSituacao(AgendamentoModel ag)
         {
+
+            ag.AgendamentoID = GetUltimoAgendamentoId(ag.ClienteID);
+
+            if (ag.AgendamentoID == 0)
+                return false;
+
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
-                    UPDATE Agendamentos SET
-                    Situacao = @Situacao
-                    WHERE ClienteID = @ClienteID";
+            UPDATE Agendamentos SET
+            Situacao = @Situacao
+            WHERE AgendamentoID = @AgendamentoID";
+
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ClienteID", ag.ClienteID);
+                    cmd.Parameters.AddWithValue("@AgendamentoID", ag.AgendamentoID);
                     cmd.Parameters.AddWithValue("@Situacao", ag.Situacao);
+
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
                 }
             }
         }
 
-        public bool UpdateTable(AgendamentoModel ag) 
+        public bool UpdateTable(AgendamentoModel ag)
         {
+            ag.AgendamentoID = GetUltimoAgendamentoId(ag.ClienteID);
+
+            if (ag.AgendamentoID == 0)
+                return false;
+
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
                     UPDATE Agendamentos SET
-                    FuncionarioID = @FuncionarioID,
-                    Servico = @Servicos, 
-                    DataAgendamento = @DataAgendamento,
-                    Valor = @Valor,
-                    Situacao = @Situacao,
-                    Pagamento = @Pagamento
-                    WHERE ClienteID = @ClienteID";  
+                        FuncionarioID = @FuncionarioID,
+                        Servico = @Servicos, 
+                        DataAgendamento = @DataAgendamento,
+                        Valor = @Valor,
+                        Situacao = @Situacao,
+                        Pagamento = @Pagamento
+                        WHERE AgendamentoID = @AgendamentoID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ClienteID", ag.ClienteID);
+                    cmd.Parameters.AddWithValue("@AgendamentoID", ag.AgendamentoID);
                     cmd.Parameters.AddWithValue("@FuncionarioID", ag.FuncionarioID);
                     cmd.Parameters.AddWithValue("@Servicos", ag.Servicos);
                     cmd.Parameters.AddWithValue("@DataAgendamento", ag.DataAgendamento);
                     cmd.Parameters.AddWithValue("@Valor", ag.Valor);
                     cmd.Parameters.AddWithValue("@Situacao", ag.Situacao);
                     cmd.Parameters.AddWithValue("@Pagamento", ag.Pagamento);
+
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
                 }
             }
         }
+
     }
 }

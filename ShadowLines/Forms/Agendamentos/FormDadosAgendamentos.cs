@@ -48,7 +48,7 @@ namespace ShadowLines.Forms
             sfDataGridPanel.Columns.Add(dataAgendamento);
 
             GridTextColumn servico = new GridTextColumn();
-            servico.MappingName = "Servico";
+            servico.MappingName = "Servicos";
             servico.HeaderText = "Serviço";
             servico.Width = 180;
             sfDataGridPanel.Columns.Add(servico);
