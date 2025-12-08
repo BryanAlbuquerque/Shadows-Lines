@@ -2,6 +2,7 @@
 using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using ShadowLines.Models;
 
 namespace ShadowLines.Forms
 {
@@ -89,16 +90,18 @@ namespace ShadowLines.Forms
                 }
                
 
+                AgendamentoModel ag = new AgendamentoModel();
+
+                ag.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
+                ag.Servicos = comboBoxServicos.Text;
+                ag.FuncionarioID = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
+                ag.Pagamento = txtStatus.Text;
+                ag.Valor = Convert.ToDecimal(txtValor.Text);
+                ag.DataAgendamento = Convert.ToDateTime(txtData.Text);
+
                 Agendamento agendamento = new Agendamento();
 
-                agendamento.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
-                agendamento.Servico = comboBoxServicos.Text;
-                agendamento.FuncionarioID = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
-                agendamento.Pagamento = txtStatus.Text;
-                agendamento.Valor = Convert.ToDecimal(txtValor.Text);
-                agendamento.DataAgendamento = Convert.ToDateTime(txtData.Text);
-
-                agendamento.Insert();
+                agendamento.Insert(ag);
                 MessageBox.Show("Agendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (SqlException ex)

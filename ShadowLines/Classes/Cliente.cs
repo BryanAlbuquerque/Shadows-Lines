@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
-using TheArtOfDevHtmlRenderer.Adapters;
+using ShadowLines.Models;
 
 namespace ShadowLines.Classes
 {
@@ -9,19 +9,10 @@ namespace ShadowLines.Classes
     {
         private readonly static string _connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
-        public int ClienteID { get; set; }
-        public string Nome_Completo { get; set; }
-        public long CPF { get; set; }
-        public long Telefone { get; set; }
-        public string Email { get; set; }
-        public DateTime? Data_Nascimento { get; set; }
-        public string Endereco { get; set; }
-        public DateTime DataCadastro { get; set; }
-
-
-        public static List<Cliente> Select(string termo)
+       
+        public static List<ClienteModel> Select(string termo)
         {
-            var lista = new List<Cliente>();
+            List<ClienteModel> lista = new List<ClienteModel>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -48,7 +39,7 @@ namespace ShadowLines.Classes
                     {
                         while (reader.Read())
                         {
-                            lista.Add(new Cliente
+                            lista.Add(new ClienteModel
                             {
                                 ClienteID = reader.GetInt32(reader.GetOrdinal("ClienteID")),
                                 Nome_Completo = reader.GetString(reader.GetOrdinal("Nome_Completo")),
@@ -67,9 +58,9 @@ namespace ShadowLines.Classes
         }
 
 
-        public static Cliente SelectedSet(int id)
+        public static ClienteModel SelectedSet(int id)
         {
-            Cliente cliente = null;
+            ClienteModel cliente = null;
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -87,7 +78,7 @@ namespace ShadowLines.Classes
                     {
                         if (reader.Read())
                         {
-                            cliente = new Cliente
+                            cliente = new ClienteModel
                             {
                                 ClienteID = reader.GetInt32(reader.GetOrdinal("ClienteID")),
                                 Nome_Completo = reader.GetString(reader.GetOrdinal("Nome_Completo")),
@@ -106,7 +97,7 @@ namespace ShadowLines.Classes
             return cliente;
         }
 
-        public bool Insert()
+        public bool Insert(ClienteModel cliente)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -118,12 +109,12 @@ namespace ShadowLines.Classes
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Nome", Nome_Completo);
-                    cmd.Parameters.AddWithValue("@CPF", CPF);
-                    cmd.Parameters.AddWithValue("@Telefone", Telefone);
-                    cmd.Parameters.AddWithValue("@Email", (object)Email ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Nascimento", (object)Data_Nascimento ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Endereco", (object)Endereco ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Nome", cliente.Nome_Completo);
+                    cmd.Parameters.AddWithValue("@CPF", cliente.CPF);
+                    cmd.Parameters.AddWithValue("@Telefone", cliente.Telefone);
+                    cmd.Parameters.AddWithValue("@Email", (object)cliente.Email ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Nascimento", (object)cliente.Data_Nascimento ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Endereco", (object)cliente.Endereco ?? DBNull.Value);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
@@ -131,7 +122,7 @@ namespace ShadowLines.Classes
             }
         }
 
-        public bool Update()
+        public bool Update(ClienteModel cliente)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -147,13 +138,13 @@ namespace ShadowLines.Classes
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ID", ClienteID);
-                    cmd.Parameters.AddWithValue("@Nome", Nome_Completo);
-                    cmd.Parameters.AddWithValue("@CPF", CPF);
-                    cmd.Parameters.AddWithValue("@Telefone", Telefone);
-                    cmd.Parameters.AddWithValue("@Email", (object)Email ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Nascimento", (object)Data_Nascimento ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Endereco", (object)Endereco ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@ID", cliente.ClienteID);
+                    cmd.Parameters.AddWithValue("@Nome", cliente.Nome_Completo);
+                    cmd.Parameters.AddWithValue("@CPF", cliente.CPF);
+                    cmd.Parameters.AddWithValue("@Telefone", cliente.Telefone);
+                    cmd.Parameters.AddWithValue("@Email", (object)cliente.Email ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Nascimento", (object)cliente.Data_Nascimento ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Endereco", (object)cliente.Endereco ?? DBNull.Value);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
@@ -161,14 +152,14 @@ namespace ShadowLines.Classes
             }
         }
 
-        public bool Delete()
+        public bool Delete(ClienteModel cliente)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = "DELETE FROM Clientes WHERE ClienteID = @ID";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ID", ClienteID);
+                    cmd.Parameters.AddWithValue("@ID", cliente.ClienteID);
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
                 }
