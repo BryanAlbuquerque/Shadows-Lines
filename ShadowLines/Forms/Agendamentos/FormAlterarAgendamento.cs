@@ -1,8 +1,9 @@
 ﻿using Microsoft.Data.SqlClient;
 using ShadowLines.Classes;
-using System;
-using System.Windows.Forms;
 using ShadowLines.Models;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace ShadowLines.Forms.Agendamentos
 {
@@ -14,13 +15,14 @@ namespace ShadowLines.Forms.Agendamentos
         }
         public void PopularComboBoxClientes()
         {
-            var lista = Agendamento.Select();
+            List<AgendamentoModel> lista = Agendamento.Select();
+
+            MessageBox.Show(lista.Count.ToString());
 
             comboBoxClientes.DataSource = lista;
-            comboBoxClientes.DisplayMember = "NomeCliente";
+            comboBoxClientes.DisplayMember = "Display";
             comboBoxClientes.ValueMember = "AgendamentoID";
             comboBoxClientes.SelectedIndex = -1;
-
         }
 
         public void PopularComboBoxFuncionarios()
@@ -59,13 +61,13 @@ namespace ShadowLines.Forms.Agendamentos
             int id = Convert.ToInt32(comboBoxClientes.SelectedValue);
             var c = Agendamento.Select();
 
-            comboBoxFuncionario.Text = c.Find(x => x.ClienteID == id)?.NomeFuncionario;
-            comboBoxServicos.Text = c.Find(x => x.ClienteID == id)?.Servicos;
+            comboBoxFuncionario.Text = c.Find(x => x.AgendamentoID == id)?.NomeFuncionario;
+            comboBoxServicos.Text = c.Find(x => x.AgendamentoID == id)?.Servicos;
 
-            txtData.Text = c.Find(x => x.ClienteID == id)?.DataAgendamento.ToString("dd/MM/yyyy HH:mm");
-            txtValor.Text = c.Find(x => x.ClienteID == id)?.Valor.ToString("F2");
-            txtSituacao.Text = c.Find(x => x.ClienteID == id)?.Situacao;
-            txtPagamento.Text = c.Find(x => x.ClienteID == id)?.Pagamento;
+            txtData.Text = c.Find(x => x.AgendamentoID == id)?.DataAgendamento.ToString("dd/MM/yyyy HH:mm");
+            txtValor.Text = c.Find(x => x.AgendamentoID == id)?.Valor.ToString("F2");
+            txtSituacao.Text = c.Find(x => x.AgendamentoID == id)?.Situacao;
+            txtPagamento.Text = c.Find(x => x.AgendamentoID == id)?.Pagamento;
         }
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)

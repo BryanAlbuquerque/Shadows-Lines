@@ -23,7 +23,7 @@ namespace ShadowLines.Forms
             sfDataGridPanel.FilterRowPosition = RowPosition.Top;
 
             ConfigurarColunas();
-            sfDataGridPanel.DataSource = Agendamento.Select();
+            sfDataGridPanel.DataSource = Agendamento.Busca("%");
         }
 
         private void ConfigurarColunas()

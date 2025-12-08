@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShadowLines.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,5 +19,7 @@ namespace ShadowLines.Models
         public string Pagamento { get; set; }
         public string NomeCliente { get; set; } // Nome do cliente da tabela Clientes
         public string NomeFuncionario { get; set; } // Nome do funcionário da tabela Funcionarios
+
+        public string Display => $"{NomeCliente} - {DataAgendamento:dd/MM/yyyy}";
     }
 }

@@ -13,21 +13,25 @@ namespace ShadowLines.Classes
         public static List<AgendamentoModel> Select()
         {
             List<AgendamentoModel> lista = new List<AgendamentoModel>();
+
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"SELECT 
-                            A.AgendamentoID, 
-                            A.ClienteID, 
-                            A.FuncionarioID, 
-                            A.DataAgendamento, 
-                            A.Servico, 
-                            A.Valor, 
-                            A.Situacao, 
-                            A.Pagamento, 
-                         C.Nome_Completo AS NomeCliente, F.Nome AS NomeFuncionario
-                         FROM Agendamentos A
-                         INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
-                         INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID";
+                string query = @"
+                        SELECT 
+                            A.AgendamentoID,
+                            A.ClienteID,
+                            C.Nome_Completo AS NomeCliente,
+                            A.Servico,
+                            A.DataAgendamento,
+                            A.Situacao
+                        FROM Agendamentos A
+                        INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
+                        WHERE 
+                            A.DataAgendamento >= CAST(GETDATE() AS DATE)
+                        AND 
+                            A.Situacao = 'Em Aberto'
+                        ORDER BY 
+                            A.DataAgendamento ASC";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -40,14 +44,10 @@ namespace ShadowLines.Classes
                             {
                                 AgendamentoID = r.GetInt32(r.GetOrdinal("AgendamentoID")),
                                 ClienteID = r.GetInt32(r.GetOrdinal("ClienteID")),
-                                FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
-                                DataAgendamento = r.GetDateTime(r.GetOrdinal("DataAgendamento")),
-                                Servicos = r["Servico"].ToString(),
-                                Valor = (decimal)r["Valor"],
-                                Situacao = r["Situacao"].ToString(),
-                                Pagamento = r["Pagamento"].ToString(),
                                 NomeCliente = r["NomeCliente"].ToString(),
-                                NomeFuncionario = r["NomeFuncionario"].ToString()
+                                Servicos = r["Servico"].ToString(),
+                                DataAgendamento = r.GetDateTime(r.GetOrdinal("DataAgendamento")),
+                                Situacao = r["Situacao"].ToString()
                             });
                         }
                     }
