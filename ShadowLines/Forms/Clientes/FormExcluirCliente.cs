@@ -22,6 +22,9 @@ namespace ShadowLines.Forms
 
         private void FormExcluirCliente_Load(object sender, EventArgs e)
         {
+            comboBoxClientes.AutoCompleteMode = AutoCompleteMode.Suggest;
+            comboBoxClientes.AutoCompleteSource = AutoCompleteSource.ListItems;
+
             PopularComboBoxClientes();
         }
 

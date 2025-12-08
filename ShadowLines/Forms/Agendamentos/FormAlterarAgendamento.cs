@@ -50,6 +50,9 @@ namespace ShadowLines.Forms.Agendamentos
 
         private void FormAlterarAgendamento_Load(object sender, EventArgs e)
         {
+            comboBoxCliente.AutoCompleteMode = AutoCompleteMode.Suggest;
+            comboBoxCliente.AutoCompleteSource = AutoCompleteSource.ListItems;
+
             PopularComboBoxClientes();
             PopularComboBoxFuncionarios();
             PopularComboBoxServicos();

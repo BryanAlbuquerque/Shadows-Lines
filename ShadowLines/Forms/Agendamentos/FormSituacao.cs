@@ -44,6 +44,9 @@ namespace ShadowLines.Forms
 
         private void FormSituacao_Load(object sender, EventArgs e)
         {
+            comboBoxClientes.AutoCompleteMode = AutoCompleteMode.Suggest;
+            comboBoxClientes.AutoCompleteSource = AutoCompleteSource.ListItems;
+
             PopularComboBoxSituacao();
         }
 

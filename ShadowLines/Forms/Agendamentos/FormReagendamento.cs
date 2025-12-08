@@ -24,6 +24,9 @@ namespace ShadowLines.Forms
 
         private void FormReagendamento_Load(object sender, EventArgs e)
         {
+            comboBoxCliente.AutoCompleteMode = AutoCompleteMode.Suggest;
+            comboBoxCliente.AutoCompleteSource = AutoCompleteSource.ListItems;
+
             txtData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
             PopularComboBoxClientes();

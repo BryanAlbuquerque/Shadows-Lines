@@ -63,6 +63,9 @@ namespace ShadowLines.Forms
 
         private void FormAgendamento_Load(object sender, EventArgs e)
         {
+            comboBoxCliente.AutoCompleteMode = AutoCompleteMode.Suggest;
+            comboBoxCliente.AutoCompleteSource = AutoCompleteSource.ListItems;
+
             PopularComboBoxClientes();
             PopularComboBoxServicos();
             PopularComboBoxFuncionarios();

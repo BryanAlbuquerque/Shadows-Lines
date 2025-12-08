@@ -894,14 +894,14 @@
             this.guna2PictureBox1.TabIndex = 111;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // FormAgendamento2
+            // FormAgendamentoNivelAcesso2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 604);
             this.Controls.Add(this.customBackgroundPanel1);
             this.IsMdiContainer = true;
-            this.Name = "FormAgendamento2";
+            this.Name = "FormAgendamentoNivelAcesso2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAgendamentos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

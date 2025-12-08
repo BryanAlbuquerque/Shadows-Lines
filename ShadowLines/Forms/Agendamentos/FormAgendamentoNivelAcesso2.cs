@@ -80,7 +80,7 @@ namespace ShadowLines.Forms.FormsMenu2
             comboBoxClientesSituacao.ValueMember = "ClienteID";
             comboBoxClientesSituacao.SelectedIndex = -1;
         }
-        private void Agendar() 
+        private void Agendar()
         {
             try
             {
@@ -122,6 +122,14 @@ namespace ShadowLines.Forms.FormsMenu2
 
         private void FormAgendamento2_Load(object sender, EventArgs e)
         {
+            comboBoxClientes.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBoxClientes.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+            comboBoxClientesReagendamento.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBoxClientesReagendamento.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+            comboBoxClientesSituacao.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+
             labelData.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
 
             txtData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");

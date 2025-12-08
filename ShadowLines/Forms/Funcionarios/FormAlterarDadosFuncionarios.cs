@@ -22,6 +22,9 @@ namespace ShadowLines.Forms.Funcionarios
         }
         private void FormAlterarDadosFuncionarios_Load(object sender, EventArgs e)
         {
+            comboBoxFuncionarios.AutoCompleteMode = AutoCompleteMode.Suggest;
+            comboBoxFuncionarios.AutoCompleteSource = AutoCompleteSource.ListItems;
+
             PopularComboBoxFuncionarios();
         }
 
