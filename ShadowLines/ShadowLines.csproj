@@ -358,6 +358,7 @@
     <Compile Include="Forms\Funcionarios\FormFuncionarios.Designer.cs">
       <DependentUpon>FormFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\AgendamentoModel.cs" />
     <Compile Include="Models\SessaoUsuarioModel.cs" />
     <Compile Include="UI\CardUI.cs">
       <SubType>Component</SubType>
