@@ -15,11 +15,11 @@ namespace ShadowLines.Forms.Agendamentos
         }
         public void PopularComboBoxClientes()
         {
-            List<AgendamentoModel> lista = Agendamento.Select();
+            List<AgendamentoModel> lista = Agendamento.Busca("%");
 
             comboBoxClientes.DataSource = lista;
             comboBoxClientes.DisplayMember = "Display";
-            comboBoxClientes.ValueMember = "AgendamentoID";
+            comboBoxClientes.ValueMember = "ClienteID";
             comboBoxClientes.SelectedIndex = -1;
         }
 
@@ -60,7 +60,7 @@ namespace ShadowLines.Forms.Agendamentos
 
             List<AgendamentoModel> lista = Agendamento.Select();
 
-            AgendamentoModel ag = lista.Find(x => x.AgendamentoID == id);
+            AgendamentoModel ag = lista.Find(x => x.ClienteID == id);
 
             if (ag == null) return;
 
@@ -89,13 +89,14 @@ namespace ShadowLines.Forms.Agendamentos
 
         private void Salvar()
         {
+            if (string.IsNullOrEmpty(comboBoxClientes.Text))
+            {
+                MessageBox.Show("Erro! escolha o nome do cliente");
+                return;
+            }
+
             try
             {
-                if (string.IsNullOrEmpty(comboBoxClientes.Text))
-                {
-                    MessageBox.Show("Erro! escolha o nome do cliente");
-                    return;
-                }
                 AgendamentoModel ag = new AgendamentoModel();
 
                 ag.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
@@ -107,8 +108,12 @@ namespace ShadowLines.Forms.Agendamentos
                 ag.Pagamento = txtPagamento.Text;
 
                 Agendamento agendamento = new Agendamento();
-                agendamento.UpdateTable(ag);
-                MessageBox.Show("Agendamento alterado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                bool ok = agendamento.UpdateTable(ag);
+
+                if (ok)
+                    MessageBox.Show("Dados atualizados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Erro ao alterar os dados para este cliente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (SqlException ex)
             {

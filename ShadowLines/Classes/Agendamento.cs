@@ -32,6 +32,8 @@ namespace ShadowLines.Classes
                         INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID  
                         WHERE 
                             A.DataAgendamento >= CAST(GETDATE() AS DATE)
+                            AND A.Situacao <> 'Cancelado'
+                            AND A.Situacao <> 'Finalizado'
                         ORDER BY 
                             A.DataAgendamento ASC";
 
@@ -143,7 +145,9 @@ namespace ShadowLines.Classes
                     AND (C.Nome_Completo LIKE '%' + @termo + '%'
                     AND F.Nome LIKE '%' + @termo + '%'
                     AND A.Servico LIKE '%' + @termo + '%'
-                    AND A.DataAgendamento LIKE '%' + @termo + '%')";
+                    AND A.DataAgendamento LIKE '%' + @termo + '%'
+                    AND A.Situacao LIKE '%' + @termo + '%'
+                    AND A.Pagemento LIKE '%' + @termo + '%')";
                     
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -261,6 +265,11 @@ namespace ShadowLines.Classes
 
         public bool Update(AgendamentoModel ag)
         {
+            ag.AgendamentoID = GetUltimoAgendamentoId(ag.ClienteID);
+
+            if (ag.AgendamentoID == 0)
+                return false;
+
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"

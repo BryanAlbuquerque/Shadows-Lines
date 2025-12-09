@@ -20,6 +20,6 @@ namespace ShadowLines.Models
         public string NomeCliente { get; set; } // Nome do cliente da tabela Clientes
         public string NomeFuncionario { get; set; } // Nome do funcionário da tabela Funcionarios
 
-        public string Display => $"{NomeCliente} - {DataAgendamento:dd/MM/yyyy}";
+        public string Display => $"{NomeCliente} - {DataAgendamento:dd/MM/yyyy HH:mm}";
     }
 }

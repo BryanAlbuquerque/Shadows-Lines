@@ -31,15 +31,13 @@ namespace ShadowLines.Forms
                 menu.Interface(true);
             }
         }
-        public void PopularComboBoxSituacao()
+        public void PopularComboBoxClientes()
         {
-            var agendamento = Agendamento.Select();
+            var lista = Agendamento.Select();
 
-            var clientes = Cliente.Select("%");
-
-            comboBoxClientes.DataSource = clientes;
-            comboBoxClientes.DisplayMember = "Nome_Completo";
-            comboBoxClientes.ValueMember = "AgendamentoID";
+            comboBoxClientes.DataSource = lista;
+            comboBoxClientes.DisplayMember = "Display";
+            comboBoxClientes.ValueMember = "ClienteID";
             comboBoxClientes.SelectedIndex = -1;
         }
 
@@ -48,30 +46,36 @@ namespace ShadowLines.Forms
             comboBoxClientes.AutoCompleteMode = AutoCompleteMode.Suggest;
             comboBoxClientes.AutoCompleteSource = AutoCompleteSource.ListItems;
 
-            PopularComboBoxSituacao();
+            PopularComboBoxClientes();
         }
 
         public void Salvar()
         {
+            if (string.IsNullOrEmpty(comboBoxClientes.Text)
+                || string.IsNullOrEmpty(comboBoxSituacao.Text))
+            {
+                MessageBox.Show("Erro: existem espaços em branco!");
+                return;
+            }
+
             try
             {
-                if (string.IsNullOrEmpty(comboBoxClientes.Text)
-                    || string.IsNullOrEmpty(comboBoxSituacao.Text))
-                {
-                    MessageBox.Show("Erro existem espaços em branco!");
-                    return;
-                }
                 AgendamentoModel ag = new AgendamentoModel();
+
                 ag.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
                 ag.Situacao = comboBoxSituacao.SelectedItem.ToString();
 
                 Agendamento agendamento = new Agendamento();
-                agendamento.UpdateSituacao(ag);
-                MessageBox.Show("Situação atualizada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                bool ok = agendamento.UpdateSituacao(ag);
+
+                if (ok)
+                    MessageBox.Show("Situação atualizada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Nenhum agendamento encontrado para este cliente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (SqlException ex) 
+            catch (SqlException ex)
             {
-                MessageBox.Show($"Ocorreu um erro: {ex}");            
+                MessageBox.Show($"Ocorreu um erro: {ex}");
             }
         }
 

@@ -69,7 +69,7 @@ namespace ShadowLines.Forms
             {
                 AgendamentoModel ag = new AgendamentoModel();
 
-                ag.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
+                ag.AgendamentoID = Convert.ToInt32(comboBoxCliente.SelectedValue);
                 ag.DataAgendamento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy HH:mm", null);
                 ag.Servicos = comboBoxServicos.Text;
                 ag.Valor = Convert.ToDecimal(txtValor.Text);
