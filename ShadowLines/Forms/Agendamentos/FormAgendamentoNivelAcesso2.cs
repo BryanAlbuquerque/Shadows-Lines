@@ -2,7 +2,7 @@
 using Microsoft.Data.SqlClient;
 using System;
 using System.Windows.Forms;
-using ShadowLines.Models;   
+using ShadowLines.Models;
 
 namespace ShadowLines.Forms.FormsMenu2
 {
@@ -58,6 +58,7 @@ namespace ShadowLines.Forms.FormsMenu2
         public void PopularComboBoxClientesReagendamento()
         {
             var lista = Agendamento.Select();
+
             comboBoxClientesReagendamento.DataSource = lista;
             comboBoxClientesReagendamento.DisplayMember = "NomeCliente";
             comboBoxClientesReagendamento.ValueMember = "ClienteID";
@@ -175,27 +176,50 @@ namespace ShadowLines.Forms.FormsMenu2
 
         private void Reagendar()
         {
+            if (string.IsNullOrEmpty(comboBoxClientesReagendamento.Text)
+                    || string.IsNullOrEmpty(txtValorReagendamento.Text)
+                    || string.IsNullOrEmpty(txtDataReagendamento.Text))
+            {
+                MessageBox.Show("Erro existem espaços em branco");
+                return;
+            }
             try
             {
-                if (string.IsNullOrEmpty(comboBoxClientesReagendamento.Text)
-                    || string.IsNullOrEmpty(comboBoxFuncionarios.Text)
-                    || string.IsNullOrEmpty(txtValor.Text)
-                    || string.IsNullOrEmpty(txtData.Text))
-                {
-                    MessageBox.Show("Erro existem espaços em branco");
-                    return;
-                }
                 AgendamentoModel ag = new AgendamentoModel();
+                Agendamento agendamento = new Agendamento();
 
                 ag.ClienteID = Convert.ToInt32(comboBoxClientesReagendamento.SelectedValue);
+
+                ag.AgendamentoID = agendamento.GetUltimoAgendamentoId(ag.ClienteID);
+
+                if (ag.AgendamentoID == 0)
+                {
+                    MessageBox.Show("Este cliente não possui agendamentos ativos para reagendar.",
+                                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                ag.DataAgendamento = DateTime.ParseExact(
+                                        txtDataReagendamento.Text,
+                                        "dd/MM/yyyy HH:mm",
+                                        null);
+
                 ag.Servicos = comboBoxServicosReagendamento.Text;
                 ag.Valor = Convert.ToDecimal(txtValorReagendamento.Text);
-                ag.DataAgendamento = Convert.ToDateTime(txtDataReagendamento.Text);
 
-                Agendamento agendamento = new Agendamento();
-                agendamento.Update(ag);
+                bool atualizado = agendamento.Update(ag);
 
-                MessageBox.Show("Reagendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (atualizado)
+                {
+                    MessageBox.Show("Reagendamento realizado com sucesso!",
+                                    "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível reagendar. Tente novamente.",
+                                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
             catch (SqlException ex)
             {
@@ -233,7 +257,8 @@ namespace ShadowLines.Forms.FormsMenu2
         {
             if (comboBoxServicosReagendamento.SelectedValue == null) { return; }
 
-            int servicoID = Convert.ToInt32(comboBoxServicos.SelectedValue);
+            int servicoID = Convert.ToInt32(comboBoxServicosReagendamento.SelectedValue);
+
             Servico servicoSelecionado = Servico.SelectSet(servicoID);
 
             if (servicoSelecionado != null)

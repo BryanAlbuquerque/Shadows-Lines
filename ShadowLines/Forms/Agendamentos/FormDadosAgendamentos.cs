@@ -45,6 +45,7 @@ namespace ShadowLines.Forms
             dataAgendamento.MappingName = "DataAgendamento";
             dataAgendamento.HeaderText = "Data do Agendamento";
             dataAgendamento.Width = 200;
+            dataAgendamento.Format = "dd/MM/yyyy HH:mm";
             sfDataGridPanel.Columns.Add(dataAgendamento);
 
             GridTextColumn servico = new GridTextColumn();

@@ -13,8 +13,6 @@ namespace ShadowLines.Classes
         public string Nome { get; set; }
         public decimal Valor { get; set; }
 
-
-        // 🔹 LISTAR TODOS OS SERVIÇOS (para ComboBox, Grid, etc.)
         public static List<Servico> Select()
         {
             var lista = new List<Servico>();

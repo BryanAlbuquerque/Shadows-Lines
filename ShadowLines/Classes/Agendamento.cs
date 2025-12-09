@@ -187,10 +187,13 @@ namespace ShadowLines.Classes
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
-                    SELECT TOP 1 AgendamentoID 
-                    FROM Agendamentos
-                    WHERE ClienteID = @ClienteID
-                    ORDER BY DataAgendamento DESC";
+                        SELECT TOP 1 AgendamentoID 
+                        FROM Agendamentos
+                        WHERE ClienteID = @ClienteID
+                          AND DataAgendamento >= CAST(GETDATE() AS DATE)
+                          AND Situacao <> 'Cancelado'
+                          AND Situacao <> 'Finalizado'
+                        ORDER BY DataAgendamento DESC";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {

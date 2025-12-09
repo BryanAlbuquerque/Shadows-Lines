@@ -40,7 +40,7 @@ namespace ShadowLines.Forms
 
             comboBoxCliente.DataSource = lista;
             comboBoxCliente.DisplayMember = "NomeCliente";
-            comboBoxCliente.ValueMember = "AgendamentoID";
+            comboBoxCliente.ValueMember = "ClienteID";
             comboBoxCliente.SelectedIndex = -1;
         }
 
@@ -68,15 +68,39 @@ namespace ShadowLines.Forms
             try
             {
                 AgendamentoModel ag = new AgendamentoModel();
+                Agendamento agendamento = new Agendamento();
 
-                ag.AgendamentoID = Convert.ToInt32(comboBoxCliente.SelectedValue);
-                ag.DataAgendamento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy HH:mm", null);
+                ag.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
+
+                ag.AgendamentoID = agendamento.GetUltimoAgendamentoId(ag.ClienteID);
+
+                if (ag.AgendamentoID == 0)
+                {
+                    MessageBox.Show("Este cliente não possui agendamentos ativos para reagendar.",
+                                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                ag.DataAgendamento = DateTime.ParseExact(
+                                        txtData.Text,
+                                        "dd/MM/yyyy HH:mm",
+                                        null);
+
                 ag.Servicos = comboBoxServicos.Text;
                 ag.Valor = Convert.ToDecimal(txtValor.Text);
 
-                Agendamento agendamento = new Agendamento();
-                agendamento.Update(ag);
-                MessageBox.Show("Reagendamento realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                bool atualizado = agendamento.Update(ag);
+
+                if (atualizado)
+                {
+                    MessageBox.Show("Reagendamento realizado com sucesso!",
+                                    "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível reagendar. Tente novamente.",
+                                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (SqlException ex)
             {

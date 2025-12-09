@@ -19,7 +19,7 @@ namespace ShadowLines.Forms.Agendamentos
 
             comboBoxClientes.DataSource = lista;
             comboBoxClientes.DisplayMember = "Display";
-            comboBoxClientes.ValueMember = "ClienteID";
+            comboBoxClientes.ValueMember = "AgendamentoID";
             comboBoxClientes.SelectedIndex = -1;
         }
 
@@ -58,9 +58,9 @@ namespace ShadowLines.Forms.Agendamentos
 
             int id = Convert.ToInt32(comboBoxClientes.SelectedValue);
 
-            List<AgendamentoModel> lista = Agendamento.Select();
+            List<AgendamentoModel> lista = Agendamento.Busca("%");
 
-            AgendamentoModel ag = lista.Find(x => x.ClienteID == id);
+            AgendamentoModel ag = lista.Find(x => x.AgendamentoID == id);
 
             if (ag == null) return;
 
