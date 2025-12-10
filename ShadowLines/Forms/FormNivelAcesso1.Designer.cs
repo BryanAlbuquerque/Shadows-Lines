@@ -92,7 +92,7 @@
             this.btnReagendamento.FillColor2 = System.Drawing.Color.Black;
             this.btnReagendamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReagendamento.ForeColor = System.Drawing.Color.White;
-            this.btnReagendamento.Location = new System.Drawing.Point(58, 359);
+            this.btnReagendamento.Location = new System.Drawing.Point(58, 365);
             this.btnReagendamento.Name = "btnReagendamento";
             this.btnReagendamento.Size = new System.Drawing.Size(144, 51);
             this.btnReagendamento.TabIndex = 12;
@@ -272,7 +272,7 @@
             this.iconPictureBox3.IconColor = System.Drawing.Color.White;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 40;
-            this.iconPictureBox3.Location = new System.Drawing.Point(19, 370);
+            this.iconPictureBox3.Location = new System.Drawing.Point(19, 376);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(50, 40);
             this.iconPictureBox3.TabIndex = 80;
@@ -349,7 +349,7 @@
             this.roundedPanel1.Size = new System.Drawing.Size(50, 684);
             this.roundedPanel1.TabIndex = 1;
             // 
-            // FormMenu1
+            // FormNivelAcesso1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -365,7 +365,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Name = "FormMenu1";
+            this.Name = "FormNivelAcesso1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

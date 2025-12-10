@@ -128,7 +128,9 @@ namespace ShadowLines.Forms
 
         private void gerarBoletoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Abre o formulário de geração de boletos
+            FormGerarBoleto boleto = new FormGerarBoleto();
+            boleto.Show();
+            this.Hide();
         }
     }
 }

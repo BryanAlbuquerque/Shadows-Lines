@@ -328,6 +328,12 @@
     <Compile Include="Forms\Agendamentos\FormSituacao.Designer.cs">
       <DependentUpon>FormSituacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Clientes\FormGerarBoleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clientes\FormGerarBoleto.Designer.cs">
+      <DependentUpon>FormGerarBoleto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Clientes\FormPagamentoPendente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -438,6 +444,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Agendamentos\FormSituacao.resx">
       <DependentUpon>FormSituacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clientes\FormGerarBoleto.resx">
+      <DependentUpon>FormGerarBoleto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes\FormPagamentoPendente.resx">
       <DependentUpon>FormPagamentoPendente.cs</DependentUpon>

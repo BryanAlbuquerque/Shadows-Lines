@@ -31,23 +31,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNivelAcesso2));
             this.iconButtonAtualizar = new FontAwesome.Sharp.IconButton();
             this.lblUsuario = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.roundedPanel3 = new RoundedPanel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnServicos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnRelatorios = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bntFuncionarios = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnDados = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
-            this.btnDados = new Guna.UI2.WinForms.Guna2GradientButton();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.roundedPanel3 = new RoundedPanel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
@@ -86,20 +89,6 @@
             this.lblUsuario.TabIndex = 79;
             this.lblUsuario.Text = "Usuario";
             // 
-            // roundedPanel3
-            // 
-            this.roundedPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.roundedPanel3.BackColor = System.Drawing.Color.White;
-            this.roundedPanel3.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel3.BorderRadius = 20;
-            this.roundedPanel3.BorderSize = 2;
-            this.roundedPanel3.ForeColor = System.Drawing.SystemColors.Control;
-            this.roundedPanel3.Location = new System.Drawing.Point(218, -1);
-            this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(59, 683);
-            this.roundedPanel3.TabIndex = 81;
-            // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.White;
@@ -113,15 +102,17 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.btnClientes);
+            this.panel1.Controls.Add(this.btnServicos);
             this.panel1.Controls.Add(this.btnRelatorios);
             this.panel1.Controls.Add(this.bntFuncionarios);
+            this.panel1.Controls.Add(this.btnDados);
+            this.panel1.Controls.Add(this.btnAgendamentos);
+            this.panel1.Controls.Add(this.iconPictureBox7);
             this.panel1.Controls.Add(this.iconPictureBox3);
             this.panel1.Controls.Add(this.iconPictureBox6);
-            this.panel1.Controls.Add(this.btnDados);
             this.panel1.Controls.Add(this.iconPictureBox5);
             this.panel1.Controls.Add(this.iconPictureBox1);
-            this.panel1.Controls.Add(this.btnAgendamentos);
-            this.panel1.Controls.Add(this.btnClientes);
             this.panel1.Controls.Add(this.iconPictureBox2);
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
             this.panel1.Controls.Add(this.guna2PictureBox1);
@@ -130,134 +121,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 679);
             this.panel1.TabIndex = 80;
-            // 
-            // btnRelatorios
-            // 
-            this.btnRelatorios.BorderRadius = 5;
-            this.btnRelatorios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRelatorios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRelatorios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRelatorios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRelatorios.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRelatorios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRelatorios.FillColor = System.Drawing.Color.Black;
-            this.btnRelatorios.FillColor2 = System.Drawing.Color.Black;
-            this.btnRelatorios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorios.ForeColor = System.Drawing.Color.White;
-            this.btnRelatorios.Location = new System.Drawing.Point(72, 528);
-            this.btnRelatorios.Name = "btnRelatorios";
-            this.btnRelatorios.Size = new System.Drawing.Size(144, 51);
-            this.btnRelatorios.TabIndex = 86;
-            this.btnRelatorios.Text = "Relatórios";
-            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
-            // 
-            // bntFuncionarios
-            // 
-            this.bntFuncionarios.BorderRadius = 5;
-            this.bntFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bntFuncionarios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bntFuncionarios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bntFuncionarios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bntFuncionarios.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bntFuncionarios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bntFuncionarios.FillColor = System.Drawing.Color.Black;
-            this.bntFuncionarios.FillColor2 = System.Drawing.Color.Black;
-            this.bntFuncionarios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntFuncionarios.ForeColor = System.Drawing.Color.White;
-            this.bntFuncionarios.Location = new System.Drawing.Point(72, 259);
-            this.bntFuncionarios.Name = "bntFuncionarios";
-            this.bntFuncionarios.Size = new System.Drawing.Size(144, 38);
-            this.bntFuncionarios.TabIndex = 88;
-            this.bntFuncionarios.Text = "Funcionarios";
-            this.bntFuncionarios.Click += new System.EventHandler(this.bntFuncionarios_Click);
-            // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.UserTie;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 40;
-            this.iconPictureBox3.Location = new System.Drawing.Point(29, 259);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(57, 40);
-            this.iconPictureBox3.TabIndex = 89;
-            this.iconPictureBox3.TabStop = false;
-            // 
-            // iconPictureBox6
-            // 
-            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
-            this.iconPictureBox6.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.IconSize = 42;
-            this.iconPictureBox6.Location = new System.Drawing.Point(29, 537);
-            this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(50, 42);
-            this.iconPictureBox6.TabIndex = 87;
-            this.iconPictureBox6.TabStop = false;
-            // 
-            // btnDados
-            // 
-            this.btnDados.BorderRadius = 5;
-            this.btnDados.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDados.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDados.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDados.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDados.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDados.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDados.FillColor = System.Drawing.Color.Black;
-            this.btnDados.FillColor2 = System.Drawing.Color.Black;
-            this.btnDados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDados.ForeColor = System.Drawing.Color.White;
-            this.btnDados.Location = new System.Drawing.Point(68, 438);
-            this.btnDados.Name = "btnDados";
-            this.btnDados.Size = new System.Drawing.Size(144, 51);
-            this.btnDados.TabIndex = 84;
-            this.btnDados.Text = "Dados Agendamentos";
-            this.btnDados.Click += new System.EventHandler(this.btnDados_Click);
-            // 
-            // iconPictureBox5
-            // 
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Database;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 42;
-            this.iconPictureBox5.Location = new System.Drawing.Point(29, 444);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(50, 42);
-            this.iconPictureBox5.TabIndex = 85;
-            this.iconPictureBox5.TabStop = false;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 40;
-            this.iconPictureBox1.Location = new System.Drawing.Point(29, 171);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(57, 40);
-            this.iconPictureBox1.TabIndex = 78;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // btnAgendamentos
-            // 
-            this.btnAgendamentos.BorderRadius = 5;
-            this.btnAgendamentos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgendamentos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgendamentos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAgendamentos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAgendamentos.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAgendamentos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAgendamentos.FillColor = System.Drawing.Color.Black;
-            this.btnAgendamentos.FillColor2 = System.Drawing.Color.Black;
-            this.btnAgendamentos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgendamentos.ForeColor = System.Drawing.Color.White;
-            this.btnAgendamentos.Location = new System.Drawing.Point(68, 346);
-            this.btnAgendamentos.Name = "btnAgendamentos";
-            this.btnAgendamentos.Size = new System.Drawing.Size(144, 47);
-            this.btnAgendamentos.TabIndex = 4;
-            this.btnAgendamentos.Text = "Agendamento";
-            this.btnAgendamentos.Click += new System.EventHandler(this.btnAgendamentos_Click);
             // 
             // btnClientes
             // 
@@ -279,13 +142,174 @@
             this.btnClientes.Text = "Clientes";
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
+            // btnServicos
+            // 
+            this.btnServicos.BorderRadius = 5;
+            this.btnServicos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnServicos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnServicos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnServicos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnServicos.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnServicos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnServicos.FillColor = System.Drawing.Color.Black;
+            this.btnServicos.FillColor2 = System.Drawing.Color.Black;
+            this.btnServicos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnServicos.ForeColor = System.Drawing.Color.White;
+            this.btnServicos.Location = new System.Drawing.Point(68, 328);
+            this.btnServicos.Name = "btnServicos";
+            this.btnServicos.Size = new System.Drawing.Size(144, 38);
+            this.btnServicos.TabIndex = 90;
+            this.btnServicos.Text = "Serviços";
+            this.btnServicos.Click += new System.EventHandler(this.btnServicos_Click);
+            // 
+            // btnRelatorios
+            // 
+            this.btnRelatorios.BorderRadius = 5;
+            this.btnRelatorios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRelatorios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRelatorios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRelatorios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRelatorios.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRelatorios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRelatorios.FillColor = System.Drawing.Color.Black;
+            this.btnRelatorios.FillColor2 = System.Drawing.Color.Black;
+            this.btnRelatorios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorios.ForeColor = System.Drawing.Color.White;
+            this.btnRelatorios.Location = new System.Drawing.Point(68, 576);
+            this.btnRelatorios.Name = "btnRelatorios";
+            this.btnRelatorios.Size = new System.Drawing.Size(144, 42);
+            this.btnRelatorios.TabIndex = 86;
+            this.btnRelatorios.Text = "Relatórios";
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
+            // 
+            // bntFuncionarios
+            // 
+            this.bntFuncionarios.BorderRadius = 5;
+            this.bntFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bntFuncionarios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bntFuncionarios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bntFuncionarios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bntFuncionarios.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bntFuncionarios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bntFuncionarios.FillColor = System.Drawing.Color.Black;
+            this.bntFuncionarios.FillColor2 = System.Drawing.Color.Black;
+            this.bntFuncionarios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntFuncionarios.ForeColor = System.Drawing.Color.White;
+            this.bntFuncionarios.Location = new System.Drawing.Point(72, 246);
+            this.bntFuncionarios.Name = "bntFuncionarios";
+            this.bntFuncionarios.Size = new System.Drawing.Size(144, 38);
+            this.bntFuncionarios.TabIndex = 88;
+            this.bntFuncionarios.Text = "Funcionarios";
+            this.bntFuncionarios.Click += new System.EventHandler(this.bntFuncionarios_Click);
+            // 
+            // btnDados
+            // 
+            this.btnDados.BorderRadius = 5;
+            this.btnDados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDados.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDados.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDados.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDados.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDados.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDados.FillColor = System.Drawing.Color.Black;
+            this.btnDados.FillColor2 = System.Drawing.Color.Black;
+            this.btnDados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDados.ForeColor = System.Drawing.Color.White;
+            this.btnDados.Location = new System.Drawing.Point(68, 491);
+            this.btnDados.Name = "btnDados";
+            this.btnDados.Size = new System.Drawing.Size(144, 45);
+            this.btnDados.TabIndex = 84;
+            this.btnDados.Text = "Dados Agendamentos";
+            this.btnDados.Click += new System.EventHandler(this.btnDados_Click);
+            // 
+            // btnAgendamentos
+            // 
+            this.btnAgendamentos.BorderRadius = 5;
+            this.btnAgendamentos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgendamentos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgendamentos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAgendamentos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgendamentos.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAgendamentos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAgendamentos.FillColor = System.Drawing.Color.Black;
+            this.btnAgendamentos.FillColor2 = System.Drawing.Color.Black;
+            this.btnAgendamentos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendamentos.ForeColor = System.Drawing.Color.White;
+            this.btnAgendamentos.Location = new System.Drawing.Point(68, 409);
+            this.btnAgendamentos.Name = "btnAgendamentos";
+            this.btnAgendamentos.Size = new System.Drawing.Size(144, 40);
+            this.btnAgendamentos.TabIndex = 4;
+            this.btnAgendamentos.Text = "Agendamento";
+            this.btnAgendamentos.Click += new System.EventHandler(this.btnAgendamentos_Click);
+            // 
+            // iconPictureBox7
+            // 
+            this.iconPictureBox7.ForeColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.Wpforms;
+            this.iconPictureBox7.IconColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox7.IconSize = 38;
+            this.iconPictureBox7.Location = new System.Drawing.Point(29, 328);
+            this.iconPictureBox7.Name = "iconPictureBox7";
+            this.iconPictureBox7.Size = new System.Drawing.Size(50, 38);
+            this.iconPictureBox7.TabIndex = 185;
+            this.iconPictureBox7.TabStop = false;
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.UserTie;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.IconSize = 40;
+            this.iconPictureBox3.Location = new System.Drawing.Point(29, 246);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(57, 40);
+            this.iconPictureBox3.TabIndex = 89;
+            this.iconPictureBox3.TabStop = false;
+            // 
+            // iconPictureBox6
+            // 
+            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
+            this.iconPictureBox6.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox6.IconSize = 42;
+            this.iconPictureBox6.Location = new System.Drawing.Point(29, 576);
+            this.iconPictureBox6.Name = "iconPictureBox6";
+            this.iconPictureBox6.Size = new System.Drawing.Size(46, 42);
+            this.iconPictureBox6.TabIndex = 87;
+            this.iconPictureBox6.TabStop = false;
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Database;
+            this.iconPictureBox5.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.IconSize = 42;
+            this.iconPictureBox5.Location = new System.Drawing.Point(29, 491);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(50, 42);
+            this.iconPictureBox5.TabIndex = 85;
+            this.iconPictureBox5.TabStop = false;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 40;
+            this.iconPictureBox1.Location = new System.Drawing.Point(29, 171);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(57, 40);
+            this.iconPictureBox1.TabIndex = 78;
+            this.iconPictureBox1.TabStop = false;
+            // 
             // iconPictureBox2
             // 
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.CalendarAlt;
             this.iconPictureBox2.IconColor = System.Drawing.Color.White;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 40;
-            this.iconPictureBox2.Location = new System.Drawing.Point(29, 353);
+            this.iconPictureBox2.Location = new System.Drawing.Point(29, 409);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(50, 40);
             this.iconPictureBox2.TabIndex = 79;
@@ -334,6 +358,20 @@
             this.btnDesconectar.Text = "Desconectar";
             this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
+            // roundedPanel3
+            // 
+            this.roundedPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.roundedPanel3.BackColor = System.Drawing.Color.White;
+            this.roundedPanel3.BorderColor = System.Drawing.Color.White;
+            this.roundedPanel3.BorderRadius = 20;
+            this.roundedPanel3.BorderSize = 2;
+            this.roundedPanel3.ForeColor = System.Drawing.SystemColors.Control;
+            this.roundedPanel3.Location = new System.Drawing.Point(218, -1);
+            this.roundedPanel3.Name = "roundedPanel3";
+            this.roundedPanel3.Size = new System.Drawing.Size(59, 683);
+            this.roundedPanel3.TabIndex = 81;
+            // 
             // FormNivelAcesso2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,6 +392,7 @@
             this.Load += new System.EventHandler(this.FormMenu2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
@@ -385,5 +424,7 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private Guna.UI2.WinForms.Guna2GradientButton bntFuncionarios;
         private Guna.UI2.WinForms.Guna2GradientButton btnRelatorios;
+        private Guna.UI2.WinForms.Guna2GradientButton btnServicos;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
     }
 }
