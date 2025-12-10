@@ -308,3 +308,5 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\ru\Microsoft.SqlS
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormRelatorios.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Clientes.FormGerarBoleto.resources
+C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Funcionarios.FormCadastrarFuncionario.resources

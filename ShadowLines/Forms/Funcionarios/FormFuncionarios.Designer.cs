@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFuncionarios));
             this.customBackground = new CustomBackgroundPanel();
+            this.btnCadastrar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAlterar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -49,19 +50,42 @@
             this.customBackground.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.customBackground.Controls.Add(this.btnCadastrar);
             this.customBackground.Controls.Add(this.btnAlterar);
             this.customBackground.Controls.Add(this.btnBuscar);
             this.customBackground.Controls.Add(this.txtBuscar);
             this.customBackground.Controls.Add(this.sfDataGridPanel);
             this.customBackground.Controls.Add(this.guna2HtmlLabel2);
-            this.customBackground.Controls.Add(this.guna2HtmlLabel3);
             this.customBackground.Controls.Add(this.btnVoltar);
             this.customBackground.Controls.Add(this.btnClose);
             this.customBackground.Controls.Add(this.picLogo);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel3);
             this.customBackground.Location = new System.Drawing.Point(-2, -1);
             this.customBackground.Name = "customBackground";
             this.customBackground.Size = new System.Drawing.Size(1041, 606);
             this.customBackground.TabIndex = 1;
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.BorderRadius = 15;
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCadastrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCadastrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCadastrar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCadastrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCadastrar.FillColor = System.Drawing.Color.Black;
+            this.btnCadastrar.FillColor2 = System.Drawing.Color.Navy;
+            this.btnCadastrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrar.Location = new System.Drawing.Point(780, 137);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(113, 34);
+            this.btnCadastrar.TabIndex = 46;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnAlterar
             // 
@@ -78,7 +102,7 @@
             this.btnAlterar.FillColor2 = System.Drawing.Color.Navy;
             this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(805, 137);
+            this.btnAlterar.Location = new System.Drawing.Point(913, 137);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(113, 34);
             this.btnAlterar.TabIndex = 45;
@@ -159,9 +183,9 @@
             this.btnVoltar.FillColor2 = System.Drawing.Color.Navy;
             this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(937, 137);
+            this.btnVoltar.Location = new System.Drawing.Point(904, 3);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(99, 34);
+            this.btnVoltar.Size = new System.Drawing.Size(85, 29);
             this.btnVoltar.TabIndex = 36;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -181,7 +205,7 @@
             this.btnClose.FillColor2 = System.Drawing.Color.Navy;
             this.btnClose.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(998, 3);
+            this.btnClose.Location = new System.Drawing.Point(1002, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(34, 29);
             this.btnClose.TabIndex = 35;
@@ -193,7 +217,7 @@
             this.picLogo.BackColor = System.Drawing.Color.Transparent;
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
             this.picLogo.ImageRotate = 0F;
-            this.picLogo.Location = new System.Drawing.Point(12, 24);
+            this.picLogo.Location = new System.Drawing.Point(21, 40);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(139, 117);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -233,5 +257,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnClose;
         private Guna.UI2.WinForms.Guna2PictureBox picLogo;
         private Guna.UI2.WinForms.Guna2GradientButton btnAlterar;
+        private Guna.UI2.WinForms.Guna2GradientButton btnCadastrar;
     }
 }

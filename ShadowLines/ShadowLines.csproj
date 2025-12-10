@@ -358,6 +358,12 @@
     <Compile Include="Forms\Funcionarios\FormAlterarDadosFuncionarios.Designer.cs">
       <DependentUpon>FormAlterarDadosFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Funcionarios\FormCadastrarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Funcionarios\FormCadastrarFuncionario.Designer.cs">
+      <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Funcionarios\FormFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -465,6 +471,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Funcionarios\FormAlterarDadosFuncionarios.resx">
       <DependentUpon>FormAlterarDadosFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Funcionarios\FormCadastrarFuncionario.resx">
+      <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Funcionarios\FormFuncionarios.resx">
       <DependentUpon>FormFuncionarios.cs</DependentUpon>

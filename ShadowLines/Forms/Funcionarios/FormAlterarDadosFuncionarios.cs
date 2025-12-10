@@ -58,8 +58,17 @@ namespace ShadowLines.Forms.Funcionarios
                 func.Cargo = txtCargo.Text;
                 func.NivelAcesso = Convert.ToInt32(comboBoxNivelAcesso.Text);
 
-                funcionario.Update();
-                MessageBox.Show("Dados do funcionário alterados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                bool sucesso = funcionario.Update(func);
+
+                if (sucesso)
+                {
+                    MessageBox.Show("Funcionário cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Falha ao cadastrar o funcionário.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {

@@ -3,13 +3,6 @@ using ShadowLines.Forms.Funcionarios;
 using Syncfusion.WinForms.DataGrid;
 using Syncfusion.WinForms.DataGrid.Enums;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms.FormsMenu2
@@ -93,6 +86,7 @@ namespace ShadowLines.Forms.FormsMenu2
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             FormAlterarDadosFuncionarios formAlterar = new FormAlterarDadosFuncionarios();
+            formAlterar.MdiParent = this.MdiParent;
             formAlterar.Show();
         }
 
@@ -106,6 +100,13 @@ namespace ShadowLines.Forms.FormsMenu2
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            FormCadastrarFuncionario CadastroFuncionarios = new FormCadastrarFuncionario(); 
+            CadastroFuncionarios.MdiParent = this.MdiParent;
+            this.Hide();
         }
     }
 }

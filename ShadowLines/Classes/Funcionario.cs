@@ -91,9 +91,8 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        public bool Insert()
+        public bool Insert(FuncionarioModel funcionario)
         {
-            FuncionarioModel funcionario = new FuncionarioModel();
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
@@ -119,9 +118,8 @@ namespace ShadowLines.Classes
             }
         }
 
-        public bool Update()
+        public bool Update(FuncionarioModel funcionario)
         {
-            FuncionarioModel funcionario = new FuncionarioModel();
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
