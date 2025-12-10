@@ -147,7 +147,7 @@ namespace ShadowLines.Classes
                     AND A.Servico LIKE '%' + @termo + '%'
                     AND A.DataAgendamento LIKE '%' + @termo + '%'
                     AND A.Situacao LIKE '%' + @termo + '%'
-                    AND A.Pagemento LIKE '%' + @termo + '%')";
+                    AND A.Pagamento LIKE '%' + @termo + '%')";
                     
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -323,11 +323,6 @@ namespace ShadowLines.Classes
 
         public bool UpdateTable(AgendamentoModel ag)
         {
-            ag.AgendamentoID = GetUltimoAgendamentoId(ag.ClienteID);
-
-            if (ag.AgendamentoID == 0)
-                return false;
-
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"

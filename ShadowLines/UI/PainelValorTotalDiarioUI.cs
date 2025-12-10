@@ -41,7 +41,7 @@ namespace ShadowLines.UI
 
             Label descricao = new Label
             {
-                Text = "Valor total estimado de faturamento hoje",
+                Text = "Valor total de faturamento hoje",
                 Font = new Font("Segoe UI", 9, FontStyle.Regular),
                 AutoSize = true,
                 ForeColor = Color.Gray,

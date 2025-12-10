@@ -99,7 +99,7 @@ namespace ShadowLines.Forms.Agendamentos
             {
                 AgendamentoModel ag = new AgendamentoModel();
 
-                ag.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
+                ag.AgendamentoID = Convert.ToInt32(comboBoxClientes.SelectedValue);
                 ag.FuncionarioID = Convert.ToInt32(comboBoxFuncionario.SelectedValue);
                 ag.DataAgendamento = DateTime.Parse(txtData.Text);
                 ag.Servicos = comboBoxServicos.Text;

@@ -1,8 +1,9 @@
-﻿using ShadowLines.Classes;
-using Microsoft.Data.SqlClient;
-using System;
-using System.Windows.Forms;
+﻿using Microsoft.Data.SqlClient;
+using ShadowLines.Classes;
 using ShadowLines.Models;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace ShadowLines.Forms.FormsMenu2
 {
@@ -20,7 +21,7 @@ namespace ShadowLines.Forms.FormsMenu2
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            labelData.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
+            lblData.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
         }
 
         // Agendamento
@@ -77,8 +78,9 @@ namespace ShadowLines.Forms.FormsMenu2
         public void PopularComboBoxClientesSituacao()
         {
             var lista = Agendamento.Select();
+
             comboBoxClientesSituacao.DataSource = lista;
-            comboBoxClientesSituacao.DisplayMember = "NomeCliente";
+            comboBoxClientesSituacao.DisplayMember = "Display";
             comboBoxClientesSituacao.ValueMember = "ClienteID";
             comboBoxClientesSituacao.SelectedIndex = -1;
         }
@@ -134,7 +136,8 @@ namespace ShadowLines.Forms.FormsMenu2
 
             comboBoxClientesSituacao.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 
-            labelData.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
+            lblData.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
+            lblDataSituacao.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy HH:mm:ss");
 
             txtData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
             txtDataReagendamento.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
@@ -240,13 +243,42 @@ namespace ShadowLines.Forms.FormsMenu2
                 return;
             }
 
-            AgendamentoModel ag = new AgendamentoModel();
-            ag.ClienteID = Convert.ToInt32(comboBoxClientesSituacao.SelectedValue);
-            ag.Situacao = comboBoxSituacao.Text;
+            try
+            {
+                AgendamentoModel ag = new AgendamentoModel();
+                Agendamento agendamento = new Agendamento();
 
-            Agendamento agendamento = new Agendamento();
-            agendamento.UpdateSituacao(ag);
-            MessageBox.Show("Situação alterada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ag.ClienteID = Convert.ToInt32(comboBoxClientesSituacao.SelectedValue);
+
+                ag.AgendamentoID = agendamento.GetUltimoAgendamentoId(ag.ClienteID);
+
+                if (ag.AgendamentoID == 0)
+                {
+                    MessageBox.Show("Este cliente não possui agendamentos ativos para reagendar.",
+                                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                ag.AgendamentoID = agendamento.GetUltimoAgendamentoId(ag.ClienteID);
+                ag.Situacao = comboBoxSituacao.Text;
+
+                bool atualizado = agendamento.UpdateSituacao(ag);
+
+                if (atualizado)
+                {
+                    MessageBox.Show("Situação atualizada com sucesso!",
+                                    "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível atualizar. Tente novamente.",
+                                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show($"ocorreu um erro: {ex}");
+            }
         }
         private void btnAlterar_Click(object sender, EventArgs e)
         {
@@ -266,6 +298,24 @@ namespace ShadowLines.Forms.FormsMenu2
                 txtValorReagendamento.Text = servicoSelecionado.Valor.ToString("F2");
             }
 
+        }
+
+        private void comboBoxClientesReagendamento_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (comboBoxClientesReagendamento.SelectedIndex == -1) return;
+
+            int id = Convert.ToInt32(comboBoxClientesReagendamento.SelectedValue);
+
+            List<AgendamentoModel> lista = Agendamento.Busca("%");
+
+            AgendamentoModel ag = lista.Find(x => x.ClienteID == id);
+
+            if (ag == null) return;
+
+            comboBoxServicosReagendamento.Text = ag.Servicos;
+
+            txtDataReagendamento.Text = ag.DataAgendamento.ToString("dd/MM/yyyy HH:mm");
+            txtValorReagendamento.Text = ag.Valor.ToString("F2");
         }
     }
 }

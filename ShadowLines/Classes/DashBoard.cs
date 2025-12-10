@@ -41,7 +41,8 @@ namespace ShadowLines.Classes
             using (SqlConnection conexao = new SqlConnection(connectionString))
             {
                 string query = @"SELECT SUM(Valor) FROM Agendamentos 
-                                 WHERE CONVERT(date, DataAgendamento) = CONVERT(date, GETDATE())";
+                                 WHERE CONVERT(date, DataAgendamento) = CONVERT(date, GETDATE())
+                                 AND Situacao <> 'Cancelado'";
 
                 SqlCommand cmd = new SqlCommand(query, conexao);
                 conexao.Open();
