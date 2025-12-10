@@ -37,7 +37,6 @@
             this.btnRelatorios = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bntFuncionarios = new Guna.UI2.WinForms.Guna2GradientButton();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.btnDados = new Guna.UI2.WinForms.Guna2GradientButton();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
@@ -117,7 +116,6 @@
             this.panel1.Controls.Add(this.btnRelatorios);
             this.panel1.Controls.Add(this.bntFuncionarios);
             this.panel1.Controls.Add(this.iconPictureBox3);
-            this.panel1.Controls.Add(this.guna2GradientButton1);
             this.panel1.Controls.Add(this.iconPictureBox6);
             this.panel1.Controls.Add(this.btnDados);
             this.panel1.Controls.Add(this.iconPictureBox5);
@@ -146,7 +144,7 @@
             this.btnRelatorios.FillColor2 = System.Drawing.Color.Black;
             this.btnRelatorios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelatorios.ForeColor = System.Drawing.Color.White;
-            this.btnRelatorios.Location = new System.Drawing.Point(68, 541);
+            this.btnRelatorios.Location = new System.Drawing.Point(72, 528);
             this.btnRelatorios.Name = "btnRelatorios";
             this.btnRelatorios.Size = new System.Drawing.Size(144, 51);
             this.btnRelatorios.TabIndex = 86;
@@ -185,32 +183,13 @@
             this.iconPictureBox3.TabIndex = 89;
             this.iconPictureBox3.TabStop = false;
             // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.BorderRadius = 5;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(68, 555);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(144, 51);
-            this.guna2GradientButton1.TabIndex = 86;
-            this.guna2GradientButton1.Text = "Relatórios";
-            // 
             // iconPictureBox6
             // 
             this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
             this.iconPictureBox6.IconColor = System.Drawing.Color.White;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 42;
-            this.iconPictureBox6.Location = new System.Drawing.Point(29, 550);
+            this.iconPictureBox6.Location = new System.Drawing.Point(29, 537);
             this.iconPictureBox6.Name = "iconPictureBox6";
             this.iconPictureBox6.Size = new System.Drawing.Size(50, 42);
             this.iconPictureBox6.TabIndex = 87;
@@ -401,7 +380,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2GradientButton btnDados;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
         private Guna.UI2.WinForms.Guna2GradientButton btnDesconectar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;

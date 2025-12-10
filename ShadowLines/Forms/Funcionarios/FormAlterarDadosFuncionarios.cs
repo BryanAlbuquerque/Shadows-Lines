@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using ShadowLines.Classes;
+using ShadowLines.Models;
 
 namespace ShadowLines.Forms.Funcionarios
 {
@@ -44,17 +45,18 @@ namespace ShadowLines.Forms.Funcionarios
 
             try
             {
+                FuncionarioModel func = new FuncionarioModel();
                 Funcionario funcionario = new Funcionario();
 
-                funcionario.FuncionarioID = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
-                funcionario.Nome = txtNome.Text;
-                funcionario.CPF = Convert.ToInt64(txtCPF.Text);
-                funcionario.DataNascimento = Convert.ToDateTime(txtData.Text);
-                funcionario.Email = txtEmail.Text;
-                funcionario.Telefone = Convert.ToInt64(txtTelefone.Text);
-                funcionario.Endereco = txtEndereço.Text;
-                funcionario.Cargo = txtCargo.Text;
-                funcionario.NivelAcesso = Convert.ToInt32(comboBoxNivelAcesso.Text);
+                func.FuncionarioID = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
+                func.Nome = txtNome.Text;
+                func.CPF = Convert.ToInt64(txtCPF.Text);
+                func.DataNascimento = Convert.ToDateTime(txtData.Text);
+                func.Email = txtEmail.Text;
+                func.Telefone = Convert.ToInt64(txtTelefone.Text);
+                func.Endereco = txtEndereço.Text;
+                func.Cargo = txtCargo.Text;
+                func.NivelAcesso = Convert.ToInt32(comboBoxNivelAcesso.Text);
 
                 funcionario.Update();
                 MessageBox.Show("Dados do funcionário alterados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -75,7 +77,7 @@ namespace ShadowLines.Forms.Funcionarios
         {
             if (comboBoxFuncionarios.SelectedIndex != -1)
             {
-                Funcionario funcionario = (Funcionario)comboBoxFuncionarios.SelectedItem;
+                FuncionarioModel funcionario = (FuncionarioModel)comboBoxFuncionarios.SelectedItem;
                 txtNome.Text = funcionario.Nome;
                 txtCPF.Text = funcionario.CPF.ToString();
                 txtData.Text = funcionario.DataNascimento.ToString("dd/MM/yyyy");

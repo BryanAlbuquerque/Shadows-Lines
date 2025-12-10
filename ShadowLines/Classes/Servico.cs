@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using ShadowLines.Models;
 using System.Collections.Generic;
-using Microsoft.Data.SqlClient;
 
 namespace ShadowLines.Classes
 {
@@ -9,13 +9,9 @@ namespace ShadowLines.Classes
         private readonly static string _connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public int ServicoID { get; set; }
-        public string Nome { get; set; }
-        public decimal Valor { get; set; }
-
-        public static List<Servico> Select()
+        public static List<ServicoModel> Select()
         {
-            var lista = new List<Servico>();
+            List<ServicoModel> lista = new List<ServicoModel>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -28,7 +24,7 @@ namespace ShadowLines.Classes
                     {
                         while (r.Read())
                         {
-                            lista.Add(new Servico
+                            lista.Add(new ServicoModel
                             {
                                 ServicoID = r.GetInt32(r.GetOrdinal("ServicoID")),
                                 Nome = r["Nome"].ToString(),
@@ -42,9 +38,9 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        public static Servico SelectSet(int id)
+        public static ServicoModel SelectSet(int id)
         {
-            Servico servico = null;
+            ServicoModel servicoModel = null;
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -59,7 +55,7 @@ namespace ShadowLines.Classes
                     {
                         if (r.Read())
                         {
-                            servico = new Servico
+                            servicoModel = new ServicoModel
                             {
                                 ServicoID = r.GetInt32(r.GetOrdinal("ServicoID")),
                                 Nome = r["Nome"].ToString(),
@@ -70,13 +66,14 @@ namespace ShadowLines.Classes
                 }
             }
 
-            return servico;
+            return servicoModel;
         }
 
 
 
         public bool Insert()
         {
+            ServicoModel servico = new ServicoModel();
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"INSERT INTO Servicos (Nome, Valor)
@@ -84,8 +81,8 @@ namespace ShadowLines.Classes
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Nome", Nome);
-                    cmd.Parameters.AddWithValue("@Valor", Valor);
+                    cmd.Parameters.AddWithValue("@Nome", servico.Nome);
+                    cmd.Parameters.AddWithValue("@Valor", servico.Valor);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
@@ -95,6 +92,8 @@ namespace ShadowLines.Classes
 
         public bool Update()
         {
+            ServicoModel servico = new ServicoModel();
+
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"UPDATE Servicos SET
@@ -104,9 +103,9 @@ namespace ShadowLines.Classes
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ID", ServicoID);
-                    cmd.Parameters.AddWithValue("@Nome", Nome);
-                    cmd.Parameters.AddWithValue("@Valor", Valor);
+                    cmd.Parameters.AddWithValue("@ID", servico.ServicoID);
+                    cmd.Parameters.AddWithValue("@Nome", servico.Nome);
+                    cmd.Parameters.AddWithValue("@Valor", servico.Valor);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;

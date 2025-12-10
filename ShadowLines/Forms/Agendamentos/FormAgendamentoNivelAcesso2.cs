@@ -162,7 +162,7 @@ namespace ShadowLines.Forms.FormsMenu2
 
             int servicoID = Convert.ToInt32(comboBoxServicos.SelectedValue);
 
-            Servico servicoSelecionado = Servico.SelectSet(servicoID);
+            ServicoModel servicoSelecionado = Servico.SelectSet(servicoID);
 
             if (servicoSelecionado != null)
             {
@@ -291,7 +291,7 @@ namespace ShadowLines.Forms.FormsMenu2
 
             int servicoID = Convert.ToInt32(comboBoxServicosReagendamento.SelectedValue);
 
-            Servico servicoSelecionado = Servico.SelectSet(servicoID);
+            ServicoModel servicoSelecionado = Servico.SelectSet(servicoID);
 
             if (servicoSelecionado != null)
             {

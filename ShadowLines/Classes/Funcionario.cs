@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
+using ShadowLines.Models;
 
 namespace ShadowLines.Classes
 {
@@ -9,19 +10,9 @@ namespace ShadowLines.Classes
         private readonly static string _connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public int FuncionarioID { get; set; }
-        public string Nome { get; set; }
-        public long CPF { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public string Email { get; set; }
-        public long Telefone { get; set; }
-        public string Endereco { get; set; }
-        public string Cargo { get; set; }
-        public int NivelAcesso { get; set; }
-
-        public static List<Funcionario> Select()
+        public static List<FuncionarioModel> Select()
         {
-            var lista = new List<Funcionario>();
+            List<FuncionarioModel> lista = new List<FuncionarioModel>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -36,7 +27,7 @@ namespace ShadowLines.Classes
                     {
                         while (r.Read())
                         {
-                            lista.Add(new Funcionario
+                            lista.Add(new FuncionarioModel
                             {
                                 FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
                                 Nome = r.GetString(r.GetOrdinal("Nome")),
@@ -56,31 +47,31 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        public static List<Funcionario> Buscar(string termo)
+        public static List<FuncionarioModel> Buscar(string termo)
         {
-            var lista = new List<Funcionario>();
+            List<FuncionarioModel> lista = new List<FuncionarioModel>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
                     SELECT * FROM Funcionarios
                     WHERE 
-                        Nome LIKE @t
-                        OR CPF LIKE @t
-                        OR Telefone LIKE @t
-                        OR Email LIKE @t
-                        OR Cargo LIKE @t";
+                        Nome LIKE @termo
+                        OR CPF LIKE @termo
+                        OR Telefone LIKE @termo
+                        OR Email LIKE @termo
+                        OR Cargo LIKE @termo";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@t", $"%{termo}%");
+                    cmd.Parameters.AddWithValue("@termo", $"%{termo}%");
 
                     conn.Open();
                     using (SqlDataReader r = cmd.ExecuteReader())
                     {
                         while (r.Read())
                         {
-                            lista.Add(new Funcionario
+                            lista.Add(new FuncionarioModel
                             {
                                 FuncionarioID = r.GetInt32(r.GetOrdinal("FuncionarioID")),
                                 Nome = r.GetString(r.GetOrdinal("Nome")),
@@ -102,6 +93,7 @@ namespace ShadowLines.Classes
 
         public bool Insert()
         {
+            FuncionarioModel funcionario = new FuncionarioModel();
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
@@ -112,14 +104,14 @@ namespace ShadowLines.Classes
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Nome", Nome);
-                    cmd.Parameters.AddWithValue("@CPF", CPF);
-                    cmd.Parameters.AddWithValue("@Nascimento", DataNascimento);
-                    cmd.Parameters.AddWithValue("@Email", Email);
-                    cmd.Parameters.AddWithValue("@Telefone", Telefone);
-                    cmd.Parameters.AddWithValue("@Endereco", (object)Endereco ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Cargo", (object)Cargo ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Nivel", NivelAcesso);
+                    cmd.Parameters.AddWithValue("@Nome", funcionario.Nome);
+                    cmd.Parameters.AddWithValue("@CPF", funcionario.CPF);
+                    cmd.Parameters.AddWithValue("@Nascimento", funcionario.DataNascimento);
+                    cmd.Parameters.AddWithValue("@Email", funcionario.Email);
+                    cmd.Parameters.AddWithValue("@Telefone", funcionario.Telefone);
+                    cmd.Parameters.AddWithValue("@Endereco", (object)funcionario.Endereco ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Cargo", (object)funcionario.Cargo ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Nivel", funcionario.NivelAcesso);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
@@ -129,6 +121,7 @@ namespace ShadowLines.Classes
 
         public bool Update()
         {
+            FuncionarioModel funcionario = new FuncionarioModel();
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
@@ -145,15 +138,15 @@ namespace ShadowLines.Classes
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@ID", FuncionarioID);
-                    cmd.Parameters.AddWithValue("@Nome", Nome);
-                    cmd.Parameters.AddWithValue("@CPF", CPF);
-                    cmd.Parameters.AddWithValue("@Nascimento", DataNascimento);
-                    cmd.Parameters.AddWithValue("@Email", Email);
-                    cmd.Parameters.AddWithValue("@Telefone", Telefone);
-                    cmd.Parameters.AddWithValue("@Endereco", (object)Endereco ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Cargo", (object)Cargo ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Nivel", NivelAcesso);
+                    cmd.Parameters.AddWithValue("@ID", funcionario.FuncionarioID);
+                    cmd.Parameters.AddWithValue("@Nome", funcionario.Nome);
+                    cmd.Parameters.AddWithValue("@CPF", funcionario.CPF);
+                    cmd.Parameters.AddWithValue("@Nascimento", funcionario.DataNascimento);
+                    cmd.Parameters.AddWithValue("@Email", funcionario.Email);
+                    cmd.Parameters.AddWithValue("@Telefone", funcionario.Telefone);
+                    cmd.Parameters.AddWithValue("@Endereco", (object)funcionario.Endereco ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Cargo", (object)funcionario.Cargo ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Nivel", funcionario.NivelAcesso);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;

@@ -360,6 +360,8 @@
     </Compile>
     <Compile Include="Models\AgendamentoModel.cs" />
     <Compile Include="Models\ClienteModel.cs" />
+    <Compile Include="Models\FuncionarioModel.cs" />
+    <Compile Include="Models\ServicoModel.cs" />
     <Compile Include="Models\SessaoUsuarioModel.cs" />
     <Compile Include="UI\CardUI.cs">
       <SubType>Component</SubType>
@@ -486,6 +488,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Servicos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

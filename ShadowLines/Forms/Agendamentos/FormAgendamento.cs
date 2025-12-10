@@ -134,7 +134,7 @@ namespace ShadowLines.Forms
 
             int servicoID = Convert.ToInt32(comboBoxServicos.SelectedValue);
 
-            Servico servicoSelecionado = Servico.SelectSet(servicoID);
+            ServicoModel servicoSelecionado = Servico.SelectSet(servicoID);
 
             if (servicoSelecionado != null)
             {
