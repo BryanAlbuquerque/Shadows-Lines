@@ -106,7 +106,7 @@ namespace ShadowLines.Forms.FormsMenu2
         {
             FormCadastrarFuncionario CadastroFuncionarios = new FormCadastrarFuncionario(); 
             CadastroFuncionarios.MdiParent = this.MdiParent;
-            this.Hide();
+            CadastroFuncionarios.Show();
         }
     }
 }

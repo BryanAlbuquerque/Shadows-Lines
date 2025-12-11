@@ -370,6 +370,12 @@
     <Compile Include="Forms\Funcionarios\FormFuncionarios.Designer.cs">
       <DependentUpon>FormFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Servicos\FormServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicos\FormServicos.Designer.cs">
+      <DependentUpon>FormServicos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\AgendamentoModel.cs" />
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Models\FuncionarioModel.cs" />
@@ -484,6 +490,9 @@
     <EmbeddedResource Include="Forms\Agendamentos\FormReagendamento.resx">
       <DependentUpon>FormReagendamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicos\FormServicos.resx">
+      <DependentUpon>FormServicos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -507,9 +516,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\Servicos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

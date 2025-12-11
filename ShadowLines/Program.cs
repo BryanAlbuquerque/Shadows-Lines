@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System;
 using ShadowLines.Forms.FormsMenu2;
+using ShadowLines.Forms.Funcionarios;
 
 namespace ShadowLines
 {
@@ -15,7 +16,7 @@ namespace ShadowLines
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new FormAlterarDadosFuncionarios());
         }
     }
 }

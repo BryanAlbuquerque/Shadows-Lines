@@ -78,7 +78,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(73, 205);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(31, 202);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(148, 20);
             this.guna2HtmlLabel1.TabIndex = 196;
@@ -91,10 +91,10 @@
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 40;
-            this.iconPictureBox2.Location = new System.Drawing.Point(29, 215);
+            this.iconPictureBox2.IconSize = 36;
+            this.iconPictureBox2.Location = new System.Drawing.Point(31, 225);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(40, 46);
+            this.iconPictureBox2.Size = new System.Drawing.Size(40, 36);
             this.iconPictureBox2.TabIndex = 207;
             this.iconPictureBox2.TabStop = false;
             // 
@@ -145,12 +145,12 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(66, 314);
+            this.txtData.Location = new System.Drawing.Point(71, 314);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtData.PlaceholderText = "";
             this.txtData.SelectedText = "";
-            this.txtData.Size = new System.Drawing.Size(358, 36);
+            this.txtData.Size = new System.Drawing.Size(348, 36);
             this.txtData.TabIndex = 192;
             // 
             // txtTelefone
@@ -172,14 +172,14 @@
             this.txtTelefone.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTelefone.PlaceholderText = "";
             this.txtTelefone.SelectedText = "";
-            this.txtTelefone.Size = new System.Drawing.Size(353, 36);
+            this.txtTelefone.Size = new System.Drawing.Size(348, 36);
             this.txtTelefone.TabIndex = 205;
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(540, 202);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(494, 203);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(36, 20);
             this.guna2HtmlLabel4.TabIndex = 203;
@@ -209,7 +209,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(535, 314);
+            this.txtEmail.Location = new System.Drawing.Point(535, 315);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmail.PlaceholderText = "";
@@ -330,7 +330,7 @@
             // 
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(498, 294);
+            this.lblEmail.Location = new System.Drawing.Point(492, 292);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(46, 20);
             this.lblEmail.TabIndex = 188;
@@ -365,7 +365,7 @@
             this.txtNome.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNome.PlaceholderText = "";
             this.txtNome.SelectedText = "";
-            this.txtNome.Size = new System.Drawing.Size(353, 36);
+            this.txtNome.Size = new System.Drawing.Size(348, 36);
             this.txtNome.TabIndex = 212;
             // 
             // txtCPF
@@ -409,7 +409,7 @@
             this.txtCargo.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCargo.PlaceholderText = "";
             this.txtCargo.SelectedText = "";
-            this.txtCargo.Size = new System.Drawing.Size(353, 36);
+            this.txtCargo.Size = new System.Drawing.Size(348, 36);
             this.txtCargo.TabIndex = 217;
             // 
             // guna2HtmlLabel6
@@ -439,16 +439,16 @@
             "0",
             "1",
             "2"});
-            this.comboBoxNivelAcesso.Location = new System.Drawing.Point(535, 494);
+            this.comboBoxNivelAcesso.Location = new System.Drawing.Point(539, 499);
             this.comboBoxNivelAcesso.Name = "comboBoxNivelAcesso";
-            this.comboBoxNivelAcesso.Size = new System.Drawing.Size(358, 21);
+            this.comboBoxNivelAcesso.Size = new System.Drawing.Size(354, 21);
             this.comboBoxNivelAcesso.TabIndex = 218;
             // 
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(506, 468);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(498, 473);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(130, 20);
             this.guna2HtmlLabel8.TabIndex = 219;
@@ -461,10 +461,10 @@
             this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.IdCard;
             this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 42;
-            this.iconPictureBox4.Location = new System.Drawing.Point(492, 215);
+            this.iconPictureBox4.IconSize = 36;
+            this.iconPictureBox4.Location = new System.Drawing.Point(492, 225);
             this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(42, 46);
+            this.iconPictureBox4.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox4.TabIndex = 221;
             this.iconPictureBox4.TabStop = false;
             // 
@@ -476,7 +476,7 @@
             this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 36;
-            this.iconPictureBox3.Location = new System.Drawing.Point(492, 312);
+            this.iconPictureBox3.Location = new System.Drawing.Point(492, 315);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox3.TabIndex = 222;
@@ -490,7 +490,7 @@
             this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 36;
-            this.iconPictureBox5.Location = new System.Drawing.Point(492, 403);
+            this.iconPictureBox5.Location = new System.Drawing.Point(498, 403);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox5.TabIndex = 223;
@@ -517,10 +517,9 @@
             this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.Key;
             this.iconPictureBox7.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox7.IconSize = 26;
-            this.iconPictureBox7.Location = new System.Drawing.Point(498, 488);
+            this.iconPictureBox7.Location = new System.Drawing.Point(498, 492);
             this.iconPictureBox7.Name = "iconPictureBox7";
-            this.iconPictureBox7.Size = new System.Drawing.Size(38, 26);
+            this.iconPictureBox7.Size = new System.Drawing.Size(38, 32);
             this.iconPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconPictureBox7.TabIndex = 225;
             this.iconPictureBox7.TabStop = false;
@@ -544,17 +543,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 582);
+            this.Controls.Add(this.txtEndereço);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.comboBoxNivelAcesso);
+            this.Controls.Add(this.guna2HtmlLabel7);
+            this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.iconPictureBox9);
-            this.Controls.Add(this.iconPictureBox7);
             this.Controls.Add(this.iconPictureBox8);
             this.Controls.Add(this.iconPictureBox5);
             this.Controls.Add(this.iconPictureBox3);
             this.Controls.Add(this.iconPictureBox4);
             this.Controls.Add(this.guna2HtmlLabel8);
-            this.Controls.Add(this.comboBoxNivelAcesso);
-            this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -566,8 +567,6 @@
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtEndereço);
             this.Controls.Add(this.iconPictureBox6);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.lblPagamento);
@@ -575,11 +574,11 @@
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnAlterar);
-            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.guna2HtmlLabel5);
+            this.Controls.Add(this.iconPictureBox7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormAlterarDadosFuncionarios";
-            this.Text = "FormAlterarDadosFuncionarios";
+            this.Text = "Alterar Dados Funcionarios";
             this.Load += new System.EventHandler(this.FormAlterarDadosFuncionarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();

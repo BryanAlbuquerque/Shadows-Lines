@@ -35,7 +35,7 @@
             this.txtTelefone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNome = new Guna.UI2.WinForms.Guna2TextBox();
-            this.labelData = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
@@ -47,7 +47,7 @@
             this.lblPagamento = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblValor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCliente = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTitulo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnCadastrar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblFuncionario = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -201,15 +201,15 @@
             this.txtNome.Size = new System.Drawing.Size(301, 36);
             this.txtNome.TabIndex = 138;
             // 
-            // labelData
+            // lblData
             // 
-            this.labelData.BackColor = System.Drawing.Color.Transparent;
-            this.labelData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelData.Location = new System.Drawing.Point(5, 437);
-            this.labelData.Name = "labelData";
-            this.labelData.Size = new System.Drawing.Size(81, 20);
-            this.labelData.TabIndex = 148;
-            this.labelData.Text = "Data Hoje";
+            this.lblData.BackColor = System.Drawing.Color.Transparent;
+            this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.Location = new System.Drawing.Point(5, 437);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(81, 20);
+            this.lblData.TabIndex = 148;
+            this.lblData.Text = "Data Hoje";
             // 
             // iconPictureBox6
             // 
@@ -346,15 +346,15 @@
             this.lblCliente.TabIndex = 128;
             this.lblCliente.Text = "Nome do Funcionario";
             // 
-            // lblData
+            // label
             // 
-            this.lblData.BackColor = System.Drawing.Color.Transparent;
-            this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(21, 203);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(140, 20);
-            this.lblData.TabIndex = 132;
-            this.lblData.Text = "Data Nascimento";
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(21, 203);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(140, 20);
+            this.label.TabIndex = 132;
+            this.label.Text = "Data Nascimento";
             // 
             // lblTitulo
             // 
@@ -517,7 +517,7 @@
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.labelData);
+            this.Controls.Add(this.lblData);
             this.Controls.Add(this.iconPictureBox6);
             this.Controls.Add(this.iconPictureBox5);
             this.Controls.Add(this.iconPictureBox4);
@@ -529,7 +529,7 @@
             this.Controls.Add(this.lblPagamento);
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.lblCliente);
-            this.Controls.Add(this.lblData);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.lblFuncionario);
@@ -559,7 +559,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtTelefone;
         private Guna.UI2.WinForms.Guna2TextBox txtData;
         private Guna.UI2.WinForms.Guna2TextBox txtNome;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelData;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
@@ -571,7 +571,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPagamento;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblValor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCliente;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
+        private Guna.UI2.WinForms.Guna2HtmlLabel label;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo;
         private Guna.UI2.WinForms.Guna2GradientButton btnCadastrar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblFuncionario;

@@ -97,7 +97,7 @@ namespace ShadowLines.Classes
             {
                 string query = @"
                     INSERT INTO Funcionarios
-                    (Nome, CPF, DataNascimento, Email, Telefone, Endereco, Cargo, Nivel_Acesso)
+                    (Nome, CPF, DataNascimento, Email, Telefone, Endereco, Cargo, NivelAcesso)
                     VALUES
                     (@Nome, @CPF, @Nascimento, @Email, @Telefone, @Endereco, @Cargo, @Nivel)";
 
@@ -132,7 +132,7 @@ namespace ShadowLines.Classes
                         Endereco = @Endereco,
                         Cargo = @Cargo,
                         NivelAcesso = @Nivel
-                    WHERE FuncionarioID = @ID";
+                        WHERE FuncionarioID = @ID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {

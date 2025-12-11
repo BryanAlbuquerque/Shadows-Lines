@@ -21,7 +21,7 @@ namespace ShadowLines.Forms.Funcionarios
 
         private void Time_Ticker(object sender, EventArgs e)
         {
-            lblData.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            lblData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
 
         private void FormCadastrarFuncionario_Load(object sender, EventArgs e)

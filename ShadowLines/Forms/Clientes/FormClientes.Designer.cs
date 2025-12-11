@@ -41,10 +41,10 @@
             this.clientesPagamentoPendenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fianceiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cobrançaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerarBoletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.gerarBoletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customBackgroundPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -60,7 +60,7 @@
             this.customBackgroundPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customBackgroundPanel1.Location = new System.Drawing.Point(0, 0);
             this.customBackgroundPanel1.Name = "customBackgroundPanel1";
-            this.customBackgroundPanel1.Size = new System.Drawing.Size(973, 545);
+            this.customBackgroundPanel1.Size = new System.Drawing.Size(1112, 630);
             this.customBackgroundPanel1.TabIndex = 2;
             // 
             // btnVoltar
@@ -78,7 +78,7 @@
             this.btnVoltar.FillColor2 = System.Drawing.Color.Navy;
             this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(856, 5);
+            this.btnVoltar.Location = new System.Drawing.Point(995, 5);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(112, 34);
             this.btnVoltar.TabIndex = 37;
@@ -95,7 +95,7 @@
             this.fianceiroToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(477, 76);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(404, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(284, 26);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -165,9 +165,16 @@
             // cobrançaToolStripMenuItem
             // 
             this.cobrançaToolStripMenuItem.Name = "cobrançaToolStripMenuItem";
-            this.cobrançaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cobrançaToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.cobrançaToolStripMenuItem.Text = "Cobrança";
             this.cobrançaToolStripMenuItem.Click += new System.EventHandler(this.cobrançaToolStripMenuItem_Click);
+            // 
+            // gerarBoletoToolStripMenuItem
+            // 
+            this.gerarBoletoToolStripMenuItem.Name = "gerarBoletoToolStripMenuItem";
+            this.gerarBoletoToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.gerarBoletoToolStripMenuItem.Text = "Gerar boleto";
+            this.gerarBoletoToolStripMenuItem.Click += new System.EventHandler(this.gerarBoletoToolStripMenuItem_Click);
             // 
             // guna2HtmlLabel4
             // 
@@ -203,19 +210,12 @@
             this.guna2PictureBox1.TabIndex = 111;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // gerarBoletoToolStripMenuItem
-            // 
-            this.gerarBoletoToolStripMenuItem.Name = "gerarBoletoToolStripMenuItem";
-            this.gerarBoletoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gerarBoletoToolStripMenuItem.Text = "Gerar boleto";
-            this.gerarBoletoToolStripMenuItem.Click += new System.EventHandler(this.gerarBoletoToolStripMenuItem_Click);
-            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(973, 545);
+            this.ClientSize = new System.Drawing.Size(1112, 630);
             this.Controls.Add(this.customBackgroundPanel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

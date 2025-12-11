@@ -38,35 +38,37 @@ namespace ShadowLines.Classes
             return lista;
         }
 
-        public static ServicoModel SelectSet(int id)
+        public static List<ServicoModel> Buscar(string termo)
         {
-            ServicoModel servicoModel = null;
+            List<ServicoModel> lista = new List<ServicoModel>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM Servicos WHERE ServicoID = @id";
+                string query = @"SELECT Nome, Valor
+                            FROM Servicos 
+                            WHERE Nome LIKE '%' + @termo + '%'
+                            OR Valor LIKE '%' + @termo + '%'";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@termo", termo);
 
                     conn.Open();
                     using (SqlDataReader r = cmd.ExecuteReader())
                     {
-                        if (r.Read())
+                        while (r.Read())
                         {
-                            servicoModel = new ServicoModel
+                            lista.Add(new ServicoModel()
                             {
-                                ServicoID = r.GetInt32(r.GetOrdinal("ServicoID")),
                                 Nome = r["Nome"].ToString(),
-                                Valor = (decimal)r["Valor"]
-                            };
+                                Valor = (decimal)r["Valor"],
+                            });
                         }
                     }
                 }
             }
 
-            return servicoModel;
+            return lista;
         }
 
 

@@ -1,7 +1,8 @@
 ﻿using ShadowLines.Classes;
-using ShadowLines.Forms.FormsMenu2;
 using ShadowLines.UI;
 using System.Windows.Forms;
+using ShadowLines.Forms.Servicos;
+using ShadowLines.Forms.FormsMenu2;
 
 namespace ShadowLines.Forms
 {
@@ -117,9 +118,9 @@ namespace ShadowLines.Forms
 
         private void btnServicos_Click(object sender, System.EventArgs e)
         {
-            //FormServicos servicos = new FormServicos();
-            //servicos.Show();
-            //this.Hide();
+            FormServicos servicos = new FormServicos();
+            servicos.Show();
+            this.Hide();
         }
     }
 }
