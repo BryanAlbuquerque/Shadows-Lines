@@ -74,7 +74,7 @@ namespace ShadowLines.Forms.FormsMenu2
             GridTextColumn nivelAcesso = new GridTextColumn();
             nivelAcesso.MappingName = "NivelAcesso";
             nivelAcesso.HeaderText = "Nível de Acesso";
-            nivelAcesso.Width = 150;
+            nivelAcesso.Width = 125;
             sfDataGridPanel.Columns.Add(nivelAcesso);
         }
 

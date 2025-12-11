@@ -38,16 +38,19 @@ namespace ShadowLines.Classes
             return lista;
         }
 
+
         public static List<ServicoModel> Buscar(string termo)
         {
             List<ServicoModel> lista = new List<ServicoModel>();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"SELECT Nome, Valor
-                            FROM Servicos 
-                            WHERE Nome LIKE '%' + @termo + '%'
-                            OR Valor LIKE '%' + @termo + '%'";
+                string query = @"SELECT ServicoID, Nome, Valor, DataInclusao
+                         FROM Servicos 
+                         WHERE CAST(ServicoID AS VARCHAR) LIKE '%' + @termo + '%'
+                         OR Nome LIKE '%' + @termo + '%'
+                         OR CAST(Valor AS VARCHAR) LIKE '%' + @termo + '%'
+                         OR DataInclusao LIKE '%' + @termo + '%'";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -60,8 +63,10 @@ namespace ShadowLines.Classes
                         {
                             lista.Add(new ServicoModel()
                             {
+                                ServicoID = r.GetInt32(r.GetOrdinal("ServicoID")),
                                 Nome = r["Nome"].ToString(),
                                 Valor = (decimal)r["Valor"],
+                                DataInclusao = (System.DateTime)r["DataInclusao"]
                             });
                         }
                     }
@@ -73,9 +78,9 @@ namespace ShadowLines.Classes
 
 
 
-        public bool Insert()
+
+        public bool Insert(ServicoModel servico)
         {
-            ServicoModel servico = new ServicoModel();
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"INSERT INTO Servicos (Nome, Valor)
@@ -92,9 +97,8 @@ namespace ShadowLines.Classes
             }
         }
 
-        public bool Update()
+        public bool Update(ServicoModel servico)
         {
-            ServicoModel servico = new ServicoModel();
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -109,6 +113,20 @@ namespace ShadowLines.Classes
                     cmd.Parameters.AddWithValue("@Nome", servico.Nome);
                     cmd.Parameters.AddWithValue("@Valor", servico.Valor);
 
+                    conn.Open();
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        public bool Delete(int servicoID)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = "DELETE FROM Servicos WHERE ServicoID = @ID";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ID", servicoID);
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;
                 }

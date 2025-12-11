@@ -370,6 +370,24 @@
     <Compile Include="Forms\Funcionarios\FormFuncionarios.Designer.cs">
       <DependentUpon>FormFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Servicos\FormAlterarServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicos\FormAlterarServicos.Designer.cs">
+      <DependentUpon>FormAlterarServicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Servicos\FormCadastrarServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicos\FormCadastrarServico.Designer.cs">
+      <DependentUpon>FormCadastrarServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Servicos\FormExcluir Serviço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicos\FormExcluir Serviço.Designer.cs">
+      <DependentUpon>FormExcluir Serviço.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Servicos\FormServicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -489,6 +507,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Agendamentos\FormReagendamento.resx">
       <DependentUpon>FormReagendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicos\FormAlterarServicos.resx">
+      <DependentUpon>FormAlterarServicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicos\FormCadastrarServico.resx">
+      <DependentUpon>FormCadastrarServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicos\FormExcluir Serviço.resx">
+      <DependentUpon>FormExcluir Serviço.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Servicos\FormServicos.resx">
       <DependentUpon>FormServicos.cs</DependentUpon>

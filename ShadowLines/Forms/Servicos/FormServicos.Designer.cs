@@ -44,6 +44,7 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.btnExcluir = new Guna.UI2.WinForms.Guna2GradientButton();
             this.customBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sfDataGridPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -54,6 +55,7 @@
             this.customBackground.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.customBackground.Controls.Add(this.btnExcluir);
             this.customBackground.Controls.Add(this.btnAlterar);
             this.customBackground.Controls.Add(this.btnCadastrar);
             this.customBackground.Controls.Add(this.btnBuscar);
@@ -84,11 +86,12 @@
             this.btnAlterar.FillColor2 = System.Drawing.Color.Navy;
             this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(982, 137);
+            this.btnAlterar.Location = new System.Drawing.Point(939, 243);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(112, 34);
             this.btnAlterar.TabIndex = 42;
-            this.btnAlterar.Text = "Voltar";
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnCadastrar
             // 
@@ -105,11 +108,12 @@
             this.btnCadastrar.FillColor2 = System.Drawing.Color.Navy;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(858, 137);
+            this.btnCadastrar.Location = new System.Drawing.Point(939, 186);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(112, 34);
             this.btnCadastrar.TabIndex = 42;
-            this.btnCadastrar.Text = "Voltar";
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnBuscar
             // 
@@ -144,7 +148,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.sfDataGridPanel.Location = new System.Drawing.Point(62, 177);
             this.sfDataGridPanel.Name = "sfDataGridPanel";
-            this.sfDataGridPanel.Size = new System.Drawing.Size(1040, 418);
+            this.sfDataGridPanel.Size = new System.Drawing.Size(871, 418);
             this.sfDataGridPanel.Style.HeaderStyle.FilterIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.sfDataGridPanel.TabIndex = 39;
             this.sfDataGridPanel.Text = "sfDataGrid1";
@@ -185,11 +189,12 @@
             this.btnVoltar.FillColor2 = System.Drawing.Color.Navy;
             this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(952, 3);
+            this.btnVoltar.Location = new System.Drawing.Point(1007, 39);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(87, 29);
+            this.btnVoltar.Size = new System.Drawing.Size(95, 29);
             this.btnVoltar.TabIndex = 36;
             this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnClose
             // 
@@ -206,11 +211,12 @@
             this.btnClose.FillColor2 = System.Drawing.Color.Navy;
             this.btnClose.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1068, 3);
+            this.btnClose.Location = new System.Drawing.Point(1007, 3);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(34, 29);
+            this.btnClose.Size = new System.Drawing.Size(95, 29);
             this.btnClose.TabIndex = 35;
-            this.btnClose.Text = "X";
+            this.btnClose.Text = "Fechar";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // picLogo
             // 
@@ -251,6 +257,28 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcluir.BorderRadius = 15;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcluir.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcluir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExcluir.FillColor = System.Drawing.Color.Black;
+            this.btnExcluir.FillColor2 = System.Drawing.Color.Navy;
+            this.btnExcluir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnExcluir.Location = new System.Drawing.Point(939, 297);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(112, 34);
+            this.btnExcluir.TabIndex = 43;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,8 +288,10 @@
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Name = "FormServicos";
             this.Text = "FormServicos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormServicos_Load);
             this.customBackground.ResumeLayout(false);
             this.customBackground.PerformLayout();
@@ -288,5 +318,6 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2GradientButton btnCadastrar;
         private Guna.UI2.WinForms.Guna2GradientButton btnAlterar;
+        private Guna.UI2.WinForms.Guna2GradientButton btnExcluir;
     }
 }

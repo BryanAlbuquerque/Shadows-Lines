@@ -1,8 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using ShadowLines.Classes;
 using ShadowLines.Models;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
@@ -115,16 +116,10 @@ namespace ShadowLines.Forms
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (comboBoxServicos.SelectedValue == null) { return; }
+            if (comboBoxServicos.SelectedIndex == -1) return;
 
-            int servicoID = Convert.ToInt32(comboBoxServicos.SelectedValue);
-
-            ServicoModel servicoSelecionado = Servico.SelectSet(servicoID);
-
-            if (servicoSelecionado != null)
-            {
-                txtValor.Text = servicoSelecionado.Valor.ToString("F2");
-            }
+            ServicoModel servico = (ServicoModel)comboBoxServicos.SelectedItem;
+            txtValor.Text = servico.Valor.ToString("F2");
         }
     }
 }

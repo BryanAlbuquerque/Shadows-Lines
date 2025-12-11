@@ -158,16 +158,10 @@ namespace ShadowLines.Forms.FormsMenu2
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (comboBoxServicos.SelectedValue == null) { return; }
+            if (comboBoxServicos.SelectedIndex == -1) return;
 
-            int servicoID = Convert.ToInt32(comboBoxServicos.SelectedValue);
-
-            ServicoModel servicoSelecionado = Servico.Select(servicoID);
-
-            if (servicoSelecionado != null)
-            {
-                txtValor.Text = servicoSelecionado.Valor.ToString("F2");
-            }
+            ServicoModel servico = (ServicoModel)comboBoxServicos.SelectedItem;
+            txtValor.Text = servico.Valor.ToString("F2");
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -280,6 +274,7 @@ namespace ShadowLines.Forms.FormsMenu2
                 MessageBox.Show($"ocorreu um erro: {ex}");
             }
         }
+
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             Alterar();
@@ -287,16 +282,10 @@ namespace ShadowLines.Forms.FormsMenu2
 
         private void comboBoxServicosReagendamento_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (comboBoxServicosReagendamento.SelectedValue == null) { return; }
+            if (comboBoxServicosReagendamento.SelectedIndex == -1) return;
 
-            int servicoID = Convert.ToInt32(comboBoxServicosReagendamento.SelectedValue);
-
-            ServicoModel servicoSelecionado = Servico.SelectSet(servicoID);
-
-            if (servicoSelecionado != null)
-            {
-                txtValorReagendamento.Text = servicoSelecionado.Valor.ToString("F2");
-            }
+            ServicoModel servico = (ServicoModel)comboBoxServicosReagendamento.SelectedItem;
+            txtValorReagendamento.Text = servico.Valor.ToString("F2");
 
         }
 

@@ -4,7 +4,8 @@ GO
 CREATE TABLE Servicos(
 ServicoID INT PRIMARY KEY IDENTITY(1,1),
 Nome VARCHAR(50),
-Valor DECIMAL(12,2)
+Valor DECIMAL(12,2),
+DataInclusao DATETIME NOT NULL DEFAULT GETDATE()
 );
 
 drop table Servicos
@@ -23,5 +24,3 @@ VALUES
 ('Manutenção','130'),
 ('Remoção','400');
 
-delete from Servicos 
-where ServicoID = 1;

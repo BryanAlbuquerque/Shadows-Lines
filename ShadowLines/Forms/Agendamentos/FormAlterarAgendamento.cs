@@ -75,16 +75,11 @@ namespace ShadowLines.Forms.Agendamentos
 
         private void comboBoxServicos_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (comboBoxServicos.SelectedValue == null) { return; }
+            if (comboBoxServicos.SelectedIndex == -1) return;
 
-            int servicoID = Convert.ToInt32(comboBoxServicos.SelectedValue);
+            ServicoModel servico = (ServicoModel)comboBoxServicos.SelectedItem;
+            txtValor.Text = servico.Valor.ToString("F2");
 
-            ServicoModel servicoSelecionado = Servico.SelectSet(servicoID);
-
-            if (servicoSelecionado != null)
-            {
-                txtValor.Text = servicoSelecionado.Valor.ToString("F2");
-            }
         }
 
         private void Salvar()
