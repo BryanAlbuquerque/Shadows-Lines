@@ -233,10 +233,8 @@ C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.SfInpu
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.SfListView.WinForms.xml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\bin\Debug\Syncfusion.Shared.Base.xml
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormDadosAgendamentos.resources
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormDadosClientes.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Agendamentos.FormAlterarAgendamento.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.FormLogin.resources
-C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Clientes.FormPagamentoPendente.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Clientes.FormCobranca.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormsMenu2.FormFuncionarios.resources
 C:\Users\bryan\Documents\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormNivelAcesso1.resources

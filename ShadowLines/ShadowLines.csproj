@@ -334,12 +334,6 @@
     <Compile Include="Forms\Clientes\FormGerarBoleto.Designer.cs">
       <DependentUpon>FormGerarBoleto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Clientes\FormPagamentoPendente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Clientes\FormPagamentoPendente.Designer.cs">
-      <DependentUpon>FormPagamentoPendente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -419,12 +413,6 @@
     <Compile Include="Forms\Clientes\FormClientes.Designer.cs">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Clientes\FormDadosClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Clientes\FormDadosClientes.Designer.cs">
-      <DependentUpon>FormDadosClientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -457,9 +445,6 @@
     <EmbeddedResource Include="Forms\Clientes\FormCobranca.resx">
       <DependentUpon>FormCobranca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Clientes\FormDadosClientes.resx">
-      <DependentUpon>FormDadosClientes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Agendamentos\FormAgendamento.resx">
       <DependentUpon>FormAgendamento.cs</DependentUpon>
     </EmbeddedResource>
@@ -477,9 +462,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes\FormGerarBoleto.resx">
       <DependentUpon>FormGerarBoleto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Clientes\FormPagamentoPendente.resx">
-      <DependentUpon>FormPagamentoPendente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
