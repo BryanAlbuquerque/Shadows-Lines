@@ -171,7 +171,7 @@
             this.btnLogin.FillColor2 = System.Drawing.Color.Blue;
             this.btnLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(411, 335);
+            this.btnLogin.Location = new System.Drawing.Point(401, 333);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(120, 32);
             this.btnLogin.TabIndex = 7;

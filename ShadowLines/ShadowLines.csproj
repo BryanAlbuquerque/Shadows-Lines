@@ -340,6 +340,12 @@
     <Compile Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.Designer.cs">
       <DependentUpon>FormAgendamentoNivelAcesso2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormNivelAcesso0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNivelAcesso0.Designer.cs">
+      <DependentUpon>FormNivelAcesso0.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormRelatorios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -465,6 +471,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNivelAcesso0.resx">
+      <DependentUpon>FormNivelAcesso0.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormNivelAcesso1.resx">
       <DependentUpon>FormNivelAcesso1.cs</DependentUpon>

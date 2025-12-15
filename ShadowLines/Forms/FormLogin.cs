@@ -18,7 +18,7 @@ namespace ShadowLines
             this.Controls.Add(fundo);
         }
 
-        private void Salvar() 
+        private void Salvar()
         {
             if (string.IsNullOrEmpty(txtNomeUsuario.Text)
                    || string.IsNullOrEmpty(txtSenhaId.Text))
@@ -28,36 +28,52 @@ namespace ShadowLines
             }
             try
             {
-                Usuarios usuario = new Usuarios();
-
-                usuario.NomeUsuario = txtNomeUsuario.Text;
-                usuario.SenhaId = txtSenhaId.Text;
-
-                usuario.Login();
-                MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                if (SessaoUsuarioModel.NivelAcesso == 1)
+                Usuarios usuario = new Usuarios
                 {
-                    FormNivelAcesso1 formNivelAcesso1 = new FormNivelAcesso1();
-                    formNivelAcesso1.Show();
-                    this.Hide();
+                    NomeUsuario = txtNomeUsuario.Text,
+                    SenhaId = txtSenhaId.Text
+                };
+
+                int nivelAcesso = usuario.Login(); 
+
+                if (nivelAcesso >= 0)
+                {
+                    MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    if (nivelAcesso == 0)
+                    {
+                        FormNivelAcesso0 form = new FormNivelAcesso0();
+                        form.Show();
+                        this.Hide();
+                    }
+                    else if (nivelAcesso == 1)
+                    {
+                        FormNivelAcesso1 formNivelAcesso1 = new FormNivelAcesso1();
+                        formNivelAcesso1.Show();
+                        this.Hide();
+                    }
+                    else if (nivelAcesso == 2)
+                    {
+                        FormNivelAcesso2 formNivelAcesso2 = new FormNivelAcesso2();
+                        formNivelAcesso2.Show();
+                        this.Hide();
+                    }
                 }
-                else if (SessaoUsuarioModel.NivelAcesso == 2)
+                else 
                 {
-                    FormNivelAcesso2 formNivelAcesso2 = new FormNivelAcesso2();
-                    formNivelAcesso2.Show();
-                    this.Hide();
+                    MessageBox.Show("Nome de usuário ou senha incorretos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (SqlException ex)
             {
                 MessageBox.Show("Erro ao conectar! Envie print ao suporte: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Salvar();   
+            Salvar();
+            
         }
 
 

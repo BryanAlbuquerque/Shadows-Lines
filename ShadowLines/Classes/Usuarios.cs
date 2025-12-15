@@ -9,42 +9,37 @@ namespace ShadowLines.Classes
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
         public string NomeUsuario { get; set; }
-        public string SenhaId{ get; set; }
+        public string SenhaId { get; set; }
 
         public int Login()
         {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    string query =
-                      @"SELECT Nome, NivelAcesso
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query =
+                  @"SELECT Nome, NivelAcesso
                         FROM Funcionarios 
                         WHERE Nome = @NomeUsuario
                         AND FuncionarioID = @SenhaId";
 
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@NomeUsuario", NomeUsuario);
-                    command.Parameters.AddWithValue("@SenhaId", SenhaId);
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@NomeUsuario", NomeUsuario);
+                command.Parameters.AddWithValue("@SenhaId", SenhaId);
 
-                    try
-                    {
-                        connection.Open();
-                        SqlDataReader reader = command.ExecuteReader();
 
-                        if (reader.Read())
-                        {
-                            SessaoUsuarioModel.NomeUsuario = reader["Nome"].ToString();
-                            SessaoUsuarioModel.NivelAcesso = Convert.ToInt32(reader["NivelAcesso"]);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
 
-                            return SessaoUsuarioModel.NivelAcesso; // 1 ou 2 conforme BD
-                        }
+                if (reader.Read())
+                {
+                    SessaoUsuarioModel.NomeUsuario = reader["Nome"].ToString();
+                    SessaoUsuarioModel.NivelAcesso = Convert.ToInt32(reader["NivelAcesso"]);
 
-                        return 0; // Falha de autenticação
-                    }
-                    catch
-                    {
-                        throw;
-                    }
+                    return SessaoUsuarioModel.NivelAcesso; // 1 ou 2 conforme BD
                 }
+
+                return 0; // Falha de autenticação
+            }
+
         }
     }
 }
