@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ShadowLines.Classes;
+using ShadowLines.Models;
 
 namespace ShadowLines.Forms
 {
@@ -15,6 +11,19 @@ namespace ShadowLines.Forms
         public FormNivelAcesso0()
         {
             InitializeComponent();
+
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is MdiClient)
+                {
+                    ctrl.BackColor = Color.White;
+                    break;
+                }
+            }
+        }
+        private void FormNivelAcesso0_Load(object sender, EventArgs e)
+        {
+            lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
         }
     }
 }
