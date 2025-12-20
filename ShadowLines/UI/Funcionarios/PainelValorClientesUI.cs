@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShadowLines.UI
 {
-    internal class PainelValorTotalMeusClientes
+    internal class PainelValorClientesUI
     {
     }
 }

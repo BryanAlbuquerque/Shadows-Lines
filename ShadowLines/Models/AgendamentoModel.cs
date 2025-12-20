@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShadowLines.Models
 {
-    internal class AgendamentoModel
+    public class AgendamentoModel
     {
         public int AgendamentoID { get; set; }
         public int ClienteID { get; set; }

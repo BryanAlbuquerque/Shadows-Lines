@@ -66,7 +66,7 @@ namespace ShadowLines.UI
 
                 Label lblServico = new Label
                 {
-                    Text = $"💼 Serviço: {ag.Servico}",
+                    Text = $"💼 Serviço: {ag.Servicos}",
                     Font = new Font("Segoe UI", 10),
                     AutoSize = true,
                     Location = new Point(10, 65)

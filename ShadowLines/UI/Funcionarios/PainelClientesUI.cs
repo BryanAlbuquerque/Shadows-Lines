@@ -1,18 +1,16 @@
 ﻿using ShadowLines.Classes;
-using ShadowLines.UI.;
-using System;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace ShadowLines.UI
 {
-    internal class PainelMeusClientes 
+    internal class PainelClientesUI 
     {
-        private Dashboard dashboard;
+        private DashBoardFuncionarios dashBoardFuncionarios;
 
-        public PainelMeusClientes()
+        public PainelClientesUI()
         {
-            dashboard = new Dashboard();
+            dashBoardFuncionarios = new DashBoardFuncionarios();
         }
 
         public Panel CriarPainel()
@@ -34,7 +32,7 @@ namespace ShadowLines.UI
 
             Label valor = new Label
             {
-                Text = dashboard.ObterTotalAgendamentosHoje().ToString(),
+                Text = dashBoardFuncionarios.ObterTotalAgendamentosHojeFuncionario(SessaoUsuarioModel.FuncionarioID).ToString(),
                 Font = new Font("Segoe UI", 27, FontStyle.Bold),
                 AutoSize = true,
                 ForeColor = Color.Black,

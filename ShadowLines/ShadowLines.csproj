@@ -272,6 +272,7 @@
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\DashBoard.cs" />
     <Compile Include="Classes\Agendamento.cs" />
+    <Compile Include="Classes\DashBoardFuncionarios.cs" />
     <Compile Include="Classes\Funcionario.cs" />
     <Compile Include="Classes\Servico.cs" />
     <Compile Include="Forms\Agendamentos\FormAgendamento.cs">
@@ -407,10 +408,10 @@
     </Compile>
     <Compile Include="UI\PainelAgendamentosUI.cs" />
     <Compile Include="UI\PainelCanceladosDiaUI.cs" />
-    <Compile Include="UI\Funcionarios\PainelMeusClientes.cs" />
+    <Compile Include="UI\Funcionarios\PainelClientesUI.cs" />
     <Compile Include="UI\PainelTotalAgendamentosUI.cs" />
     <Compile Include="UI\PainelValorTotalDiarioUI.cs" />
-    <Compile Include="UI\Funcionarios\PainelValorTotalMeusClientes.cs" />
+    <Compile Include="UI\Funcionarios\PainelValorClientesUI.cs" />
     <Compile Include="UI\Panel.cs">
       <SubType>Component</SubType>
     </Compile>
