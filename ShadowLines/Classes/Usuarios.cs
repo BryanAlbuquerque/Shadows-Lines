@@ -34,7 +34,7 @@ namespace ShadowLines.Classes
                     SessaoUsuarioModel.NomeUsuario = reader["Nome"].ToString();
                     SessaoUsuarioModel.NivelAcesso = Convert.ToInt32(reader["NivelAcesso"]);
 
-                    return SessaoUsuarioModel.NivelAcesso; // 1 ou 2 conforme BD
+                    return SessaoUsuarioModel.NivelAcesso; // 1, 2 ou 3 conforme BD
                 }
 
                 return 0; // Falha de autenticação

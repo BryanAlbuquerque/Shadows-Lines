@@ -57,7 +57,7 @@ namespace ShadowLines.Forms.Servicos
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            FormNivelAcesso2 formNivelAcesso2 = new FormNivelAcesso2();
+            FormNivelAcesso3 formNivelAcesso2 = new FormNivelAcesso3();
             formNivelAcesso2.Show();
             this.Hide();
         }

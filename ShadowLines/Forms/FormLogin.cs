@@ -34,32 +34,30 @@ namespace ShadowLines
                     SenhaId = txtSenhaId.Text
                 };
 
-                int nivelAcesso = usuario.Login(); 
+                int nivelAcesso = usuario.Login();
 
-                if (nivelAcesso >= 0)
+                MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                if (nivelAcesso == 1)
                 {
-                    MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    if (nivelAcesso == 0)
-                    {
-                        FormNivelAcesso0 form = new FormNivelAcesso0();
-                        form.Show();
-                        this.Hide();
-                    }
-                    else if (nivelAcesso == 1)
-                    {
-                        FormNivelAcesso1 formNivelAcesso1 = new FormNivelAcesso1();
-                        formNivelAcesso1.Show();
-                        this.Hide();
-                    }
-                    else if (nivelAcesso == 2)
-                    {
-                        FormNivelAcesso2 formNivelAcesso2 = new FormNivelAcesso2();
-                        formNivelAcesso2.Show();
-                        this.Hide();
-                    }
+                    FormNivelAcesso1 form = new FormNivelAcesso1();
+                    form.Show();
+                    this.Hide();
                 }
-                else 
+                else if (nivelAcesso == 2)
+                {
+                    FormNivelAcesso2 formNivelAcesso1 = new FormNivelAcesso2();
+                    formNivelAcesso1.Show();
+                    this.Hide();
+                }
+                else if (nivelAcesso == 3)
+                {
+                    FormNivelAcesso3 formNivelAcesso2 = new FormNivelAcesso3();
+                    formNivelAcesso2.Show();
+                    this.Hide();
+                }
+
+                else
                 {
                     MessageBox.Show("Nome de usuário ou senha incorretos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -73,7 +71,7 @@ namespace ShadowLines
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Salvar();
-            
+
         }
 
 

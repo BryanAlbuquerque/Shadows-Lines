@@ -2,7 +2,6 @@
 using ShadowLines.Models;
 using System;
 using System.Collections.Generic;
-using System.Windows.Documents;
 
 namespace ShadowLines.Classes
 {
@@ -12,16 +11,15 @@ namespace ShadowLines.Classes
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=True";
 
 
-        public int ObterTotalAgendamentosHojeFuncionario(int funcionarioId)
+        public int ObterTotalAgendamentosHoje()
         {
             using (SqlConnection conexao = new SqlConnection(connectionString))
             {
                 string query = @"SELECT COUNT(*) FROM Agendamentos 
-                                 WHERE CONVERT(date, DataAgendamento) = CONVERT(date, GETDATE())
-                                 AND FuncionarioId = @FuncionarioId";
+                                 WHERE FuncionarioID = @FuncionarioID";
 
                 SqlCommand cmd = new SqlCommand(query, conexao);
-                cmd.Parameters.AddWithValue("@FuncionarioId", funcionarioId);
+                cmd.Parameters.AddWithValue("@FuncionarioID", SessaoUsuarioModel.FuncionarioID);
 
                 conexao.Open();
                 return (int)cmd.ExecuteScalar();

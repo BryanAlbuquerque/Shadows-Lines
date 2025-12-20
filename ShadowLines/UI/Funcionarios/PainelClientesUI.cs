@@ -23,16 +23,16 @@ namespace ShadowLines.UI
 
             Label titulo = new Label
             {
-                Text = "Meus Clientes de Hoje",
+                Text = "Clientes de Hoje",
                 Font = new Font("Segoe UI", 11, FontStyle.Bold),
                 AutoSize = true,
                 ForeColor = Color.FromArgb(40, 40, 40),
                 Location = new Point(10, 10)
             };
 
-            Label valor = new Label
+            Label quantidade = new Label
             {
-                Text = dashBoardFuncionarios.ObterTotalAgendamentosHojeFuncionario(SessaoUsuarioModel.FuncionarioID).ToString(),
+                Text = dashBoardFuncionarios.ObterTotalAgendamentosHoje().ToString(),
                 Font = new Font("Segoe UI", 27, FontStyle.Bold),
                 AutoSize = true,
                 ForeColor = Color.Black,
@@ -49,7 +49,7 @@ namespace ShadowLines.UI
             };
 
             panel.Controls.Add(titulo);
-            panel.Controls.Add(valor);
+            panel.Controls.Add(quantidade);
             panel.Controls.Add(descricao);
 
             return panel;

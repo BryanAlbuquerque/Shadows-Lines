@@ -17,7 +17,7 @@ namespace ShadowLines.Classes
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"SELECT * FROM Funcionarios 
-                                WHERE NivelAcesso = 0                     
+                                WHERE NivelAcesso = 1                     
                                 ORDER BY FuncionarioID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))

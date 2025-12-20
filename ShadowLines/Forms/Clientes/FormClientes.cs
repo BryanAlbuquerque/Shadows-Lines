@@ -19,13 +19,13 @@ namespace ShadowLines.Forms
         {
             if (SessaoUsuarioModel.NivelAcesso == 1)
             {
-                FormNivelAcesso1 menu = new FormNivelAcesso1();
+                FormNivelAcesso2 menu = new FormNivelAcesso2();
                 menu.Show();
                 this.Hide();
             }
             else if (SessaoUsuarioModel.NivelAcesso == 2)
             {
-                FormNivelAcesso2 menu = new FormNivelAcesso2();
+                FormNivelAcesso3 menu = new FormNivelAcesso3();
                 menu.Show();
                 this.Hide();
             }

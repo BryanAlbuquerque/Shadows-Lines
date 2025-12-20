@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\forms\\formnivelacesso0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\formnivelacesso0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\ui\\funcionarios\\painelclientesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:ui\\funcionarios\\painelclientesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\formnivelacesso1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\formnivelacesso1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\classes\\dashboardfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:classes\\dashboardfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\forms\\formnivelacesso0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\formnivelacesso0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\models\\sessaousuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:models\\sessaousuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\ui\\funcionarios\\painelclientesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:ui\\funcionarios\\painelclientesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlines\\forms\\formnivelacesso1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\formnivelacesso1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +30,76 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormNivelAcesso0.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\FormNivelAcesso0.cs",
-              "RelativeDocumentMoniker": "Forms\\FormNivelAcesso0.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\FormNivelAcesso0.cs",
-              "RelativeToolTip": "Forms\\FormNivelAcesso0.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "SessaoUsuarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Models\\SessaoUsuarioModel.cs",
+              "RelativeDocumentMoniker": "Models\\SessaoUsuarioModel.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Models\\SessaoUsuarioModel.cs",
+              "RelativeToolTip": "Models\\SessaoUsuarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T16:12:08.024Z",
+              "WhenOpened": "2025-12-20T19:32:22.456Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashBoardFuncionarios.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Classes\\DashBoardFuncionarios.cs",
+              "RelativeDocumentMoniker": "Classes\\DashBoardFuncionarios.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Classes\\DashBoardFuncionarios.cs",
+              "RelativeToolTip": "Classes\\DashBoardFuncionarios.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBEAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T19:32:30.909Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormNivelAcesso0.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\FormNivelAcesso0.cs",
-              "RelativeDocumentMoniker": "Forms\\FormNivelAcesso0.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\FormNivelAcesso0.cs [Design]",
-              "RelativeToolTip": "Forms\\FormNivelAcesso0.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T00:43:09.736Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DashBoardFuncionarios.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Classes\\DashBoardFuncionarios.cs",
-              "RelativeDocumentMoniker": "Classes\\DashBoardFuncionarios.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Classes\\DashBoardFuncionarios.cs",
-              "RelativeToolTip": "Classes\\DashBoardFuncionarios.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:13:17.666Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "PainelClientesUI.cs",
               "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\UI\\Funcionarios\\PainelClientesUI.cs",
               "RelativeDocumentMoniker": "UI\\Funcionarios\\PainelClientesUI.cs",
               "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\UI\\Funcionarios\\PainelClientesUI.cs",
               "RelativeToolTip": "UI\\Funcionarios\\PainelClientesUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T18:17:17.811Z",
+              "WhenOpened": "2025-12-20T19:37:57.639Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormNivelAcesso1.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\FormNivelAcesso1.cs",
+              "RelativeDocumentMoniker": "Forms\\FormNivelAcesso1.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\FormNivelAcesso1.cs",
+              "RelativeToolTip": "Forms\\FormNivelAcesso1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T19:32:15.869Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormNivelAcesso1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\FormNivelAcesso1.cs",
+              "RelativeDocumentMoniker": "Forms\\FormNivelAcesso1.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLines\\Forms\\FormNivelAcesso1.cs [Design]",
+              "RelativeToolTip": "Forms\\FormNivelAcesso1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T19:32:13.763Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",

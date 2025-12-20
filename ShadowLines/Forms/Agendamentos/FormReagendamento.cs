@@ -18,7 +18,7 @@ namespace ShadowLines.Forms
 
         private void FormReagendamento_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (this.MdiParent is FormNivelAcesso1 menu)
+            if (this.MdiParent is FormNivelAcesso2 menu)
             {
                 menu.Interface(true);
             }

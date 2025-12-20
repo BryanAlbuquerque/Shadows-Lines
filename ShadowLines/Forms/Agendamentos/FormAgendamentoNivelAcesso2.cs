@@ -166,7 +166,7 @@ namespace ShadowLines.Forms.FormsMenu2
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            FormNivelAcesso2 menu2 = new FormNivelAcesso2();
+            FormNivelAcesso3 menu2 = new FormNivelAcesso3();
             menu2.Show();
             this.Hide();
         }
