@@ -9,6 +9,7 @@ namespace ShadowLines.Forms
     public partial class FormNivelAcesso1 : Form
     {
         private Panel painelClientesUI;
+        private PainelClientesUI painelUI;
         public FormNivelAcesso1()
         {
             InitializeComponent();
@@ -22,15 +23,14 @@ namespace ShadowLines.Forms
                 }
             }
 
-            painelClientesUI = new PainelClientesUI().CriarPainel();
-
+            painelUI = new PainelClientesUI(); 
+            painelClientesUI = painelUI.CriarPainel();
             this.Controls.Add(painelClientesUI);
         }
         private void FormNivelAcesso0_Load(object sender, EventArgs e)
         {
             lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
             painelClientesUI.BringToFront();
-
             Interface(true);
         }
 

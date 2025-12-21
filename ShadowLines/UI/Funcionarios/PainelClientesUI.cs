@@ -4,9 +4,10 @@ using System.Windows.Forms;
 
 namespace ShadowLines.UI
 {
-    internal class PainelClientesUI 
+    internal class PainelClientesUI
     {
         private DashBoardFuncionarios dashBoardFuncionarios;
+        private Label quantidade;  
 
         public PainelClientesUI()
         {
@@ -15,12 +16,7 @@ namespace ShadowLines.UI
 
         public Panel CriarPainel()
         {
-            CardUI panel = new CardUI
-            {
-                Size = new Size(300, 120),
-                Location = new Point(300, 130)
-            };
-
+            CardUI panel = new CardUI { Size = new Size(300, 120), Location = new Point(300, 130) };
             Label titulo = new Label
             {
                 Text = "Clientes de Hoje",
@@ -30,7 +26,7 @@ namespace ShadowLines.UI
                 Location = new Point(10, 10)
             };
 
-            Label quantidade = new Label
+            quantidade = new Label  
             {
                 Text = dashBoardFuncionarios.ObterTotalAgendamentosHoje().ToString(),
                 Font = new Font("Segoe UI", 27, FontStyle.Bold),
@@ -51,9 +47,16 @@ namespace ShadowLines.UI
             panel.Controls.Add(titulo);
             panel.Controls.Add(quantidade);
             panel.Controls.Add(descricao);
-
             return panel;
         }
 
+        // Novo método para atualizar o painel
+        public void AtualizarPainel()
+        {
+            if (quantidade != null)
+            {
+                quantidade.Text = dashBoardFuncionarios.ObterTotalAgendamentosHoje().ToString();
+            }
+        }
     }
 }
