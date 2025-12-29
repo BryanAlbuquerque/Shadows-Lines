@@ -31,7 +31,7 @@ namespace ShadowLines.UI
                 Text = dashBoardFuncionarios.ObterTotalAgendamentosHoje().ToString(),
                 Font = new Font("Segoe UI", 27, FontStyle.Bold),
                 AutoSize = true,
-                ForeColor = Color.Black,
+                ForeColor = Color.YellowGreen,
                 Location = new Point(10, 40)
             };
 

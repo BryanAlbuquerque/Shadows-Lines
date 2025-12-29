@@ -36,27 +36,30 @@ namespace ShadowLines
 
                 int nivelAcesso = usuario.Login();
 
-                MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 if (nivelAcesso == 1)
                 {
+                    MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     FormNivelAcesso1 form = new FormNivelAcesso1();
                     form.Show();
                     this.Hide();
                 }
                 else if (nivelAcesso == 2)
                 {
+                    MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     FormNivelAcesso2 formNivelAcesso1 = new FormNivelAcesso2();
                     formNivelAcesso1.Show();
                     this.Hide();
                 }
                 else if (nivelAcesso == 3)
                 {
+                    MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     FormNivelAcesso3 formNivelAcesso2 = new FormNivelAcesso3();
                     formNivelAcesso2.Show();
                     this.Hide();
                 }
-
                 else
                 {
                     MessageBox.Show("Nome de usuário ou senha incorretos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);

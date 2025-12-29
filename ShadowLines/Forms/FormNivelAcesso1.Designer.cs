@@ -30,15 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNivelAcesso1));
             this.customBackgroundPanel1 = new CustomBackgroundPanel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblUsuario = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // customBackgroundPanel1
             // 
+            this.customBackgroundPanel1.Controls.Add(this.btnDesconectar);
             this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox1);
             this.customBackgroundPanel1.Controls.Add(this.lblUsuario);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel5);
@@ -47,6 +49,18 @@
             this.customBackgroundPanel1.Name = "customBackgroundPanel1";
             this.customBackgroundPanel1.Size = new System.Drawing.Size(1077, 664);
             this.customBackgroundPanel1.TabIndex = 84;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(50, 20);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(137, 133);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 83;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // lblUsuario
             // 
@@ -69,17 +83,26 @@
             this.guna2HtmlLabel5.TabIndex = 81;
             this.guna2HtmlLabel5.Text = "_____________________";
             // 
-            // guna2PictureBox1
+            // btnDesconectar
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(50, 20);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(137, 133);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 83;
-            this.guna2PictureBox1.TabStop = false;
+            this.btnDesconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDesconectar.BorderRadius = 5;
+            this.btnDesconectar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDesconectar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDesconectar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDesconectar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDesconectar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDesconectar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDesconectar.FillColor = System.Drawing.Color.Black;
+            this.btnDesconectar.FillColor2 = System.Drawing.Color.Navy;
+            this.btnDesconectar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesconectar.ForeColor = System.Drawing.Color.White;
+            this.btnDesconectar.Location = new System.Drawing.Point(933, 12);
+            this.btnDesconectar.Name = "btnDesconectar";
+            this.btnDesconectar.Size = new System.Drawing.Size(132, 32);
+            this.btnDesconectar.TabIndex = 84;
+            this.btnDesconectar.Text = "Desconectar";
+            this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
             // FormNivelAcesso1
             // 
@@ -107,5 +130,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private CustomBackgroundPanel customBackgroundPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDesconectar;
     }
 }
