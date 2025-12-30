@@ -44,17 +44,25 @@ namespace ShadowLines.Classes
         public List<AgendamentoModel> ObterClientesDoDia()
         {
             List<AgendamentoModel> lista = new List<AgendamentoModel>();
+
             using (SqlConnection conexao = new SqlConnection(connectionString))
             {
-                string query = @"SELECT c.Nome_Completo, a.Servico, a.Valor, a.DataAgendamento, a.Situacao, a.Pagamento 
+                string query = @"SELECT c.Nome_Completo, 
+                                    a.Servico, 
+                                    a.Valor, 
+                                    a.DataAgendamento, 
+                                    a.Situacao, 
+                                    a.Pagamento 
                                  FROM Agendamentos a 
                                  INNER JOIN Clientes c ON c.ClienteID = a.ClienteID 
                                  WHERE FuncionarioID = @FuncionarioID 
                                  AND CONVERT(date, a.DataAgendamento) = CONVERT(date, GETDATE()) 
                                  AND a.Situacao <> 'Cancelado'";  
+
                 SqlCommand cmd = new SqlCommand(query, conexao);
                 cmd.Parameters.AddWithValue("@FuncionarioID", SessaoUsuarioModel.FuncionarioID);  
                 conexao.Open();
+
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {

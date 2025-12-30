@@ -406,6 +406,7 @@
     <Compile Include="UI\CustomBackgroundPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UI\Funcionarios\PainelAgendamentosFuncionariosUI.cs" />
     <Compile Include="UI\PainelAgendamentosUI.cs" />
     <Compile Include="UI\PainelCanceladosDiaUI.cs" />
     <Compile Include="UI\Funcionarios\PainelClientesUI.cs" />

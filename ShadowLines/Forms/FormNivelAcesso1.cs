@@ -10,6 +10,7 @@ namespace ShadowLines.Forms
     {
         private Panel painelClientesUI;
         private Panel painelValorHojeUI;
+        private Panel painelClientesDoDiaUI;
 
         private PainelClientesUI painelUI;
         public FormNivelAcesso1()
@@ -28,15 +29,22 @@ namespace ShadowLines.Forms
             painelUI = new PainelClientesUI(); 
             painelClientesUI = painelUI.CriarPainel();
             painelValorHojeUI = new PainelValorClientesUI().CriarPainel();
+            painelClientesDoDiaUI = new PainelAgendamentosFuncionariosUI().CriarPainel();
 
             this.Controls.Add(painelClientesUI);
             this.Controls.Add(painelValorHojeUI);
+            this.Controls.Add(painelClientesDoDiaUI);
         }
         private void FormNivelAcesso0_Load(object sender, EventArgs e)
         {
             lblUsuario.Text = $"Bem-vindo, {SessaoUsuarioModel.NomeUsuario}!";
+
             painelClientesUI.BringToFront();
             painelValorHojeUI.BringToFront();
+            painelClientesDoDiaUI.BringToFront();
+
+            iconButtonAtualizar.BringToFront();
+
             Interface(true);
         }
 
@@ -44,7 +52,7 @@ namespace ShadowLines.Forms
         {
             painelClientesUI.Visible = visivel;
             painelValorHojeUI.Visible = visivel;
-
+            painelClientesDoDiaUI.Visible = visivel;
 
             //iconButtonAtualizar.Visible = visivel;
         }
@@ -54,6 +62,10 @@ namespace ShadowLines.Forms
             FormLogin formLogin = new FormLogin();
             formLogin.Show();
             this.Hide();
+        }
+
+        private void iconButtonAtualizar_Click(object sender, EventArgs e)
+        {
         }
     }
 }

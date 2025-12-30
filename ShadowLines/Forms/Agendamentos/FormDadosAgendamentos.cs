@@ -77,13 +77,13 @@ namespace ShadowLines.Forms
 
         private void btnVoltar_Click_1(object sender, EventArgs e)
         {
-            if (SessaoUsuarioModel.NivelAcesso == 1)
+            if (SessaoUsuarioModel.NivelAcesso == 2)
             {
                 FormNivelAcesso2 menu = new FormNivelAcesso2();
                 menu.Show();
                 this.Hide();
             }
-            else if (SessaoUsuarioModel.NivelAcesso == 2)
+            else if (SessaoUsuarioModel.NivelAcesso == 3)
             {
                 FormNivelAcesso3 menu = new FormNivelAcesso3();
                 menu.Show();

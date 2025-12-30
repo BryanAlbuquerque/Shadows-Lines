@@ -30,16 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNivelAcesso1));
             this.customBackgroundPanel1 = new CustomBackgroundPanel();
+            this.iconButtonAtualizar = new FontAwesome.Sharp.IconButton();
+            this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblUsuario = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // customBackgroundPanel1
             // 
+            this.customBackgroundPanel1.Controls.Add(this.iconButtonAtualizar);
             this.customBackgroundPanel1.Controls.Add(this.btnDesconectar);
             this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox1);
             this.customBackgroundPanel1.Controls.Add(this.lblUsuario);
@@ -49,6 +51,45 @@
             this.customBackgroundPanel1.Name = "customBackgroundPanel1";
             this.customBackgroundPanel1.Size = new System.Drawing.Size(1077, 664);
             this.customBackgroundPanel1.TabIndex = 84;
+            // 
+            // iconButtonAtualizar
+            // 
+            this.iconButtonAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButtonAtualizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonAtualizar.IconChar = FontAwesome.Sharp.IconChar.ArrowRotateBackward;
+            this.iconButtonAtualizar.IconColor = System.Drawing.Color.Black;
+            this.iconButtonAtualizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonAtualizar.IconSize = 35;
+            this.iconButtonAtualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonAtualizar.Location = new System.Drawing.Point(646, 263);
+            this.iconButtonAtualizar.Name = "iconButtonAtualizar";
+            this.iconButtonAtualizar.Size = new System.Drawing.Size(118, 38);
+            this.iconButtonAtualizar.TabIndex = 86;
+            this.iconButtonAtualizar.Text = "Atualizar";
+            this.iconButtonAtualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButtonAtualizar.UseVisualStyleBackColor = true;
+            this.iconButtonAtualizar.Click += new System.EventHandler(this.iconButtonAtualizar_Click);
+            // 
+            // btnDesconectar
+            // 
+            this.btnDesconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDesconectar.BorderRadius = 5;
+            this.btnDesconectar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDesconectar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDesconectar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDesconectar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDesconectar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDesconectar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDesconectar.FillColor = System.Drawing.Color.Black;
+            this.btnDesconectar.FillColor2 = System.Drawing.Color.Navy;
+            this.btnDesconectar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesconectar.ForeColor = System.Drawing.Color.White;
+            this.btnDesconectar.Location = new System.Drawing.Point(933, 12);
+            this.btnDesconectar.Name = "btnDesconectar";
+            this.btnDesconectar.Size = new System.Drawing.Size(132, 32);
+            this.btnDesconectar.TabIndex = 84;
+            this.btnDesconectar.Text = "Desconectar";
+            this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
             // guna2PictureBox1
             // 
@@ -83,27 +124,6 @@
             this.guna2HtmlLabel5.TabIndex = 81;
             this.guna2HtmlLabel5.Text = "_____________________";
             // 
-            // btnDesconectar
-            // 
-            this.btnDesconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDesconectar.BorderRadius = 5;
-            this.btnDesconectar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDesconectar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDesconectar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDesconectar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDesconectar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDesconectar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDesconectar.FillColor = System.Drawing.Color.Black;
-            this.btnDesconectar.FillColor2 = System.Drawing.Color.Navy;
-            this.btnDesconectar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDesconectar.ForeColor = System.Drawing.Color.White;
-            this.btnDesconectar.Location = new System.Drawing.Point(933, 12);
-            this.btnDesconectar.Name = "btnDesconectar";
-            this.btnDesconectar.Size = new System.Drawing.Size(132, 32);
-            this.btnDesconectar.TabIndex = 84;
-            this.btnDesconectar.Text = "Desconectar";
-            this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
-            // 
             // FormNivelAcesso1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,5 +151,6 @@
         private CustomBackgroundPanel customBackgroundPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2GradientButton btnDesconectar;
+        private FontAwesome.Sharp.IconButton iconButtonAtualizar;
     }
 }
