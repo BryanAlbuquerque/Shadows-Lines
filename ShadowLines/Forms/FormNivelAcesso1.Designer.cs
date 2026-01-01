@@ -118,7 +118,7 @@
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.White;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(267, 33);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(283, 33);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(381, 42);
             this.guna2HtmlLabel5.TabIndex = 81;
