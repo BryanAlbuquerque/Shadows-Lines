@@ -65,7 +65,7 @@ namespace ShadowLines.Forms
 
         private void btnAgendamentos_Click(object sender, System.EventArgs e)
         {
-            FormAgendamentoNivelAcesso2 form = new FormAgendamentoNivelAcesso2();
+            FormAgendamentoNivelAcesso3 form = new FormAgendamentoNivelAcesso3();
             form.Show();
             this.Hide();
         }

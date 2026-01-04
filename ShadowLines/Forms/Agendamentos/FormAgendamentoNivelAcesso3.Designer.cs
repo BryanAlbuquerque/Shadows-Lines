@@ -1,6 +1,6 @@
 ﻿namespace ShadowLines.Forms.FormsMenu2
 {
-    partial class FormAgendamentoNivelAcesso2
+    partial class FormAgendamentoNivelAcesso3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgendamentoNivelAcesso2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgendamentoNivelAcesso3));
             this.customBackgroundPanel1 = new CustomBackgroundPanel();
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -145,20 +145,20 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(159, 116);
+            this.tabControl1.Location = new System.Drawing.Point(155, 117);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(835, 428);
+            this.tabControl1.Size = new System.Drawing.Size(918, 517);
             this.tabControl1.TabIndex = 82;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.comboBoxServicos);
             this.tabPage1.Controls.Add(this.lblPagamento);
             this.tabPage1.Controls.Add(this.lblFuncionario);
             this.tabPage1.Controls.Add(this.lblCliente);
             this.tabPage1.Controls.Add(this.comboBoxClientes);
             this.tabPage1.Controls.Add(this.comboBoxFuncionarios);
-            this.tabPage1.Controls.Add(this.comboBoxServicos);
             this.tabPage1.Controls.Add(this.txtData);
             this.tabPage1.Controls.Add(this.iconPictureBox6);
             this.tabPage1.Controls.Add(this.iconPictureBox5);
@@ -166,7 +166,6 @@
             this.tabPage1.Controls.Add(this.iconPictureBox1);
             this.tabPage1.Controls.Add(this.guna2HtmlLabel2);
             this.tabPage1.Controls.Add(this.lblData);
-            this.tabPage1.Controls.Add(this.guna2HtmlLabel1);
             this.tabPage1.Controls.Add(this.txtStatus);
             this.tabPage1.Controls.Add(this.txtValor);
             this.tabPage1.Controls.Add(this.lblValor);
@@ -174,12 +173,13 @@
             this.tabPage1.Controls.Add(this.btnAgendar);
             this.tabPage1.Controls.Add(this.guna2HtmlLabel3);
             this.tabPage1.Controls.Add(this.iconPictureBox2);
+            this.tabPage1.Controls.Add(this.guna2HtmlLabel1);
             this.tabPage1.Controls.Add(this.iconPictureBox3);
             this.tabPage1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(827, 402);
+            this.tabPage1.Size = new System.Drawing.Size(910, 491);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Agendamentos";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -188,7 +188,7 @@
             // 
             this.lblPagamento.BackColor = System.Drawing.Color.Transparent;
             this.lblPagamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPagamento.Location = new System.Drawing.Point(58, 248);
+            this.lblPagamento.Location = new System.Drawing.Point(58, 296);
             this.lblPagamento.Name = "lblPagamento";
             this.lblPagamento.Size = new System.Drawing.Size(150, 20);
             this.lblPagamento.TabIndex = 105;
@@ -198,7 +198,7 @@
             // 
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFuncionario.Location = new System.Drawing.Point(499, 168);
+            this.lblFuncionario.Location = new System.Drawing.Point(494, 205);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(148, 20);
             this.lblFuncionario.TabIndex = 103;
@@ -208,7 +208,7 @@
             // 
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(64, 94);
+            this.lblCliente.Location = new System.Drawing.Point(71, 113);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(133, 20);
             this.lblCliente.TabIndex = 102;
@@ -218,7 +218,7 @@
             // 
             this.comboBoxClientes.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxClientes.FormattingEnabled = true;
-            this.comboBoxClientes.Location = new System.Drawing.Point(69, 116);
+            this.comboBoxClientes.Location = new System.Drawing.Point(76, 135);
             this.comboBoxClientes.Name = "comboBoxClientes";
             this.comboBoxClientes.Size = new System.Drawing.Size(331, 28);
             this.comboBoxClientes.TabIndex = 192;
@@ -227,7 +227,7 @@
             // 
             this.comboBoxFuncionarios.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFuncionarios.FormattingEnabled = true;
-            this.comboBoxFuncionarios.Location = new System.Drawing.Point(504, 188);
+            this.comboBoxFuncionarios.Location = new System.Drawing.Point(499, 225);
             this.comboBoxFuncionarios.Name = "comboBoxFuncionarios";
             this.comboBoxFuncionarios.Size = new System.Drawing.Size(317, 28);
             this.comboBoxFuncionarios.TabIndex = 191;
@@ -236,7 +236,7 @@
             // 
             this.comboBoxServicos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxServicos.FormattingEnabled = true;
-            this.comboBoxServicos.Location = new System.Drawing.Point(504, 116);
+            this.comboBoxServicos.Location = new System.Drawing.Point(498, 134);
             this.comboBoxServicos.Name = "comboBoxServicos";
             this.comboBoxServicos.Size = new System.Drawing.Size(317, 28);
             this.comboBoxServicos.TabIndex = 190;
@@ -256,7 +256,7 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(501, 269);
+            this.txtData.Location = new System.Drawing.Point(499, 317);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtData.PlaceholderText = "";
@@ -272,7 +272,7 @@
             this.iconPictureBox6.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 36;
-            this.iconPictureBox6.Location = new System.Drawing.Point(459, 265);
+            this.iconPictureBox6.Location = new System.Drawing.Point(457, 313);
             this.iconPictureBox6.Name = "iconPictureBox6";
             this.iconPictureBox6.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox6.TabIndex = 188;
@@ -286,7 +286,7 @@
             this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 36;
-            this.iconPictureBox5.Location = new System.Drawing.Point(25, 265);
+            this.iconPictureBox5.Location = new System.Drawing.Point(25, 313);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(37, 36);
             this.iconPictureBox5.TabIndex = 187;
@@ -300,7 +300,7 @@
             this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 36;
-            this.iconPictureBox4.Location = new System.Drawing.Point(25, 178);
+            this.iconPictureBox4.Location = new System.Drawing.Point(25, 217);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(37, 36);
             this.iconPictureBox4.TabIndex = 184;
@@ -314,7 +314,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 36;
-            this.iconPictureBox1.Location = new System.Drawing.Point(30, 107);
+            this.iconPictureBox1.Location = new System.Drawing.Point(37, 126);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(37, 36);
             this.iconPictureBox1.TabIndex = 181;
@@ -335,7 +335,7 @@
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(21, 336);
+            this.lblData.Location = new System.Drawing.Point(6, 415);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(81, 20);
             this.lblData.TabIndex = 116;
@@ -345,7 +345,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(501, 94);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(495, 112);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(73, 20);
             this.guna2HtmlLabel1.TabIndex = 114;
@@ -365,7 +365,7 @@
             this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtStatus.ForeColor = System.Drawing.Color.Black;
             this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStatus.Location = new System.Drawing.Point(64, 269);
+            this.txtStatus.Location = new System.Drawing.Point(64, 317);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtStatus.PlaceholderText = "Pendente ou Pago";
@@ -387,7 +387,7 @@
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(64, 178);
+            this.txtValor.Location = new System.Drawing.Point(64, 217);
             this.txtValor.Name = "txtValor";
             this.txtValor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtValor.PlaceholderText = "";
@@ -399,7 +399,7 @@
             // 
             this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(64, 158);
+            this.lblValor.Location = new System.Drawing.Point(64, 197);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(45, 20);
             this.lblValor.TabIndex = 104;
@@ -409,7 +409,7 @@
             // 
             this.data.BackColor = System.Drawing.Color.Transparent;
             this.data.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.data.Location = new System.Drawing.Point(460, 243);
+            this.data.Location = new System.Drawing.Point(458, 291);
             this.data.Name = "data";
             this.data.Size = new System.Drawing.Size(181, 20);
             this.data.TabIndex = 106;
@@ -429,9 +429,9 @@
             this.btnAgendar.FillColor2 = System.Drawing.Color.Navy;
             this.btnAgendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(3, 362);
+            this.btnAgendar.Location = new System.Drawing.Point(3, 451);
             this.btnAgendar.Name = "btnAgendar";
-            this.btnAgendar.Size = new System.Drawing.Size(821, 37);
+            this.btnAgendar.Size = new System.Drawing.Size(904, 37);
             this.btnAgendar.TabIndex = 100;
             this.btnAgendar.Text = "Agendar";
             this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
@@ -454,7 +454,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 36;
-            this.iconPictureBox2.Location = new System.Drawing.Point(462, 180);
+            this.iconPictureBox2.Location = new System.Drawing.Point(457, 217);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox2.TabIndex = 186;
@@ -468,7 +468,7 @@
             this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 36;
-            this.iconPictureBox3.Location = new System.Drawing.Point(464, 108);
+            this.iconPictureBox3.Location = new System.Drawing.Point(458, 126);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox3.TabIndex = 185;
@@ -495,7 +495,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(827, 402);
+            this.tabPage2.Size = new System.Drawing.Size(910, 491);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Reagendamento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -616,7 +616,7 @@
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(462, 246);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(461, 246);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(45, 20);
             this.guna2HtmlLabel6.TabIndex = 196;
@@ -672,7 +672,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMudarData.BackColor = System.Drawing.Color.Transparent;
             this.lblMudarData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMudarData.Location = new System.Drawing.Point(95, 248);
+            this.lblMudarData.Location = new System.Drawing.Point(50, 246);
             this.lblMudarData.Name = "lblMudarData";
             this.lblMudarData.Size = new System.Drawing.Size(179, 20);
             this.lblMudarData.TabIndex = 190;
@@ -705,9 +705,9 @@
             this.btnReagendar.FillColor2 = System.Drawing.Color.Black;
             this.btnReagendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReagendar.ForeColor = System.Drawing.Color.White;
-            this.btnReagendar.Location = new System.Drawing.Point(3, 365);
+            this.btnReagendar.Location = new System.Drawing.Point(3, 454);
             this.btnReagendar.Name = "btnReagendar";
-            this.btnReagendar.Size = new System.Drawing.Size(821, 34);
+            this.btnReagendar.Size = new System.Drawing.Size(904, 34);
             this.btnReagendar.TabIndex = 192;
             this.btnReagendar.Text = "Reagendar";
             this.btnReagendar.Click += new System.EventHandler(this.btnReagendar_Click_1);
@@ -728,7 +728,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(827, 402);
+            this.tabPage3.Size = new System.Drawing.Size(910, 491);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Alterar Situação";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -809,7 +809,7 @@
             // 
             this.lblDataSituacao.BackColor = System.Drawing.Color.Transparent;
             this.lblDataSituacao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataSituacao.Location = new System.Drawing.Point(6, 340);
+            this.lblDataSituacao.Location = new System.Drawing.Point(6, 420);
             this.lblDataSituacao.Name = "lblDataSituacao";
             this.lblDataSituacao.Size = new System.Drawing.Size(81, 20);
             this.lblDataSituacao.TabIndex = 190;
@@ -855,9 +855,9 @@
             this.btnAlterar.FillColor2 = System.Drawing.Color.Black;
             this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(3, 366);
+            this.btnAlterar.Location = new System.Drawing.Point(3, 455);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(821, 33);
+            this.btnAlterar.Size = new System.Drawing.Size(904, 33);
             this.btnAlterar.TabIndex = 189;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
@@ -895,14 +895,14 @@
             this.guna2PictureBox1.TabIndex = 111;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // FormAgendamentoNivelAcesso2
+            // FormAgendamentoNivelAcesso3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 604);
             this.Controls.Add(this.customBackgroundPanel1);
             this.IsMdiContainer = true;
-            this.Name = "FormAgendamentoNivelAcesso2";
+            this.Name = "FormAgendamentoNivelAcesso3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAgendamentos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

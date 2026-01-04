@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 568);
+            this.ClientSize = new System.Drawing.Size(1018, 534);
             this.Name = "FormGerarBoleto";
             this.Text = "FormGerarBoleto";
             this.ResumeLayout(false);

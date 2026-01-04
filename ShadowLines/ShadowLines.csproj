@@ -335,11 +335,11 @@
     <Compile Include="Forms\Clientes\FormGerarBoleto.Designer.cs">
       <DependentUpon>FormGerarBoleto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.cs">
+    <Compile Include="Forms\Agendamentos\FormAgendamentoNivelAcesso3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.Designer.cs">
-      <DependentUpon>FormAgendamentoNivelAcesso2.cs</DependentUpon>
+    <Compile Include="Forms\Agendamentos\FormAgendamentoNivelAcesso3.Designer.cs">
+      <DependentUpon>FormAgendamentoNivelAcesso3.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormNivelAcesso1.cs">
       <SubType>Form</SubType>
@@ -482,8 +482,8 @@
     <EmbeddedResource Include="Forms\FormNivelAcesso2.resx">
       <DependentUpon>FormNivelAcesso2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Agendamentos\FormAgendamentoNivelAcesso2.resx">
-      <DependentUpon>FormAgendamentoNivelAcesso2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Agendamentos\FormAgendamentoNivelAcesso3.resx">
+      <DependentUpon>FormAgendamentoNivelAcesso3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormRelatorios.resx">
       <DependentUpon>FormRelatorios.cs</DependentUpon>

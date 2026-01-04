@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace ShadowLines.Forms.FormsMenu2
 {
-    public partial class FormAgendamentoNivelAcesso2 : Form
+    public partial class FormAgendamentoNivelAcesso3 : Form
     {
-        public FormAgendamentoNivelAcesso2()
+        public FormAgendamentoNivelAcesso3()
         {
             InitializeComponent();
 
