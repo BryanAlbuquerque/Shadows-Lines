@@ -47,7 +47,7 @@ namespace ShadowLines.Classes
 
             using (SqlConnection conexao = new SqlConnection(connectionString))
             {
-                string query = @"SELECT c.Nome_Completo, 
+                string query = @"SELECT c.Nome, 
                                     a.Servico, 
                                     a.Valor, 
                                     a.DataAgendamento, 

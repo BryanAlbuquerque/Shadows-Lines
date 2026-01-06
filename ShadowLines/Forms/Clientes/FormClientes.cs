@@ -147,7 +147,7 @@ namespace ShadowLines.Forms
         private void ConfigurarColunas()
         {
             GridTextColumn nome = new GridTextColumn();
-            nome.MappingName = "Nome_Completo";
+            nome.MappingName = "Nome";
             nome.HeaderText = "Nome Completo";
             nome.Width = 220;
             sfDataGridPanel.Columns.Add(nome);
@@ -171,7 +171,7 @@ namespace ShadowLines.Forms
             sfDataGridPanel.Columns.Add(email);
 
             GridTextColumn dataNascimento = new GridTextColumn();
-            dataNascimento.MappingName = "Data_Nascimento";
+            dataNascimento.MappingName = "DataNascimento";
             dataNascimento.HeaderText = "Data Nascimento";
             dataNascimento.Format = "dd/MM/yyyy";
             dataNascimento.Width = 200;

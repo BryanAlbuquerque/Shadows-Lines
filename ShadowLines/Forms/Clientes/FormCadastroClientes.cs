@@ -40,11 +40,11 @@ namespace ShadowLines.Forms
                 }
                 ClienteModel cliente = new ClienteModel();
 
-                cliente.Nome_Completo = txtNome.Text;
+                cliente.Nome = txtNome.Text;
                 cliente.CPF = Convert.ToInt64(txtCpf.Text.Replace(".", "").Replace("-", ""));
                 cliente.Telefone = Convert.ToInt64(txtTelefone.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
                 cliente.Email = txtEmail.Text;
-                cliente.Data_Nascimento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                cliente.DataNascimento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
                 cliente.Endereco = txtEndereco.Text;
 
                 Cliente clientes = new Cliente();

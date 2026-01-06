@@ -16,7 +16,7 @@ namespace ShadowLines.Classes
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = @"SELECT FuncionarioID, Nome, NivelAcesso
-                                    FROM Funcionarios 
+                                    FROM Funcionarios
                                     WHERE Nome = @NomeUsuario
                                     AND FuncionarioID = @SenhaId";
 

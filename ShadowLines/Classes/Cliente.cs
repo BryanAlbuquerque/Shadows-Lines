@@ -18,18 +18,18 @@ namespace ShadowLines.Classes
             {
                 string query = @"SELECT 
                                 ClienteID, 
-                                Nome_Completo, 
+                                Nome, 
                                 CPF, 
                                 Telefone, 
                                 Email, 
-                                Data_Nascimento, 
+                                DataNascimento, 
                                 Endereco, 
                                 DataCadastro
                                 FROM Clientes 
-                                WHERE Nome_Completo LIKE '%' + @termo + '%'
+                                WHERE Nome LIKE '%' + @termo + '%'
                                 OR CPF LIKE '%' + @termo + '%'
                                 OR Email LIKE '%' + @termo + '%'
-                                OR Data_Nascimento LIKE '%' + @termo + '%'";
+                                OR DataNascimento LIKE '%' + @termo + '%'";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -42,11 +42,11 @@ namespace ShadowLines.Classes
                             lista.Add(new ClienteModel
                             {
                                 ClienteID = reader.GetInt32(reader.GetOrdinal("ClienteID")),
-                                Nome_Completo = reader.GetString(reader.GetOrdinal("Nome_Completo")),
+                                Nome = reader.GetString(reader.GetOrdinal("Nome")),
                                 CPF = reader.GetInt64(reader.GetOrdinal("CPF")),
                                 Telefone = reader.GetInt64(reader.GetOrdinal("Telefone")),
                                 Email = reader["Email"] as string,
-                                Data_Nascimento = reader["Data_Nascimento"] as DateTime?,
+                                DataNascimento = reader["DataNascimento"] as DateTime?,
                                 Endereco = reader["Endereco"] as string,
                                 DataCadastro = reader.GetDateTime(reader.GetOrdinal("DataCadastro"))
                             });
@@ -65,8 +65,8 @@ namespace ShadowLines.Classes
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 string query = @"
-                        SELECT ClienteID, Nome_Completo, CPF, Telefone, Email,
-                        Data_Nascimento, Endereco, DataCadastro
+                        SELECT ClienteID, Nome, CPF, Telefone, Email,
+                        DataNascimento, Endereco, DataCadastro
                         FROM Clientes
                         WHERE ClienteID = @ClienteID";
 
@@ -81,11 +81,11 @@ namespace ShadowLines.Classes
                             cliente = new ClienteModel
                             {
                                 ClienteID = reader.GetInt32(reader.GetOrdinal("ClienteID")),
-                                Nome_Completo = reader.GetString(reader.GetOrdinal("Nome_Completo")),
+                                Nome = reader.GetString(reader.GetOrdinal("Nome")),
                                 CPF = reader.GetInt64(reader.GetOrdinal("CPF")),
                                 Telefone = reader.GetInt64(reader.GetOrdinal("Telefone")),
                                 Email = reader["Email"] as string,
-                                Data_Nascimento = reader.IsDBNull(reader.GetOrdinal("Data_Nascimento")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("Data_Nascimento")),
+                                DataNascimento = reader.IsDBNull(reader.GetOrdinal("DataNascimento")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("DataNascimento")),
                                 Endereco = reader["Endereco"] as string,
                                 DataCadastro = reader.GetDateTime(reader.GetOrdinal("DataCadastro"))
                             };
@@ -103,17 +103,17 @@ namespace ShadowLines.Classes
             {
                 string query = @"
                     INSERT INTO Clientes
-                    (Nome_Completo, CPF, Telefone, Email, Data_Nascimento, Endereco)
+                    (Nome, CPF, Telefone, Email, DataNascimento, Endereco)
                     VALUES
                     (@Nome, @CPF, @Telefone, @Email, @Nascimento, @Endereco)";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Nome", cliente.Nome_Completo);
+                    cmd.Parameters.AddWithValue("@Nome", cliente.Nome);
                     cmd.Parameters.AddWithValue("@CPF", cliente.CPF);
                     cmd.Parameters.AddWithValue("@Telefone", cliente.Telefone);
                     cmd.Parameters.AddWithValue("@Email", (object)cliente.Email ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Nascimento", (object)cliente.Data_Nascimento ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Nascimento", (object)cliente.DataNascimento ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Endereco", (object)cliente.Endereco ?? DBNull.Value);
 
                     conn.Open();
@@ -128,22 +128,22 @@ namespace ShadowLines.Classes
             {
                 string query = @"
                     UPDATE Clientes SET
-                        Nome_Completo = @Nome,
+                        Nome = @Nome,
                         CPF = @CPF,
                         Telefone = @Telefone,
                         Email = @Email,
-                        Data_Nascimento = @Nascimento,
+                        DataNascimento = @Nascimento,
                         Endereco = @Endereco
                     WHERE ClienteID = @ID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@ID", cliente.ClienteID);
-                    cmd.Parameters.AddWithValue("@Nome", cliente.Nome_Completo);
+                    cmd.Parameters.AddWithValue("@Nome", cliente.Nome);
                     cmd.Parameters.AddWithValue("@CPF", cliente.CPF);
                     cmd.Parameters.AddWithValue("@Telefone", cliente.Telefone);
                     cmd.Parameters.AddWithValue("@Email", (object)cliente.Email ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Nascimento", (object)cliente.Data_Nascimento ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Nascimento", (object)cliente.DataNascimento ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Endereco", (object)cliente.Endereco ?? DBNull.Value);
 
                     conn.Open();

@@ -29,7 +29,7 @@ namespace ShadowLines.Forms
             var lista = Cliente.Select("%");
 
             comboBoxClientes.DataSource = lista;
-            comboBoxClientes.DisplayMember = "Nome_Completo";
+            comboBoxClientes.DisplayMember = "Nome";
             comboBoxClientes.ValueMember = "ClienteID";
             comboBoxClientes.SelectedIndex = -1;
         }
@@ -60,11 +60,11 @@ namespace ShadowLines.Forms
                 ClienteModel cliente = new ClienteModel();
 
                 cliente.ClienteID = Convert.ToInt32(comboBoxClientes.SelectedValue);
-                cliente.Nome_Completo = txtNome.Text;
+                cliente.Nome = txtNome.Text;
                 cliente.CPF = Convert.ToInt64(txtCpf.Text.Replace(".", "").Replace("-", ""));
                 cliente.Telefone = Convert.ToInt64(txtTelefone.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
                 cliente.Email = txtEmail.Text;
-                cliente.Data_Nascimento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                cliente.DataNascimento = DateTime.ParseExact(txtData.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
                 cliente.Endereco = txtEndereco.Text;
 
                 Cliente clientes = new Cliente();
@@ -90,12 +90,12 @@ namespace ShadowLines.Forms
             int id = Convert.ToInt32(comboBoxClientes.SelectedValue);
             var c = Cliente.SelectedSet(id);
 
-            txtNome.Text = c.Nome_Completo;
+            txtNome.Text = c.Nome;
             txtCpf.Text = c.CPF.ToString();
             txtTelefone.Text = c.Telefone.ToString();
             txtEmail.Text = c.Email;
             txtEndereco.Text = c.Endereco;
-            txtData.Text = c.Data_Nascimento?.ToString("dd/MM/yyyy");
+            txtData.Text = c.DataNascimento?.ToString("dd/MM/yyyy");
         }
     }
 }

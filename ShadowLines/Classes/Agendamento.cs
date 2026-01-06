@@ -20,7 +20,7 @@ namespace ShadowLines.Classes
                         SELECT 
                             A.AgendamentoID,
                             A.ClienteID,
-                            C.Nome_Completo AS NomeCliente,
+                            C.Nome AS NomeCliente,
                             A.Servico,
                             A.DataAgendamento,
                             A.Valor,
@@ -80,13 +80,13 @@ namespace ShadowLines.Classes
                     A.Valor, 
                     A.Situacao, 
                     A.Pagamento, 
-                    C.Nome_Completo AS NomeCliente, 
+                    C.Nome AS NomeCliente, 
                     F.Nome AS NomeFuncionario
 
                     FROM Agendamentos A
                          INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
                          INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID
-                         WHERE C.Nome_Completo LIKE '%' + @termo + '%' 
+                         WHERE C.Nome LIKE '%' + @termo + '%' 
                     OR F.Nome LIKE '%' + @termo + '%' 
                     OR A.Servico LIKE '%' + @termo + '%'
                     OR A.DataAgendamento LIKE '%' + @termo + '%'";
@@ -135,14 +135,14 @@ namespace ShadowLines.Classes
                     A.Valor, 
                     A.Situacao, 
                     A.Pagamento, 
-                    C.Nome_Completo AS NomeCliente, 
+                    C.Nome AS NomeCliente, 
                     F.Nome AS NomeFuncionario
 
                     FROM Agendamentos A
                  INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
                  INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID
                  WHERE Pagamento = 'Pendente'
-                    AND (C.Nome_Completo LIKE '%' + @termo + '%'
+                    AND (C.Nome LIKE '%' + @termo + '%'
                     AND F.Nome LIKE '%' + @termo + '%'
                     AND A.Servico LIKE '%' + @termo + '%'
                     AND A.DataAgendamento LIKE '%' + @termo + '%'

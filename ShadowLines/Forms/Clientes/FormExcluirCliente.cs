@@ -16,7 +16,7 @@ namespace ShadowLines.Forms
         {
             var clientes = Classes.Cliente.Select("%");
             comboBoxClientes.DataSource = clientes;
-            comboBoxClientes.DisplayMember = "Nome_Completo";
+            comboBoxClientes.DisplayMember = "Nome";
             comboBoxClientes.ValueMember = "ClienteID";
             comboBoxClientes.SelectedIndex = -1;
         }
