@@ -1,8 +1,7 @@
-﻿using ShadowLines.Forms;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using ShadowLines.Forms;
 using System;
-using ShadowLines.Forms.FormsMenu2;
-using ShadowLines.Forms.Funcionarios;
+using ShadowLines.Forms.Clientes;
 
 namespace ShadowLines
 {
@@ -16,7 +15,7 @@ namespace ShadowLines
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new FormGerarBoleto());
         }
     }
 }

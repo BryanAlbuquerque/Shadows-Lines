@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:classes\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formalterardadoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formalterardadoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formalterardadoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formalterardadoscliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +18,35 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormGerarBoleto.cs",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormGerarBoleto.cs",
+              "RelativeDocumentMoniker": "Forms\\Clientes\\FormGerarBoleto.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormGerarBoleto.cs",
+              "RelativeToolTip": "Forms\\Clientes\\FormGerarBoleto.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIAwwB8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T20:38:20.187Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormGerarBoleto.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormGerarBoleto.cs",
+              "RelativeDocumentMoniker": "Forms\\Clientes\\FormGerarBoleto.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormGerarBoleto.cs [Design]",
+              "RelativeToolTip": "Forms\\Clientes\\FormGerarBoleto.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T20:33:56.93Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -39,44 +62,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Classes\\Cliente.cs",
-              "RelativeDocumentMoniker": "Classes\\Cliente.cs",
-              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Classes\\Cliente.cs",
-              "RelativeToolTip": "Classes\\Cliente.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAE0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T23:42:06.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormAlterarDadosCliente.cs",
-              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "RelativeDocumentMoniker": "Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "RelativeToolTip": "Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAIAwwDoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T23:41:35.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormAlterarDadosCliente.cs [Design]",
-              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "RelativeDocumentMoniker": "Forms\\Clientes\\FormAlterarDadosCliente.cs",
-              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormAlterarDadosCliente.cs [Design]",
-              "RelativeToolTip": "Forms\\Clientes\\FormAlterarDadosCliente.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T23:41:33.04Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
