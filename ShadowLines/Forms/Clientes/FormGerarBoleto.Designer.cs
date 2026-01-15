@@ -47,14 +47,16 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.sfDataGrid1 = new Syncfusion.WinForms.DataGrid.SfDataGrid();
+            this.sfDataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.CheckBoxFinalizado = new Guna.UI2.WinForms.Guna2CheckBox();
             this.CheckBoxRecentes = new Guna.UI2.WinForms.Guna2CheckBox();
             this.checkBoxAtualizacao = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -127,7 +129,9 @@
             // 
             // customBackgroundPanel1
             // 
+            this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel7);
             this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox1);
+            this.customBackgroundPanel1.Controls.Add(this.textBox5);
             this.customBackgroundPanel1.Controls.Add(this.guna2GradientButton1);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.customBackgroundPanel1.Controls.Add(this.lblData);
@@ -136,7 +140,7 @@
             this.customBackgroundPanel1.Controls.Add(this.txtBuscar);
             this.customBackgroundPanel1.Controls.Add(this.btnBuscar);
             this.customBackgroundPanel1.Controls.Add(this.btnVoltar);
-            this.customBackgroundPanel1.Controls.Add(this.sfDataGrid1);
+            this.customBackgroundPanel1.Controls.Add(this.sfDataGrid);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel2);
             this.customBackgroundPanel1.Controls.Add(this.CheckBoxFinalizado);
             this.customBackgroundPanel1.Controls.Add(this.CheckBoxRecentes);
@@ -275,14 +279,14 @@
             this.btnVoltar.TabIndex = 119;
             this.btnVoltar.Text = "Gerar Boleto";
             // 
-            // sfDataGrid1
+            // sfDataGrid
             // 
-            this.sfDataGrid1.AccessibleName = "Table";
-            this.sfDataGrid1.Location = new System.Drawing.Point(21, 213);
-            this.sfDataGrid1.Name = "sfDataGrid1";
-            this.sfDataGrid1.Size = new System.Drawing.Size(1047, 269);
-            this.sfDataGrid1.TabIndex = 3;
-            this.sfDataGrid1.Text = "sfDataGrid1";
+            this.sfDataGrid.AccessibleName = "Table";
+            this.sfDataGrid.Location = new System.Drawing.Point(21, 213);
+            this.sfDataGrid.Name = "sfDataGrid";
+            this.sfDataGrid.Size = new System.Drawing.Size(1047, 269);
+            this.sfDataGrid.TabIndex = 3;
+            this.sfDataGrid.Text = "sfDataGrid";
             // 
             // guna2HtmlLabel2
             // 
@@ -348,6 +352,23 @@
             this.checkBoxAtualizacao.UncheckedState.BorderThickness = 0;
             this.checkBoxAtualizacao.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(889, 488);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(74, 20);
+            this.guna2HtmlLabel7.TabIndex = 135;
+            this.guna2HtmlLabel7.Text = "Situação";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(889, 514);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(168, 20);
+            this.textBox5.TabIndex = 134;
+            // 
             // FormGerarBoleto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,7 +391,7 @@
             this.customBackgroundPanel1.ResumeLayout(false);
             this.customBackgroundPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,7 +402,7 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGrid1;
+        private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGrid;
         private FontAwesome.Sharp.IconButton btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
         private Guna.UI2.WinForms.Guna2GradientButton btnVoltar;
@@ -401,5 +422,7 @@
         private CustomBackgroundPanel customBackgroundPanel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }

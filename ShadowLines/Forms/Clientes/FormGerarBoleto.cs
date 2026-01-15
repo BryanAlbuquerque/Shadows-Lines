@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ShadowLines.Classes;
+using Syncfusion.WinForms.DataGrid;
 using System.Windows.Forms;
+using System;
 
 namespace ShadowLines.Forms.Clientes
 {
@@ -29,8 +24,46 @@ namespace ShadowLines.Forms.Clientes
         }
         private void FormGerarBoleto_Load(object sender, EventArgs e)
         {
+            sfDataGrid.AutoGenerateColumns = false;
+            sfDataGrid.AllowSorting = true;
+            sfDataGrid.AllowEditing = false;
+            sfDataGrid.AllowFiltering = true;
+
+            sfDataGrid.DataSource = GerarBoletos.BoletoAgendamentoPendente(txtBuscar.Text);
+
             checkBoxAtualizacao.Checked = true;
 
+            ConfigurarColunas();
+
         }
+
+        private void ConfigurarColunas()
+        {
+            GridTextColumn nome = new GridTextColumn();
+            nome.MappingName = "NomeCliente";
+            nome.HeaderText = "Nome do Cliente";
+            nome.Width = 220;
+            sfDataGrid.Columns.Add(nome);
+
+            GridTextColumn dataAgendamento = new GridTextColumn();
+            dataAgendamento.MappingName = "DataAgendamento";
+            dataAgendamento.HeaderText = "Data do Agendamento";
+            dataAgendamento.Width = 200;
+            sfDataGrid.Columns.Add(dataAgendamento);
+
+            GridTextColumn servico = new GridTextColumn();
+            servico.MappingName = "Servicos";
+            servico.HeaderText = "Serviço";
+            servico.Width = 180;
+            sfDataGrid.Columns.Add(servico);
+
+            GridTextColumn valor = new GridTextColumn();
+            valor.MappingName = "Valor";
+            valor.HeaderText = "Valor";
+            valor.Width = 220;
+            sfDataGrid.Columns.Add(valor);
+        }
+
+
     }
 }

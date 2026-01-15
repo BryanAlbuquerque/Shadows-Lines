@@ -133,6 +133,7 @@ namespace ShadowLines.Forms
             ConfigurarColunas();
             sfDataGridPanel.DataSource = Cliente.Select(txtBuscar.Text);
 
+
             // Pagamentos pendentes
             sfDataGridPanelPendentes.AutoGenerateColumns = false;
             sfDataGridPanelPendentes.AllowEditing = false;

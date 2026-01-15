@@ -274,6 +274,7 @@
     <Compile Include="Classes\Agendamento.cs" />
     <Compile Include="Classes\DashBoardFuncionarios.cs" />
     <Compile Include="Classes\Funcionario.cs" />
+    <Compile Include="Classes\GerarBoletos.cs" />
     <Compile Include="Classes\Servico.cs" />
     <Compile Include="Forms\Agendamentos\FormAgendamento.cs">
       <SubType>Form</SubType>
