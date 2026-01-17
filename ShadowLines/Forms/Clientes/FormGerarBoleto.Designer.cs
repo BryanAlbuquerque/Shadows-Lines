@@ -38,12 +38,14 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.customBackgroundPanel1 = new CustomBackgroundPanel();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btnLocalizar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DateTimerDataRecente = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DateTimerDataAntiga = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -52,8 +54,6 @@
             this.CheckBoxFinalizado = new Guna.UI2.WinForms.Guna2CheckBox();
             this.CheckBoxRecentes = new Guna.UI2.WinForms.Guna2CheckBox();
             this.checkBoxAtualizacao = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid)).BeginInit();
@@ -132,11 +132,11 @@
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel7);
             this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox1);
             this.customBackgroundPanel1.Controls.Add(this.textBox5);
-            this.customBackgroundPanel1.Controls.Add(this.guna2GradientButton1);
+            this.customBackgroundPanel1.Controls.Add(this.btnLocalizar);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.customBackgroundPanel1.Controls.Add(this.lblData);
-            this.customBackgroundPanel1.Controls.Add(this.guna2DateTimePicker2);
-            this.customBackgroundPanel1.Controls.Add(this.guna2DateTimePicker1);
+            this.customBackgroundPanel1.Controls.Add(this.DateTimerDataRecente);
+            this.customBackgroundPanel1.Controls.Add(this.DateTimerDataAntiga);
             this.customBackgroundPanel1.Controls.Add(this.txtBuscar);
             this.customBackgroundPanel1.Controls.Add(this.btnBuscar);
             this.customBackgroundPanel1.Controls.Add(this.btnVoltar);
@@ -151,6 +151,16 @@
             this.customBackgroundPanel1.Size = new System.Drawing.Size(1080, 641);
             this.customBackgroundPanel1.TabIndex = 133;
             // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(889, 488);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(74, 20);
+            this.guna2HtmlLabel7.TabIndex = 135;
+            this.guna2HtmlLabel7.Text = "Situação";
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -163,26 +173,34 @@
             this.guna2PictureBox1.TabIndex = 163;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2GradientButton1
+            // textBox5
             // 
-            this.guna2GradientButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 15;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Navy;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(728, 89);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(106, 34);
-            this.guna2GradientButton1.TabIndex = 133;
-            this.guna2GradientButton1.Text = "Localizar";
+            this.textBox5.Location = new System.Drawing.Point(889, 514);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(168, 20);
+            this.textBox5.TabIndex = 134;
+            // 
+            // btnLocalizar
+            // 
+            this.btnLocalizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLocalizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnLocalizar.BorderRadius = 15;
+            this.btnLocalizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLocalizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLocalizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLocalizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLocalizar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLocalizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLocalizar.FillColor = System.Drawing.Color.Black;
+            this.btnLocalizar.FillColor2 = System.Drawing.Color.Navy;
+            this.btnLocalizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocalizar.ForeColor = System.Drawing.Color.White;
+            this.btnLocalizar.Location = new System.Drawing.Point(728, 89);
+            this.btnLocalizar.Name = "btnLocalizar";
+            this.btnLocalizar.Size = new System.Drawing.Size(106, 34);
+            this.btnLocalizar.TabIndex = 133;
+            this.btnLocalizar.Text = "Localizar";
+            this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -206,33 +224,33 @@
             this.lblData.TabIndex = 132;
             this.lblData.Text = "Data Hoje";
             // 
-            // guna2DateTimePicker2
+            // DateTimerDataRecente
             // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(470, 89);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(252, 36);
-            this.guna2DateTimePicker2.TabIndex = 1;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2026, 1, 14, 17, 34, 36, 203);
+            this.DateTimerDataRecente.Checked = true;
+            this.DateTimerDataRecente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.DateTimerDataRecente.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimerDataRecente.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateTimerDataRecente.Location = new System.Drawing.Point(470, 89);
+            this.DateTimerDataRecente.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimerDataRecente.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimerDataRecente.Name = "DateTimerDataRecente";
+            this.DateTimerDataRecente.Size = new System.Drawing.Size(252, 36);
+            this.DateTimerDataRecente.TabIndex = 1;
+            this.DateTimerDataRecente.Value = new System.DateTime(2026, 1, 14, 17, 34, 36, 203);
             // 
-            // guna2DateTimePicker1
+            // DateTimerDataAntiga
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(182, 89);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(252, 36);
-            this.guna2DateTimePicker1.TabIndex = 0;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2026, 1, 14, 17, 34, 36, 203);
+            this.DateTimerDataAntiga.Checked = true;
+            this.DateTimerDataAntiga.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.DateTimerDataAntiga.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimerDataAntiga.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateTimerDataAntiga.Location = new System.Drawing.Point(182, 89);
+            this.DateTimerDataAntiga.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimerDataAntiga.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimerDataAntiga.Name = "DateTimerDataAntiga";
+            this.DateTimerDataAntiga.Size = new System.Drawing.Size(252, 36);
+            this.DateTimerDataAntiga.TabIndex = 0;
+            this.DateTimerDataAntiga.Value = new System.DateTime(2026, 1, 14, 17, 34, 36, 203);
             // 
             // txtBuscar
             // 
@@ -257,6 +275,7 @@
             this.btnBuscar.TabIndex = 118;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnVoltar
             // 
@@ -284,7 +303,7 @@
             this.sfDataGrid.AccessibleName = "Table";
             this.sfDataGrid.Location = new System.Drawing.Point(21, 213);
             this.sfDataGrid.Name = "sfDataGrid";
-            this.sfDataGrid.Size = new System.Drawing.Size(1047, 269);
+            this.sfDataGrid.Size = new System.Drawing.Size(835, 269);
             this.sfDataGrid.TabIndex = 3;
             this.sfDataGrid.Text = "sfDataGrid";
             // 
@@ -352,23 +371,6 @@
             this.checkBoxAtualizacao.UncheckedState.BorderThickness = 0;
             this.checkBoxAtualizacao.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(889, 488);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(74, 20);
-            this.guna2HtmlLabel7.TabIndex = 135;
-            this.guna2HtmlLabel7.Text = "Situação";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(889, 514);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(168, 20);
-            this.textBox5.TabIndex = 134;
-            // 
             // FormGerarBoleto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,8 +401,8 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimerDataAntiga;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimerDataRecente;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGrid;
         private FontAwesome.Sharp.IconButton btnBuscar;
@@ -420,9 +422,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
         private CustomBackgroundPanel customBackgroundPanel1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private System.Windows.Forms.TextBox textBox5;
+        private Guna.UI2.WinForms.Guna2GradientButton btnLocalizar;
     }
 }

@@ -64,6 +64,14 @@ namespace ShadowLines.Forms.Clientes
             sfDataGrid.Columns.Add(valor);
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            sfDataGrid.DataSource = GerarBoletos.BoletoAgendamentoPendente(txtBuscar.Text);
+        }
 
+        private void btnLocalizar_Click(object sender, EventArgs e)
+        {
+            sfDataGrid.DataSource = GerarBoletos.BoletoAgendamentoPendente();
+        }
     }
 }

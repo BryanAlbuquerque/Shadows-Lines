@@ -39,7 +39,7 @@ namespace ShadowLines.Forms
             var lista = Cliente.Select("%");
 
             comboBoxCliente.DataSource = lista;
-            comboBoxCliente.DisplayMember = "Nome_Completo";
+            comboBoxCliente.DisplayMember = "Nome";
             comboBoxCliente.ValueMember = "ClienteID";
             comboBoxCliente.SelectedIndex = -1;
         }
