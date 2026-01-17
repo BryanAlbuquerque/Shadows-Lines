@@ -29,9 +29,7 @@ namespace ShadowLines.Forms.Clientes
             sfDataGrid.AllowEditing = false;
             sfDataGrid.AllowFiltering = true;
 
-            sfDataGrid.DataSource = GerarBoletos.BoletoAgendamentoPendente(txtBuscar.Text);
-
-            checkBoxAtualizacao.Checked = true;
+            sfDataGrid.DataSource = GerarBoletos.ListarClientes(txtBuscar.Text);
 
             ConfigurarColunas();
 
@@ -66,12 +64,13 @@ namespace ShadowLines.Forms.Clientes
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            sfDataGrid.DataSource = GerarBoletos.BoletoAgendamentoPendente(txtBuscar.Text);
+            sfDataGrid.DataSource = GerarBoletos.ListarClientes(txtBuscar.Text);
         }
 
         private void btnLocalizar_Click(object sender, EventArgs e)
         {
-            sfDataGrid.DataSource = GerarBoletos.BoletoAgendamentoPendente();
+            sfDataGrid.DataSource = 
+                GerarBoletos.ListarClienteDataSelecionada(DateTimerDataAntiga.Value, DateTimerDataRecente.Value);
         }
     }
 }

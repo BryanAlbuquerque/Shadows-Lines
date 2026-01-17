@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\classes\\gerarboletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:classes\\gerarboletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\clientes\\formgerarboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "GerarBoletos.cs",
               "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Classes\\GerarBoletos.cs",
               "RelativeDocumentMoniker": "Classes\\GerarBoletos.cs",
               "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Classes\\GerarBoletos.cs",
               "RelativeToolTip": "Classes\\GerarBoletos.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwCgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T19:48:25.058Z",
               "IsPinned": true,
@@ -40,13 +40,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormGerarBoleto.cs",
               "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormGerarBoleto.cs",
               "RelativeDocumentMoniker": "Forms\\Clientes\\FormGerarBoleto.cs",
               "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormGerarBoleto.cs",
               "RelativeToolTip": "Forms\\Clientes\\FormGerarBoleto.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAMwEQAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAEwCEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T20:38:20.187Z",
               "IsPinned": true,
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FormGerarBoleto.cs [Design]",
               "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Clientes\\FormGerarBoleto.cs",
               "RelativeDocumentMoniker": "Forms\\Clientes\\FormGerarBoleto.cs",

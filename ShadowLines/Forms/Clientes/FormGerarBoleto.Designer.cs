@@ -50,10 +50,6 @@
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.sfDataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.CheckBoxFinalizado = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.CheckBoxRecentes = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.checkBoxAtualizacao = new Guna.UI2.WinForms.Guna2CheckBox();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid)).BeginInit();
@@ -141,10 +137,6 @@
             this.customBackgroundPanel1.Controls.Add(this.btnBuscar);
             this.customBackgroundPanel1.Controls.Add(this.btnVoltar);
             this.customBackgroundPanel1.Controls.Add(this.sfDataGrid);
-            this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel2);
-            this.customBackgroundPanel1.Controls.Add(this.CheckBoxFinalizado);
-            this.customBackgroundPanel1.Controls.Add(this.CheckBoxRecentes);
-            this.customBackgroundPanel1.Controls.Add(this.checkBoxAtualizacao);
             this.customBackgroundPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customBackgroundPanel1.Location = new System.Drawing.Point(0, 0);
             this.customBackgroundPanel1.Name = "customBackgroundPanel1";
@@ -195,7 +187,7 @@
             this.btnLocalizar.FillColor2 = System.Drawing.Color.Navy;
             this.btnLocalizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocalizar.ForeColor = System.Drawing.Color.White;
-            this.btnLocalizar.Location = new System.Drawing.Point(728, 89);
+            this.btnLocalizar.Location = new System.Drawing.Point(750, 89);
             this.btnLocalizar.Name = "btnLocalizar";
             this.btnLocalizar.Size = new System.Drawing.Size(106, 34);
             this.btnLocalizar.TabIndex = 133;
@@ -303,73 +295,9 @@
             this.sfDataGrid.AccessibleName = "Table";
             this.sfDataGrid.Location = new System.Drawing.Point(21, 213);
             this.sfDataGrid.Name = "sfDataGrid";
-            this.sfDataGrid.Size = new System.Drawing.Size(835, 269);
+            this.sfDataGrid.Size = new System.Drawing.Size(904, 269);
             this.sfDataGrid.TabIndex = 3;
             this.sfDataGrid.Text = "sfDataGrid";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(900, 12);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(134, 20);
-            this.guna2HtmlLabel2.TabIndex = 123;
-            this.guna2HtmlLabel2.Text = "Opções de Filtro";
-            // 
-            // CheckBoxFinalizado
-            // 
-            this.CheckBoxFinalizado.AutoSize = true;
-            this.CheckBoxFinalizado.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBoxFinalizado.CheckedState.BorderRadius = 0;
-            this.CheckBoxFinalizado.CheckedState.BorderThickness = 0;
-            this.CheckBoxFinalizado.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBoxFinalizado.CheckMarkColor = System.Drawing.Color.Red;
-            this.CheckBoxFinalizado.Location = new System.Drawing.Point(902, 125);
-            this.CheckBoxFinalizado.Name = "CheckBoxFinalizado";
-            this.CheckBoxFinalizado.Size = new System.Drawing.Size(178, 17);
-            this.CheckBoxFinalizado.TabIndex = 122;
-            this.CheckBoxFinalizado.Text = "Clientes agendamento finalizado";
-            this.CheckBoxFinalizado.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.CheckBoxFinalizado.UncheckedState.BorderRadius = 0;
-            this.CheckBoxFinalizado.UncheckedState.BorderThickness = 0;
-            this.CheckBoxFinalizado.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // CheckBoxRecentes
-            // 
-            this.CheckBoxRecentes.AutoSize = true;
-            this.CheckBoxRecentes.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBoxRecentes.CheckedState.BorderRadius = 0;
-            this.CheckBoxRecentes.CheckedState.BorderThickness = 0;
-            this.CheckBoxRecentes.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBoxRecentes.CheckMarkColor = System.Drawing.Color.Red;
-            this.CheckBoxRecentes.Location = new System.Drawing.Point(902, 89);
-            this.CheckBoxRecentes.Name = "CheckBoxRecentes";
-            this.CheckBoxRecentes.Size = new System.Drawing.Size(134, 17);
-            this.CheckBoxRecentes.TabIndex = 120;
-            this.CheckBoxRecentes.Text = "Filtro por mais recentes";
-            this.CheckBoxRecentes.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.CheckBoxRecentes.UncheckedState.BorderRadius = 0;
-            this.CheckBoxRecentes.UncheckedState.BorderThickness = 0;
-            this.CheckBoxRecentes.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // checkBoxAtualizacao
-            // 
-            this.checkBoxAtualizacao.AutoSize = true;
-            this.checkBoxAtualizacao.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBoxAtualizacao.CheckedState.BorderRadius = 0;
-            this.checkBoxAtualizacao.CheckedState.BorderThickness = 0;
-            this.checkBoxAtualizacao.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.checkBoxAtualizacao.CheckMarkColor = System.Drawing.Color.Red;
-            this.checkBoxAtualizacao.Location = new System.Drawing.Point(902, 49);
-            this.checkBoxAtualizacao.Name = "checkBoxAtualizacao";
-            this.checkBoxAtualizacao.Size = new System.Drawing.Size(136, 17);
-            this.checkBoxAtualizacao.TabIndex = 121;
-            this.checkBoxAtualizacao.Text = "Atualização automatica";
-            this.checkBoxAtualizacao.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.checkBoxAtualizacao.UncheckedState.BorderRadius = 0;
-            this.checkBoxAtualizacao.UncheckedState.BorderThickness = 0;
-            this.checkBoxAtualizacao.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             // 
             // FormGerarBoleto
             // 
@@ -408,10 +336,6 @@
         private FontAwesome.Sharp.IconButton btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
         private Guna.UI2.WinForms.Guna2GradientButton btnVoltar;
-        private Guna.UI2.WinForms.Guna2CheckBox CheckBoxRecentes;
-        private Guna.UI2.WinForms.Guna2CheckBox checkBoxAtualizacao;
-        private Guna.UI2.WinForms.Guna2CheckBox CheckBoxFinalizado;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
