@@ -313,6 +313,7 @@
             this.btnGerarBoleto.Size = new System.Drawing.Size(136, 34);
             this.btnGerarBoleto.TabIndex = 119;
             this.btnGerarBoleto.Text = "Gerar Boleto";
+            this.btnGerarBoleto.Click += new System.EventHandler(this.btnGerarBoleto_Click);
             // 
             // sfDataGrid
             // 
@@ -320,6 +321,7 @@
             this.sfDataGrid.Location = new System.Drawing.Point(21, 213);
             this.sfDataGrid.Name = "sfDataGrid";
             this.sfDataGrid.Size = new System.Drawing.Size(819, 269);
+            this.sfDataGrid.Style.DragPreviewRowStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.sfDataGrid.TabIndex = 3;
             this.sfDataGrid.Text = "sfDataGrid";
             this.sfDataGrid.SelectionChanged += new Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventHandler(this.sfDataGrid_SelectionChanged);

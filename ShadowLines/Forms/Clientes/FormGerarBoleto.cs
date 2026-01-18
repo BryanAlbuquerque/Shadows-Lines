@@ -3,6 +3,7 @@ using ShadowLines.Models;
 using Syncfusion.WinForms.DataGrid;
 using System;
 using System.Windows.Forms;
+using ShadowLines.Utils;
 
 namespace ShadowLines.Forms.Clientes
 {
@@ -107,6 +108,19 @@ namespace ShadowLines.Forms.Clientes
             FormClientes formClientes = new FormClientes();
             formClientes.Show();
             this.Hide();
+        }
+
+        private void btnGerarBoleto_Click(object sender, EventArgs e)
+        {
+            if (sfDataGrid.SelectedItem == null)
+            {
+                MessageBox.Show("Selecione um agendamento pendente.");
+                return;
+            }
+
+            AgendamentoModel agendamento = sfDataGrid.SelectedItem as AgendamentoModel;
+
+            Utils.BoletoPdfGenerator.GerarBoleto(agendamento);
         }
     }
 }
