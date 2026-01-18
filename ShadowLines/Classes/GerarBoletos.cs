@@ -11,7 +11,7 @@ namespace ShadowLines.Classes
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
 
-        public static List<AgendamentoModel> ListarClientes(string termo)
+        public static List<AgendamentoModel> PesquisarClientes(string termo)
         {
             List<AgendamentoModel> lista = new List<AgendamentoModel>();
 
@@ -28,9 +28,12 @@ namespace ShadowLines.Classes
 
                     FROM Agendamentos A
                  INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
-                 WHERE Pagamento = 'Pendente'
-                    AND (C.Nome LIKE '%' + @termo + '%'
-                    AND A.Servico LIKE '%' + @termo + '%')";
+                 WHERE A.Pagamento = 'Pendente'
+                    AND (
+                        C.Nome LIKE '%' + @termo + '%'
+                        OR A.Servico LIKE '%' + @termo + '%'
+                        OR CONVERT(VARCHAR, A.DataAgendamento, 103) LIKE '%' + @termo + '%'
+                    )";
 
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))

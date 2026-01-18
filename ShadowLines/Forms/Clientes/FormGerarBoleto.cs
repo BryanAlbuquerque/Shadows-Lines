@@ -75,7 +75,7 @@ namespace ShadowLines.Forms.Clientes
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            sfDataGrid.DataSource = GerarBoletos.ListarClientes(txtBuscar.Text);
+            sfDataGrid.DataSource = GerarBoletos.PesquisarClientes(txtBuscar.Text);
         }
 
         private void btnLocalizar_Click(object sender, EventArgs e)
