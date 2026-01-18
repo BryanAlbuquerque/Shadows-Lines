@@ -577,6 +577,7 @@
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.iconPictureBox7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAlterarDadosFuncionarios";
             this.Text = "Alterar Dados Funcionarios";
             this.Load += new System.EventHandler(this.FormAlterarDadosFuncionarios_Load);

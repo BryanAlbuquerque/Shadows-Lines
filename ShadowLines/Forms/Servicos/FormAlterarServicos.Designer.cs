@@ -256,6 +256,7 @@
             this.Controls.Add(this.iconPictureBox4);
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.lblCliente);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAlterarServicos";
             this.Text = "FormAlterarServicos";
             this.Load += new System.EventHandler(this.FormAlterarServicos_Load);

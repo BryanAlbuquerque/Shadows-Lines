@@ -36,10 +36,10 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.sfDataGridPanel = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.customBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sfDataGridPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -143,6 +143,7 @@
             this.sfDataGridPanel.Location = new System.Drawing.Point(62, 177);
             this.sfDataGridPanel.Name = "sfDataGridPanel";
             this.sfDataGridPanel.Size = new System.Drawing.Size(974, 353);
+            this.sfDataGridPanel.Style.DragPreviewRowStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.sfDataGridPanel.Style.HeaderStyle.FilterIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.sfDataGridPanel.TabIndex = 39;
             this.sfDataGridPanel.Text = "sfDataGrid1";
@@ -157,16 +158,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(246, 35);
             this.guna2HtmlLabel2.TabIndex = 37;
             this.guna2HtmlLabel2.Text = "Shadows & Lines";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(216, 24);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(381, 42);
-            this.guna2HtmlLabel3.TabIndex = 38;
-            this.guna2HtmlLabel3.Text = "_____________________";
             // 
             // btnVoltar
             // 
@@ -224,6 +215,16 @@
             this.picLogo.TabIndex = 34;
             this.picLogo.TabStop = false;
             // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(216, 24);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(381, 42);
+            this.guna2HtmlLabel3.TabIndex = 38;
+            this.guna2HtmlLabel3.Text = "_____________________";
+            // 
             // FormFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +232,7 @@
             this.ClientSize = new System.Drawing.Size(1036, 605);
             this.Controls.Add(this.customBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "FormFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

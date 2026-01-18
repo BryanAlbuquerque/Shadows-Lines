@@ -443,6 +443,7 @@
             this.Controls.Add(this.lblFuncionario);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAlterarAgendamento";
             this.Text = "FormAlterarAgendamento";
             this.Load += new System.EventHandler(this.FormAlterarAgendamento_Load);

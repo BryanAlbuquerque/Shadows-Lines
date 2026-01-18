@@ -534,6 +534,7 @@
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.lblFuncionario);
             this.Controls.Add(this.guna2HtmlLabel5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadastrarFuncionario";
             this.Text = "FormCadastrarFuncionario";
             this.Load += new System.EventHandler(this.FormCadastrarFuncionario_Load);

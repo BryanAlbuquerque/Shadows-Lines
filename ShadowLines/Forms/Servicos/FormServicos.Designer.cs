@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormServicos));
             this.customBackground = new CustomBackgroundPanel();
+            this.btnExcluir = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAlterar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnCadastrar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
@@ -44,7 +45,6 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.btnExcluir = new Guna.UI2.WinForms.Guna2GradientButton();
             this.customBackground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sfDataGridPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -70,6 +70,28 @@
             this.customBackground.Name = "customBackground";
             this.customBackground.Size = new System.Drawing.Size(1105, 671);
             this.customBackground.TabIndex = 30;
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcluir.BorderRadius = 15;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcluir.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcluir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExcluir.FillColor = System.Drawing.Color.Black;
+            this.btnExcluir.FillColor2 = System.Drawing.Color.Navy;
+            this.btnExcluir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnExcluir.Location = new System.Drawing.Point(939, 297);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(112, 34);
+            this.btnExcluir.TabIndex = 43;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -149,6 +171,7 @@
             this.sfDataGridPanel.Location = new System.Drawing.Point(62, 177);
             this.sfDataGridPanel.Name = "sfDataGridPanel";
             this.sfDataGridPanel.Size = new System.Drawing.Size(871, 418);
+            this.sfDataGridPanel.Style.DragPreviewRowStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.sfDataGridPanel.Style.HeaderStyle.FilterIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.sfDataGridPanel.TabIndex = 39;
             this.sfDataGridPanel.Text = "sfDataGrid1";
@@ -257,28 +280,6 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
-            this.btnExcluir.BorderRadius = 15;
-            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExcluir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcluir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcluir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExcluir.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExcluir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExcluir.FillColor = System.Drawing.Color.Black;
-            this.btnExcluir.FillColor2 = System.Drawing.Color.Navy;
-            this.btnExcluir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.Location = new System.Drawing.Point(939, 297);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(112, 34);
-            this.btnExcluir.TabIndex = 43;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,6 +289,7 @@
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "FormServicos";
             this.Text = "FormServicos";

@@ -279,6 +279,7 @@
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCobranca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cobrança";

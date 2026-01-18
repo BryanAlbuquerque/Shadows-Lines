@@ -33,12 +33,12 @@
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBoxServicos = new System.Windows.Forms.ComboBox();
             this.lblPagamento = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblFuncionario = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCliente = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.comboBoxClientes = new System.Windows.Forms.ComboBox();
             this.comboBoxFuncionarios = new System.Windows.Forms.ComboBox();
-            this.comboBoxServicos = new System.Windows.Forms.ComboBox();
             this.txtData = new Guna.UI2.WinForms.Guna2TextBox();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
@@ -46,7 +46,6 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblValor = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -54,6 +53,7 @@
             this.btnAgendar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lblTitulo2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -184,6 +184,16 @@
             this.tabPage1.Text = "Agendamentos";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // comboBoxServicos
+            // 
+            this.comboBoxServicos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxServicos.FormattingEnabled = true;
+            this.comboBoxServicos.Location = new System.Drawing.Point(498, 134);
+            this.comboBoxServicos.Name = "comboBoxServicos";
+            this.comboBoxServicos.Size = new System.Drawing.Size(317, 28);
+            this.comboBoxServicos.TabIndex = 190;
+            this.comboBoxServicos.SelectionChangeCommitted += new System.EventHandler(this.comboBoxServicos_SelectionChangeCommitted);
+            // 
             // lblPagamento
             // 
             this.lblPagamento.BackColor = System.Drawing.Color.Transparent;
@@ -231,16 +241,6 @@
             this.comboBoxFuncionarios.Name = "comboBoxFuncionarios";
             this.comboBoxFuncionarios.Size = new System.Drawing.Size(317, 28);
             this.comboBoxFuncionarios.TabIndex = 191;
-            // 
-            // comboBoxServicos
-            // 
-            this.comboBoxServicos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxServicos.FormattingEnabled = true;
-            this.comboBoxServicos.Location = new System.Drawing.Point(498, 134);
-            this.comboBoxServicos.Name = "comboBoxServicos";
-            this.comboBoxServicos.Size = new System.Drawing.Size(317, 28);
-            this.comboBoxServicos.TabIndex = 190;
-            this.comboBoxServicos.SelectionChangeCommitted += new System.EventHandler(this.comboBoxServicos_SelectionChangeCommitted);
             // 
             // txtData
             // 
@@ -340,16 +340,6 @@
             this.lblData.Size = new System.Drawing.Size(81, 20);
             this.lblData.TabIndex = 116;
             this.lblData.Text = "Data Hoje";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(495, 112);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(73, 20);
-            this.guna2HtmlLabel1.TabIndex = 114;
-            this.guna2HtmlLabel1.Text = "Serviços";
             // 
             // txtStatus
             // 
@@ -459,6 +449,16 @@
             this.iconPictureBox2.Size = new System.Drawing.Size(42, 36);
             this.iconPictureBox2.TabIndex = 186;
             this.iconPictureBox2.TabStop = false;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(495, 112);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(73, 20);
+            this.guna2HtmlLabel1.TabIndex = 114;
+            this.guna2HtmlLabel1.Text = "Serviços";
             // 
             // iconPictureBox3
             // 
@@ -901,6 +901,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 604);
             this.Controls.Add(this.customBackgroundPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "FormAgendamentoNivelAcesso3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
