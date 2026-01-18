@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGerarBoleto));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.txtData = new System.Windows.Forms.TextBox();
+            this.txtServico = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.customBackgroundPanel1 = new CustomBackgroundPanel();
+            this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtSituacao = new System.Windows.Forms.TextBox();
             this.btnLocalizar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -48,40 +49,40 @@
             this.DateTimerDataAntiga = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnGerarBoleto = new Guna.UI2.WinForms.Guna2GradientButton();
             this.sfDataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.customBackgroundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 514);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 20);
-            this.textBox1.TabIndex = 124;
+            this.txtCliente.Location = new System.Drawing.Point(12, 514);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(168, 20);
+            this.txtCliente.TabIndex = 124;
             // 
-            // textBox2
+            // txtData
             // 
-            this.textBox2.Location = new System.Drawing.Point(216, 514);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(209, 20);
-            this.textBox2.TabIndex = 125;
+            this.txtData.Location = new System.Drawing.Point(216, 514);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(209, 20);
+            this.txtData.TabIndex = 125;
             // 
-            // textBox3
+            // txtServico
             // 
-            this.textBox3.Location = new System.Drawing.Point(470, 514);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(181, 20);
-            this.textBox3.TabIndex = 126;
+            this.txtServico.Location = new System.Drawing.Point(470, 514);
+            this.txtServico.Name = "txtServico";
+            this.txtServico.Size = new System.Drawing.Size(181, 20);
+            this.txtServico.TabIndex = 126;
             // 
-            // textBox4
+            // txtValor
             // 
-            this.textBox4.Location = new System.Drawing.Point(688, 514);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 20);
-            this.textBox4.TabIndex = 127;
+            this.txtValor.Location = new System.Drawing.Point(688, 514);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(168, 20);
+            this.txtValor.TabIndex = 127;
             // 
             // guna2HtmlLabel3
             // 
@@ -125,9 +126,10 @@
             // 
             // customBackgroundPanel1
             // 
+            this.customBackgroundPanel1.Controls.Add(this.btnVoltar);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel7);
             this.customBackgroundPanel1.Controls.Add(this.guna2PictureBox1);
-            this.customBackgroundPanel1.Controls.Add(this.textBox5);
+            this.customBackgroundPanel1.Controls.Add(this.txtSituacao);
             this.customBackgroundPanel1.Controls.Add(this.btnLocalizar);
             this.customBackgroundPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.customBackgroundPanel1.Controls.Add(this.lblData);
@@ -135,13 +137,35 @@
             this.customBackgroundPanel1.Controls.Add(this.DateTimerDataAntiga);
             this.customBackgroundPanel1.Controls.Add(this.txtBuscar);
             this.customBackgroundPanel1.Controls.Add(this.btnBuscar);
-            this.customBackgroundPanel1.Controls.Add(this.btnVoltar);
+            this.customBackgroundPanel1.Controls.Add(this.btnGerarBoleto);
             this.customBackgroundPanel1.Controls.Add(this.sfDataGrid);
             this.customBackgroundPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customBackgroundPanel1.Location = new System.Drawing.Point(0, 0);
             this.customBackgroundPanel1.Name = "customBackgroundPanel1";
             this.customBackgroundPanel1.Size = new System.Drawing.Size(1080, 641);
             this.customBackgroundPanel1.TabIndex = 133;
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVoltar.BackColor = System.Drawing.Color.Transparent;
+            this.btnVoltar.BorderRadius = 10;
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoltar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoltar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoltar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoltar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoltar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoltar.FillColor = System.Drawing.Color.Black;
+            this.btnVoltar.FillColor2 = System.Drawing.Color.Navy;
+            this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
+            this.btnVoltar.Location = new System.Drawing.Point(998, 8);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(79, 34);
+            this.btnVoltar.TabIndex = 164;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // guna2HtmlLabel7
             // 
@@ -165,12 +189,12 @@
             this.guna2PictureBox1.TabIndex = 163;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // textBox5
+            // txtSituacao
             // 
-            this.textBox5.Location = new System.Drawing.Point(889, 514);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(168, 20);
-            this.textBox5.TabIndex = 134;
+            this.txtSituacao.Location = new System.Drawing.Point(889, 514);
+            this.txtSituacao.Name = "txtSituacao";
+            this.txtSituacao.Size = new System.Drawing.Size(168, 20);
+            this.txtSituacao.TabIndex = 134;
             // 
             // btnLocalizar
             // 
@@ -269,35 +293,36 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // btnVoltar
+            // btnGerarBoleto
             // 
-            this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVoltar.BackColor = System.Drawing.Color.Transparent;
-            this.btnVoltar.BorderRadius = 15;
-            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVoltar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnVoltar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnVoltar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnVoltar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnVoltar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnVoltar.FillColor = System.Drawing.Color.Black;
-            this.btnVoltar.FillColor2 = System.Drawing.Color.Navy;
-            this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(932, 576);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(136, 34);
-            this.btnVoltar.TabIndex = 119;
-            this.btnVoltar.Text = "Gerar Boleto";
+            this.btnGerarBoleto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGerarBoleto.BackColor = System.Drawing.Color.Transparent;
+            this.btnGerarBoleto.BorderRadius = 15;
+            this.btnGerarBoleto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGerarBoleto.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerarBoleto.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerarBoleto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGerarBoleto.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGerarBoleto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGerarBoleto.FillColor = System.Drawing.Color.Black;
+            this.btnGerarBoleto.FillColor2 = System.Drawing.Color.Navy;
+            this.btnGerarBoleto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerarBoleto.ForeColor = System.Drawing.Color.White;
+            this.btnGerarBoleto.Location = new System.Drawing.Point(932, 576);
+            this.btnGerarBoleto.Name = "btnGerarBoleto";
+            this.btnGerarBoleto.Size = new System.Drawing.Size(136, 34);
+            this.btnGerarBoleto.TabIndex = 119;
+            this.btnGerarBoleto.Text = "Gerar Boleto";
             // 
             // sfDataGrid
             // 
             this.sfDataGrid.AccessibleName = "Table";
             this.sfDataGrid.Location = new System.Drawing.Point(21, 213);
             this.sfDataGrid.Name = "sfDataGrid";
-            this.sfDataGrid.Size = new System.Drawing.Size(904, 269);
+            this.sfDataGrid.Size = new System.Drawing.Size(819, 269);
             this.sfDataGrid.TabIndex = 3;
             this.sfDataGrid.Text = "sfDataGrid";
+            this.sfDataGrid.SelectionChanged += new Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventHandler(this.sfDataGrid_SelectionChanged);
             // 
             // FormGerarBoleto
             // 
@@ -308,10 +333,10 @@
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtValor);
+            this.Controls.Add(this.txtServico);
+            this.Controls.Add(this.txtData);
+            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.customBackgroundPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FormGerarBoleto";
@@ -335,11 +360,11 @@
         private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGrid;
         private FontAwesome.Sharp.IconButton btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
-        private Guna.UI2.WinForms.Guna2GradientButton btnVoltar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private Guna.UI2.WinForms.Guna2GradientButton btnGerarBoleto;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.TextBox txtData;
+        private System.Windows.Forms.TextBox txtServico;
+        private System.Windows.Forms.TextBox txtValor;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
@@ -348,7 +373,8 @@
         private CustomBackgroundPanel customBackgroundPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtSituacao;
         private Guna.UI2.WinForms.Guna2GradientButton btnLocalizar;
+        private Guna.UI2.WinForms.Guna2GradientButton btnVoltar;
     }
 }

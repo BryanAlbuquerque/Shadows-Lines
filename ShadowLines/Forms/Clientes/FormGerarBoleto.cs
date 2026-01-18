@@ -1,7 +1,8 @@
 ﻿using ShadowLines.Classes;
+using ShadowLines.Models;
 using Syncfusion.WinForms.DataGrid;
-using System.Windows.Forms;
 using System;
+using System.Windows.Forms;
 
 namespace ShadowLines.Forms.Clientes
 {
@@ -24,14 +25,22 @@ namespace ShadowLines.Forms.Clientes
         }
         private void FormGerarBoleto_Load(object sender, EventArgs e)
         {
+
+            DateTimerDataAntiga.Value = DateTime.Now.AddMonths(-1);
+            DateTimerDataRecente.Value = DateTime.Now;
+
             sfDataGrid.AutoGenerateColumns = false;
             sfDataGrid.AllowSorting = true;
             sfDataGrid.AllowEditing = false;
             sfDataGrid.AllowFiltering = true;
 
-            sfDataGrid.DataSource = GerarBoletos.ListarClientes(txtBuscar.Text);
-
             ConfigurarColunas();
+
+            txtCliente.ReadOnly = true;
+            txtData.ReadOnly = true;
+            txtServico.ReadOnly = true;
+            txtValor.ReadOnly = true;
+            txtSituacao.ReadOnly = true;
 
         }
 
@@ -47,6 +56,7 @@ namespace ShadowLines.Forms.Clientes
             dataAgendamento.MappingName = "DataAgendamento";
             dataAgendamento.HeaderText = "Data do Agendamento";
             dataAgendamento.Width = 200;
+            dataAgendamento.Format = "dd/MM/yyyy HH:mm";
             sfDataGrid.Columns.Add(dataAgendamento);
 
             GridTextColumn servico = new GridTextColumn();
@@ -59,6 +69,7 @@ namespace ShadowLines.Forms.Clientes
             valor.MappingName = "Valor";
             valor.HeaderText = "Valor";
             valor.Width = 220;
+            valor.Format = "C2";
             sfDataGrid.Columns.Add(valor);
         }
 
@@ -71,6 +82,31 @@ namespace ShadowLines.Forms.Clientes
         {
             sfDataGrid.DataSource = 
                 GerarBoletos.ListarClienteDataSelecionada(DateTimerDataAntiga.Value, DateTimerDataRecente.Value);
+        }
+
+        private void sfDataGrid_SelectionChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventArgs e)
+        {
+
+            if (sfDataGrid.SelectedItem == null)
+                return;
+
+            AgendamentoModel agendamento = sfDataGrid.SelectedItem as AgendamentoModel;
+
+            if (agendamento == null)
+                return;
+
+            txtCliente.Text = agendamento.NomeCliente;
+            txtData.Text = agendamento.DataAgendamento.ToString("dd/MM/yyyy");
+            txtServico.Text = agendamento.Servicos;
+            txtValor.Text = agendamento.Valor.ToString("C2");
+            txtSituacao.Text = "Pendente";
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            FormClientes formClientes = new FormClientes();
+            formClientes.Show();
+            this.Hide();
         }
     }
 }
