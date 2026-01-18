@@ -6,9 +6,11 @@ D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\ShadowLines.exe
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\ShadowLines.pdb
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\Azure.Core.dll
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\Azure.Identity.dll
+D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\BouncyCastle.Cryptography.dll
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\FontAwesome.Sharp.dll
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\Guna.UI2.dll
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.barcodes.dll
+D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.bouncy-castle-adapter.dll
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.bouncy-castle-connector.dll
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.commons.dll
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.forms.dll
@@ -80,7 +82,9 @@ D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\EnvDTE.dll
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\stdole.dll
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\Azure.Core.xml
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\Azure.Identity.xml
+D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\BouncyCastle.Cryptography.xml
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.barcodes.xml
+D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.bouncy-castle-adapter.xml
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.bouncy-castle-connector.xml
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.commons.xml
 D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\itext.forms.xml

@@ -3,7 +3,6 @@ using ShadowLines.Models;
 using Syncfusion.WinForms.DataGrid;
 using System;
 using System.Windows.Forms;
-using ShadowLines.Utils;
 
 namespace ShadowLines.Forms.Clientes
 {
@@ -81,7 +80,7 @@ namespace ShadowLines.Forms.Clientes
 
         private void btnLocalizar_Click(object sender, EventArgs e)
         {
-            sfDataGrid.DataSource = 
+            sfDataGrid.DataSource =
                 GerarBoletos.ListarClienteDataSelecionada(DateTimerDataAntiga.Value, DateTimerDataRecente.Value);
         }
 
@@ -112,15 +111,33 @@ namespace ShadowLines.Forms.Clientes
 
         private void btnGerarBoleto_Click(object sender, EventArgs e)
         {
-            if (sfDataGrid.SelectedItem == null)
+            if (string.IsNullOrEmpty(txtCliente.Text)
+                || string.IsNullOrEmpty(txtData.Text)
+                || string.IsNullOrEmpty(txtServico.Text)
+                || string.IsNullOrEmpty(txtValor.Text)
+                || string.IsNullOrEmpty(txtSituacao.Text))
             {
-                MessageBox.Show("Selecione um agendamento pendente.");
-                return;
+                MessageBox.Show("Selecione um Cliente para preencher todos os campos antes de gerar o boleto.");
             }
 
-            AgendamentoModel agendamento = sfDataGrid.SelectedItem as AgendamentoModel;
+            try
+            {
+                if (sfDataGrid.SelectedItem == null)
+                {
+                    MessageBox.Show("Selecione um agendamento pendente.");
+                    return;
+                }
 
-            Utils.BoletoPdfGenerator.GerarBoleto(agendamento);
+                AgendamentoModel agendamento = sfDataGrid.SelectedItem as AgendamentoModel;
+
+                Utils.BoletoPdfGenerator.GerarBoleto(agendamento);
+
+                MessageBox.Show("Boleto gerado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao gerar o boleto: " + ex.Message);
+            }
         }
     }
 }
