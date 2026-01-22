@@ -1,7 +1,5 @@
 ﻿using System.Windows.Forms;
-using ShadowLines.Forms;
 using System;
-using ShadowLines.Forms.Clientes;
 
 namespace ShadowLines
 {

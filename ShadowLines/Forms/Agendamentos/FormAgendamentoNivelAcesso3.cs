@@ -30,7 +30,7 @@ namespace ShadowLines.Forms.FormsMenu2
             var lista = Cliente.Select("%");
 
             comboBoxClientes.DataSource = lista;
-            comboBoxClientes.DisplayMember = "Nome_Completo";
+            comboBoxClientes.DisplayMember = "Nome";
             comboBoxClientes.ValueMember = "ClienteID";
             comboBoxClientes.SelectedIndex = -1;
 
