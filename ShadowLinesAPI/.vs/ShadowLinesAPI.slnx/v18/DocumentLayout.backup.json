@@ -37,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
@@ -120,19 +120,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\bryan\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
-              "ToolTip": "C:\\Users\\bryan\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-03T00:37:21.757Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
@@ -147,6 +134,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\bryan\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
+              "ToolTip": "C:\\Users\\bryan\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-03T00:37:21.757Z",
+              "EditorCaption": ""
             }
           ]
         }
