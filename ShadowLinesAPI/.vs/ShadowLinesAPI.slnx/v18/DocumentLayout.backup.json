@@ -1,32 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\",
+  "WorkspaceRootPath": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bryan\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlinesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlinesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlinesapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlinesapi\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|solutionrelative:smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlinesapi\\models\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlinesapi\\models\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|solutionrelative:models\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlinesapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlinesapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlinesapi\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|solutionrelative:smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlinesapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|solutionrelative:controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|c:\\users\\bryan\\documents\\shadows \u0026 lines\\shadowlinesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlinesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E825A44-E182-1A96-C549-CF628669B7C1}|ShadowLinesAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -43,50 +43,53 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\Program.cs",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\Program.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T17:57:29.498Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "EmailController.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\Controllers\\EmailController.cs",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\Controllers\\EmailController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmailController.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\Controllers\\EmailController.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\Controllers\\EmailController.cs",
               "RelativeToolTip": "Controllers\\EmailController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBoAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T22:42:46.635Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmailRequest.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\Models\\EmailRequest.cs",
-              "RelativeDocumentMoniker": "Models\\EmailRequest.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\Models\\EmailRequest.cs",
-              "RelativeToolTip": "Models\\EmailRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T22:43:39.142Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "EmailRequest.cs",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\Models\\EmailRequest.cs",
+              "RelativeDocumentMoniker": "Models\\EmailRequest.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\Models\\EmailRequest.cs",
+              "RelativeToolTip": "Models\\EmailRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T22:43:39.142Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\Services\\EmailService.cs",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\Services\\EmailService.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\Services\\EmailService.cs",
               "RelativeToolTip": "Services\\EmailService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T22:45:37.528Z",
               "IsPinned": true,
@@ -94,26 +97,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SmtpSettings.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\SmtpSettings.cs",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\SmtpSettings.cs",
               "RelativeDocumentMoniker": "SmtpSettings.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\SmtpSettings.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\SmtpSettings.cs",
               "RelativeToolTip": "SmtpSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T22:46:08.146Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\appsettings.json",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\Shadows \u0026 Lines\\ShadowLinesAPI\\appsettings.json",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLinesAPI\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-03T00:37:03.663Z",
               "IsPinned": true,
@@ -140,10 +144,8 @@
               "DocumentIndex": 0,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\bryan\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
               "ToolTip": "C:\\Users\\bryan\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\6f2f221f-8200-49e8-8756-7c0b5029338a\\secrets.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-03T00:37:21.757Z",
               "EditorCaption": ""
