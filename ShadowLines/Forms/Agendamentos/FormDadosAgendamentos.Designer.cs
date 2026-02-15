@@ -34,17 +34,31 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.customBackground = new CustomBackgroundPanel();
+            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtPagamento = new System.Windows.Forms.TextBox();
+            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtFuncionario = new System.Windows.Forms.TextBox();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.txtServico = new System.Windows.Forms.TextBox();
+            this.txtData = new System.Windows.Forms.TextBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtSituacao = new System.Windows.Forms.TextBox();
             this.btnAlterar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.txtBusca = new System.Windows.Forms.TextBox();
-            this.sfDataGridPanel = new Syncfusion.WinForms.DataGrid.SfDataGrid();
+            this.sfDataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnVoltar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.customBackground.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sfDataGridPanel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,19 +94,152 @@
             this.customBackground.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.customBackground.Controls.Add(this.guna2HtmlLabel11);
+            this.customBackground.Controls.Add(this.txtPagamento);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel10);
+            this.customBackground.Controls.Add(this.txtFuncionario);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel6);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel4);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel7);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel8);
+            this.customBackground.Controls.Add(this.txtValor);
+            this.customBackground.Controls.Add(this.txtServico);
+            this.customBackground.Controls.Add(this.txtData);
+            this.customBackground.Controls.Add(this.txtCliente);
+            this.customBackground.Controls.Add(this.guna2HtmlLabel9);
+            this.customBackground.Controls.Add(this.txtSituacao);
             this.customBackground.Controls.Add(this.btnAlterar);
             this.customBackground.Controls.Add(this.btnBuscar);
             this.customBackground.Controls.Add(this.txtBusca);
-            this.customBackground.Controls.Add(this.sfDataGridPanel);
+            this.customBackground.Controls.Add(this.sfDataGrid);
             this.customBackground.Controls.Add(this.guna2HtmlLabel2);
             this.customBackground.Controls.Add(this.guna2HtmlLabel3);
             this.customBackground.Controls.Add(this.btnVoltar);
             this.customBackground.Controls.Add(this.btnClose);
             this.customBackground.Controls.Add(this.picLogo);
-            this.customBackground.Location = new System.Drawing.Point(0, 0);
+            this.customBackground.Location = new System.Drawing.Point(0, 1);
             this.customBackground.Name = "customBackground";
-            this.customBackground.Size = new System.Drawing.Size(1027, 606);
+            this.customBackground.Size = new System.Drawing.Size(1028, 696);
             this.customBackground.TabIndex = 0;
+            // 
+            // guna2HtmlLabel11
+            // 
+            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(563, 548);
+            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
+            this.guna2HtmlLabel11.Size = new System.Drawing.Size(94, 20);
+            this.guna2HtmlLabel11.TabIndex = 150;
+            this.guna2HtmlLabel11.Text = "Pagamento";
+            // 
+            // txtPagamento
+            // 
+            this.txtPagamento.Location = new System.Drawing.Point(563, 574);
+            this.txtPagamento.Name = "txtPagamento";
+            this.txtPagamento.Size = new System.Drawing.Size(168, 20);
+            this.txtPagamento.TabIndex = 149;
+            // 
+            // guna2HtmlLabel10
+            // 
+            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(68, 548);
+            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(98, 20);
+            this.guna2HtmlLabel10.TabIndex = 148;
+            this.guna2HtmlLabel10.Text = "Funcionario";
+            // 
+            // txtFuncionario
+            // 
+            this.txtFuncionario.Location = new System.Drawing.Point(66, 574);
+            this.txtFuncionario.Name = "txtFuncionario";
+            this.txtFuncionario.Size = new System.Drawing.Size(192, 20);
+            this.txtFuncionario.TabIndex = 147;
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(563, 483);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(45, 20);
+            this.guna2HtmlLabel6.TabIndex = 144;
+            this.guna2HtmlLabel6.Text = "Valor";
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(308, 483);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(64, 20);
+            this.guna2HtmlLabel4.TabIndex = 143;
+            this.guna2HtmlLabel4.Text = "Serviço";
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(308, 548);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(181, 20);
+            this.guna2HtmlLabel7.TabIndex = 142;
+            this.guna2HtmlLabel7.Text = "Data do Agendamento";
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(68, 483);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(59, 20);
+            this.guna2HtmlLabel8.TabIndex = 141;
+            this.guna2HtmlLabel8.Text = "Cliente";
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(563, 509);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(168, 20);
+            this.txtValor.TabIndex = 140;
+            // 
+            // txtServico
+            // 
+            this.txtServico.Location = new System.Drawing.Point(308, 509);
+            this.txtServico.Name = "txtServico";
+            this.txtServico.Size = new System.Drawing.Size(181, 20);
+            this.txtServico.TabIndex = 139;
+            // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(308, 574);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(193, 20);
+            this.txtData.TabIndex = 138;
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.Location = new System.Drawing.Point(66, 509);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(192, 20);
+            this.txtCliente.TabIndex = 137;
+            // 
+            // guna2HtmlLabel9
+            // 
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(761, 483);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(74, 20);
+            this.guna2HtmlLabel9.TabIndex = 146;
+            this.guna2HtmlLabel9.Text = "Situação";
+            // 
+            // txtSituacao
+            // 
+            this.txtSituacao.Location = new System.Drawing.Point(761, 509);
+            this.txtSituacao.Name = "txtSituacao";
+            this.txtSituacao.Size = new System.Drawing.Size(168, 20);
+            this.txtSituacao.TabIndex = 145;
             // 
             // btnAlterar
             // 
@@ -109,7 +256,7 @@
             this.btnAlterar.FillColor2 = System.Drawing.Color.Navy;
             this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(792, 137);
+            this.btnAlterar.Location = new System.Drawing.Point(873, 625);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(112, 34);
             this.btnAlterar.TabIndex = 42;
@@ -141,25 +288,26 @@
             this.txtBusca.Size = new System.Drawing.Size(507, 20);
             this.txtBusca.TabIndex = 40;
             // 
-            // sfDataGridPanel
+            // sfDataGrid
             // 
-            this.sfDataGridPanel.AccessibleName = "Table";
-            this.sfDataGridPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.sfDataGrid.AccessibleName = "Table";
+            this.sfDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sfDataGridPanel.Location = new System.Drawing.Point(62, 177);
-            this.sfDataGridPanel.Name = "sfDataGridPanel";
-            this.sfDataGridPanel.Size = new System.Drawing.Size(962, 353);
-            this.sfDataGridPanel.Style.HeaderStyle.FilterIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.sfDataGridPanel.TabIndex = 39;
-            this.sfDataGridPanel.Text = "sfDataGrid1";
+            this.sfDataGrid.Location = new System.Drawing.Point(62, 177);
+            this.sfDataGrid.Name = "sfDataGrid";
+            this.sfDataGrid.Size = new System.Drawing.Size(963, 295);
+            this.sfDataGrid.Style.DragPreviewRowStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.sfDataGrid.Style.HeaderStyle.FilterIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.sfDataGrid.TabIndex = 39;
+            this.sfDataGrid.Text = "sfDataGrid";
+            this.sfDataGrid.SelectionChanged += new Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventHandler(this.sfDataGridPanel_SelectionChanged);
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(203, 24);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(157, 3);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(246, 35);
             this.guna2HtmlLabel2.TabIndex = 37;
@@ -169,7 +317,7 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(203, 35);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(185, 11);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(381, 42);
             this.guna2HtmlLabel3.TabIndex = 38;
@@ -190,9 +338,9 @@
             this.btnVoltar.FillColor2 = System.Drawing.Color.Navy;
             this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(910, 137);
+            this.btnVoltar.Location = new System.Drawing.Point(873, 3);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(112, 34);
+            this.btnVoltar.Size = new System.Drawing.Size(112, 29);
             this.btnVoltar.TabIndex = 36;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click_1);
@@ -212,7 +360,7 @@
             this.btnClose.FillColor2 = System.Drawing.Color.Navy;
             this.btnClose.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(990, 3);
+            this.btnClose.Location = new System.Drawing.Point(991, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(34, 29);
             this.btnClose.TabIndex = 35;
@@ -235,7 +383,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 606);
+            this.ClientSize = new System.Drawing.Size(1027, 696);
             this.Controls.Add(this.customBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -246,7 +394,7 @@
             this.Load += new System.EventHandler(this.ClientesDados_Load);
             this.customBackground.ResumeLayout(false);
             this.customBackground.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sfDataGridPanel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
@@ -262,9 +410,23 @@
         private Guna.UI2.WinForms.Guna2PictureBox picLogo;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGridPanel;
+        private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGrid;
         private System.Windows.Forms.TextBox txtBusca;
         private FontAwesome.Sharp.IconButton btnBuscar;
         private Guna.UI2.WinForms.Guna2GradientButton btnAlterar;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.TextBox txtServico;
+        private System.Windows.Forms.TextBox txtData;
+        private System.Windows.Forms.TextBox txtCliente;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private System.Windows.Forms.TextBox txtSituacao;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private System.Windows.Forms.TextBox txtFuncionario;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private System.Windows.Forms.TextBox txtPagamento;
     }
 }

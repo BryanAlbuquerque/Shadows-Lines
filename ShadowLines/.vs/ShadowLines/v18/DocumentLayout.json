@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\agendamentos\\formalteraragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\agendamentos\\formalteraragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\agendamentos\\formdadosagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\agendamentos\\formdadosagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\agendamentos\\formdadosagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\agendamentos\\formdadosagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\agendamentos\\formalteraragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\agendamentos\\formalteraragendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,8 +26,35 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormDadosAgendamentos.cs",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormDadosAgendamentos.cs",
+              "RelativeDocumentMoniker": "Forms\\Agendamentos\\FormDadosAgendamentos.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormDadosAgendamentos.cs",
+              "RelativeToolTip": "Forms\\Agendamentos\\FormDadosAgendamentos.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAMwJYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T20:40:28.842Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormDadosAgendamentos.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormDadosAgendamentos.cs",
+              "RelativeDocumentMoniker": "Forms\\Agendamentos\\FormDadosAgendamentos.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormDadosAgendamentos.cs [Design]",
+              "RelativeToolTip": "Forms\\Agendamentos\\FormDadosAgendamentos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T20:51:56.741Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -26,6 +70,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormAlterarAgendamento.cs",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormAlterarAgendamento.cs",
+              "RelativeDocumentMoniker": "Forms\\Agendamentos\\FormAlterarAgendamento.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormAlterarAgendamento.cs",
+              "RelativeToolTip": "Forms\\Agendamentos\\FormAlterarAgendamento.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwGwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T20:58:02.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormAlterarAgendamento.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormAlterarAgendamento.cs",
+              "RelativeDocumentMoniker": "Forms\\Agendamentos\\FormAlterarAgendamento.cs",
+              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormAlterarAgendamento.cs [Design]",
+              "RelativeToolTip": "Forms\\Agendamentos\\FormAlterarAgendamento.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T20:58:00.538Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -1,9 +1,10 @@
-﻿using System;
-using ShadowLines.Classes;
-using System.Windows.Forms;
+﻿using ShadowLines.Classes;
+using ShadowLines.Forms.Agendamentos;
+using ShadowLines.Models;
 using Syncfusion.WinForms.DataGrid;
 using Syncfusion.WinForms.DataGrid.Enums;
-using ShadowLines.Forms.Agendamentos;
+using System;
+using System.Windows.Forms;
 
 namespace ShadowLines.Forms
 {
@@ -17,13 +18,13 @@ namespace ShadowLines.Forms
         private void ClientesDados_Load(object sender, EventArgs e)
         {
 
-            sfDataGridPanel.AutoGenerateColumns = false;
-            sfDataGridPanel.AllowSorting = true;
-            sfDataGridPanel.AllowFiltering = true;
-            sfDataGridPanel.FilterRowPosition = RowPosition.Top;
+            sfDataGrid.AutoGenerateColumns = false;
+            sfDataGrid.AllowSorting = true;
+            sfDataGrid.AllowFiltering = true;
+            sfDataGrid.FilterRowPosition = RowPosition.Top;
 
             ConfigurarColunas();
-            sfDataGridPanel.DataSource = Agendamento.Busca("%");
+            sfDataGrid.DataSource = Agendamento.Busca("%");
         }
 
         private void ConfigurarColunas()
@@ -32,13 +33,13 @@ namespace ShadowLines.Forms
             nome.MappingName = "NomeCliente";
             nome.HeaderText = "Nome do Cliente";
             nome.Width = 220;
-            sfDataGridPanel.Columns.Add(nome);
+            sfDataGrid.Columns.Add(nome);
 
             GridTextColumn nomeFuncionario = new GridTextColumn();
             nomeFuncionario.MappingName = "NomeFuncionario";
             nomeFuncionario.HeaderText = "Nome do Funcionario";
             nomeFuncionario.Width = 170;
-            sfDataGridPanel.Columns.Add(nomeFuncionario);
+            sfDataGrid.Columns.Add(nomeFuncionario);
 
 
             GridTextColumn dataAgendamento = new GridTextColumn();
@@ -46,32 +47,32 @@ namespace ShadowLines.Forms
             dataAgendamento.HeaderText = "Data do Agendamento";
             dataAgendamento.Width = 200;
             dataAgendamento.Format = "dd/MM/yyyy HH:mm";
-            sfDataGridPanel.Columns.Add(dataAgendamento);
+            sfDataGrid.Columns.Add(dataAgendamento);
 
             GridTextColumn servico = new GridTextColumn();
             servico.MappingName = "Servicos";
             servico.HeaderText = "Serviço";
             servico.Width = 180;
-            sfDataGridPanel.Columns.Add(servico);
+            sfDataGrid.Columns.Add(servico);
 
             GridTextColumn valor = new GridTextColumn();
             valor.MappingName = "Valor";
             valor.HeaderText = "Valor";
             valor.Format = "C2";
             valor.Width = 220;
-            sfDataGridPanel.Columns.Add(valor);
+            sfDataGrid.Columns.Add(valor);
 
             GridTextColumn situacao = new GridTextColumn();
             situacao.MappingName = "Situacao";
             situacao.HeaderText = "Situação do agendamento";
             situacao.Width = 200;
-            sfDataGridPanel.Columns.Add(situacao);
+            sfDataGrid.Columns.Add(situacao);
 
             GridTextColumn pagamento = new GridTextColumn();
             pagamento.MappingName = "Pagamento";
             pagamento.HeaderText = "Pagamento";
             pagamento.Width = 180;
-            sfDataGridPanel.Columns.Add(pagamento);
+            sfDataGrid.Columns.Add(pagamento);
         }
 
 
@@ -114,7 +115,7 @@ namespace ShadowLines.Forms
         {
             Agendamento agendamento = new Agendamento();
 
-            sfDataGridPanel.DataSource = Agendamento.Busca(txtBusca.Text);
+            sfDataGrid.DataSource = Agendamento.Busca(txtBusca.Text);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -127,6 +128,25 @@ namespace ShadowLines.Forms
             FormAlterarAgendamento alterarAgendamento = new FormAlterarAgendamento();
             alterarAgendamento.MdiParent = this.MdiParent;
             alterarAgendamento.Show();
+        }
+
+        private void sfDataGridPanel_SelectionChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventArgs e)
+        {
+            if (sfDataGrid.SelectedItem == null)
+                return;
+
+            AgendamentoModel agendamento = sfDataGrid.SelectedItem as AgendamentoModel;
+
+            if (agendamento == null)
+                return;
+
+            txtCliente.Text = agendamento.NomeCliente;
+            txtFuncionario.Text = agendamento.NomeFuncionario;
+            txtData.Text = agendamento.DataAgendamento.ToString("dd/MM/yyyy");
+            txtServico.Text = agendamento.Servicos;
+            txtValor.Text = agendamento.Valor.ToString("C2");
+            txtPagamento.Text = agendamento.Pagamento;
+            txtSituacao.Text = "Pendente";
         }
     }
 }

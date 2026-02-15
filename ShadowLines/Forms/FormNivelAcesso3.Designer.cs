@@ -35,13 +35,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClientes = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnServicos = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnRelatorios = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bntFuncionarios = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnDados = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAgendamentos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
@@ -52,7 +50,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -104,13 +101,11 @@
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.btnClientes);
             this.panel1.Controls.Add(this.btnServicos);
-            this.panel1.Controls.Add(this.btnRelatorios);
             this.panel1.Controls.Add(this.bntFuncionarios);
             this.panel1.Controls.Add(this.btnDados);
             this.panel1.Controls.Add(this.btnAgendamentos);
             this.panel1.Controls.Add(this.iconPictureBox7);
             this.panel1.Controls.Add(this.iconPictureBox3);
-            this.panel1.Controls.Add(this.iconPictureBox6);
             this.panel1.Controls.Add(this.iconPictureBox5);
             this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Controls.Add(this.iconPictureBox2);
@@ -161,26 +156,6 @@
             this.btnServicos.TabIndex = 90;
             this.btnServicos.Text = "Serviços";
             this.btnServicos.Click += new System.EventHandler(this.btnServicos_Click);
-            // 
-            // btnRelatorios
-            // 
-            this.btnRelatorios.BorderRadius = 5;
-            this.btnRelatorios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRelatorios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRelatorios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRelatorios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRelatorios.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRelatorios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRelatorios.FillColor = System.Drawing.Color.Black;
-            this.btnRelatorios.FillColor2 = System.Drawing.Color.Black;
-            this.btnRelatorios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorios.ForeColor = System.Drawing.Color.White;
-            this.btnRelatorios.Location = new System.Drawing.Point(68, 576);
-            this.btnRelatorios.Name = "btnRelatorios";
-            this.btnRelatorios.Size = new System.Drawing.Size(144, 42);
-            this.btnRelatorios.TabIndex = 86;
-            this.btnRelatorios.Text = "Relatórios";
-            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // bntFuncionarios
             // 
@@ -266,18 +241,6 @@
             this.iconPictureBox3.Size = new System.Drawing.Size(57, 40);
             this.iconPictureBox3.TabIndex = 89;
             this.iconPictureBox3.TabStop = false;
-            // 
-            // iconPictureBox6
-            // 
-            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
-            this.iconPictureBox6.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.IconSize = 42;
-            this.iconPictureBox6.Location = new System.Drawing.Point(29, 576);
-            this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(46, 42);
-            this.iconPictureBox6.TabIndex = 87;
-            this.iconPictureBox6.TabStop = false;
             // 
             // iconPictureBox5
             // 
@@ -372,7 +335,7 @@
             this.roundedPanel3.Size = new System.Drawing.Size(59, 683);
             this.roundedPanel3.TabIndex = 81;
             // 
-            // FormNivelAcesso2
+            // FormNivelAcesso3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -385,7 +348,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormNivelAcesso2";
+            this.Name = "FormNivelAcesso3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -394,7 +357,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
@@ -419,11 +381,9 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2GradientButton btnDados;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
         private Guna.UI2.WinForms.Guna2GradientButton btnDesconectar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private Guna.UI2.WinForms.Guna2GradientButton bntFuncionarios;
-        private Guna.UI2.WinForms.Guna2GradientButton btnRelatorios;
         private Guna.UI2.WinForms.Guna2GradientButton btnServicos;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
     }

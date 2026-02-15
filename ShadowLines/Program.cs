@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System;
+using ShadowLines.Forms;
 
 namespace ShadowLines
 {
@@ -13,7 +14,7 @@ namespace ShadowLines
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new FormDadosAgendamentos());
         }
     }
 }

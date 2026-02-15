@@ -226,7 +226,6 @@ D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.FormLogin.resource
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormNivelAcesso1.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormNivelAcesso2.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormsMenu2.FormAgendamentoNivelAcesso3.resources
-D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormRelatorios.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Funcionarios.FormAlterarDadosFuncionarios.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Funcionarios.FormCadastrarFuncionario.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormsMenu2.FormFuncionarios.resources

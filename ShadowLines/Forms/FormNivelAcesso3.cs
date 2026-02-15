@@ -109,12 +109,6 @@ namespace ShadowLines.Forms
             this.Hide();
         }
 
-        private void btnRelatorios_Click(object sender, System.EventArgs e)
-        {
-            FormRelatorios relatorios = new FormRelatorios();
-            relatorios.Show();
-            this.Hide();
-        }
 
         private void btnServicos_Click(object sender, System.EventArgs e)
         {
