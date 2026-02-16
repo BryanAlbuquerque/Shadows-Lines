@@ -190,7 +190,7 @@ namespace ShadowLines.Classes
                         SELECT TOP 1 AgendamentoID 
                         FROM Agendamentos
                         WHERE ClienteID = @ClienteID
-                          AND DataAgendamento >= CAST(GETDATE() AS DATE)
+
                           AND Situacao <> 'Cancelado'
                           AND Situacao <> 'Finalizado'
                         ORDER BY DataAgendamento DESC";
@@ -288,32 +288,6 @@ namespace ShadowLines.Classes
                     cmd.Parameters.AddWithValue("@DataAgendamento", ag.DataAgendamento);
                     cmd.Parameters.AddWithValue("@Servicos", ag.Servicos);
                     cmd.Parameters.AddWithValue("@Valor", ag.Valor);
-
-                    conn.Open();
-                    return cmd.ExecuteNonQuery() > 0;
-                }
-            }
-        }
-
-        public bool UpdateSituacao(AgendamentoModel ag)
-        {
-
-            ag.AgendamentoID = GetUltimoAgendamentoId(ag.ClienteID);
-
-            if (ag.AgendamentoID == 0)
-                return false;
-
-            using (SqlConnection conn = new SqlConnection(_connectionString))
-            {
-                string query = @"
-                    UPDATE Agendamentos SET
-                    Situacao = @Situacao
-                    WHERE AgendamentoID = @AgendamentoID";
-
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@AgendamentoID", ag.AgendamentoID);
-                    cmd.Parameters.AddWithValue("@Situacao", ag.Situacao);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery() > 0;

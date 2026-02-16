@@ -1,5 +1,4 @@
 ﻿using ShadowLines.Classes;
-using ShadowLines.Forms.Agendamentos;
 using ShadowLines.Models;
 using Syncfusion.WinForms.DataGrid;
 using Syncfusion.WinForms.DataGrid.Enums;
@@ -15,6 +14,24 @@ namespace ShadowLines.Forms
             InitializeComponent();
         }
 
+        public void PopularComboBoxFuncionarios()
+        {
+            var lista = Funcionario.Select();
+            comboBoxFuncionario.DataSource = lista;
+            comboBoxFuncionario.DisplayMember = "Nome";
+            comboBoxFuncionario.ValueMember = "FuncionarioID";
+            comboBoxFuncionario.SelectedIndex = -1;
+        }
+
+        public void PopularComboBoxServicos()
+        {
+            var lista = Servico.Select();
+
+            comboBoxServicos.DataSource = lista;
+            comboBoxServicos.DisplayMember = "Nome";
+            comboBoxServicos.ValueMember = "ServicoID";
+            comboBoxServicos.SelectedIndex = -1;
+        }
         private void ClientesDados_Load(object sender, EventArgs e)
         {
 
@@ -24,7 +41,11 @@ namespace ShadowLines.Forms
             sfDataGrid.FilterRowPosition = RowPosition.Top;
 
             ConfigurarColunas();
+            PopularComboBoxFuncionarios();
+            PopularComboBoxServicos();
             sfDataGrid.DataSource = Agendamento.Busca("%");
+
+            txtValor.Text = null;
         }
 
         private void ConfigurarColunas()
@@ -123,11 +144,61 @@ namespace ShadowLines.Forms
             Pesquisar();
         }
 
+        public void Salvar()
+        {
+            if (sfDataGrid.SelectedItem == null)
+            {
+                MessageBox.Show("Erro! Selecione um agendamento na tabela.");
+                return;
+            }
+
+            try
+            {
+                AgendamentoModel selecionado = sfDataGrid.SelectedItem as AgendamentoModel;
+
+                if (selecionado == null)
+                {
+                    MessageBox.Show("Erro ao obter o agendamento selecionado.");
+                    return;
+                }
+
+                AgendamentoModel ag = new AgendamentoModel();
+
+                ag.AgendamentoID = selecionado.AgendamentoID;
+                ag.ClienteID = selecionado.ClienteID;
+
+                ag.FuncionarioID = Convert.ToInt32(comboBoxFuncionario.SelectedValue);
+                ag.DataAgendamento = DateTime.Parse(txtData.Text);
+                ag.Servicos = comboBoxServicos.Text;
+                ag.Valor = decimal.Parse(txtValor.Text.Replace("R$", "").Trim());
+                ag.Situacao = txtSituacao.Text;
+                ag.Pagamento = txtPagamento.Text;
+
+                Agendamento agendamento = new Agendamento();
+                bool ok = agendamento.UpdateTable(ag);
+
+                if (ok)
+                {
+                    MessageBox.Show("Dados atualizados com sucesso!", "Sucesso",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    sfDataGrid.DataSource = Agendamento.Busca("%");
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao alterar os dados.", "Aviso",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocorreu um erro: {ex.Message}");
+            }
+        }
+
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            FormAlterarAgendamento alterarAgendamento = new FormAlterarAgendamento();
-            alterarAgendamento.MdiParent = this.MdiParent;
-            alterarAgendamento.Show();
+            Salvar();
         }
 
         private void sfDataGridPanel_SelectionChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventArgs e)
@@ -141,12 +212,20 @@ namespace ShadowLines.Forms
                 return;
 
             txtCliente.Text = agendamento.NomeCliente;
-            txtFuncionario.Text = agendamento.NomeFuncionario;
+            comboBoxFuncionario.Text = agendamento.NomeFuncionario;
             txtData.Text = agendamento.DataAgendamento.ToString("dd/MM/yyyy");
-            txtServico.Text = agendamento.Servicos;
+            comboBoxServicos.Text = agendamento.Servicos;
             txtValor.Text = agendamento.Valor.ToString("C2");
             txtPagamento.Text = agendamento.Pagamento;
             txtSituacao.Text = "Pendente";
+        }
+
+        private void comboBoxServicos_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (comboBoxServicos.SelectedIndex == -1) return;
+
+            ServicoModel servico = (ServicoModel)comboBoxServicos.SelectedItem;
+            txtValor.Text = servico.Valor.ToString("F2");
         }
     }
 }

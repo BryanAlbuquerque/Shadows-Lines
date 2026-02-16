@@ -212,7 +212,6 @@ D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\zh-Hant\Microsoft.SqlServer.Ty
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.csproj.AssemblyReference.cache
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.csproj.SuggestedBindingRedirects.cache
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.exe.config
-D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Agendamentos.FormAlterarAgendamento.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormDadosAgendamentos.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormClientes.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Clientes.FormCobranca.resources

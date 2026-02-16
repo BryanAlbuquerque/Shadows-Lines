@@ -34,16 +34,16 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.customBackground = new CustomBackgroundPanel();
+            this.comboBoxServicos = new System.Windows.Forms.ComboBox();
+            this.comboBoxFuncionario = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtPagamento = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtFuncionario = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtValor = new System.Windows.Forms.TextBox();
-            this.txtServico = new System.Windows.Forms.TextBox();
             this.txtData = new System.Windows.Forms.TextBox();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -94,16 +94,16 @@
             this.customBackground.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.customBackground.Controls.Add(this.comboBoxServicos);
+            this.customBackground.Controls.Add(this.comboBoxFuncionario);
             this.customBackground.Controls.Add(this.guna2HtmlLabel11);
             this.customBackground.Controls.Add(this.txtPagamento);
             this.customBackground.Controls.Add(this.guna2HtmlLabel10);
-            this.customBackground.Controls.Add(this.txtFuncionario);
             this.customBackground.Controls.Add(this.guna2HtmlLabel6);
             this.customBackground.Controls.Add(this.guna2HtmlLabel4);
             this.customBackground.Controls.Add(this.guna2HtmlLabel7);
             this.customBackground.Controls.Add(this.guna2HtmlLabel8);
             this.customBackground.Controls.Add(this.txtValor);
-            this.customBackground.Controls.Add(this.txtServico);
             this.customBackground.Controls.Add(this.txtData);
             this.customBackground.Controls.Add(this.txtCliente);
             this.customBackground.Controls.Add(this.guna2HtmlLabel9);
@@ -122,11 +122,29 @@
             this.customBackground.Size = new System.Drawing.Size(1028, 696);
             this.customBackground.TabIndex = 0;
             // 
+            // comboBoxServicos
+            // 
+            this.comboBoxServicos.FormattingEnabled = true;
+            this.comboBoxServicos.ItemHeight = 13;
+            this.comboBoxServicos.Location = new System.Drawing.Point(309, 556);
+            this.comboBoxServicos.Name = "comboBoxServicos";
+            this.comboBoxServicos.Size = new System.Drawing.Size(193, 21);
+            this.comboBoxServicos.TabIndex = 205;
+            this.comboBoxServicos.SelectedValueChanged += new System.EventHandler(this.comboBoxServicos_SelectedValueChanged);
+            // 
+            // comboBoxFuncionario
+            // 
+            this.comboBoxFuncionario.FormattingEnabled = true;
+            this.comboBoxFuncionario.Location = new System.Drawing.Point(62, 621);
+            this.comboBoxFuncionario.Name = "comboBoxFuncionario";
+            this.comboBoxFuncionario.Size = new System.Drawing.Size(197, 21);
+            this.comboBoxFuncionario.TabIndex = 202;
+            // 
             // guna2HtmlLabel11
             // 
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(563, 548);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(564, 596);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(94, 20);
             this.guna2HtmlLabel11.TabIndex = 150;
@@ -134,7 +152,7 @@
             // 
             // txtPagamento
             // 
-            this.txtPagamento.Location = new System.Drawing.Point(563, 574);
+            this.txtPagamento.Location = new System.Drawing.Point(564, 622);
             this.txtPagamento.Name = "txtPagamento";
             this.txtPagamento.Size = new System.Drawing.Size(168, 20);
             this.txtPagamento.TabIndex = 149;
@@ -143,24 +161,17 @@
             // 
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(68, 548);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(69, 596);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(98, 20);
             this.guna2HtmlLabel10.TabIndex = 148;
             this.guna2HtmlLabel10.Text = "Funcionario";
             // 
-            // txtFuncionario
-            // 
-            this.txtFuncionario.Location = new System.Drawing.Point(66, 574);
-            this.txtFuncionario.Name = "txtFuncionario";
-            this.txtFuncionario.Size = new System.Drawing.Size(192, 20);
-            this.txtFuncionario.TabIndex = 147;
-            // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(563, 483);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(564, 531);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(45, 20);
             this.guna2HtmlLabel6.TabIndex = 144;
@@ -170,7 +181,7 @@
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(308, 483);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(309, 531);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(64, 20);
             this.guna2HtmlLabel4.TabIndex = 143;
@@ -180,7 +191,7 @@
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(308, 548);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(309, 596);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(181, 20);
             this.guna2HtmlLabel7.TabIndex = 142;
@@ -190,7 +201,7 @@
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(68, 483);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(69, 531);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(59, 20);
             this.guna2HtmlLabel8.TabIndex = 141;
@@ -198,28 +209,21 @@
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(563, 509);
+            this.txtValor.Location = new System.Drawing.Point(564, 557);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(168, 20);
             this.txtValor.TabIndex = 140;
             // 
-            // txtServico
-            // 
-            this.txtServico.Location = new System.Drawing.Point(308, 509);
-            this.txtServico.Name = "txtServico";
-            this.txtServico.Size = new System.Drawing.Size(181, 20);
-            this.txtServico.TabIndex = 139;
-            // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(308, 574);
+            this.txtData.Location = new System.Drawing.Point(309, 622);
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(193, 20);
             this.txtData.TabIndex = 138;
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(66, 509);
+            this.txtCliente.Location = new System.Drawing.Point(67, 557);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(192, 20);
             this.txtCliente.TabIndex = 137;
@@ -228,7 +232,7 @@
             // 
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(761, 483);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(762, 531);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(74, 20);
             this.guna2HtmlLabel9.TabIndex = 146;
@@ -236,14 +240,13 @@
             // 
             // txtSituacao
             // 
-            this.txtSituacao.Location = new System.Drawing.Point(761, 509);
+            this.txtSituacao.Location = new System.Drawing.Point(762, 557);
             this.txtSituacao.Name = "txtSituacao";
             this.txtSituacao.Size = new System.Drawing.Size(168, 20);
             this.txtSituacao.TabIndex = 145;
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAlterar.BackColor = System.Drawing.Color.Transparent;
             this.btnAlterar.BorderRadius = 15;
             this.btnAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -256,7 +259,7 @@
             this.btnAlterar.FillColor2 = System.Drawing.Color.Navy;
             this.btnAlterar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(873, 625);
+            this.btnAlterar.Location = new System.Drawing.Point(784, 608);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(112, 34);
             this.btnAlterar.TabIndex = 42;
@@ -419,14 +422,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private System.Windows.Forms.TextBox txtValor;
-        private System.Windows.Forms.TextBox txtServico;
         private System.Windows.Forms.TextBox txtData;
         private System.Windows.Forms.TextBox txtCliente;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private System.Windows.Forms.TextBox txtSituacao;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private System.Windows.Forms.TextBox txtFuncionario;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private System.Windows.Forms.TextBox txtPagamento;
+        private System.Windows.Forms.ComboBox comboBoxFuncionario;
+        private System.Windows.Forms.ComboBox comboBoxServicos;
     }
 }

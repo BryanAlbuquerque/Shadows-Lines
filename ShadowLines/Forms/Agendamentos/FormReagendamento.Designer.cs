@@ -36,20 +36,17 @@
             this.lblTitulo2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.comboBoxServicos = new System.Windows.Forms.ComboBox();
-            this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblValor = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
+            this.txtValor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCliente = new Guna.UI2.WinForms.Guna2TextBox();
+            this.sfDataGrid1 = new Syncfusion.WinForms.DataGrid.SfDataGrid();
+            this.btnBuscar = new FontAwesome.Sharp.IconButton();
+            this.txtBusca = new System.Windows.Forms.TextBox();
+            this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtData
@@ -67,12 +64,12 @@
             this.txtData.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtData.Location = new System.Drawing.Point(59, 243);
+            this.txtData.Location = new System.Drawing.Point(666, 344);
             this.txtData.Name = "txtData";
             this.txtData.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtData.PlaceholderText = "";
             this.txtData.SelectedText = "";
-            this.txtData.Size = new System.Drawing.Size(262, 30);
+            this.txtData.Size = new System.Drawing.Size(271, 30);
             this.txtData.TabIndex = 75;
             // 
             // lblMudarData
@@ -82,7 +79,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMudarData.BackColor = System.Drawing.Color.Transparent;
             this.lblMudarData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMudarData.Location = new System.Drawing.Point(63, 223);
+            this.lblMudarData.Location = new System.Drawing.Point(666, 318);
             this.lblMudarData.Name = "lblMudarData";
             this.lblMudarData.Size = new System.Drawing.Size(179, 20);
             this.lblMudarData.TabIndex = 74;
@@ -95,7 +92,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblClient.BackColor = System.Drawing.Color.Transparent;
             this.lblClient.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClient.Location = new System.Drawing.Point(59, 133);
+            this.lblClient.Location = new System.Drawing.Point(666, 244);
             this.lblClient.Name = "lblClient";
             this.lblClient.Size = new System.Drawing.Size(133, 20);
             this.lblClient.TabIndex = 73;
@@ -115,9 +112,9 @@
             this.btnReagendar.FillColor2 = System.Drawing.Color.Black;
             this.btnReagendar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReagendar.ForeColor = System.Drawing.Color.White;
-            this.btnReagendar.Location = new System.Drawing.Point(0, 327);
+            this.btnReagendar.Location = new System.Drawing.Point(0, 469);
             this.btnReagendar.Name = "btnReagendar";
-            this.btnReagendar.Size = new System.Drawing.Size(739, 34);
+            this.btnReagendar.Size = new System.Drawing.Size(992, 34);
             this.btnReagendar.TabIndex = 77;
             this.btnReagendar.Text = "Reagendar";
             this.btnReagendar.Click += new System.EventHandler(this.btnReagendar_Click);
@@ -151,25 +148,17 @@
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(189, 24);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(193, 21);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(381, 42);
             this.guna2HtmlLabel5.TabIndex = 101;
             this.guna2HtmlLabel5.Text = "_____________________";
             // 
-            // comboBoxCliente
-            // 
-            this.comboBoxCliente.FormattingEnabled = true;
-            this.comboBoxCliente.Location = new System.Drawing.Point(55, 155);
-            this.comboBoxCliente.Name = "comboBoxCliente";
-            this.comboBoxCliente.Size = new System.Drawing.Size(266, 21);
-            this.comboBoxCliente.TabIndex = 103;
-            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(430, 127);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(666, 182);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(73, 20);
             this.guna2HtmlLabel1.TabIndex = 105;
@@ -179,12 +168,22 @@
             // 
             this.comboBoxServicos.FormattingEnabled = true;
             this.comboBoxServicos.ItemHeight = 13;
-            this.comboBoxServicos.Location = new System.Drawing.Point(434, 149);
+            this.comboBoxServicos.Location = new System.Drawing.Point(666, 205);
             this.comboBoxServicos.MaximumSize = new System.Drawing.Size(1000, 0);
             this.comboBoxServicos.Name = "comboBoxServicos";
             this.comboBoxServicos.Size = new System.Drawing.Size(271, 21);
             this.comboBoxServicos.TabIndex = 104;
             this.comboBoxServicos.SelectionChangeCommitted += new System.EventHandler(this.comboBoxServicos_SelectionChangeCommitted);
+            // 
+            // lblValor
+            // 
+            this.lblValor.BackColor = System.Drawing.Color.Transparent;
+            this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValor.Location = new System.Drawing.Point(666, 392);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(45, 20);
+            this.lblValor.TabIndex = 106;
+            this.lblValor.Text = "Valor";
             // 
             // txtValor
             // 
@@ -200,94 +199,95 @@
             this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtValor.ForeColor = System.Drawing.Color.Black;
             this.txtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtValor.Location = new System.Drawing.Point(429, 244);
+            this.txtValor.Location = new System.Drawing.Point(666, 414);
             this.txtValor.Name = "txtValor";
             this.txtValor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtValor.PlaceholderText = "";
             this.txtValor.SelectedText = "";
-            this.txtValor.Size = new System.Drawing.Size(276, 29);
+            this.txtValor.Size = new System.Drawing.Size(271, 29);
             this.txtValor.TabIndex = 107;
             // 
-            // lblValor
+            // txtCliente
             // 
-            this.lblValor.BackColor = System.Drawing.Color.Transparent;
-            this.lblValor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(430, 221);
-            this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(45, 20);
-            this.lblValor.TabIndex = 106;
-            this.lblValor.Text = "Valor";
+            this.txtCliente.BorderColor = System.Drawing.Color.DimGray;
+            this.txtCliente.BorderRadius = 5;
+            this.txtCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCliente.DefaultText = "";
+            this.txtCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCliente.ForeColor = System.Drawing.Color.Black;
+            this.txtCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCliente.Location = new System.Drawing.Point(666, 270);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCliente.PlaceholderText = "";
+            this.txtCliente.SelectedText = "";
+            this.txtCliente.Size = new System.Drawing.Size(271, 29);
+            this.txtCliente.TabIndex = 108;
             // 
-            // iconPictureBox1
+            // sfDataGrid1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 36;
-            this.iconPictureBox1.Location = new System.Drawing.Point(17, 140);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(37, 36);
-            this.iconPictureBox1.TabIndex = 184;
-            this.iconPictureBox1.TabStop = false;
+            this.sfDataGrid1.AccessibleName = "Table";
+            this.sfDataGrid1.Location = new System.Drawing.Point(5, 189);
+            this.sfDataGrid1.Name = "sfDataGrid1";
+            this.sfDataGrid1.Size = new System.Drawing.Size(655, 255);
+            this.sfDataGrid1.Style.DragPreviewRowStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.sfDataGrid1.Style.DragPreviewRowStyle.RowCountIndicatorTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sfDataGrid1.TabIndex = 109;
+            this.sfDataGrid1.Text = "sfDataGrid1";
             // 
-            // iconPictureBox3
+            // btnBuscar
             // 
-            this.iconPictureBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Wpforms;
-            this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 39;
-            this.iconPictureBox3.Location = new System.Drawing.Point(391, 134);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(39, 39);
-            this.iconPictureBox3.TabIndex = 185;
-            this.iconPictureBox3.TabStop = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.Navy;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscar.IconColor = System.Drawing.Color.White;
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnBuscar.IconSize = 25;
+            this.btnBuscar.Location = new System.Drawing.Point(518, 161);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(52, 23);
+            this.btnBuscar.TabIndex = 111;
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-            // iconPictureBox4
+            // txtBusca
             // 
-            this.iconPictureBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.MoneyBillWave;
-            this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 36;
-            this.iconPictureBox4.Location = new System.Drawing.Point(391, 237);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(37, 36);
-            this.iconPictureBox4.TabIndex = 187;
-            this.iconPictureBox4.TabStop = false;
+            this.txtBusca.Location = new System.Drawing.Point(5, 163);
+            this.txtBusca.Name = "txtBusca";
+            this.txtBusca.Size = new System.Drawing.Size(507, 20);
+            this.txtBusca.TabIndex = 110;
             // 
-            // iconPictureBox6
+            // lblData
             // 
-            this.iconPictureBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
-            this.iconPictureBox6.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.IconSize = 36;
-            this.iconPictureBox6.Location = new System.Drawing.Point(17, 237);
-            this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(42, 36);
-            this.iconPictureBox6.TabIndex = 188;
-            this.iconPictureBox6.TabStop = false;
+            this.lblData.BackColor = System.Drawing.Color.Transparent;
+            this.lblData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.Location = new System.Drawing.Point(625, 12);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(41, 20);
+            this.lblData.TabIndex = 112;
+            this.lblData.Text = "Data";
             // 
             // FormReagendamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(739, 361);
-            this.Controls.Add(this.iconPictureBox6);
-            this.Controls.Add(this.iconPictureBox4);
+            this.ClientSize = new System.Drawing.Size(992, 503);
+            this.Controls.Add(this.lblData);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtBusca);
+            this.Controls.Add(this.sfDataGrid1);
+            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.iconPictureBox3);
-            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.comboBoxServicos);
-            this.Controls.Add(this.comboBoxCliente);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.lblMudarData);
@@ -302,10 +302,7 @@
             this.Text = "Reagendamento";
             this.Load += new System.EventHandler(this.FormReagendamento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,14 +317,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitulo2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private System.Windows.Forms.ComboBox comboBoxCliente;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.ComboBox comboBoxServicos;
-        private Guna.UI2.WinForms.Guna2TextBox txtValor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblValor;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
+        private Guna.UI2.WinForms.Guna2TextBox txtValor;
+        private Guna.UI2.WinForms.Guna2TextBox txtCliente;
+        private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGrid1;
+        private FontAwesome.Sharp.IconButton btnBuscar;
+        private System.Windows.Forms.TextBox txtBusca;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
     }
 }

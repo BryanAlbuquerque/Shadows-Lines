@@ -14,7 +14,7 @@ namespace ShadowLines
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDadosAgendamentos());
+            Application.Run(new FormLogin());
         }
     }
 }

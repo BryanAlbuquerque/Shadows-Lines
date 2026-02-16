@@ -26,24 +26,12 @@ namespace ShadowLines.Forms
 
         private void FormReagendamento_Load(object sender, EventArgs e)
         {
-            comboBoxCliente.AutoCompleteMode = AutoCompleteMode.Suggest;
-            comboBoxCliente.AutoCompleteSource = AutoCompleteSource.ListItems;
-
             txtData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
             PopularComboBoxClientes();
             PopularComboBoxServicos();
         }
 
-        public void PopularComboBoxClientes()
-        {
-            var lista = Agendamento.Select();
-
-            comboBoxCliente.DataSource = lista;
-            comboBoxCliente.DisplayMember = "NomeCliente";
-            comboBoxCliente.ValueMember = "ClienteID";
-            comboBoxCliente.SelectedIndex = -1;
-        }
 
         public void PopularComboBoxServicos()
         {
@@ -57,7 +45,7 @@ namespace ShadowLines.Forms
 
         private void Salvar() 
         {
-            if (string.IsNullOrEmpty(comboBoxCliente.Text)
+            if (string.IsNullOrEmpty(txtCliente.Text)
                     || string.IsNullOrEmpty(txtData.Text)
                     || string.IsNullOrEmpty(comboBoxServicos.Text)
                     || string.IsNullOrEmpty(txtValor.Text))
