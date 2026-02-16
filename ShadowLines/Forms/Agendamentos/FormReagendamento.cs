@@ -1,8 +1,9 @@
-﻿using Microsoft.Data.SqlClient;
-using ShadowLines.Classes;
+﻿using ShadowLines.Classes;
 using ShadowLines.Models;
+using Syncfusion.WinForms.DataGrid;
+using Syncfusion.WinForms.DataGrid.Enums;
 using System;
-using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace ShadowLines.Forms
@@ -22,13 +23,27 @@ namespace ShadowLines.Forms
             {
                 menu.Interface(true);
             }
+
+            if (this.MdiParent is FormNivelAcesso2 menu03)
+            {
+                menu03.Interface(true);
+            }
+
         }
 
         private void FormReagendamento_Load(object sender, EventArgs e)
         {
-            txtData.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+            sfDataGrid.AutoGenerateColumns = false;  
+            sfDataGrid.Columns.Clear();              
 
-            PopularComboBoxClientes();
+            ConfigurarColunas();                     
+
+            sfDataGrid.AllowSorting = true;
+            sfDataGrid.AllowFiltering = true;
+            sfDataGrid.FilterRowPosition = RowPosition.Top;
+
+            sfDataGrid.DataSource = Agendamento.Busca("%");  
+
             PopularComboBoxServicos();
         }
 
@@ -43,57 +58,74 @@ namespace ShadowLines.Forms
             comboBoxServicos.SelectedIndex = -1;
         }
 
+        public void ConfigurarColunas()
+        {
+            GridTextColumn nome = new GridTextColumn();
+            nome.MappingName = "NomeCliente";
+            nome.HeaderText = "Nome do Cliente";
+            nome.Width = 130;
+            sfDataGrid.Columns.Add(nome);
+
+            GridTextColumn servico = new GridTextColumn();
+            servico.MappingName = "NomeFuncionario";
+            servico.HeaderText = "Nome do Funcionario";
+            servico.Width = 130;
+            sfDataGrid.Columns.Add(servico);
+
+            GridTextColumn dataAgendamento = new GridTextColumn();
+            dataAgendamento.MappingName = "DataAgendamento";
+            dataAgendamento.HeaderText = "Data do Agendamento";
+            dataAgendamento.Width = 150;
+            dataAgendamento.Format = "dd/MM/yyyy HH:mm";
+            sfDataGrid.Columns.Add(dataAgendamento);
+
+            GridTextColumn valor = new GridTextColumn();
+            valor.MappingName = "Valor";
+            valor.HeaderText = "Valor";
+            valor.Format = "C2";
+            valor.Width = 150;
+            sfDataGrid.Columns.Add(valor);
+
+            GridTextColumn situacao = new GridTextColumn();
+            situacao.MappingName = "Situacao";
+            situacao.HeaderText = "Situação";
+            situacao.Width = 140;
+            sfDataGrid.Columns.Add(situacao);
+
+        }
         private void Salvar() 
         {
-            if (string.IsNullOrEmpty(txtCliente.Text)
-                    || string.IsNullOrEmpty(txtData.Text)
-                    || string.IsNullOrEmpty(comboBoxServicos.Text)
-                    || string.IsNullOrEmpty(txtValor.Text))
+            if (sfDataGrid.SelectedItem == null)
             {
-                MessageBox.Show("Erro existem espaços em branco!");
+                MessageBox.Show("Erro! Selecione um agendamento na tabela.");
                 return;
             }
 
             try
             {
-                AgendamentoModel ag = new AgendamentoModel();
-                Agendamento agendamento = new Agendamento();
-
-                ag.ClienteID = Convert.ToInt32(comboBoxCliente.SelectedValue);
-
-                ag.AgendamentoID = agendamento.GetUltimoAgendamentoId(ag.ClienteID);
-
-                if (ag.AgendamentoID == 0)
+                AgendamentoModel selecionado = sfDataGrid.SelectedItem as AgendamentoModel;
+                if (selecionado == null)
                 {
-                    MessageBox.Show("Este cliente não possui agendamentos ativos para reagendar.",
-                                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Erro! Selecione um agendamento válido na tabela.");
                     return;
                 }
+                selecionado.NomeCliente = txtCliente.Text;
+                selecionado.DataAgendamento = DateTime.Parse(txtData.Text);
+                selecionado.Servicos = comboBoxServicos.Text;
+                selecionado.Valor = decimal.Parse(txtValor.Text, System.Globalization.NumberStyles.Currency);
+                selecionado.Situacao = txtSituacao.Text;
 
-                ag.DataAgendamento = DateTime.ParseExact(
-                                        txtData.Text,
-                                        "dd/MM/yyyy HH:mm",
-                                        null);
+                Agendamento.Update(selecionado);
 
-                ag.Servicos = comboBoxServicos.Text;
-                ag.Valor = Convert.ToDecimal(txtValor.Text);
+                MessageBox.Show("Agendamento reagendado com sucesso!", "Sucesso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                sfDataGrid.DataSource = Agendamento.Busca("%");
 
-                bool atualizado = agendamento.Update(ag);
-
-                if (atualizado)
-                {
-                    MessageBox.Show("Reagendamento realizado com sucesso!",
-                                    "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Não foi possível reagendar. Tente novamente.",
-                                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
             catch (SqlException ex)
             {
-                MessageBox.Show($"Erro ocorreu um erro! {ex}");
+                MessageBox.Show("Erro ao acessar o banco de dados: " + ex.Message, "Erro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -108,6 +140,30 @@ namespace ShadowLines.Forms
 
             ServicoModel servico = (ServicoModel)comboBoxServicos.SelectedItem;
             txtValor.Text = servico.Valor.ToString("F2");
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            Agendamento agendamento = new Agendamento();
+
+            sfDataGrid.DataSource = Agendamento.Busca(txtBusca.Text);
+        }
+
+        private void sfDataGrid_SelectionChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventArgs e)
+        {
+            if (sfDataGrid.SelectedItem == null) return;
+
+            AgendamentoModel selecionado = sfDataGrid.SelectedItem as AgendamentoModel;
+
+            if (selecionado == null)
+                return;
+
+            txtCliente.Text = selecionado.NomeCliente;
+            txtData.Text = selecionado.DataAgendamento.ToString("dd/MM/yyyy HH:mm");
+            comboBoxServicos.Text = selecionado.Servicos;
+            txtValor.Text = selecionado.Valor.ToString("C2");
+            txtSituacao.Text = selecionado.Situacao;
+
         }
     }
 }

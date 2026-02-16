@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\agendamentos\\formreagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\agendamentos\\formdadosagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\agendamentos\\formdadosagendamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|d:\\projetos\\shadows \u0026 lines\\shadowlines\\forms\\agendamentos\\formreagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B08D037-0455-48A3-A215-5BF0B6B5F68E}|ShadowLines.csproj|solutionrelative:forms\\agendamentos\\formreagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -48,33 +44,21 @@
               "RelativeDocumentMoniker": "Forms\\Agendamentos\\FormReagendamento.cs",
               "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormReagendamento.cs",
               "RelativeToolTip": "Forms\\Agendamentos\\FormReagendamento.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAEwD0AAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T21:13:43.91Z",
+              "WhenOpened": "2026-02-16T23:18:03.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormDadosAgendamentos.cs [Design]",
-              "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormDadosAgendamentos.cs",
-              "RelativeDocumentMoniker": "Forms\\Agendamentos\\FormDadosAgendamentos.cs",
-              "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormDadosAgendamentos.cs [Design]",
-              "RelativeToolTip": "Forms\\Agendamentos\\FormDadosAgendamentos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T21:13:14.63Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "FormReagendamento.cs [Design]",
               "DocumentMoniker": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormReagendamento.cs",
               "RelativeDocumentMoniker": "Forms\\Agendamentos\\FormReagendamento.cs",
               "ToolTip": "D:\\Projetos\\Shadows \u0026 Lines\\ShadowLines\\Forms\\Agendamentos\\FormReagendamento.cs [Design]",
               "RelativeToolTip": "Forms\\Agendamentos\\FormReagendamento.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T21:10:35.465Z",
+              "WhenOpened": "2026-02-16T23:18:00.943Z",
               "EditorCaption": " [Design]"
             }
           ]

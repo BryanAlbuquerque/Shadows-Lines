@@ -219,12 +219,10 @@ D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormAgendame
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormAlterarDadosCliente.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormCadastroClientes.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormExcluirCliente.resources
-D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormSituacao.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Clientes.FormGerarBoleto.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.FormLogin.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormNivelAcesso1.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormNivelAcesso2.resources
-D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormsMenu2.FormAgendamentoNivelAcesso3.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Funcionarios.FormAlterarDadosFuncionarios.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.Funcionarios.FormCadastrarFuncionario.resources
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.Forms.FormsMenu2.FormFuncionarios.resources

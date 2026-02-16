@@ -32,6 +32,11 @@ namespace ShadowLines.Forms
             {
                 menu.Interface(true);
             }
+
+            if (this.MdiParent is FormNivelAcesso3 menu03) 
+            { 
+                menu03.Interface(true);
+            }
         }
 
         public void PopularComboBoxClientes()

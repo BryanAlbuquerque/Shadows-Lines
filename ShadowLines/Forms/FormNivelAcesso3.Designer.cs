@@ -47,6 +47,8 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnDesconectar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.roundedPanel3 = new RoundedPanel();
+            this.btnReagendamento = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -54,6 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // iconButtonAtualizar
@@ -99,6 +102,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.btnReagendamento);
+            this.panel1.Controls.Add(this.iconPictureBox4);
             this.panel1.Controls.Add(this.btnClientes);
             this.panel1.Controls.Add(this.btnServicos);
             this.panel1.Controls.Add(this.bntFuncionarios);
@@ -190,7 +195,7 @@
             this.btnDados.FillColor2 = System.Drawing.Color.Black;
             this.btnDados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDados.ForeColor = System.Drawing.Color.White;
-            this.btnDados.Location = new System.Drawing.Point(68, 491);
+            this.btnDados.Location = new System.Drawing.Point(68, 580);
             this.btnDados.Name = "btnDados";
             this.btnDados.Size = new System.Drawing.Size(144, 45);
             this.btnDados.TabIndex = 84;
@@ -248,7 +253,7 @@
             this.iconPictureBox5.IconColor = System.Drawing.Color.White;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 42;
-            this.iconPictureBox5.Location = new System.Drawing.Point(29, 491);
+            this.iconPictureBox5.Location = new System.Drawing.Point(29, 580);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(50, 42);
             this.iconPictureBox5.TabIndex = 85;
@@ -335,6 +340,38 @@
             this.roundedPanel3.Size = new System.Drawing.Size(59, 683);
             this.roundedPanel3.TabIndex = 81;
             // 
+            // btnReagendamento
+            // 
+            this.btnReagendamento.BorderRadius = 5;
+            this.btnReagendamento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReagendamento.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReagendamento.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReagendamento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReagendamento.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReagendamento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReagendamento.FillColor = System.Drawing.Color.Black;
+            this.btnReagendamento.FillColor2 = System.Drawing.Color.Black;
+            this.btnReagendamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReagendamento.ForeColor = System.Drawing.Color.White;
+            this.btnReagendamento.Location = new System.Drawing.Point(68, 492);
+            this.btnReagendamento.Name = "btnReagendamento";
+            this.btnReagendamento.Size = new System.Drawing.Size(144, 51);
+            this.btnReagendamento.TabIndex = 186;
+            this.btnReagendamento.Text = "Reagendar";
+            this.btnReagendamento.Click += new System.EventHandler(this.btnReagendamento_Click);
+            // 
+            // iconPictureBox4
+            // 
+            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
+            this.iconPictureBox4.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox4.IconSize = 40;
+            this.iconPictureBox4.Location = new System.Drawing.Point(29, 503);
+            this.iconPictureBox4.Name = "iconPictureBox4";
+            this.iconPictureBox4.Size = new System.Drawing.Size(50, 40);
+            this.iconPictureBox4.TabIndex = 187;
+            this.iconPictureBox4.TabStop = false;
+            // 
             // FormNivelAcesso3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,6 +385,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "FormNivelAcesso3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Principal";
@@ -361,6 +399,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,5 +425,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton bntFuncionarios;
         private Guna.UI2.WinForms.Guna2GradientButton btnServicos;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
+        private Guna.UI2.WinForms.Guna2GradientButton btnReagendamento;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
     }
 }

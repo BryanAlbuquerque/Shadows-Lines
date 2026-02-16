@@ -181,8 +181,7 @@ namespace ShadowLines.Classes
         }
 
 
-        // Regras de negocio
-        public int GetUltimoAgendamentoId(int clienteId)
+        public static int GetUltimoAgendamentoId(int clienteId)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
@@ -266,7 +265,7 @@ namespace ShadowLines.Classes
         }
 
 
-        public bool Update(AgendamentoModel ag)
+        public static bool Update(AgendamentoModel ag)
         {
             ag.AgendamentoID = GetUltimoAgendamentoId(ag.ClienteID);
 

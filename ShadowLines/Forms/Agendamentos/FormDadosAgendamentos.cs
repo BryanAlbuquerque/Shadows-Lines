@@ -62,7 +62,6 @@ namespace ShadowLines.Forms
             nomeFuncionario.Width = 170;
             sfDataGrid.Columns.Add(nomeFuncionario);
 
-
             GridTextColumn dataAgendamento = new GridTextColumn();
             dataAgendamento.MappingName = "DataAgendamento";
             dataAgendamento.HeaderText = "Data do Agendamento";

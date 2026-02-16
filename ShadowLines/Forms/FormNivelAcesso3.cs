@@ -3,6 +3,7 @@ using ShadowLines.UI;
 using System.Windows.Forms;
 using ShadowLines.Forms.Servicos;
 using ShadowLines.Forms.FormsMenu2;
+using System.Drawing;
 
 namespace ShadowLines.Forms
 {
@@ -15,6 +16,15 @@ namespace ShadowLines.Forms
         public FormNivelAcesso3()
         {
             InitializeComponent();
+
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is MdiClient)
+                {
+                    ctrl.BackColor = Color.White;
+                    break;
+                }
+            }
 
             painelAgendamentosUI = new PainelAgendamentosUI().CriarPainel();
             painelCanceladosDiaUI = new PainelCanceladosDiaUI().CriarPainel();
@@ -65,9 +75,11 @@ namespace ShadowLines.Forms
 
         private void btnAgendamentos_Click(object sender, System.EventArgs e)
         {
-            FormAgendamentoNivelAcesso3 form = new FormAgendamentoNivelAcesso3();
-            form.Show();
-            this.Hide();
+            Interface(false);
+            FormAgendamento agendamentos = new FormAgendamento();
+            agendamentos.MdiParent = this;
+            agendamentos.Show();
+
         }
 
         private void FormMenu2_Load(object sender, System.EventArgs e)
@@ -115,6 +127,14 @@ namespace ShadowLines.Forms
             FormServicos servicos = new FormServicos();
             servicos.Show();
             this.Hide();
+        }
+
+        private void btnReagendamento_Click(object sender, System.EventArgs e)
+        {
+            Interface(false);
+            FormReagendamento reagendamento = new FormReagendamento();
+            reagendamento.MdiParent = this;
+            reagendamento.Show();
         }
     }
 }
