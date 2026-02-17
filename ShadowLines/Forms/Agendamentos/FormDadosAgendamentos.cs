@@ -12,6 +12,7 @@ namespace ShadowLines.Forms
         public FormDadosAgendamentos()
         {
             InitializeComponent();
+
         }
 
         public void PopularComboBoxFuncionarios()
@@ -216,7 +217,7 @@ namespace ShadowLines.Forms
             comboBoxServicos.Text = agendamento.Servicos;
             txtValor.Text = agendamento.Valor.ToString("C2");
             txtPagamento.Text = agendamento.Pagamento;
-            txtSituacao.Text = "Pendente";
+            txtSituacao.Text = agendamento.Situacao;
         }
 
         private void comboBoxServicos_SelectedValueChanged(object sender, EventArgs e)
@@ -225,6 +226,11 @@ namespace ShadowLines.Forms
 
             ServicoModel servico = (ServicoModel)comboBoxServicos.SelectedItem;
             txtValor.Text = servico.Valor.ToString("F2");
+        }
+
+        private void sfDataGrid_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

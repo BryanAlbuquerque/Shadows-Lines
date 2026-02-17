@@ -42,7 +42,7 @@ namespace ShadowLines.Forms
             sfDataGrid.AllowFiltering = true;
             sfDataGrid.FilterRowPosition = RowPosition.Top;
 
-            sfDataGrid.DataSource = Agendamento.Busca("%");  
+            sfDataGrid.DataSource = Agendamento.ListaEmAberto("%");  
 
             PopularComboBoxServicos();
         }
@@ -119,7 +119,7 @@ namespace ShadowLines.Forms
 
                 MessageBox.Show("Agendamento reagendado com sucesso!", "Sucesso",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-                sfDataGrid.DataSource = Agendamento.Busca("%");
+                sfDataGrid.DataSource = Agendamento.ListaEmAberto("%");
 
             }
             catch (SqlException ex)
@@ -146,7 +146,7 @@ namespace ShadowLines.Forms
         {
             Agendamento agendamento = new Agendamento();
 
-            sfDataGrid.DataSource = Agendamento.Busca(txtBusca.Text);
+            sfDataGrid.DataSource = Agendamento.ListaEmAberto(txtBusca.Text);
         }
 
         private void sfDataGrid_SelectionChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventArgs e)

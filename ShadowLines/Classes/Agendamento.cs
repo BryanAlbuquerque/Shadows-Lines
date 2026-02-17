@@ -10,61 +10,6 @@ namespace ShadowLines.Classes
         private readonly static string _connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
-        public static List<AgendamentoModel> Select()
-        {
-            List<AgendamentoModel> lista = new List<AgendamentoModel>();
-
-            using (SqlConnection conn = new SqlConnection(_connectionString))
-            {
-                string query = @"
-                        SELECT 
-                            A.AgendamentoID,
-                            A.ClienteID,
-                            C.Nome AS NomeCliente,
-                            A.Servico,
-                            A.DataAgendamento,
-                            A.Valor,
-                            A.Pagamento,
-                            A.Situacao,
-                            F.Nome AS NomeFuncionario
-                        FROM Agendamentos A
-                        INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
-                        INNER JOIN Funcionarios F ON A.FuncionarioID = F.FuncionarioID  
-                        WHERE 
-                            A.DataAgendamento >= CAST(GETDATE() AS DATE)
-                            AND A.Situacao <> 'Cancelado'
-                            AND A.Situacao <> 'Finalizado'
-                        ORDER BY 
-                            A.DataAgendamento ASC";
-
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    conn.Open();
-                    using (SqlDataReader r = cmd.ExecuteReader())
-                    {
-                        while (r.Read())
-                        {
-                            lista.Add(new AgendamentoModel()
-                            {
-                                AgendamentoID = r.GetInt32(r.GetOrdinal("AgendamentoID")),
-                                ClienteID = r.GetInt32(r.GetOrdinal("ClienteID")),
-                                NomeCliente = r["NomeCliente"].ToString(),
-                                Servicos = r["Servico"].ToString(),
-                                DataAgendamento = r.GetDateTime(r.GetOrdinal("DataAgendamento")),
-                                Valor = r.GetDecimal(r.GetOrdinal("Valor")),
-                                Pagamento = r["Pagamento"].ToString(),
-                                Situacao = r["Situacao"].ToString(),
-                                NomeFuncionario = r["NomeFuncionario"].ToString()
-                            });
-                        }
-                    }
-                }
-            }
-            return lista;
-        }
-
-
-
         public static List<AgendamentoModel> Busca(string termo)
         {
            List<AgendamentoModel> lista = new List<AgendamentoModel>();
@@ -112,6 +57,57 @@ namespace ShadowLines.Classes
                                 Pagamento = r["Pagamento"].ToString(),
                                 NomeCliente = r["NomeCliente"].ToString(),
                                 NomeFuncionario = r["NomeFuncionario"].ToString() 
+                            });
+                        }
+                    }
+                }
+            }
+            return lista;
+        }
+
+        public static List<AgendamentoModel> ListaEmAberto(string termo)
+        {
+            List<AgendamentoModel> lista = new List<AgendamentoModel>();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+                        SELECT 
+                            A.AgendamentoID, 
+                            A.ClienteID, 
+                            A.DataAgendamento, 
+                            A.Servico, 
+                            A.Valor, 
+                            A.Situacao, 
+                            C.Nome AS NomeCliente
+                        FROM Agendamentos A
+                        INNER JOIN Clientes C ON A.ClienteID = C.ClienteID
+                        WHERE A.Situacao = 'Em Aberto'
+                        AND (
+                                C.Nome LIKE '%' + @termo + '%' 
+                             OR A.Servico LIKE '%' + @termo + '%'
+                             OR CONVERT(VARCHAR, A.DataAgendamento, 103) LIKE '%' + @termo + '%'
+                            )";
+
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@termo", termo);
+
+                    conn.Open();
+                    using (SqlDataReader r = cmd.ExecuteReader())
+                    {
+                        while (r.Read())
+                        {
+                            lista.Add(new AgendamentoModel()
+                            {
+                                AgendamentoID = r.GetInt32(r.GetOrdinal("AgendamentoID")),
+                                ClienteID = r.GetInt32(r.GetOrdinal("ClienteID")),
+                                DataAgendamento = r.GetDateTime(r.GetOrdinal("DataAgendamento")),
+                                Servicos = r["Servico"].ToString(),
+                                Valor = (decimal)r["Valor"],
+                                Situacao = r["Situacao"].ToString(),
+                                NomeCliente = r["NomeCliente"].ToString(),
                             });
                         }
                     }

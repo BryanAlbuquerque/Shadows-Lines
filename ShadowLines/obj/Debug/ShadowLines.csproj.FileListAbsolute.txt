@@ -238,3 +238,7 @@ D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.csproj.CoreCompile
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLi.331D85DA.Up2Date
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.exe
 D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.pdb
+D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\ShadowLines.exe.manifest
+D:\Projetos\Shadows & Lines\ShadowLines\bin\Debug\ShadowLines.application
+D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.exe.manifest
+D:\Projetos\Shadows & Lines\ShadowLines\obj\Debug\ShadowLines.application
