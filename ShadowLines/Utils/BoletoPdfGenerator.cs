@@ -15,6 +15,8 @@ namespace ShadowLines.Utils
     {
         public static void GerarBoleto(AgendamentoModel agendamento)
         {
+            ClienteModel cliente = new ClienteModel();
+
             string pasta = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
                 "Boletos"
@@ -41,6 +43,7 @@ namespace ShadowLines.Utils
 
             // 🔹 Dados do cliente
             document.Add(new Paragraph($"Cliente: {agendamento.NomeCliente}"));
+            document.Add(new Paragraph($"CPF: {cliente.CPF}"));
             document.Add(new Paragraph($"Data do Agendamento: {agendamento.DataAgendamento:dd/MM/yyyy}"));
             document.Add(new Paragraph($"Serviço: {agendamento.Servicos}"));
             document.Add(new Paragraph($"Valor: R$ {agendamento.Valor:N2}"));

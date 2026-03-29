@@ -10,6 +10,7 @@ namespace ShadowLines.Classes
         private readonly static string _connectionString =
             "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=ShadowLines;Trusted_Connection=True;TrustServerCertificate=true";
 
+
         public static List<AgendamentoModel> Busca(string termo)
         {
            List<AgendamentoModel> lista = new List<AgendamentoModel>();
